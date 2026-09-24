@@ -14,7 +14,7 @@
  * Settings live in Project Settings → Script properties:
  *   RECAPTCHA_SECRET   (required) reCAPTCHA v2 secret key
  *   NOTIFY_EMAIL       (required) who receives enquiries, comma-separated
- *   ALLOWED_HOSTNAMES  (optional) e.g. "planman.com,www.planman.com" — rejects tokens from other sites
+ *   ALLOWED_HOSTNAMES  (optional) e.g. "planman.ae,www.planman.ae" — rejects tokens from other sites
  *   AUTO_REPLY         (optional) "true" to email the customer a confirmation (default: off)
  */
 
