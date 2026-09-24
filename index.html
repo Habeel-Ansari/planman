@@ -3,180 +3,471 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan Man | Trusted IT Hardware & Enterprise Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Plan Man | Enterprise IT Solutions &amp; Hardware, UAE</title>
+    <meta name="description" content="Plan Man designs, supplies, deploys and supports enterprise IT infrastructure for hospitality groups, universities, manufacturers and enterprises in the UAE. Servers, storage, GPUs and networking from all premium brands.">
+    <script>(function(){var d=document.documentElement,t='light';d.classList.add('js');try{t=localStorage.getItem('pm-theme')||t}catch(e){}d.setAttribute('data-theme',t)})()</script>
+    <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+    <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css?v=12">
+    <link rel="stylesheet" href="apple.css?v=12">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="Black Modern A letter Logo.png" alt="Plan Man" style="height: 48px;">
+            <a href="index.html" class="logo" aria-label="Plan Man home">
+                <img class="logo-light" src="assets/logo/planman-logo-compact.svg?v=3" alt="Plan Man" width="1440" height="236"><img class="logo-dark" src="assets/logo/planman-logo-compact-dark.svg?v=3" alt="Plan Man" width="1440" height="236">
             </a>
             <ul class="nav-links">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li class="has-mega">
+                    <button type="button" aria-expanded="false">Products <i class="ph ph-caret-down"></i></button>
+                    <div class="mega">
+                        <div class="container mega-inner">
+                            <div>
+                                <h5>AI Infrastructure</h5>
+                                <ul>
+                                    <li><a href="products.html?cat=rack-scale">Rack-Scale AI Systems</a></li>
+                                    <li><a href="products.html?cat=gpu-servers">GPU &amp; AI Servers</a></li>
+                                    <li><a href="products.html?cat=accelerators">Data Center GPUs</a></li>
+                                    <li><a href="products.html?cat=networking">AI Networking</a></li>
+                                    <li><a href="products.html?cat=desktop-ai">AI Workstations &amp; Deskside</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Enterprise Data Center</h5>
+                                <ul>
+                                    <li><a href="products.html?cat=servers">Rack &amp; Multi-Node Servers</a></li>
+                                    <li><a href="products.html?cat=storage">Storage</a></li>
+                                    <li><a href="products.html?cat=edge">Edge Systems</a></li>
+                                    <li><a href="products.html?cat=software">Software &amp; Management</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Hardware by Brand</h5>
+                                <ul>
+                                    <li><a href="products.html?brand=nvidia">NVIDIA</a></li>
+                                    <li><a href="products.html?brand=supermicro">Supermicro</a></li>
+                                    <li><a href="products.html?brand=asus">ASUS</a></li>
+                                    <li><a href="products.html#hardware">All premium brands</a></li>
+                                    <li><a href="products.html">View all products</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="industries.html">Industries</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-cta">
-                <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                <a href="tel:+971585225166" class="btn btn-ghost btn-sm"><i class="ph ph-phone"></i> +971 58 522 5166</a>
+                <a href="contact.html" class="btn btn-primary btn-sm">Request Quote</a>
             </div>
-            <div class="menu-toggle">
-                <i class="ph ph-list"></i>
-            </div>
+            <button type="button" class="theme-toggle" aria-label="Switch to dark theme"><i class="ph ph-moon"></i></button>
+            <button type="button" class="menu-toggle" aria-label="Menu" aria-expanded="false"><i class="ph ph-list"></i></button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="home-hero">
-        <div class="container hero-content gsap-fade-up">
-            <div class="hero-badge">Enterprise IT Solutions</div>
-            <h1 class="hero-title">Plan Man | Your Trusted IT Hardware & Enterprise Solutions Partner in the UAE.</h1>
-            <p class="hero-subtitle">Robust Digital Workplaces | High Speed | High Impact. Discover premium IT products, scalable servers, and reliable storage solutions from globally renowned brands.</p>
-            <div class="hero-buttons">
-                <a href="products.html" class="btn btn-primary">Shop Products <i class="ph ph-arrow-right"></i></a>
-                <a href="contact.html" class="btn btn-secondary">Request a Quote</a>
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-layout">
+            <div>
+                <span class="eyebrow">Enterprise IT Solutions · Hardware · UAE</span>
+                <h1 class="display">Build Your<br><span class="rotator shimmer" data-words="AI Factory|GPU Cluster|Private Cloud|HPC Cluster">AI Factory</span><br>With Plan Man.</h1>
+                <p class="lead">From AI factories to hotel, campus and factory IT, Plan Man takes your project from requirements and design through supply, deployment and after-sales support, with servers, storage, GPUs and networking from all the premium brands.</p>
+                <div class="hero-buttons">
+                    <a href="industries.html" class="btn btn-primary">Industries We Serve <i class="ph ph-arrow-right"></i></a>
+                    <a href="contact.html?type=quote" class="btn btn-ghost">Request a Quote</a>
+                </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <!-- HERO-ART -->
+                <svg class="eco" viewBox="0 0 1200 500" role="img" aria-label="One Plan Man infrastructure platform connecting hospitality, education, manufacturing and enterprise" xmlns="http://www.w3.org/2000/svg"><ellipse class="eco-glow" cx="597.0" cy="347.0" rx="340" ry="100"/><polygon class="eco-plate" points="512.1,207.0 829.1,390.0 676.6,478.0 359.7,295.0"/><polygon class="eco-plate-edge" points="512.1,207.0 829.1,390.0 676.6,478.0 359.7,295.0"/><polygon class="eco-top" points="512.1,57.0 572.7,92.0 500.0,134.0 439.4,99.0"/><polygon class="eco-side" points="572.7,282.0 500.0,324.0 500.0,134.0 572.7,92.0"/><polygon class="eco-front" points="439.4,289.0 500.0,324.0 500.0,134.0 439.4,99.0"/><line class="eco-seam" x1="443.7" y1="279.5" x2="495.6" y2="309.5"/><line class="eco-vent" x1="447.1" y1="273.5" x2="470.5" y2="287.0"/><circle class="eco-led-b led0" cx="491.3" cy="299.0" r="2.2"/><line class="eco-seam" x1="443.7" y1="263.6" x2="495.6" y2="293.6"/><line class="eco-vent" x1="447.1" y1="257.6" x2="470.5" y2="271.1"/><circle class="eco-led-g led1" cx="491.3" cy="283.1" r="2.2"/><line class="eco-seam" x1="443.7" y1="247.7" x2="495.6" y2="277.7"/><line class="eco-vent" x1="447.1" y1="241.7" x2="470.5" y2="255.2"/><circle class="eco-led-g led2" cx="491.3" cy="267.2" r="2.2"/><line class="eco-seam" x1="443.7" y1="231.8" x2="495.6" y2="261.8"/><line class="eco-vent" x1="447.1" y1="225.8" x2="470.5" y2="239.3"/><circle class="eco-led-b led3" cx="491.3" cy="251.3" r="2.2"/><line class="eco-seam" x1="443.7" y1="215.9" x2="495.6" y2="245.9"/><line class="eco-vent" x1="447.1" y1="209.9" x2="470.5" y2="223.4"/><circle class="eco-led-g led0" cx="491.3" cy="235.4" r="2.2"/><line class="eco-seam" x1="443.7" y1="200.0" x2="495.6" y2="230.0"/><circle class="eco-led-g led0" cx="447.1" cy="194.0" r="1.9"/><circle class="eco-led-g led1" cx="453.2" cy="197.5" r="1.9"/><circle class="eco-led-g led2" cx="459.3" cy="201.0" r="1.9"/><circle class="eco-led-g led3" cx="465.3" cy="204.5" r="1.9"/><circle class="eco-led-g led0" cx="471.4" cy="208.0" r="1.9"/><circle class="eco-led-g led1" cx="477.5" cy="211.5" r="1.9"/><circle class="eco-led-g led2" cx="483.5" cy="215.0" r="1.9"/><circle class="eco-led-g led3" cx="489.6" cy="218.5" r="1.9"/><line class="eco-seam" x1="443.7" y1="184.1" x2="495.6" y2="214.1"/><line class="eco-vent" x1="447.1" y1="178.1" x2="470.5" y2="191.6"/><circle class="eco-led-b led2" cx="491.3" cy="203.6" r="2.2"/><line class="eco-seam" x1="443.7" y1="168.2" x2="495.6" y2="198.2"/><line class="eco-vent" x1="447.1" y1="162.2" x2="470.5" y2="175.7"/><circle class="eco-led-g led3" cx="491.3" cy="187.7" r="2.2"/><line class="eco-seam" x1="443.7" y1="152.3" x2="495.6" y2="182.3"/><line class="eco-vent" x1="447.1" y1="146.3" x2="470.5" y2="159.8"/><circle class="eco-led-g led0" cx="491.3" cy="171.8" r="2.2"/><line class="eco-seam" x1="443.7" y1="136.4" x2="495.6" y2="166.4"/><line class="eco-vent" x1="447.1" y1="130.4" x2="470.5" y2="143.9"/><circle class="eco-led-b led1" cx="491.3" cy="155.9" r="2.2"/><line class="eco-seam" x1="443.7" y1="120.5" x2="495.6" y2="150.5"/><line class="eco-vent" x1="447.1" y1="114.5" x2="470.5" y2="128.0"/><circle class="eco-led-g led2" cx="491.3" cy="140.0" r="2.2"/><line class="eco-rim" x1="439.4" y1="99.0" x2="500.0" y2="134.0"/><polygon class="eco-top" points="574.5,93.0 635.1,128.0 562.3,170.0 501.7,135.0"/><polygon class="eco-side" points="635.1,318.0 562.3,360.0 562.3,170.0 635.1,128.0"/><polygon class="eco-front" points="501.7,325.0 562.3,360.0 562.3,170.0 501.7,135.0"/><line class="eco-seam" x1="506.0" y1="315.5" x2="558.0" y2="345.5"/><line class="eco-vent" x1="509.5" y1="309.5" x2="532.9" y2="323.0"/><circle class="eco-led-g led2" cx="553.7" cy="335.0" r="2.2"/><line class="eco-seam" x1="506.0" y1="299.6" x2="558.0" y2="329.6"/><line class="eco-vent" x1="509.5" y1="293.6" x2="532.9" y2="307.1"/><circle class="eco-led-g led3" cx="553.7" cy="319.1" r="2.2"/><line class="eco-seam" x1="506.0" y1="283.7" x2="558.0" y2="313.7"/><line class="eco-vent" x1="509.5" y1="277.7" x2="532.9" y2="291.2"/><circle class="eco-led-b led0" cx="553.7" cy="303.2" r="2.2"/><line class="eco-seam" x1="506.0" y1="267.8" x2="558.0" y2="297.8"/><line class="eco-vent" x1="509.5" y1="261.8" x2="532.9" y2="275.3"/><circle class="eco-led-g led1" cx="553.7" cy="287.3" r="2.2"/><line class="eco-seam" x1="506.0" y1="251.9" x2="558.0" y2="281.9"/><line class="eco-vent" x1="509.5" y1="245.9" x2="532.9" y2="259.4"/><circle class="eco-led-g led2" cx="553.7" cy="271.4" r="2.2"/><line class="eco-seam" x1="506.0" y1="236.0" x2="558.0" y2="266.0"/><circle class="eco-led-g led1" cx="509.5" cy="230.0" r="1.9"/><circle class="eco-led-g led2" cx="515.6" cy="233.5" r="1.9"/><circle class="eco-led-g led3" cx="521.6" cy="237.0" r="1.9"/><circle class="eco-led-g led0" cx="527.7" cy="240.5" r="1.9"/><circle class="eco-led-g led1" cx="533.8" cy="244.0" r="1.9"/><circle class="eco-led-g led2" cx="539.8" cy="247.5" r="1.9"/><circle class="eco-led-g led3" cx="545.9" cy="251.0" r="1.9"/><circle class="eco-led-g led0" cx="551.9" cy="254.5" r="1.9"/><line class="eco-seam" x1="506.0" y1="220.1" x2="558.0" y2="250.1"/><line class="eco-vent" x1="509.5" y1="214.1" x2="532.9" y2="227.6"/><circle class="eco-led-g led0" cx="553.7" cy="239.6" r="2.2"/><line class="eco-seam" x1="506.0" y1="204.2" x2="558.0" y2="234.2"/><line class="eco-vent" x1="509.5" y1="198.2" x2="532.9" y2="211.7"/><circle class="eco-led-g led1" cx="553.7" cy="223.7" r="2.2"/><line class="eco-seam" x1="506.0" y1="188.3" x2="558.0" y2="218.3"/><line class="eco-vent" x1="509.5" y1="182.3" x2="532.9" y2="195.8"/><circle class="eco-led-b led2" cx="553.7" cy="207.8" r="2.2"/><line class="eco-seam" x1="506.0" y1="172.4" x2="558.0" y2="202.4"/><line class="eco-vent" x1="509.5" y1="166.4" x2="532.9" y2="179.9"/><circle class="eco-led-g led3" cx="553.7" cy="191.9" r="2.2"/><line class="eco-seam" x1="506.0" y1="156.5" x2="558.0" y2="186.5"/><line class="eco-vent" x1="509.5" y1="150.5" x2="532.9" y2="164.0"/><circle class="eco-led-g led0" cx="553.7" cy="176.0" r="2.2"/><line class="eco-rim" x1="501.7" y1="135.0" x2="562.3" y2="170.0"/><polygon class="eco-top" points="636.8,129.0 697.4,164.0 624.7,206.0 564.1,171.0"/><polygon class="eco-side" points="697.4,354.0 624.7,396.0 624.7,206.0 697.4,164.0"/><polygon class="eco-front" points="564.1,361.0 624.7,396.0 624.7,206.0 564.1,171.0"/><line class="eco-seam" x1="568.4" y1="351.5" x2="620.4" y2="381.5"/><line class="eco-vent" x1="571.9" y1="345.5" x2="595.2" y2="359.0"/><circle class="eco-led-g led0" cx="616.0" cy="371.0" r="2.2"/><line class="eco-seam" x1="568.4" y1="335.6" x2="620.4" y2="365.6"/><line class="eco-vent" x1="571.9" y1="329.6" x2="595.2" y2="343.1"/><circle class="eco-led-b led1" cx="616.0" cy="355.1" r="2.2"/><line class="eco-seam" x1="568.4" y1="319.7" x2="620.4" y2="349.7"/><line class="eco-vent" x1="571.9" y1="313.7" x2="595.2" y2="327.2"/><circle class="eco-led-g led2" cx="616.0" cy="339.2" r="2.2"/><line class="eco-seam" x1="568.4" y1="303.8" x2="620.4" y2="333.8"/><line class="eco-vent" x1="571.9" y1="297.8" x2="595.2" y2="311.3"/><circle class="eco-led-g led3" cx="616.0" cy="323.3" r="2.2"/><line class="eco-seam" x1="568.4" y1="287.9" x2="620.4" y2="317.9"/><line class="eco-vent" x1="571.9" y1="281.9" x2="595.2" y2="295.4"/><circle class="eco-led-b led0" cx="616.0" cy="307.4" r="2.2"/><line class="eco-seam" x1="568.4" y1="272.0" x2="620.4" y2="302.0"/><circle class="eco-led-g led2" cx="571.9" cy="266.0" r="1.9"/><circle class="eco-led-g led3" cx="577.9" cy="269.5" r="1.9"/><circle class="eco-led-g led0" cx="584.0" cy="273.0" r="1.9"/><circle class="eco-led-g led1" cx="590.0" cy="276.5" r="1.9"/><circle class="eco-led-g led2" cx="596.1" cy="280.0" r="1.9"/><circle class="eco-led-g led3" cx="602.2" cy="283.5" r="1.9"/><circle class="eco-led-g led0" cx="608.2" cy="287.0" r="1.9"/><circle class="eco-led-g led1" cx="614.3" cy="290.5" r="1.9"/><line class="eco-seam" x1="568.4" y1="256.1" x2="620.4" y2="286.1"/><line class="eco-vent" x1="571.9" y1="250.1" x2="595.2" y2="263.6"/><circle class="eco-led-g led2" cx="616.0" cy="275.6" r="2.2"/><line class="eco-seam" x1="568.4" y1="240.2" x2="620.4" y2="270.2"/><line class="eco-vent" x1="571.9" y1="234.2" x2="595.2" y2="247.7"/><circle class="eco-led-b led3" cx="616.0" cy="259.7" r="2.2"/><line class="eco-seam" x1="568.4" y1="224.3" x2="620.4" y2="254.3"/><line class="eco-vent" x1="571.9" y1="218.3" x2="595.2" y2="231.8"/><circle class="eco-led-g led0" cx="616.0" cy="243.8" r="2.2"/><line class="eco-seam" x1="568.4" y1="208.4" x2="620.4" y2="238.4"/><line class="eco-vent" x1="571.9" y1="202.4" x2="595.2" y2="215.9"/><circle class="eco-led-g led1" cx="616.0" cy="227.9" r="2.2"/><line class="eco-seam" x1="568.4" y1="192.5" x2="620.4" y2="222.5"/><line class="eco-vent" x1="571.9" y1="186.5" x2="595.2" y2="200.0"/><circle class="eco-led-b led2" cx="616.0" cy="212.0" r="2.2"/><line class="eco-rim" x1="564.1" y1="171.0" x2="624.7" y2="206.0"/><polygon class="eco-top" points="699.2,165.0 759.8,200.0 687.0,242.0 626.4,207.0"/><polygon class="eco-side" points="759.8,390.0 687.0,432.0 687.0,242.0 759.8,200.0"/><polygon class="eco-front" points="626.4,397.0 687.0,432.0 687.0,242.0 626.4,207.0"/><line class="eco-seam" x1="630.7" y1="387.5" x2="682.7" y2="417.5"/><line class="eco-vent" x1="634.2" y1="381.5" x2="657.6" y2="395.0"/><circle class="eco-led-b led2" cx="678.4" cy="407.0" r="2.2"/><line class="eco-seam" x1="630.7" y1="371.6" x2="682.7" y2="401.6"/><line class="eco-vent" x1="634.2" y1="365.6" x2="657.6" y2="379.1"/><circle class="eco-led-g led3" cx="678.4" cy="391.1" r="2.2"/><line class="eco-seam" x1="630.7" y1="355.7" x2="682.7" y2="385.7"/><line class="eco-vent" x1="634.2" y1="349.7" x2="657.6" y2="363.2"/><circle class="eco-led-g led0" cx="678.4" cy="375.2" r="2.2"/><line class="eco-seam" x1="630.7" y1="339.8" x2="682.7" y2="369.8"/><line class="eco-vent" x1="634.2" y1="333.8" x2="657.6" y2="347.3"/><circle class="eco-led-b led1" cx="678.4" cy="359.3" r="2.2"/><line class="eco-seam" x1="630.7" y1="323.9" x2="682.7" y2="353.9"/><line class="eco-vent" x1="634.2" y1="317.9" x2="657.6" y2="331.4"/><circle class="eco-led-g led2" cx="678.4" cy="343.4" r="2.2"/><line class="eco-seam" x1="630.7" y1="308.0" x2="682.7" y2="338.0"/><circle class="eco-led-g led3" cx="634.2" cy="302.0" r="1.9"/><circle class="eco-led-g led0" cx="640.3" cy="305.5" r="1.9"/><circle class="eco-led-g led1" cx="646.3" cy="309.0" r="1.9"/><circle class="eco-led-g led2" cx="652.4" cy="312.5" r="1.9"/><circle class="eco-led-g led3" cx="658.5" cy="316.0" r="1.9"/><circle class="eco-led-g led0" cx="664.5" cy="319.5" r="1.9"/><circle class="eco-led-g led1" cx="670.6" cy="323.0" r="1.9"/><circle class="eco-led-g led2" cx="676.6" cy="326.5" r="1.9"/><line class="eco-seam" x1="630.7" y1="292.1" x2="682.7" y2="322.1"/><line class="eco-vent" x1="634.2" y1="286.1" x2="657.6" y2="299.6"/><circle class="eco-led-b led0" cx="678.4" cy="311.6" r="2.2"/><line class="eco-seam" x1="630.7" y1="276.2" x2="682.7" y2="306.2"/><line class="eco-vent" x1="634.2" y1="270.2" x2="657.6" y2="283.7"/><circle class="eco-led-g led1" cx="678.4" cy="295.7" r="2.2"/><line class="eco-seam" x1="630.7" y1="260.3" x2="682.7" y2="290.3"/><line class="eco-vent" x1="634.2" y1="254.3" x2="657.6" y2="267.8"/><circle class="eco-led-g led2" cx="678.4" cy="279.8" r="2.2"/><line class="eco-seam" x1="630.7" y1="244.4" x2="682.7" y2="274.4"/><line class="eco-vent" x1="634.2" y1="238.4" x2="657.6" y2="251.9"/><circle class="eco-led-b led3" cx="678.4" cy="263.9" r="2.2"/><line class="eco-seam" x1="630.7" y1="228.5" x2="682.7" y2="258.5"/><line class="eco-vent" x1="634.2" y1="222.5" x2="657.6" y2="236.0"/><circle class="eco-led-g led0" cx="678.4" cy="248.0" r="2.2"/><line class="eco-rim" x1="626.4" y1="207.0" x2="687.0" y2="242.0"/><path class="eco-link" d="M439.4 139.0C354.7 139.0 354.7 132 270 132"/><path class="eco-flow" d="M439.4 139.0C354.7 139.0 354.7 132 270 132" style="animation-delay:0s"/><circle class="eco-pulse" r="3.5"><animateMotion path="M439.4 139.0C354.7 139.0 354.7 132 270 132" dur="2.6s" begin="0s" repeatCount="indefinite"/></circle><circle class="eco-port" cx="439.4" cy="139.0" r="3.5"/><g class="eco-node" style="animation-delay:0s"><rect class="eco-card" x="70" y="96" width="200" height="72" rx="18"/><circle class="eco-icon-bg" cx="106" cy="132" r="20"/><path class="eco-icon" transform="translate(106 132)" d="M-9 9V-7h18V9M-5-3h3M2-3h3M-5 2h3M2 2h3M-2 9V6h4v3"/><text class="eco-label" x="136" y="128">Hospitality</text><text class="eco-sub" x="136" y="148">PMS · Wi-Fi · CCTV</text></g><path class="eco-link" d="M465.3 254.0C352.7 254.0 352.7 354 240 354"/><path class="eco-flow" d="M465.3 254.0C352.7 254.0 352.7 354 240 354" style="animation-delay:0.35s"/><circle class="eco-pulse" r="3.5"><animateMotion path="M465.3 254.0C352.7 254.0 352.7 354 240 354" dur="2.9s" begin="0.5s" repeatCount="indefinite"/></circle><circle class="eco-port" cx="465.3" cy="254.0" r="3.5"/><g class="eco-node" style="animation-delay:-1.4s"><rect class="eco-card" x="40" y="318" width="200" height="72" rx="18"/><circle class="eco-icon-bg" cx="76" cy="354" r="20"/><path class="eco-icon" transform="translate(76 354)" d="M-11-2L0-9L11-2ZM-8 8V-1M-3 8V-1M3 8V-1M8 8V-1M-11 9h22"/><text class="eco-label" x="106" y="350">Education</text><text class="eco-sub" x="106" y="370">AI labs · HPC · VDI</text></g><path class="eco-link" d="M733.8 245.0C834.9 245.0 834.9 132 936 132"/><path class="eco-flow" d="M733.8 245.0C834.9 245.0 834.9 132 936 132" style="animation-delay:0.7s"/><circle class="eco-pulse" r="3.5"><animateMotion path="M733.8 245.0C834.9 245.0 834.9 132 936 132" dur="3.2s" begin="1s" repeatCount="indefinite"/></circle><circle class="eco-port" cx="733.8" cy="245.0" r="3.5"/><g class="eco-node" style="animation-delay:-2.8s"><rect class="eco-card" x="936" y="96" width="200" height="72" rx="18"/><circle class="eco-icon-bg" cx="972" cy="132" r="20"/><path class="eco-icon" transform="translate(972 132)" d="M-11 9V-2l6-4v4l6-4v4l6-4V9ZM6-6V-10h3V9"/><text class="eco-label" x="1002" y="128">Manufacturing</text><text class="eco-sub" x="1002" y="148">Edge AI · MES · ERP</text></g><path class="eco-link" d="M716.5 345.0C841.2 345.0 841.2 354 966 354"/><path class="eco-flow" d="M716.5 345.0C841.2 345.0 841.2 354 966 354" style="animation-delay:1.0499999999999998s"/><circle class="eco-pulse" r="3.5"><animateMotion path="M716.5 345.0C841.2 345.0 841.2 354 966 354" dur="3.5s" begin="1.5s" repeatCount="indefinite"/></circle><circle class="eco-port" cx="716.5" cy="345.0" r="3.5"/><g class="eco-node" style="animation-delay:-4.199999999999999s"><rect class="eco-card" x="966" y="318" width="200" height="72" rx="18"/><circle class="eco-icon-bg" cx="1002" cy="354" r="20"/><path class="eco-icon" transform="translate(1002 354)" d="M-9 9V-6h8V9M-1 9V-10h10V9M-6-2h2M-6 2h2M3-6h3M3-2h3M3 2h3"/><text class="eco-label" x="1032" y="350">Enterprise</text><text class="eco-sub" x="1032" y="370">Cloud · Backup · DR</text></g></svg>
+                <!-- /HERO-ART -->
             </div>
         </div>
     </header>
 
-    <!-- Why Choose Plan Man Section -->
-    <section class="section bg-white">
-        <div class="container text-center section-header gsap-fade-up" style="margin: 0 auto 60px auto;">
-            <h2 class="section-title">Why Choose Plan Man?</h2>
-            <p class="section-subtitle">We empower businesses with robust IT infrastructure and top-tier support across the region.</p>
-        </div>
-        <div class="container grid-4 gsap-stagger-parent">
-            <!-- Box 1 -->
-            <div class="card">
-                <div class="card-icon"><i class="ph ph-map-pin-line"></i></div>
-                <h3 class="card-title">01. Nationwide Coverage</h3>
-                <p class="card-text">Ensuring that clients all over the UAE receive timely and efficient service. Our extensive reach guarantees high-quality tech solutions for businesses of all sizes.</p>
+    <!-- Platforms strip -->
+    <div class="partner-strip">
+        <div class="container">
+            <span class="label">Brands we supply</span>
+            <div class="marquee">
+                <div class="marquee-track"><span>Dell</span><span>HPE</span><span>Lenovo</span><span>NVIDIA</span><span>Supermicro</span><span>ASUS</span><span>Cisco</span><span>NetApp</span><span>Pure Storage</span><span>Synology</span><span>QNAP</span><span>Seagate</span><span>Western Digital</span><span>AMD</span><span>Intel</span><span>APC</span><span>Eaton</span><span aria-hidden="true" style="display:contents"><span>Dell</span><span>HPE</span><span>Lenovo</span><span>NVIDIA</span><span>Supermicro</span><span>ASUS</span><span>Cisco</span><span>NetApp</span><span>Pure Storage</span><span>Synology</span><span>QNAP</span><span>Seagate</span><span>Western Digital</span><span>AMD</span><span>Intel</span><span>APC</span><span>Eaton</span></span></div>
             </div>
-            <!-- Box 2 -->
-            <div class="card">
-                <div class="card-icon"><i class="ph ph-cpu"></i></div>
-                <h3 class="card-title">02. Latest Technology</h3>
-                <p class="card-text">We provide cutting-edge technology from globally renowned brands, keeping your enterprise at the forefront of innovation.</p>
-            </div>
-            <!-- Box 3 -->
-            <div class="card">
-                <div class="card-icon"><i class="ph ph-lightbulb"></i></div>
-                <h3 class="card-title">03. Innovative Products</h3>
-                <p class="card-text">Delivering a wide range of forward-thinking IT products, from high-capacity NAS storage to interactive displays, designed to meet modern business demands.</p>
-            </div>
-            <!-- Box 4 -->
-            <div class="card">
-                <div class="card-icon"><i class="ph ph-users-three"></i></div>
-                <h3 class="card-title">04. Professional Team</h3>
-                <p class="card-text">Our talented staff brings years of industry knowledge to ensure top-notch customer support, tailored advice, and timely troubleshooting.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Featured Categories Section -->
+        </div>
+    </div>
+
+    <!-- Industries -->
     <section class="section">
-        <div class="container text-center section-header gsap-fade-up" style="margin: 0 auto 60px auto;">
-            <h2 class="section-title">Featured Product Categories</h2>
-            <p class="section-subtitle">Explore our comprehensive range of high-performance enterprise IT hardware.</p>
-        </div>
-        <div class="container grid-3 gsap-stagger-parent">
-            <!-- Cat 1 -->
-            <div class="card">
-                <div class="card-icon"><i class="ph ph-hard-drives"></i></div>
-                <h3 class="card-title">Storage Devices & NAS</h3>
-                <p class="card-text">Tower NAS, Rackmount NAS, and robust DAS Solutions for secure data management.</p>
-                <a href="products.html" class="btn btn-outline btn-sm" style="margin-top: 24px;">View Solutions</a>
+        <div class="container">
+            <div class="section-head-row reveal">
+                <div>
+                    <span class="eyebrow">Industries We Serve</span>
+                    <h2 class="h2">Infrastructure That Powers Your <span class="rotator shimmer" data-words="Hotels|Campus|Factory|Business">Hotels</span></h2>
+                    <p class="lead">Every sector runs differently. We design around how your hotel, campus, plant or office actually operates.</p>
+                </div>
+                <a href="industries.html" class="link-arrow">All industries <i class="ph ph-arrow-right"></i></a>
             </div>
-            <!-- Cat 2 -->
-            <div class="card">
-                <div class="card-icon"><i class="ph ph-database"></i></div>
-                <h3 class="card-title">Enterprise HDDs & SSDs</h3>
-                <p class="card-text">Data Center HDDs, Surveillance Drives, and High-Speed Internal/External SSDs.</p>
-                <a href="products.html" class="btn btn-outline btn-sm" style="margin-top: 24px;">View Solutions</a>
-            </div>
-            <!-- Cat 3 -->
-            <div class="card">
-                <div class="card-icon"><i class="ph ph-server"></i></div>
-                <h3 class="card-title">Servers & Workstations</h3>
-                <p class="card-text">Rack Servers, Tower Servers, and full Enterprise Networking components.</p>
-                <a href="products.html" class="btn btn-outline btn-sm" style="margin-top: 24px;">View Solutions</a>
-            </div>
-            <!-- Cat 4 -->
-            <div class="card">
-                <div class="card-icon"><i class="ph ph-laptop"></i></div>
-                <h3 class="card-title">Laptops & Computers</h3>
-                <p class="card-text">Business Laptops, Workstations, All-in-One Desktops, and 4K/5K Monitors.</p>
-                <a href="products.html" class="btn btn-outline btn-sm" style="margin-top: 24px;">View Solutions</a>
-            </div>
-            <!-- Cat 5 -->
-            <div class="card">
-                <div class="card-icon"><i class="ph ph-pen-nib"></i></div>
-                <h3 class="card-title">Creative & Drawing Tablets</h3>
-                <p class="card-text">Interactive Pen Displays, Signature Pads, and Professional Graphic Tablets.</p>
-                <a href="products.html" class="btn btn-outline btn-sm" style="margin-top: 24px;">View Solutions</a>
-            </div>
-            <!-- Cat 6 -->
-            <div class="card">
-                <div class="card-icon"><i class="ph ph-plug"></i></div>
-                <h3 class="card-title">Accessories & Power</h3>
-                <p class="card-text">UPS Systems, Privacy Screen Filters, Docking Stations, and more.</p>
-                <a href="products.html" class="btn btn-outline btn-sm" style="margin-top: 24px;">View Solutions</a>
+            <div class="grid-4 reveal-stagger">
+                <a class="card industry-card" href="industries.html#hospitality">
+                    <img src="assets/illustrations/hospitality.svg" alt="">
+                    <h3>Hospitality</h3>
+                    <p>PMS and POS servers, guest Wi-Fi backbone, surveillance storage and multi-property standards for hotel groups.</p>
+                    <span class="link-arrow">Hospitality solutions <i class="ph ph-arrow-right"></i></span>
+                </a>
+                <a class="card industry-card" href="industries.html#education">
+                    <img src="assets/illustrations/education.svg" alt="">
+                    <h3>Universities &amp; Education</h3>
+                    <p>AI teaching labs, research HPC, virtual computer labs and campus data centers.</p>
+                    <span class="link-arrow">Education solutions <i class="ph ph-arrow-right"></i></span>
+                </a>
+                <a class="card industry-card" href="industries.html#manufacturing">
+                    <img src="assets/illustrations/manufacturing.svg" alt="">
+                    <h3>Manufacturing &amp; Industrial</h3>
+                    <p>Edge AI for quality inspection, high-availability MES and ERP servers, and plant server rooms.</p>
+                    <span class="link-arrow">Industrial solutions <i class="ph ph-arrow-right"></i></span>
+                </a>
+                <a class="card industry-card" href="industries.html#enterprise">
+                    <img src="assets/illustrations/enterprise.svg" alt="">
+                    <h3>Corporate Enterprise</h3>
+                    <p>Data center refreshes, private cloud, backup and DR, and end-user hardware at scale.</p>
+                    <span class="link-arrow">Enterprise solutions <i class="ph ph-arrow-right"></i></span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Lifecycle -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">How We Deliver</span>
+                <h2 class="h2">With You From Requirements to After-Sales</h2>
+                <p class="lead">One team stays with your project at every stage, so nothing gets lost between the people who sell, build and support it.</p>
+            </div>
+            <div class="steps reveal-stagger">
+                <div class="step"><h4>Requirements</h4><p>Site visits, stakeholder workshops and a clear scope of what the business needs.</p></div>
+                <div class="step"><h4>Design</h4><p>Solution architecture, brand selection, bill of materials and budget.</p></div>
+                <div class="step"><h4>Supply</h4><p>Enterprise hardware from premium brands, sourced and delivered on schedule.</p></div>
+                <div class="step"><h4>Deployment</h4><p>Installation, configuration, migration, testing and handover.</p></div>
+                <div class="step"><h4>After-Sales Support</h4><p>Warranty and RMA handling, maintenance, upgrades and a local support team.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise hardware -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head-row reveal">
+                <div>
+                    <span class="eyebrow">Enterprise Hardware Sales</span>
+                    <h2 class="h2">Every Premium Brand, One Supplier</h2>
+                    <p class="lead">Complete servers, storage, GPUs and networking from the brands the market demands, at project or bulk volumes, with the right configuration and warranty.</p>
+                </div>
+                <a href="contact.html?type=quote" class="btn btn-primary">Request a Quote <i class="ph ph-arrow-right"></i></a>
+            </div>
+            <div class="grid-3 reveal-stagger">
+                <div class="card hw-card">
+                    <img src="assets/illustrations/servers.svg" alt="">
+                    <h3>Servers</h3>
+                    <p>Complete rack, tower, blade and multi-node servers, configured to order.</p>
+                    <div class="brand-list"><span>Dell PowerEdge</span><span>HPE ProLiant</span><span>Lenovo ThinkSystem</span><span>Supermicro</span><span>ASUS</span><span>Cisco UCS</span></div>
+                </div>
+                <div class="card hw-card">
+                    <img src="assets/illustrations/storage.svg" alt="">
+                    <h3>Storage &amp; Drives</h3>
+                    <p>SAN, NAS, all-flash arrays, backup targets and enterprise HDD/SSD.</p>
+                    <div class="brand-list"><span>Dell</span><span>HPE</span><span>NetApp</span><span>Pure Storage</span><span>Synology</span><span>QNAP</span><span>Seagate</span><span>Western Digital</span></div>
+                </div>
+                <div class="card hw-card">
+                    <img src="assets/illustrations/gpu-card.svg" alt="">
+                    <h3>GPUs &amp; Accelerators</h3>
+                    <p>Data center GPUs, AI servers and professional graphics for any workload.</p>
+                    <div class="brand-list"><span>NVIDIA</span><span>AMD Instinct</span><span>Intel Gaudi</span></div>
+                </div>
+                <div class="card hw-card">
+                    <img src="assets/illustrations/network.svg" alt="">
+                    <h3>Networking &amp; Security</h3>
+                    <p>Core, access and data center switching, wireless, firewalls and optics.</p>
+                    <div class="brand-list"><span>Cisco</span><span>HPE Aruba</span><span>Juniper</span><span>Fortinet</span><span>NVIDIA Networking</span></div>
+                </div>
+                <div class="card hw-card">
+                    <img src="assets/illustrations/desktop.svg" alt="">
+                    <h3>Workstations &amp; PCs</h3>
+                    <p>Engineering workstations, business laptops and desktops at scale.</p>
+                    <div class="brand-list"><span>Dell Precision</span><span>HP Z</span><span>Lenovo ThinkStation</span><span>ASUS</span></div>
+                </div>
+                <div class="card hw-card">
+                    <img src="assets/illustrations/cooling.svg" alt="">
+                    <h3>Power, Racks &amp; Cooling</h3>
+                    <p>UPS, PDUs, racks and cooling for server rooms and data centers.</p>
+                    <div class="brand-list"><span>APC</span><span>Eaton</span><span>Vertiv</span></div>
+                </div>
+            </div>
+            <p class="form-note reveal">Need something not listed? We source across the market. <a class="accent" href="contact.html?type=quote">Send us your part numbers</a>.</p>
+        </div>
+    </section>
+
+    <!-- Featured platforms -->
+    <section class="section force-dark">
+        <div class="container">
+            <div class="section-head-row reveal">
+                <div>
+                    <span class="eyebrow">AI &amp; Data Center</span>
+                    <h2 class="h2">Infrastructure for the Era of AI Reasoning</h2>
+                    <p class="lead">From rack-scale NVLink systems to PCIe GPU servers, we build infrastructure that fits your workload, your power budget and your timeline.</p>
+                </div>
+                <a href="products.html" class="link-arrow">View all products <i class="ph ph-arrow-right"></i></a>
+            </div>
+
+            <div class="grid-3 reveal-stagger">
+                <a data-tilt class="feature-card wide" href="products.html?cat=rack-scale">
+                    <span class="tag tag-nvidia">Rack-Scale</span>
+                    <img class="feature-art" src="assets/illustrations/rack.svg" alt="">
+                    <div class="feature-body">
+                        <h3>NVIDIA Vera Rubin NVL72 &amp; GB300 NVL72</h3>
+                        <p>72 GPUs in a single NVLink domain, liquid-cooled and delivered as a fully integrated rack from Supermicro or ASUS. Built for training frontier models and serving reasoning at scale.</p>
+                        <span class="link-arrow">Explore rack-scale systems <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a data-tilt class="feature-card" href="products.html?q=hgx" style="--glow: rgba(77,163,255,.22)">
+                    <span class="tag tag-supermicro">8-GPU Servers</span>
+                    <img class="feature-art" src="assets/illustrations/gpu-server.svg" alt="">
+                    <div class="feature-body">
+                        <h3>HGX B300 &amp; B200 Servers</h3>
+                        <p>Air- and liquid-cooled 8-GPU systems with 800 Gb/s ConnectX-8 networking.</p>
+                        <span class="link-arrow">See HGX systems <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a data-tilt class="feature-card" href="products.html?q=rtx%20pro" style="--glow: rgba(200,162,255,.22)">
+                    <span class="tag tag-asus">Enterprise AI</span>
+                    <img class="feature-art" src="assets/illustrations/gpu-card.svg" alt="">
+                    <div class="feature-body">
+                        <h3>NVIDIA RTX PRO Servers</h3>
+                        <p>RTX PRO 6000 Blackwell with 96 GB GDDR7 for inference, VDI, rendering and digital twins.</p>
+                        <span class="link-arrow">See RTX PRO servers <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a data-tilt class="feature-card" href="products.html?cat=networking">
+                    <span class="tag tag-nvidia">Networking</span>
+                    <img class="feature-art" src="assets/illustrations/network.svg" alt="">
+                    <div class="feature-body">
+                        <h3>InfiniBand &amp; Spectrum-X</h3>
+                        <p>Quantum-X800, Spectrum-X Ethernet, ConnectX SuperNICs and BlueField DPUs.</p>
+                        <span class="link-arrow">See AI networking <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+                <a data-tilt class="feature-card" href="products.html?cat=desktop-ai" style="--glow: rgba(140,198,63,.16)">
+                    <span class="tag tag-plain">Deskside AI</span>
+                    <img class="feature-art" src="assets/illustrations/desktop.svg" alt="">
+                    <div class="feature-body">
+                        <h3>Deskside AI Supercomputers</h3>
+                        <p>Grace Blackwell AI supercomputers on your developers' desks to prototype and fine-tune locally.</p>
+                        <span class="link-arrow">Explore AI workstations <i class="ph ph-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workloads -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Workloads</span>
+                <h2 class="h2">Solutions for Every Data Center</h2>
+                <p class="lead">Every workload has different needs for compute, memory, network and cooling. We size the architecture to fit yours.</p>
+            </div>
+
+            <div class="tabs reveal" data-tabs>
+                <div class="tab-list" role="tablist">
+                    <button class="tab-btn" role="tab" aria-selected="true" aria-controls="tab-train">AI Training</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-infer">AI Inference</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-hpc">HPC &amp; Simulation</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-virt">Virtualization &amp; VDI</button>
+                    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-host">Hosting &amp; Cloud</button>
+                </div>
+                <div>
+                    <div class="tab-panel active" id="tab-train" role="tabpanel">
+                        <div>
+                            <h3>Train and Post-Train Large Models</h3>
+                            <p>Multi-node GPU clusters with non-blocking InfiniBand or Spectrum-X fabrics, parallel storage and Slurm or Kubernetes scheduling, validated end to end before handover.</p>
+                            <ul class="ticks">
+                                <li>HGX B300 / GB300 NVL72 / Vera Rubin clusters</li>
+                                <li>Rail-optimised 400–800 Gb/s compute fabric</li>
+                                <li>NCCL and HPL burn-in with acceptance reports</li>
+                            </ul>
+                            <br><a class="link-arrow" href="solutions.html#ai-factory">AI factory solutions <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                        <div class="tab-art"><img src="assets/illustrations/ai.svg" alt="" loading="lazy"><div class="chips"><span class="tag tag-nvidia">HGX B300</span><span class="tag tag-plain">Quantum-X800</span><span class="tag tag-plain">Slurm</span></div></div>
+                    </div>
+                    <div class="tab-panel" id="tab-infer" role="tabpanel">
+                        <div>
+                            <h3>Serve Models in Production</h3>
+                            <p>Right-sized inference platforms for LLMs, RAG and agentic applications, from single PCIe GPU servers to dedicated NVLink racks, with NVIDIA NIM and Triton.</p>
+                            <ul class="ticks">
+                                <li>RTX PRO 6000 Blackwell and H200 NVL servers</li>
+                                <li>Kubernetes with GPU Operator and autoscaling</li>
+                                <li>Token-per-watt and cost-per-token sizing</li>
+                            </ul>
+                            <br><a class="link-arrow" href="solutions.html#ai-factory">Inference solutions <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                        <div class="tab-art"><img src="assets/illustrations/gpu-card.svg" alt="" loading="lazy"><div class="chips"><span class="tag tag-asus">ESC8000A-E13X</span><span class="tag tag-plain">NIM</span><span class="tag tag-plain">Triton</span></div></div>
+                    </div>
+                    <div class="tab-panel" id="tab-hpc" role="tabpanel">
+                        <div>
+                            <h3>Accelerate Science and Engineering</h3>
+                            <p>HPC clusters for CFD, FEA, reservoir simulation and genomics, combining GPU and high-core-count CPU nodes with low-latency interconnects and parallel file systems.</p>
+                            <ul class="ticks">
+                                <li>Multi-node Twin and blade compute</li>
+                                <li>InfiniBand fabric and parallel storage</li>
+                                <li>Liquid cooling for dense, efficient racks</li>
+                            </ul>
+                            <br><a class="link-arrow" href="solutions.html#hpc">HPC solutions <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                        <div class="tab-art"><img src="assets/illustrations/hpc.svg" alt="" loading="lazy"><div class="chips"><span class="tag tag-supermicro">SuperBlade</span><span class="tag tag-plain">InfiniBand</span><span class="tag tag-plain">DLC</span></div></div>
+                    </div>
+                    <div class="tab-panel" id="tab-virt" role="tabpanel">
+                        <div>
+                            <h3>Virtualize and Consolidate</h3>
+                            <p>Highly available virtualization and VDI clusters with GPU-accelerated virtual workstations for design, engineering and knowledge workers.</p>
+                            <ul class="ticks">
+                                <li>VMware, Proxmox, Nutanix and Hyper-V clusters</li>
+                                <li>NVIDIA vGPU with RTX PRO and L40S</li>
+                                <li>Shared storage, replication and failover</li>
+                            </ul>
+                            <br><a class="link-arrow" href="solutions.html#virtualization">Virtualization solutions <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                        <div class="tab-art"><img src="assets/illustrations/vdi.svg" alt="" loading="lazy"><div class="chips"><span class="tag tag-nvidia">vGPU</span><span class="tag tag-plain">HA Cluster</span><span class="tag tag-plain">VDI</span></div></div>
+                    </div>
+                    <div class="tab-panel" id="tab-host" role="tabpanel">
+                        <div>
+                            <h3>Host, Colocate and Rent GPU Capacity</h3>
+                            <p>Dedicated servers, colocation and private GPU cloud for teams that need capacity now without building their own data center. Managed by us, located in the UAE.</p>
+                            <ul class="ticks">
+                                <li>Dedicated bare-metal GPU and CPU servers</li>
+                                <li>Colocation with rack, power and remote hands</li>
+                                <li>Private AI cloud with multi-tenant isolation</li>
+                            </ul>
+                            <br><a class="link-arrow" href="solutions.html#hosting">Hosting services <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                        <div class="tab-art"><img src="assets/illustrations/cloud.svg" alt="" loading="lazy"><div class="chips"><span class="tag tag-plain">Bare Metal</span><span class="tag tag-plain">Colocation</span><span class="tag tag-plain">GPU Cloud</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Plan Man -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Why Plan Man</span>
+                <h2 class="h2">One Partner From Design to Day Two</h2>
+                <p class="lead">As a solution provider and hardware partner, we own the outcome: the right design, the right products, a clean deployment and support that continues after go-live.</p>
+            </div>
+            <div class="grid-4 reveal-stagger">
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-compass-tool"></i></div>
+                    <h3>Requirement-Led Design</h3>
+                    <p>We start from what your business needs, then size servers, storage, network and power before anything is ordered.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-wrench"></i></div>
+                    <h3>Integrated &amp; Tested</h3>
+                    <p>System, rack and cluster-level integration with burn-in and acceptance testing before delivery.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-handshake"></i></div>
+                    <h3>Multi-Vendor Access</h3>
+                    <p>Every premium enterprise brand, so we recommend what fits your project rather than what one vendor sells.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-headset"></i></div>
+                    <h3>After-Sales Support</h3>
+                    <p>Dubai-based engineers for warranty, RMA, maintenance and upgrades long after handover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+        <div class="container reveal">
+            <div>
+                <h2 class="h2">Planning an IT Project?</h2>
+                <p class="lead">Tell us your requirements. We'll come back with a design and a quote.</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="contact.html?type=design" class="btn btn-primary">Start a Project <i class="ph ph-arrow-right"></i></a>
+                <a href="products.html" class="btn btn-ghost">Browse Catalog</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer force-dark">
         <div class="container">
             <div class="footer-grid">
-                <div>
-                    <a href="index.html" class="logo footer-logo">
-                        <img src="Black Modern A letter Logo.png" alt="Plan Man" style="height: 48px;">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" aria-label="Plan Man home">
+                        <img class="logo-light" src="assets/logo/planman-logo.svg?v=3" alt="Plan Man – IT Infrastructure, Hardware, Software Solutions" width="1440" height="245"><img class="logo-dark" src="assets/logo/planman-logo-dark.svg?v=3" alt="Plan Man – IT Infrastructure, Hardware, Software Solutions" width="1440" height="245">
                     </a>
-                    <p class="footer-text">The Engine For Your Digital Success. Your trusted IT hardware & enterprise solutions partner in the UAE.</p>
+                    <p>Enterprise IT solutions and hardware for hospitality, education, manufacturing and enterprise. Requirements to after-sales support. Dubai, UAE.</p>
                 </div>
                 <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="services.html">IT Services</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html?cat=rack-scale">Rack-Scale AI Systems</a></li>
+                        <li><a href="products.html?cat=gpu-servers">GPU &amp; AI Servers</a></li>
+                        <li><a href="products.html?cat=accelerators">Data Center GPUs</a></li>
+                        <li><a href="products.html?cat=networking">AI Networking</a></li>
+                        <li><a href="products.html?cat=storage">Storage</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-title">Categories</h4>
-                    <ul class="footer-links">
-                        <li><a href="products.html">Storage & NAS</a></li>
-                        <li><a href="products.html">Servers & Workstations</a></li>
-                        <li><a href="products.html">Creative Tablets</a></li>
+                    <h4>Industries</h4>
+                    <ul>
+                        <li><a href="industries.html#hospitality">Hospitality</a></li>
+                        <li><a href="industries.html#education">Universities &amp; Education</a></li>
+                        <li><a href="industries.html#manufacturing">Manufacturing &amp; Industrial</a></li>
+                        <li><a href="industries.html#enterprise">Corporate Enterprise</a></li>
+                        <li><a href="solutions.html">All Solutions</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-title">Contact</h4>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="ph ph-map-pin"></i> IFZA Properties, Dubai Silicon Oasis, Dubai, UAE</a></li>
-                        <li><a href="mailto:info@planman.com"><i class="ph ph-envelope"></i> info@planman.com</a></li>
-                        <li><a href="tel:+971585225166"><i class="ph ph-phone"></i> +971 58 522 5166</a></li>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Plan Man</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html?type=partner">Channel Partners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">IFZA Properties, Dubai Silicon Oasis, Dubai, UAE</a></li>
+                        <li><a href="mailto:sales@planman.com">sales@planman.com</a></li>
+                        <li><a href="tel:+971585225166">+971 58 522 5166</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Plan Man. All rights reserved.</p>
-                <div style="display: flex; gap: 16px;">
-                    <a href="#" style="color: #94a3b8;"><i class="ph ph-linkedin-logo" style="font-size: 24px;"></i></a>
-                    <a href="#" style="color: #94a3b8;"><i class="ph ph-twitter-logo" style="font-size: 24px;"></i></a>
+                <p>&copy; <span data-year>2026</span> Plan Man. All rights reserved.</p>
+                <p class="legal">All brand and product names are trademarks of their respective owners. Product information is provided for reference only; specifications are set by each manufacturer and may change.</p>
+                <div class="socials">
+                    <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="#" aria-label="X"><i class="ph ph-x-logo"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="main.js"></script>
+    <script src="main.js?v=12" defer></script>
 </body>
 </html>

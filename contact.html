@@ -3,183 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Plan Man</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact | Plan Man</title>
+    <meta name="description" content="Contact Plan Man in Dubai for enterprise hardware quotes, project design, deployment and after-sales support.">
+    <script>(function(){var d=document.documentElement,t='light';d.classList.add('js');try{t=localStorage.getItem('pm-theme')||t}catch(e){}d.setAttribute('data-theme',t)})()</script>
+    <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+    <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css?v=12">
+    <link rel="stylesheet" href="apple.css?v=12">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="Black Modern A letter Logo.png" alt="Plan Man" style="height: 48px;">
+            <a href="index.html" class="logo" aria-label="Plan Man home">
+                <img class="logo-light" src="assets/logo/planman-logo-compact.svg?v=3" alt="Plan Man" width="1440" height="236"><img class="logo-dark" src="assets/logo/planman-logo-compact-dark.svg?v=3" alt="Plan Man" width="1440" height="236">
             </a>
             <ul class="nav-links">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li class="has-mega">
+                    <button type="button" aria-expanded="false">Products <i class="ph ph-caret-down"></i></button>
+                    <div class="mega">
+                        <div class="container mega-inner">
+                            <div>
+                                <h5>AI Infrastructure</h5>
+                                <ul>
+                                    <li><a href="products.html?cat=rack-scale">Rack-Scale AI Systems</a></li>
+                                    <li><a href="products.html?cat=gpu-servers">GPU &amp; AI Servers</a></li>
+                                    <li><a href="products.html?cat=accelerators">Data Center GPUs</a></li>
+                                    <li><a href="products.html?cat=networking">AI Networking</a></li>
+                                    <li><a href="products.html?cat=desktop-ai">AI Workstations &amp; Deskside</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Enterprise Data Center</h5>
+                                <ul>
+                                    <li><a href="products.html?cat=servers">Rack &amp; Multi-Node Servers</a></li>
+                                    <li><a href="products.html?cat=storage">Storage</a></li>
+                                    <li><a href="products.html?cat=edge">Edge Systems</a></li>
+                                    <li><a href="products.html?cat=software">Software &amp; Management</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Hardware by Brand</h5>
+                                <ul>
+                                    <li><a href="products.html?brand=nvidia">NVIDIA</a></li>
+                                    <li><a href="products.html?brand=supermicro">Supermicro</a></li>
+                                    <li><a href="products.html?brand=asus">ASUS</a></li>
+                                    <li><a href="products.html#hardware">All premium brands</a></li>
+                                    <li><a href="products.html">View all products</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="industries.html">Industries</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
             <div class="nav-cta">
-                <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                <a href="tel:+971585225166" class="btn btn-ghost btn-sm"><i class="ph ph-phone"></i> +971 58 522 5166</a>
+                <a href="contact.html" class="btn btn-primary btn-sm">Request Quote</a>
             </div>
-            <div class="menu-toggle">
-                <i class="ph ph-list"></i>
-            </div>
+            <button type="button" class="theme-toggle" aria-label="Switch to dark theme"><i class="ph ph-moon"></i></button>
+            <button type="button" class="menu-toggle" aria-label="Menu" aria-expanded="false"><i class="ph ph-list"></i></button>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header gsap-fade-up">
+    <header class="page-hero">
+        <div class="hero-bg"></div>
         <div class="container">
-            <h1 class="page-title">Get in Touch with Plan Man</h1>
-            <p class="page-subtitle">Interested in learning more or need a custom quote for your organization? We're here to help.</p>
+            <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+            <span class="eyebrow">Contact</span>
+            <h1 class="h1">Let's Talk About Your Project</h1>
+            <p class="lead">Tell us about your project or the hardware you need, whether it's a hotel fit-out, a campus lab, a factory server room or a bulk order. We'll reply within one business day.</p>
         </div>
     </header>
 
-    <!-- Contact Section -->
-    <section class="section" style="padding-top: 0;">
-        <div class="container contact-grid gsap-fade-up">
-            
-            <!-- Info Side -->
-            <div class="contact-info-card">
-                <h2 class="card-title mb-6">Contact Information</h2>
-                <p class="text-secondary mb-8">Our dedicated support team is available to assist you with inquiries, bulk orders, and technical support.</p>
-                
+    <section class="section">
+        <div class="container contact-layout">
+            <aside class="contact-panel">
+                <h2 class="h3">Contact Information</h2>
                 <div class="contact-item">
-                    <div class="contact-icon"><i class="ph ph-map-pin"></i></div>
-                    <div>
-                        <h4 class="mb-2" style="font-family: 'Inter', sans-serif; font-size: 16px;">Office Address</h4>
-                        <p class="text-secondary">IFZA Properties, Dubai Silicon Oasis (DSO)<br>Dubai, 412189, UAE</p>
-                    </div>
+                    <i class="ph ph-map-pin"></i>
+                    <div><h4>Office</h4><p>IFZA Properties, Dubai Silicon Oasis (DSO)<br>Dubai, 412189, UAE</p></div>
                 </div>
-
                 <div class="contact-item">
-                    <div class="contact-icon"><i class="ph ph-envelope-simple"></i></div>
-                    <div>
-                        <h4 class="mb-2" style="font-family: 'Inter', sans-serif; font-size: 16px;">Email Addresses</h4>
-                        <p class="text-secondary">
-                            Sales: sales@planman.com<br>
-                            Support: info@planman.com
-                        </p>
-                    </div>
+                    <i class="ph ph-envelope-simple"></i>
+                    <div><h4>Email</h4><p>Sales: <a href="mailto:sales@planman.com">sales@planman.com</a><br>Support: <a href="mailto:info@planman.com">info@planman.com</a></p></div>
                 </div>
-
                 <div class="contact-item">
-                    <div class="contact-icon"><i class="ph ph-phone"></i></div>
-                    <div>
-                        <h4 class="mb-2" style="font-family: 'Inter', sans-serif; font-size: 16px;">Hotline</h4>
-                        <p class="text-secondary" style="font-size: 18px; font-weight: 500; color: var(--text-primary);">+971 58 522 5166</p>
-                    </div>
+                    <i class="ph ph-phone"></i>
+                    <div><h4>Hotline</h4><p><a href="tel:+971585225166">+971 58 522 5166</a></p></div>
                 </div>
-
                 <div class="contact-item">
-                    <div class="contact-icon"><i class="ph ph-clock"></i></div>
-                    <div>
-                        <h4 class="mb-2" style="font-family: 'Inter', sans-serif; font-size: 16px;">Business Hours</h4>
-                        <p class="text-secondary">Monday to Saturday<br>9:00 AM - 6:00 PM</p>
-                    </div>
+                    <i class="ph ph-clock"></i>
+                    <div><h4>Business Hours</h4><p>Monday to Saturday<br>9:00 AM – 6:00 PM (GST)</p></div>
                 </div>
-            </div>
+            </aside>
 
-            <!-- Form Side -->
             <div class="card">
-                <h2 class="card-title mb-6">Send Us a Message</h2>
-                <form action="#" method="POST">
-                    <div class="grid-2" style="gap: 20px; display: grid; grid-template-columns: 1fr 1fr;">
-                        <div class="form-group mb-0">
-                            <label class="form-label">Full Name *</label>
-                            <input type="text" class="form-control" placeholder="John Doe" required>
+                <h2 class="h3" style="margin-bottom: 24px;">Send Us Your Requirements</h2>
+                <form id="contact-form" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="f-name">Full name *</label>
+                            <input id="f-name" name="name" type="text" class="form-control" autocomplete="name" required>
                         </div>
-                        <div class="form-group mb-0">
-                            <label class="form-label">Company Name</label>
-                            <input type="text" class="form-control" placeholder="Your Organization">
+                        <div class="form-group">
+                            <label class="form-label" for="f-company">Company</label>
+                            <input id="f-company" name="company" type="text" class="form-control" autocomplete="organization">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="f-email">Work email *</label>
+                            <input id="f-email" name="email" type="email" class="form-control" autocomplete="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="f-phone">Phone *</label>
+                            <input id="f-phone" name="phone" type="tel" class="form-control" autocomplete="tel" placeholder="+971 5X XXX XXXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="f-type">How can we help? *</label>
+                            <select id="f-type" name="type" class="form-control" required>
+                                <option value="">Select an option</option>
+                                <option value="quote">Hardware quote / bulk order</option>
+                                <option value="design">New project: requirements &amp; design</option>
+                                <option value="support">After-sales support / RMA</option>
+                                <option value="hosting">Hosting or colocation</option>
+                                <option value="partner">Channel partnership</option>
+                                <option value="general">General inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="f-industry">Industry</label>
+                            <select id="f-industry" name="industry" class="form-control">
+                                <option value="">Select your sector</option>
+                                <option value="hospitality">Hospitality</option>
+                                <option value="education">University / Education</option>
+                                <option value="manufacturing">Manufacturing / Industrial</option>
+                                <option value="enterprise">Corporate enterprise</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group full">
+                            <span class="form-label">Areas of interest</span>
+                            <div class="check-grid">
+                                <label class="check"><input type="checkbox" name="interest" value="Servers"> Servers</label>
+                                <label class="check"><input type="checkbox" name="interest" value="Storage"> Storage</label>
+                                <label class="check"><input type="checkbox" name="interest" value="GPUs / AI infrastructure"> GPUs / AI infrastructure</label>
+                                <label class="check"><input type="checkbox" name="interest" value="Networking & security"> Networking &amp; security</label>
+                                <label class="check"><input type="checkbox" name="interest" value="Virtualization / clustering"> Virtualization / clustering</label>
+                                <label class="check"><input type="checkbox" name="interest" value="Backup & disaster recovery"> Backup &amp; disaster recovery</label>
+                            </div>
+                        </div>
+                        <div class="form-group full">
+                            <label class="form-label" for="f-product">Product(s) of interest</label>
+                            <input id="f-product" name="product" type="text" class="form-control" placeholder="e.g. Dell PowerEdge R760, HPE ProLiant DL380, NVIDIA L40S">
+                        </div>
+                        <div class="form-group full">
+                            <label class="form-label" for="f-message">Project details *</label>
+                            <textarea id="f-message" name="message" class="form-control" placeholder="Project scope, quantities, brands or part numbers, timeline, budget…" required></textarea>
                         </div>
                     </div>
-                    
-                    <div class="grid-2" style="gap: 20px; display: grid; grid-template-columns: 1fr 1fr; margin-top: 24px;">
-                        <div class="form-group mb-0">
-                            <label class="form-label">Email Address *</label>
-                            <input type="email" class="form-control" placeholder="john@company.com" required>
-                        </div>
-                        <div class="form-group mb-0">
-                            <label class="form-label">Phone Number *</label>
-                            <input type="tel" class="form-control" placeholder="+971 50 XXXXXXX" required>
-                        </div>
+                    <!-- Honeypot: hidden from people, bots fill it in -->
+                    <div class="hp-field" aria-hidden="true">
+                        <label for="f-gotcha">Leave this field empty</label>
+                        <input id="f-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
                     </div>
-
-                    <div class="form-group" style="margin-top: 24px;">
-                        <label class="form-label">Inquiry Type *</label>
-                        <select class="form-control" required style="cursor: pointer; appearance: auto;">
-                            <option value="">Select an option</option>
-                            <option value="general">General Inquiry</option>
-                            <option value="quote">Request for Quote / Bulk Order</option>
-                            <option value="rma">RMA & Technical Support</option>
-                            <option value="partnership">Partnership</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label">Message Details *</label>
-                        <textarea class="form-control" placeholder="How can we assist you today?" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: var(--radius-sm); font-size: 18px; padding: 16px;">Submit Message</button>
+                    <div class="recaptcha-wrap"><div id="recaptcha"></div></div>
+                    <button type="submit" class="btn btn-primary btn-block" style="margin-top: 20px;">Send Request <i class="ph ph-paper-plane-tilt"></i></button>
+                    <p class="form-note" id="form-note"></p>
+                    <div class="form-status" id="form-status" role="status"></div>
                 </form>
             </div>
-
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <footer class="site-footer force-dark">
         <div class="container">
             <div class="footer-grid">
-                <div>
-                    <a href="index.html" class="logo footer-logo">
-                        <img src="Black Modern A letter Logo.png" alt="Plan Man" style="height: 48px;">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" aria-label="Plan Man home">
+                        <img class="logo-light" src="assets/logo/planman-logo.svg?v=3" alt="Plan Man – IT Infrastructure, Hardware, Software Solutions" width="1440" height="245"><img class="logo-dark" src="assets/logo/planman-logo-dark.svg?v=3" alt="Plan Man – IT Infrastructure, Hardware, Software Solutions" width="1440" height="245">
                     </a>
-                    <p class="footer-text">The Engine For Your Digital Success. Your trusted IT hardware & enterprise solutions partner in the UAE.</p>
+                    <p>Enterprise IT solutions and hardware for hospitality, education, manufacturing and enterprise. Requirements to after-sales support. Dubai, UAE.</p>
                 </div>
                 <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="services.html">IT Services</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html?cat=rack-scale">Rack-Scale AI Systems</a></li>
+                        <li><a href="products.html?cat=gpu-servers">GPU &amp; AI Servers</a></li>
+                        <li><a href="products.html?cat=accelerators">Data Center GPUs</a></li>
+                        <li><a href="products.html?cat=networking">AI Networking</a></li>
+                        <li><a href="products.html?cat=storage">Storage</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-title">Categories</h4>
-                    <ul class="footer-links">
-                        <li><a href="products.html">Storage & NAS</a></li>
-                        <li><a href="products.html">Servers & Workstations</a></li>
-                        <li><a href="products.html">Creative Tablets</a></li>
+                    <h4>Industries</h4>
+                    <ul>
+                        <li><a href="industries.html#hospitality">Hospitality</a></li>
+                        <li><a href="industries.html#education">Universities &amp; Education</a></li>
+                        <li><a href="industries.html#manufacturing">Manufacturing &amp; Industrial</a></li>
+                        <li><a href="industries.html#enterprise">Corporate Enterprise</a></li>
+                        <li><a href="solutions.html">All Solutions</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-title">Contact</h4>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="ph ph-map-pin"></i> IFZA Properties, Dubai Silicon Oasis, Dubai, UAE</a></li>
-                        <li><a href="mailto:info@planman.com"><i class="ph ph-envelope"></i> info@planman.com</a></li>
-                        <li><a href="tel:+971585225166"><i class="ph ph-phone"></i> +971 58 522 5166</a></li>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Plan Man</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html?type=partner">Channel Partners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">IFZA Properties, Dubai Silicon Oasis, Dubai, UAE</a></li>
+                        <li><a href="mailto:sales@planman.com">sales@planman.com</a></li>
+                        <li><a href="tel:+971585225166">+971 58 522 5166</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Plan Man. All rights reserved.</p>
-                <div style="display: flex; gap: 16px;">
-                    <a href="#" style="color: #94a3b8;"><i class="ph ph-linkedin-logo" style="font-size: 24px;"></i></a>
-                    <a href="#" style="color: #94a3b8;"><i class="ph ph-twitter-logo" style="font-size: 24px;"></i></a>
+                <p>&copy; <span data-year>2026</span> Plan Man. All rights reserved.</p>
+                <p class="legal">All brand and product names are trademarks of their respective owners. Product information is provided for reference only; specifications are set by each manufacturer and may change.</p>
+                <div class="socials">
+                    <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="#" aria-label="X"><i class="ph ph-x-logo"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="main.js"></script>
+    <script src="main.js?v=12"></script>
+    <script src="contact.js?v=13"></script>
 </body>
 </html>

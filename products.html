@@ -3,242 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products & Solutions | Plan Man</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Products &amp; Hardware | Plan Man</title>
+    <meta name="description" content="NVIDIA, Supermicro and ASUS AI and data center products: rack-scale NVL72 systems, HGX GPU servers, data center GPUs, InfiniBand and Spectrum-X networking, storage and more.">
+    <script>(function(){var d=document.documentElement,t='light';d.classList.add('js');try{t=localStorage.getItem('pm-theme')||t}catch(e){}d.setAttribute('data-theme',t)})()</script>
+    <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+    <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css?v=12">
+    <link rel="stylesheet" href="apple.css?v=12">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="Black Modern A letter Logo.png" alt="Plan Man" style="height: 48px;">
+            <a href="index.html" class="logo" aria-label="Plan Man home">
+                <img class="logo-light" src="assets/logo/planman-logo-compact.svg?v=3" alt="Plan Man" width="1440" height="236"><img class="logo-dark" src="assets/logo/planman-logo-compact-dark.svg?v=3" alt="Plan Man" width="1440" height="236">
             </a>
             <ul class="nav-links">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html" class="active">Products</a></li>
+                <li class="has-mega">
+                    <button type="button" aria-expanded="false" class="active">Products <i class="ph ph-caret-down"></i></button>
+                    <div class="mega">
+                        <div class="container mega-inner">
+                            <div>
+                                <h5>AI Infrastructure</h5>
+                                <ul>
+                                    <li><a href="products.html?cat=rack-scale">Rack-Scale AI Systems</a></li>
+                                    <li><a href="products.html?cat=gpu-servers">GPU &amp; AI Servers</a></li>
+                                    <li><a href="products.html?cat=accelerators">Data Center GPUs</a></li>
+                                    <li><a href="products.html?cat=networking">AI Networking</a></li>
+                                    <li><a href="products.html?cat=desktop-ai">AI Workstations &amp; Deskside</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Enterprise Data Center</h5>
+                                <ul>
+                                    <li><a href="products.html?cat=servers">Rack &amp; Multi-Node Servers</a></li>
+                                    <li><a href="products.html?cat=storage">Storage</a></li>
+                                    <li><a href="products.html?cat=edge">Edge Systems</a></li>
+                                    <li><a href="products.html?cat=software">Software &amp; Management</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Hardware by Brand</h5>
+                                <ul>
+                                    <li><a href="products.html?brand=nvidia">NVIDIA</a></li>
+                                    <li><a href="products.html?brand=supermicro">Supermicro</a></li>
+                                    <li><a href="products.html?brand=asus">ASUS</a></li>
+                                    <li><a href="products.html#hardware">All premium brands</a></li>
+                                    <li><a href="products.html">View all products</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="industries.html">Industries</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-cta">
-                <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                <a href="tel:+971585225166" class="btn btn-ghost btn-sm"><i class="ph ph-phone"></i> +971 58 522 5166</a>
+                <a href="contact.html" class="btn btn-primary btn-sm">Request Quote</a>
             </div>
-            <div class="menu-toggle">
-                <i class="ph ph-list"></i>
-            </div>
+            <button type="button" class="theme-toggle" aria-label="Switch to dark theme"><i class="ph ph-moon"></i></button>
+            <button type="button" class="menu-toggle" aria-label="Menu" aria-expanded="false"><i class="ph ph-list"></i></button>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header gsap-fade-up">
+    <header class="page-hero">
+        <div class="hero-bg"></div>
         <div class="container">
-            <h1 class="page-title">Products & Solutions</h1>
-            <p class="page-subtitle">Extensive catalog of innovative IT hardware from globally renowned brands.</p>
+            <div class="breadcrumb"><a href="index.html">Home</a> / Products</div>
+            <span class="eyebrow">Products</span>
+            <h1 class="h1">Enterprise Hardware and AI Infrastructure</h1>
+            <p class="lead">Complete servers, storage, GPUs, networking and workstations from all premium enterprise brands, plus our featured AI platforms from NVIDIA, Supermicro and ASUS. Every order is configured, delivered and supported by Plan Man.</p>
         </div>
     </header>
 
-    <!-- Brands Marquee -->
-    <div class="brands-marquee gsap-fade-up">
-        <div class="brands-track">
-            <div class="brand-item">QNAP</div>
-            <div class="brand-item">Synology</div>
-            <div class="brand-item">Seagate</div>
-            <div class="brand-item">Western Digital</div>
-            <div class="brand-item">Toshiba</div>
-            <div class="brand-item">Dell</div>
-            <div class="brand-item">HP</div>
-            <div class="brand-item">Lenovo</div>
-            <div class="brand-item">Wacom</div>
-            <div class="brand-item">Eaton</div>
-            <div class="brand-item">H3C</div>
-            <!-- Duplicate for infinite scroll -->
-            <div class="brand-item">QNAP</div>
-            <div class="brand-item">Synology</div>
-            <div class="brand-item">Seagate</div>
-            <div class="brand-item">Western Digital</div>
-            <div class="brand-item">Toshiba</div>
-            <div class="brand-item">Dell</div>
-            <div class="brand-item">HP</div>
-            <div class="brand-item">Lenovo</div>
-            <div class="brand-item">Wacom</div>
-            <div class="brand-item">Eaton</div>
-            <div class="brand-item">H3C</div>
-        </div>
-    </div>
-
-    <!-- Product Catalog Section -->
-    <section class="section">
-        <div class="container container-md text-center mb-12 gsap-fade-up">
-            <h2 class="section-title">Comprehensive E-Commerce Catalog</h2>
-            <p class="text-secondary">Select from our extensive range of products, check real-time availability, and request a personalized bulk quote tailored to your business needs.</p>
-        </div>
-
-        <div class="container grid-3 gsap-stagger-parent">
-            <!-- Product 1 -->
-            <div class="product-card">
-                <div class="product-img">
-                    <i class="ph-duotone ph-hard-drives" style="font-size: 80px; color: #cbd5e1;"></i>
+    <section class="section" id="hardware">
+        <div class="container">
+            <div class="section-head-row reveal">
+                <div>
+                    <span class="eyebrow">Enterprise Hardware Sales</span>
+                    <h2 class="h2">Every Premium Brand, One Supplier</h2>
+                    <p class="lead">Tell us the brand, model or requirement. We quote, configure and deliver at project or bulk volumes.</p>
                 </div>
-                <div class="product-info">
-                    <div class="product-category">Storage & NAS</div>
-                    <h3 class="product-name">Synology RackStation High-End Ex NAS</h3>
-                    <span class="stock-status"><i class="ph ph-check-circle"></i> In Stock</span>
-                    <div class="product-specs">
-                        <div><strong>SKU:</strong> NAS-RS-123</div>
-                        <div><strong>Barcode:</strong> 40283948501</div>
-                        <div><strong>Compatibility:</strong> Enterprise Data Center</div>
-                    </div>
-
-                    <a href="contact.html" class="btn btn-outline btn-sm" style="width: 100%;">Request Bulk Quote</a>
-                </div>
+                <a href="contact.html?type=quote" class="btn btn-primary">Request a Quote <i class="ph ph-arrow-right"></i></a>
             </div>
-
-            <!-- Product 2 -->
-            <div class="product-card">
-                <div class="product-img">
-                    <i class="ph-duotone ph-server" style="font-size: 80px; color: #cbd5e1;"></i>
+            <div class="grid-3 reveal-stagger">
+                <div class="card hw-card">
+                    <img src="assets/illustrations/servers.svg" alt="">
+                    <h3>Servers</h3>
+                    <p>Complete rack, tower, blade and multi-node servers, configured to order.</p>
+                    <div class="brand-list"><span>Dell PowerEdge</span><span>HPE ProLiant</span><span>Lenovo ThinkSystem</span><span>Supermicro</span><span>ASUS</span><span>Cisco UCS</span></div>
                 </div>
-                <div class="product-info">
-                    <div class="product-category">Servers & Workstations</div>
-                    <h3 class="product-name">Dell PowerEdge Enterprise Server 2U</h3>
-                    <span class="stock-status quote"><i class="ph ph-clock"></i> Request for Quote</span>
-                    <div class="product-specs">
-                        <div><strong>SKU:</strong> DELL-PE-2U</div>
-                        <div><strong>Barcode:</strong> 48291038491</div>
-                        <div><strong>Compatibility:</strong> Rackmount 2U Server</div>
-                    </div>
-
-                    <a href="contact.html" class="btn btn-outline btn-sm" style="width: 100%;">Request Bulk Quote</a>
+                <div class="card hw-card">
+                    <img src="assets/illustrations/storage.svg" alt="">
+                    <h3>Storage &amp; Drives</h3>
+                    <p>SAN, NAS, all-flash arrays, backup targets and enterprise HDD/SSD.</p>
+                    <div class="brand-list"><span>Dell</span><span>HPE</span><span>NetApp</span><span>Pure Storage</span><span>Synology</span><span>QNAP</span><span>Seagate</span><span>Western Digital</span></div>
                 </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="product-card">
-                <div class="product-img">
-                    <i class="ph-duotone ph-database" style="font-size: 80px; color: #cbd5e1;"></i>
+                <div class="card hw-card">
+                    <img src="assets/illustrations/gpu-card.svg" alt="">
+                    <h3>GPUs &amp; Accelerators</h3>
+                    <p>Data center GPUs, AI servers and professional graphics for any workload.</p>
+                    <div class="brand-list"><span>NVIDIA</span><span>AMD Instinct</span><span>Intel Gaudi</span></div>
                 </div>
-                <div class="product-info">
-                    <div class="product-category">Enterprise Drives</div>
-                    <h3 class="product-name">Western Digital 20TB Data Center HDD</h3>
-                    <span class="stock-status"><i class="ph ph-check-circle"></i> In Stock</span>
-                    <div class="product-specs">
-                        <div><strong>SKU:</strong> WD-ULT-20T</div>
-                        <div><strong>Barcode:</strong> 71823901452</div>
-                        <div><strong>Compatibility:</strong> SATA / SAS Interfaces</div>
-                    </div>
-
-                    <a href="contact.html" class="btn btn-outline btn-sm" style="width: 100%;">Request Bulk Quote</a>
+                <div class="card hw-card">
+                    <img src="assets/illustrations/network.svg" alt="">
+                    <h3>Networking &amp; Security</h3>
+                    <p>Core, access and data center switching, wireless, firewalls and optics.</p>
+                    <div class="brand-list"><span>Cisco</span><span>HPE Aruba</span><span>Juniper</span><span>Fortinet</span><span>NVIDIA Networking</span></div>
                 </div>
-            </div>
-
-            <!-- Product 4 -->
-            <div class="product-card">
-                <div class="product-img">
-                    <i class="ph-duotone ph-laptop" style="font-size: 80px; color: #cbd5e1;"></i>
+                <div class="card hw-card">
+                    <img src="assets/illustrations/desktop.svg" alt="">
+                    <h3>Workstations &amp; PCs</h3>
+                    <p>Engineering workstations, business laptops and desktops at scale.</p>
+                    <div class="brand-list"><span>Dell Precision</span><span>HP Z</span><span>Lenovo ThinkStation</span><span>ASUS</span></div>
                 </div>
-                <div class="product-info">
-                    <div class="product-category">Laptops & Computers</div>
-                    <h3 class="product-name">Lenovo ThinkPad Mobile Workstation</h3>
-                    <span class="stock-status"><i class="ph ph-check-circle"></i> In Stock</span>
-                    <div class="product-specs">
-                        <div><strong>SKU:</strong> LEN-TP-WS</div>
-                        <div><strong>Barcode:</strong> 12093847562</div>
-                        <div><strong>Compatibility:</strong> Enterprise Deployment</div>
-                    </div>
-
-                    <a href="contact.html" class="btn btn-outline btn-sm" style="width: 100%;">Request Bulk Quote</a>
-                </div>
-            </div>
-
-            <!-- Product 5 -->
-            <div class="product-card">
-                <div class="product-img">
-                    <i class="ph-duotone ph-pen-nib" style="font-size: 80px; color: #cbd5e1;"></i>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Creative Hardware</div>
-                    <h3 class="product-name">Wacom Cintiq Pro Interactive Tablet</h3>
-                    <span class="stock-status quote"><i class="ph ph-clock"></i> Request for Quote</span>
-                    <div class="product-specs">
-                        <div><strong>SKU:</strong> WAC-CP-24</div>
-                        <div><strong>Barcode:</strong> 39847102934</div>
-                        <div><strong>Compatibility:</strong> MacOS & Windows</div>
-                    </div>
-
-                    <a href="contact.html" class="btn btn-outline btn-sm" style="width: 100%;">Request Bulk Quote</a>
-                </div>
-            </div>
-
-            <!-- Product 6 -->
-            <div class="product-card">
-                <div class="product-img">
-                    <i class="ph-duotone ph-plug" style="font-size: 80px; color: #cbd5e1;"></i>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Power & Networking</div>
-                    <h3 class="product-name">Eaton 5PX Smart Rack UPS 3000VA</h3>
-                    <span class="stock-status"><i class="ph ph-check-circle"></i> In Stock</span>
-                    <div class="product-specs">
-                        <div><strong>SKU:</strong> EAT-5PX-3K</div>
-                        <div><strong>Barcode:</strong> 93847561023</div>
-                        <div><strong>Compatibility:</strong> Universal Rackmount</div>
-                    </div>
-
-                    <a href="contact.html" class="btn btn-outline btn-sm" style="width: 100%;">Request Bulk Quote</a>
+                <div class="card hw-card">
+                    <img src="assets/illustrations/cooling.svg" alt="">
+                    <h3>Power, Racks &amp; Cooling</h3>
+                    <p>UPS, PDUs, racks and cooling for server rooms and data centers.</p>
+                    <div class="brand-list"><span>APC</span><span>Eaton</span><span>Vertiv</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <section class="section-sm section-alt" style="padding-bottom:40px">
+        <div class="container reveal">
+            <span class="eyebrow">Featured Catalog</span>
+            <h2 class="h2">AI &amp; Data Center Platforms</h2>
+            <p class="lead">Browse detailed specs for NVIDIA, Supermicro and ASUS systems. Filter by brand or category, then request a quote for any product.</p>
+        </div>
+    </section>
+    <div class="catalog-toolbar">
+        <div class="container">
+            <div class="brand-filter" id="brand-filter" aria-label="Filter by brand"></div>
+            <label class="search">
+                <i class="ph ph-magnifying-glass"></i>
+                <input type="search" id="catalog-search" placeholder="Search products, e.g. B300, 96 GB, liquid" aria-label="Search products">
+            </label>
+        </div>
+    </div>
+
+    <div class="container catalog">
+        <aside class="cat-nav">
+            <h5>Categories</h5>
+            <ul id="cat-filter"></ul>
+        </aside>
+        <main>
+            <div class="results-meta" id="results-meta" aria-live="polite"></div>
+            <div class="product-grid" id="product-grid">
+                <noscript><p class="muted">Enable JavaScript to browse the catalog, or <a class="accent" href="contact.html">contact us</a> for a product list.</p></noscript>
+            </div>
+        </main>
+    </div>
+
+    <section class="cta-band">
+        <div class="container">
+            <div>
+                <h2 class="h2">Don't See What You Need?</h2>
+                <p class="lead">This catalog shows our core lineup. We also source servers, components, cables, optics and accessories on request.</p>
+            </div>
+            <a href="contact.html?type=quote" class="btn btn-primary">Request a Custom Quote <i class="ph ph-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <div class="modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-dialog">
+            <button class="modal-close" type="button" aria-label="Close"><i class="ph ph-x"></i></button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <footer class="site-footer force-dark">
         <div class="container">
             <div class="footer-grid">
-                <div>
-                    <a href="index.html" class="logo footer-logo">
-                        <img src="Black Modern A letter Logo.png" alt="Plan Man" style="height: 48px;">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" aria-label="Plan Man home">
+                        <img class="logo-light" src="assets/logo/planman-logo.svg?v=3" alt="Plan Man – IT Infrastructure, Hardware, Software Solutions" width="1440" height="245"><img class="logo-dark" src="assets/logo/planman-logo-dark.svg?v=3" alt="Plan Man – IT Infrastructure, Hardware, Software Solutions" width="1440" height="245">
                     </a>
-                    <p class="footer-text">The Engine For Your Digital Success. Your trusted IT hardware & enterprise solutions partner in the UAE.</p>
+                    <p>Enterprise IT solutions and hardware for hospitality, education, manufacturing and enterprise. Requirements to after-sales support. Dubai, UAE.</p>
                 </div>
                 <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="services.html">IT Services</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html?cat=rack-scale">Rack-Scale AI Systems</a></li>
+                        <li><a href="products.html?cat=gpu-servers">GPU &amp; AI Servers</a></li>
+                        <li><a href="products.html?cat=accelerators">Data Center GPUs</a></li>
+                        <li><a href="products.html?cat=networking">AI Networking</a></li>
+                        <li><a href="products.html?cat=storage">Storage</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-title">Categories</h4>
-                    <ul class="footer-links">
-                        <li><a href="products.html">Storage & NAS</a></li>
-                        <li><a href="products.html">Servers & Workstations</a></li>
-                        <li><a href="products.html">Creative Tablets</a></li>
+                    <h4>Industries</h4>
+                    <ul>
+                        <li><a href="industries.html#hospitality">Hospitality</a></li>
+                        <li><a href="industries.html#education">Universities &amp; Education</a></li>
+                        <li><a href="industries.html#manufacturing">Manufacturing &amp; Industrial</a></li>
+                        <li><a href="industries.html#enterprise">Corporate Enterprise</a></li>
+                        <li><a href="solutions.html">All Solutions</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-title">Contact</h4>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="ph ph-map-pin"></i> IFZA Properties, Dubai Silicon Oasis, Dubai, UAE</a></li>
-                        <li><a href="mailto:info@planman.com"><i class="ph ph-envelope"></i> info@planman.com</a></li>
-                        <li><a href="tel:+971585225166"><i class="ph ph-phone"></i> +971 58 522 5166</a></li>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Plan Man</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html?type=partner">Channel Partners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">IFZA Properties, Dubai Silicon Oasis, Dubai, UAE</a></li>
+                        <li><a href="mailto:sales@planman.com">sales@planman.com</a></li>
+                        <li><a href="tel:+971585225166">+971 58 522 5166</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Plan Man. All rights reserved.</p>
-                <div style="display: flex; gap: 16px;">
-                    <a href="#" style="color: #94a3b8;"><i class="ph ph-linkedin-logo" style="font-size: 24px;"></i></a>
-                    <a href="#" style="color: #94a3b8;"><i class="ph ph-twitter-logo" style="font-size: 24px;"></i></a>
+                <p>&copy; <span data-year>2026</span> Plan Man. All rights reserved.</p>
+                <p class="legal">All brand and product names are trademarks of their respective owners. Product information is provided for reference only; specifications are set by each manufacturer and may change.</p>
+                <div class="socials">
+                    <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="#" aria-label="X"><i class="ph ph-x-logo"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="main.js"></script>
+    <script src="data/products.js?v=12"></script>
+    <script src="catalog.js?v=12"></script>
+    <script src="main.js?v=12"></script>
 </body>
 </html>

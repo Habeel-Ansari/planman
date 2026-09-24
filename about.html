@@ -4,135 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Plan Man</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Plan Man is a Dubai-based system integrator and channel solution provider for AI, HPC and enterprise data center infrastructure.">
+    <script>(function(){var d=document.documentElement,t='light';d.classList.add('js');try{t=localStorage.getItem('pm-theme')||t}catch(e){}d.setAttribute('data-theme',t)})()</script>
+    <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+    <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css?v=12">
+    <link rel="stylesheet" href="apple.css?v=12">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="Black Modern A letter Logo.png" alt="Plan Man" style="height: 48px;">
+            <a href="index.html" class="logo" aria-label="Plan Man home">
+                <img class="logo-light" src="assets/logo/planman-logo-compact.svg?v=3" alt="Plan Man" width="1440" height="236"><img class="logo-dark" src="assets/logo/planman-logo-compact-dark.svg?v=3" alt="Plan Man" width="1440" height="236">
             </a>
             <ul class="nav-links">
-                <li><a href="about.html" class="active">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li class="has-mega">
+                    <button type="button" aria-expanded="false">Products <i class="ph ph-caret-down"></i></button>
+                    <div class="mega">
+                        <div class="container mega-inner">
+                            <div>
+                                <h5>AI Infrastructure</h5>
+                                <ul>
+                                    <li><a href="products.html?cat=rack-scale">Rack-Scale AI Systems</a></li>
+                                    <li><a href="products.html?cat=gpu-servers">GPU &amp; AI Servers</a></li>
+                                    <li><a href="products.html?cat=accelerators">Data Center GPUs</a></li>
+                                    <li><a href="products.html?cat=networking">AI Networking</a></li>
+                                    <li><a href="products.html?cat=desktop-ai">AI Workstations &amp; Deskside</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Enterprise Data Center</h5>
+                                <ul>
+                                    <li><a href="products.html?cat=servers">Rack &amp; Multi-Node Servers</a></li>
+                                    <li><a href="products.html?cat=storage">Storage</a></li>
+                                    <li><a href="products.html?cat=edge">Edge Systems</a></li>
+                                    <li><a href="products.html?cat=software">Software &amp; Management</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Hardware by Brand</h5>
+                                <ul>
+                                    <li><a href="products.html?brand=nvidia">NVIDIA</a></li>
+                                    <li><a href="products.html?brand=supermicro">Supermicro</a></li>
+                                    <li><a href="products.html?brand=asus">ASUS</a></li>
+                                    <li><a href="products.html#hardware">All premium brands</a></li>
+                                    <li><a href="products.html">View all products</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="industries.html">Industries</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-cta">
-                <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                <a href="tel:+971585225166" class="btn btn-ghost btn-sm"><i class="ph ph-phone"></i> +971 58 522 5166</a>
+                <a href="contact.html" class="btn btn-primary btn-sm">Request Quote</a>
             </div>
-            <div class="menu-toggle">
-                <i class="ph ph-list"></i>
-            </div>
+            <button type="button" class="theme-toggle" aria-label="Switch to dark theme"><i class="ph ph-moon"></i></button>
+            <button type="button" class="menu-toggle" aria-label="Menu" aria-expanded="false"><i class="ph ph-list"></i></button>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header gsap-fade-up">
+    <header class="page-hero">
+        <div class="hero-bg"></div>
         <div class="container">
-            <h1 class="page-title">The Engine For Your Digital Success</h1>
-            <p class="page-subtitle">We empower modern enterprises to seamlessly achieve their digital transformation goals.</p>
+            <div class="breadcrumb"><a href="index.html">Home</a> / About</div>
+            <span class="eyebrow">About Plan Man</span>
+            <h1 class="h1">The Engine for Your Digital Success</h1>
+            <p class="lead">A Dubai-based solution provider and enterprise hardware supplier for hospitality groups, universities, manufacturers and enterprises.</p>
         </div>
     </header>
 
-    <!-- Who We Are -->
-    <section class="section" style="padding-top: 0;">
-        <div class="container about-grid gsap-fade-up">
-            <div class="about-content">
-                <div class="hero-badge mb-4">Who We Are</div>
-                <h2 class="section-title">Premier IT Hardware Distributor in the UAE</h2>
-                <p class="text-secondary mb-6" style="font-size: 18px;">Plan Man is a premier IT hardware distributor and enterprise solutions provider located in Dubai, UAE. We assist organizations across the region in assessing their present IT infrastructure and provide the expert guidance needed to upgrade to top-tier, reliable, and secure technological environments.</p>
-                <p class="text-secondary" style="font-size: 18px;">As a leading trader of innovative IT products, systems, and accessories, we partner with reliable global brands to deliver high-end, cost-effective solutions tailored to your unique requirements.</p>
-            </div>
-            <div class="about-img">
-                <i class="ph-duotone ph-network"></i>
-            </div>
-        </div>
-    </section>
-
-    <!-- Vision & Mission -->
-    <section class="section bg-white">
-        <div class="container text-center section-header gsap-fade-up" style="margin: 0 auto 60px auto;">
-            <h2 class="section-title">Our Vision & Mission</h2>
-            <p class="section-subtitle">Driving the future of enterprise technology in the Middle East.</p>
-        </div>
-        <div class="container grid-2 gsap-stagger-parent">
-            <div class="card text-center">
-                <div class="card-icon" style="margin: 0 auto 24px auto;"><i class="ph ph-eye"></i></div>
-                <h3 class="card-title">Our Vision</h3>
-                <p class="card-text">To provide the finest products on the market, meet every client requirement with cost-effective precision, and empower modern enterprises to seamlessly achieve their digital transformation goals.</p>
-            </div>
-            <div class="card text-center">
-                <div class="card-icon" style="margin: 0 auto 24px auto;"><i class="ph ph-rocket"></i></div>
-                <h3 class="card-title">Our Mission</h3>
-                <p class="card-text">To deliver reliable, secure, and advanced IT infrastructure solutions that foster innovation and enduring success for our partners and clients across the UAE region.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Leadership Message -->
     <section class="section">
-        <div class="container container-md gsap-fade-up">
-            <div class="text-center mb-8">
-                <h2 class="section-title">Leadership Message</h2>
+        <div class="container split reveal">
+            <div>
+                <span class="eyebrow">Who We Are</span>
+                <h2 class="h2">Solution Provider. Hardware Supplier. Long-Term Partner.</h2>
+                <p>Plan Man helps organisations across the UAE plan, build and run their IT infrastructure. We focus on hospitality, education, manufacturing and corporate enterprise, supplying complete servers, storage, GPUs and networking from all premium brands.</p>
+                <p>Our role goes beyond selling hardware. We gather your requirements, design the right solution, supply and deploy it, and stay with you through after-sales support, whether it's a new hotel, a university AI lab or a factory server room.</p>
+                <a href="services.html" class="link-arrow">Explore our services <i class="ph ph-arrow-right"></i></a>
             </div>
-            <blockquote>
-                “At Plan Man, we strive to be at the forefront of technological innovation. Our team is passionate about delivering reliable and advanced IT solutions that empower your business. Focusing on the UAE's thriving markets, we provide tailored solutions that seamlessly handle local demands. We value your trust and are committed to building robust, lasting relationships with our clients and partners.”
+            <div class="split-art"><img src="assets/illustrations/network.svg" alt="" loading="lazy"></div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">What We Do</span>
+                <h2 class="h2">Three Ways We Work With You</h2>
+            </div>
+            <div class="grid-3 reveal-stagger">
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-cpu"></i></div>
+                    <h3>Solution Design</h3>
+                    <p>We gather requirements and design complete solutions, from a single server room to multi-site infrastructure and AI clusters.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-lightbulb"></i></div>
+                    <h3>Deployment &amp; Support</h3>
+                    <p>We install, configure and hand over, then stay on with after-sales support, maintenance and upgrades.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="ph ph-handshake"></i></div>
+                    <h3>Enterprise Hardware Sales</h3>
+                    <p>We supply complete servers, storage, GPUs and networking from all premium brands to end customers, resellers and integrators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container grid-2 reveal-stagger">
+            <div class="card">
+                <div class="card-icon"><i class="ph ph-eye"></i></div>
+                <h3>Our Vision</h3>
+                <p>To be the region's most trusted partner for AI and data center infrastructure, helping every organisation turn accelerated computing into real business outcomes.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="ph ph-rocket"></i></div>
+                <h3>Our Mission</h3>
+                <p>To deliver reliable, secure and high-performance infrastructure, designed with care, integrated with precision and supported locally, so our clients can focus on innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container container-narrow reveal">
+            <span class="eyebrow">Leadership Message</span>
+            <blockquote class="quote">
+                “At Plan Man, we strive to be at the forefront of technological innovation. Our team is passionate about delivering reliable and advanced IT solutions that empower your business. Focusing on the UAE's thriving markets, we provide tailored solutions that handle local demands. We value your trust and are committed to building lasting relationships with our clients and partners.”
+                <footer>Plan Man Leadership Team</footer>
             </blockquote>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <section class="cta-band">
+        <div class="container reveal">
+            <div>
+                <h2 class="h2">Let's Build Something Together</h2>
+                <p class="lead">Partners, customers and integrators: we'd like to hear from you.</p>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Get in Touch <i class="ph ph-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <footer class="site-footer force-dark">
         <div class="container">
             <div class="footer-grid">
-                <div>
-                    <a href="index.html" class="logo footer-logo">
-                        <img src="Black Modern A letter Logo.png" alt="Plan Man" style="height: 48px;">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" aria-label="Plan Man home">
+                        <img class="logo-light" src="assets/logo/planman-logo.svg?v=3" alt="Plan Man – IT Infrastructure, Hardware, Software Solutions" width="1440" height="245"><img class="logo-dark" src="assets/logo/planman-logo-dark.svg?v=3" alt="Plan Man – IT Infrastructure, Hardware, Software Solutions" width="1440" height="245">
                     </a>
-                    <p class="footer-text">The Engine For Your Digital Success. Your trusted IT hardware & enterprise solutions partner in the UAE.</p>
+                    <p>Enterprise IT solutions and hardware for hospitality, education, manufacturing and enterprise. Requirements to after-sales support. Dubai, UAE.</p>
                 </div>
                 <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="services.html">IT Services</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html?cat=rack-scale">Rack-Scale AI Systems</a></li>
+                        <li><a href="products.html?cat=gpu-servers">GPU &amp; AI Servers</a></li>
+                        <li><a href="products.html?cat=accelerators">Data Center GPUs</a></li>
+                        <li><a href="products.html?cat=networking">AI Networking</a></li>
+                        <li><a href="products.html?cat=storage">Storage</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-title">Categories</h4>
-                    <ul class="footer-links">
-                        <li><a href="products.html">Storage & NAS</a></li>
-                        <li><a href="products.html">Servers & Workstations</a></li>
-                        <li><a href="products.html">Creative Tablets</a></li>
+                    <h4>Industries</h4>
+                    <ul>
+                        <li><a href="industries.html#hospitality">Hospitality</a></li>
+                        <li><a href="industries.html#education">Universities &amp; Education</a></li>
+                        <li><a href="industries.html#manufacturing">Manufacturing &amp; Industrial</a></li>
+                        <li><a href="industries.html#enterprise">Corporate Enterprise</a></li>
+                        <li><a href="solutions.html">All Solutions</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-title">Contact</h4>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="ph ph-map-pin"></i> IFZA Properties, Dubai Silicon Oasis, Dubai, UAE</a></li>
-                        <li><a href="mailto:info@planman.com"><i class="ph ph-envelope"></i> info@planman.com</a></li>
-                        <li><a href="tel:+971585225166"><i class="ph ph-phone"></i> +971 58 522 5166</a></li>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Plan Man</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html?type=partner">Channel Partners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">IFZA Properties, Dubai Silicon Oasis, Dubai, UAE</a></li>
+                        <li><a href="mailto:sales@planman.com">sales@planman.com</a></li>
+                        <li><a href="tel:+971585225166">+971 58 522 5166</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Plan Man. All rights reserved.</p>
-                <div style="display: flex; gap: 16px;">
-                    <a href="#" style="color: #94a3b8;"><i class="ph ph-linkedin-logo" style="font-size: 24px;"></i></a>
-                    <a href="#" style="color: #94a3b8;"><i class="ph ph-twitter-logo" style="font-size: 24px;"></i></a>
+                <p>&copy; <span data-year>2026</span> Plan Man. All rights reserved.</p>
+                <p class="legal">All brand and product names are trademarks of their respective owners. Product information is provided for reference only; specifications are set by each manufacturer and may change.</p>
+                <div class="socials">
+                    <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="#" aria-label="X"><i class="ph ph-x-logo"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="main.js"></script>
+    <script src="main.js?v=12" defer></script>
 </body>
 </html>
