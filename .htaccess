@@ -1,0 +1,51 @@
+# Plan Man — Hostinger (Apache/LiteSpeed) configuration
+
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # One canonical host: https://planman.ae (www redirects permanently;
+    # http -> https is already handled by Hostinger's CDN)
+    RewriteCond %{HTTP_HOST} ^www\.planman\.ae$ [NC]
+    RewriteRule ^(.*)$ https://planman.ae/$1 [R=301,L]
+
+    # /index.html -> /  (avoid duplicate home page URLs)
+    RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+    RewriteRule ^index\.html$ / [R=301,L]
+
+    # Build tooling and backend source are not part of the website
+    RewriteRule ^(tools|form-backend)(/|$) - [R=404,L]
+    RewriteRule ^README[^/]*\.md$ - [R=404,L]
+</IfModule>
+
+<IfModule mod_mime.c>
+    AddType image/svg+xml .svg
+    AddType application/manifest+json .webmanifest
+    AddType text/plain .txt
+    AddCharset utf-8 .html .css .js .txt .xml .svg .webmanifest
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 week"
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType application/xml "access plus 1 day"
+    ExpiresByType text/plain "access plus 1 day"
+    # Versioned assets (?v=N) can be cached for a long time
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/x-javascript "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+    Header always set Strict-Transport-Security "max-age=31536000"
+</IfModule>

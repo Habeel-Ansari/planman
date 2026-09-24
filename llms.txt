@@ -1,0 +1,36 @@
+# Plan Man
+
+> Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We take projects from requirements and design through hardware supply, deployment and after-sales support for hospitality groups, universities, manufacturers and enterprises across the UAE, supplying servers, storage, GPUs and networking from all premium brands.
+
+- Website: https://planman.ae/
+- Location: IFZA Properties, Dubai Silicon Oasis (DSO), Dubai, United Arab Emirates
+- Phone / WhatsApp: +971 58 522 5166
+- Email: sales@planman.ae (sales), info@planman.ae (support)
+- Business hours: Monday to Saturday, 9:00 AM – 6:00 PM (Gulf Standard Time)
+- Industries served: hospitality, universities and education, manufacturing and industrial, corporate enterprise
+- Project lifecycle: requirements → design → hardware supply → deployment → after-sales support
+- Brands supplied: Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, Seagate, Western Digital, AMD, Intel, APC, Eaton
+
+## Pages
+
+- [Home](https://planman.ae/): Dubai IT solutions provider and hardware supplier: servers, storage, GPUs and networking from premium brands, with design, deployment and after-sales support.
+- [Industries](https://planman.ae/industries.html): IT infrastructure for hotels, universities, manufacturers and enterprises in the UAE, from requirements and design to hardware supply, deployment and support.
+- [Products](https://planman.ae/products.html): Servers, storage, data center GPUs, AI systems and networking from Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS and Cisco, supplied and supported in the UAE.
+- [Solutions](https://planman.ae/solutions.html): GPU clusters and AI factories, HPC, server clustering and high availability, virtualization, AI storage and hosting, designed and deployed in the UAE.
+- [Services](https://planman.ae/services.html): Requirement analysis, solution design, rack integration, onsite deployment, liquid cooling, managed services and after-sales support from our Dubai team.
+- [About](https://planman.ae/about.html): Plan Man is a Dubai-based solution provider and enterprise hardware supplier for hospitality, education, manufacturing and corporate enterprise across the UAE.
+- [Contact](https://planman.ae/contact.html): Request a quote or discuss your IT project. Call or WhatsApp +971 58 522 5166, email sales@planman.ae or use our form. We reply within one business day.
+
+## Frequently asked questions
+
+- **What does Plan Man do?** Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We handle IT projects end to end: requirement analysis, solution design, hardware supply, deployment and after-sales support, for hospitality groups, universities, manufacturers and enterprises across the UAE.
+- **Which hardware brands does Plan Man supply?** We supply complete servers, storage, GPUs, networking, workstations and power equipment from premium enterprise brands including Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, Seagate, Western Digital, AMD, Intel, APC and Eaton.
+- **Does Plan Man supply NVIDIA GPU servers and AI infrastructure in the UAE?** Yes. We supply and integrate NVIDIA-based AI infrastructure, from RTX PRO and HGX B200/B300 GPU servers to rack-scale GB300 NVL72 systems from Supermicro and ASUS, and we design and deploy GPU clusters, AI labs and inference platforms.
+- **Which industries does Plan Man work with?** We focus on hospitality (hotels, resorts and hotel groups), universities and education, manufacturing and industrial sites, and corporate enterprises in the UAE.
+- **Does Plan Man provide installation and after-sales support?** Yes. Our team handles installation, configuration, migration, testing and handover, and continues with after-sales support including warranty and RMA handling, maintenance and upgrades.
+- **Where is Plan Man located and how do I request a quote?** Plan Man is located at IFZA Properties, Dubai Silicon Oasis (DSO), Dubai, UAE. Call or WhatsApp +971 58 522 5166, email sales@planman.ae, or send your requirements through the contact form at https://planman.ae/contact.html. We reply within one business day.
+
+## Optional
+
+- [Full site content in plain text](https://planman.ae/llms-full.txt): all page copy plus the complete product catalog with specifications.
+- [Sitemap](https://planman.ae/sitemap.xml)

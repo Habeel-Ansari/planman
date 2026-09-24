@@ -1,0 +1,1457 @@
+# Plan Man — full site content
+
+> Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We take projects from requirements and design through hardware supply, deployment and after-sales support for hospitality groups, universities, manufacturers and enterprises across the UAE, supplying servers, storage, GPUs and networking from all premium brands.
+
+Source: https://planman.ae/ · Generated 2026-09-24 · Contact: +971 58 522 5166 · sales@planman.ae
+
+---
+
+## Home (https://planman.ae/)
+
+Enterprise IT Solutions · Hardware · UAE
+
+## Build Your AI Factory With Plan Man.
+
+From AI factories to hotel, campus and factory IT, Plan Man takes your project from requirements and design through supply, deployment and after-sales support, with servers, storage, GPUs and networking from all the premium brands.
+
+Industries We Serve
+Request a Quote
+
+Brands we supply
+
+Dell HPE Lenovo NVIDIA Supermicro ASUS Cisco NetApp Pure Storage Synology QNAP Seagate Western Digital AMD Intel APC Eaton Dell HPE Lenovo NVIDIA Supermicro ASUS Cisco NetApp Pure Storage Synology QNAP Seagate Western Digital AMD Intel APC Eaton
+
+Industries We Serve
+
+### Infrastructure That Powers Your Hotels
+
+Every sector runs differently. We design around how your hotel, campus, plant or office actually operates.
+
+All industries
+
+#### Hospitality
+
+PMS and POS servers, guest Wi-Fi backbone, surveillance storage and multi-property standards for hotel groups.
+
+Hospitality solutions
+
+#### Universities & Education
+
+AI teaching labs, research HPC, virtual computer labs and campus data centers.
+
+Education solutions
+
+#### Manufacturing & Industrial
+
+Edge AI for quality inspection, high-availability MES and ERP servers, and plant server rooms.
+
+Industrial solutions
+
+#### Corporate Enterprise
+
+Data center refreshes, private cloud, backup and DR, and end-user hardware at scale.
+
+Enterprise solutions
+
+How We Deliver
+
+### With You From Requirements to After-Sales
+
+One team stays with your project at every stage, so nothing gets lost between the people who sell, build and support it.
+
+##### Requirements
+
+Site visits, stakeholder workshops and a clear scope of what the business needs.
+
+##### Design
+
+Solution architecture, brand selection, bill of materials and budget.
+
+##### Supply
+
+Enterprise hardware from premium brands, sourced and delivered on schedule.
+
+##### Deployment
+
+Installation, configuration, migration, testing and handover.
+
+##### After-Sales Support
+
+Warranty and RMA handling, maintenance, upgrades and a local support team.
+
+Enterprise Hardware Sales
+
+### Every Premium Brand, One Supplier
+
+Complete servers, storage, GPUs and networking from the brands the market demands, at project or bulk volumes, with the right configuration and warranty.
+
+Request a Quote
+
+#### Servers
+
+Complete rack, tower, blade and multi-node servers, configured to order.
+
+Dell PowerEdge HPE ProLiant Lenovo ThinkSystem Supermicro ASUS Cisco UCS
+
+#### Storage & Drives
+
+SAN, NAS, all-flash arrays, backup targets and enterprise HDD/SSD.
+
+Dell HPE NetApp Pure Storage Synology QNAP Seagate Western Digital
+
+#### GPUs & Accelerators
+
+Data center GPUs, AI servers and professional graphics for any workload.
+
+NVIDIA AMD Instinct Intel Gaudi
+
+#### Networking & Security
+
+Core, access and data center switching, wireless, firewalls and optics.
+
+Cisco HPE Aruba Juniper Fortinet NVIDIA Networking
+
+#### Workstations & PCs
+
+Engineering workstations, business laptops and desktops at scale.
+
+Dell Precision HP Z Lenovo ThinkStation ASUS
+
+#### Power, Racks & Cooling
+
+UPS, PDUs, racks and cooling for server rooms and data centers.
+
+APC Eaton Vertiv
+
+Need something not listed? We source across the market. Send us your part numbers .
+
+AI & Data Center
+
+### Infrastructure for the Era of AI Reasoning
+
+From rack-scale NVLink systems to PCIe GPU servers, we build infrastructure that fits your workload, your power budget and your timeline.
+
+View all products
+
+Rack-Scale
+
+#### NVIDIA Vera Rubin NVL72 & GB300 NVL72
+
+72 GPUs in a single NVLink domain, liquid-cooled and delivered as a fully integrated rack from Supermicro or ASUS. Built for training frontier models and serving reasoning at scale.
+
+Explore rack-scale systems
+
+8-GPU Servers
+
+#### HGX B300 & B200 Servers
+
+Air- and liquid-cooled 8-GPU systems with 800 Gb/s ConnectX-8 networking.
+
+See HGX systems
+
+Enterprise AI
+
+#### NVIDIA RTX PRO Servers
+
+RTX PRO 6000 Blackwell with 96 GB GDDR7 for inference, VDI, rendering and digital twins.
+
+See RTX PRO servers
+
+Networking
+
+#### InfiniBand & Spectrum-X
+
+Quantum-X800, Spectrum-X Ethernet, ConnectX SuperNICs and BlueField DPUs.
+
+See AI networking
+
+Deskside AI
+
+#### Deskside AI Supercomputers
+
+Grace Blackwell AI supercomputers on your developers' desks to prototype and fine-tune locally.
+
+Explore AI workstations
+
+Workloads
+
+### Solutions for Every Data Center
+
+Every workload has different needs for compute, memory, network and cooling. We size the architecture to fit yours.
+
+AI Training
+AI Inference
+HPC & Simulation
+Virtualization & VDI
+Hosting & Cloud
+
+#### Train and Post-Train Large Models
+
+Multi-node GPU clusters with non-blocking InfiniBand or Spectrum-X fabrics, parallel storage and Slurm or Kubernetes scheduling, validated end to end before handover.
+
+- HGX B300 / GB300 NVL72 / Vera Rubin clusters
+
+- Rail-optimised 400–800 Gb/s compute fabric
+
+- NCCL and HPL burn-in with acceptance reports
+
+AI factory solutions
+
+HGX B300 Quantum-X800 Slurm
+
+#### Serve Models in Production
+
+Right-sized inference platforms for LLMs, RAG and agentic applications, from single PCIe GPU servers to dedicated NVLink racks, with NVIDIA NIM and Triton.
+
+- RTX PRO 6000 Blackwell and H200 NVL servers
+
+- Kubernetes with GPU Operator and autoscaling
+
+- Token-per-watt and cost-per-token sizing
+
+Inference solutions
+
+ESC8000A-E13X NIM Triton
+
+#### Accelerate Science and Engineering
+
+HPC clusters for CFD, FEA, reservoir simulation and genomics, combining GPU and high-core-count CPU nodes with low-latency interconnects and parallel file systems.
+
+- Multi-node Twin and blade compute
+
+- InfiniBand fabric and parallel storage
+
+- Liquid cooling for dense, efficient racks
+
+HPC solutions
+
+SuperBlade InfiniBand DLC
+
+#### Virtualize and Consolidate
+
+Highly available virtualization and VDI clusters with GPU-accelerated virtual workstations for design, engineering and knowledge workers.
+
+- VMware, Proxmox, Nutanix and Hyper-V clusters
+
+- NVIDIA vGPU with RTX PRO and L40S
+
+- Shared storage, replication and failover
+
+Virtualization solutions
+
+vGPU HA Cluster VDI
+
+#### Host, Colocate and Rent GPU Capacity
+
+Dedicated servers, colocation and private GPU cloud for teams that need capacity now without building their own data center. Managed by us, located in the UAE.
+
+- Dedicated bare-metal GPU and CPU servers
+
+- Colocation with rack, power and remote hands
+
+- Private AI cloud with multi-tenant isolation
+
+Hosting services
+
+Bare Metal Colocation GPU Cloud
+
+Why Plan Man
+
+### One Partner From Design to Day Two
+
+As a solution provider and hardware partner, we own the outcome: the right design, the right products, a clean deployment and support that continues after go-live.
+
+#### Requirement-Led Design
+
+We start from what your business needs, then size servers, storage, network and power before anything is ordered.
+
+#### Integrated & Tested
+
+System, rack and cluster-level integration with burn-in and acceptance testing before delivery.
+
+#### Multi-Vendor Access
+
+Every premium enterprise brand, so we recommend what fits your project rather than what one vendor sells.
+
+#### After-Sales Support
+
+Dubai-based engineers for warranty, RMA, maintenance and upgrades long after handover.
+
+### Planning an IT Project?
+
+Tell us your requirements. We'll come back with a design and a quote.
+
+Start a Project
+Browse Catalog
+
+---
+
+## Industries (https://planman.ae/industries.html)
+
+Home / Industries
+
+Industries
+
+## Technology Partner for Hospitality, Education and Industry
+
+We handle every project end to end: requirement analysis, solution design, hardware supply, deployment and after-sales support. We work with hotel groups, universities, manufacturers and enterprises across the UAE.
+
+#### Hospitality
+
+Hotels, resorts and hospitality groups.
+Learn more
+
+#### Universities & Education
+
+Campuses, research labs and schools.
+Learn more
+
+#### Manufacturing & Industrial
+
+Plants, factories and industrial sites.
+Learn more
+
+#### Corporate Enterprise
+
+Headquarters, offices and growing businesses.
+Learn more
+
+Hospitality
+
+### IT Infrastructure for Hotels, Resorts and Hospitality Groups
+
+Guests expect fast, reliable service at every touchpoint. We build and support the infrastructure behind your front office, back office and guest experience, for a single property or an entire hotel group.
+
+- Server and virtualization platforms for PMS, POS and ERP systems
+
+- High-availability clusters so check-in and billing never stop
+
+- Wi-Fi backbone, switching and firewalls for guest and staff networks
+
+- Surveillance storage with long retention
+
+- Centralised backup and disaster recovery across properties
+
+- Group-wide hardware standards and procurement
+
+New property IT fit-out Server room refresh Multi-site standardisation
+
+Discuss a Hospitality Project
+
+Universities & Education
+
+### Campus, Research and AI Infrastructure for Universities
+
+From student computer labs to research computing, we help universities and schools build infrastructure that serves thousands of users and keeps up with demanding research.
+
+- GPU servers and AI labs for teaching and research
+
+- HPC clusters for engineering and science departments
+
+- VDI and virtual labs so students can work from any device
+
+- Research data storage, backup and archiving
+
+- Campus data center modernisation and consolidation
+
+- Volume pricing for education procurement
+
+AI teaching lab Research HPC cluster Virtual computer labs
+
+Discuss a Campus Project
+
+Manufacturing & Industrial
+
+### Reliable Systems for Manufacturing and Industrial Operations
+
+Production doesn't stop, so your IT can't either. We deliver dependable infrastructure for plants and industrial sites, from edge systems on the shop floor to the corporate data center.
+
+- Edge servers for machine vision and quality inspection
+
+- High-availability servers for MES, historians and ERP
+
+- Short-depth and rugged systems for plant environments
+
+- Storage for production, sensor and video data
+
+- Network segmentation between OT and IT
+
+- Spare-parts planning and fast replacement
+
+Edge AI inspection Plant server room ERP cluster
+
+Discuss an Industrial Project
+
+Corporate Enterprise
+
+### Enterprise Infrastructure From One Vendor-Neutral Partner
+
+For corporate headquarters, regional offices and growing businesses, we supply and support the full infrastructure stack, choosing the right brand for each job instead of pushing a single vendor.
+
+- Servers, storage and networking from all major brands
+
+- Virtualization, private cloud and hyperconverged platforms
+
+- GPU and AI infrastructure for data and analytics teams
+
+- Backup, disaster recovery and business continuity
+
+- Workstations and end-user hardware at scale
+
+Data center refresh Private cloud AI pilot
+
+Discuss an Enterprise Project
+
+Project Lifecycle
+
+### One Team From Requirements to After-Sales
+
+Whatever your sector, the same team stays with your project from the first meeting to years of support.
+
+##### Requirements
+
+Site visits, stakeholder workshops and a clear scope of what the business needs.
+
+##### Design
+
+Solution architecture, brand selection, bill of materials and budget.
+
+##### Supply
+
+Enterprise hardware from premium brands, sourced and delivered on schedule.
+
+##### Deployment
+
+Installation, configuration, migration, testing and handover.
+
+##### After-Sales Support
+
+Warranty and RMA handling, maintenance, upgrades and a local support team.
+
+### Tell Us About Your Project
+
+Share your requirements and we'll come back with a design and a quote.
+
+Start the Conversation
+
+---
+
+## Products (https://planman.ae/products.html)
+
+Home / Products
+
+Products
+
+## Enterprise Hardware and AI Infrastructure
+
+Complete servers, storage, GPUs, networking and workstations from all premium enterprise brands, plus our featured AI platforms from NVIDIA, Supermicro and ASUS. Every order is configured, delivered and supported by Plan Man.
+
+Enterprise Hardware Sales
+
+### Every Premium Brand, One Supplier
+
+Tell us the brand, model or requirement. We quote, configure and deliver at project or bulk volumes.
+
+Request a Quote
+
+#### Servers
+
+Complete rack, tower, blade and multi-node servers, configured to order.
+
+Dell PowerEdge HPE ProLiant Lenovo ThinkSystem Supermicro ASUS Cisco UCS
+
+#### Storage & Drives
+
+SAN, NAS, all-flash arrays, backup targets and enterprise HDD/SSD.
+
+Dell HPE NetApp Pure Storage Synology QNAP Seagate Western Digital
+
+#### GPUs & Accelerators
+
+Data center GPUs, AI servers and professional graphics for any workload.
+
+NVIDIA AMD Instinct Intel Gaudi
+
+#### Networking & Security
+
+Core, access and data center switching, wireless, firewalls and optics.
+
+Cisco HPE Aruba Juniper Fortinet NVIDIA Networking
+
+#### Workstations & PCs
+
+Engineering workstations, business laptops and desktops at scale.
+
+Dell Precision HP Z Lenovo ThinkStation ASUS
+
+#### Power, Racks & Cooling
+
+UPS, PDUs, racks and cooling for server rooms and data centers.
+
+APC Eaton Vertiv
+
+Featured Catalog
+
+### AI & Data Center Platforms
+
+Browse detailed specs for NVIDIA, Supermicro and ASUS systems. Filter by brand or category, then request a quote for any product.
+
+Categories
+
+### Don't See What You Need?
+
+This catalog shows our core lineup. We also source servers, components, cables, optics and accessories on request.
+
+Request a Custom Quote
+
+---
+
+## Solutions (https://planman.ae/solutions.html)
+
+Home / Solutions
+
+Solutions
+
+## Full-Stack Infrastructure, Engineered for Your Workload
+
+We combine NVIDIA accelerated computing with Supermicro and ASUS systems to deliver complete, validated solutions: compute, network, storage, cooling and software.
+
+#### AI Factories & GPU Clusters
+
+Training and inference infrastructure at any scale.
+Learn more
+
+#### High-Performance Computing
+
+Simulation, research and engineering clusters.
+Learn more
+
+#### Server Clustering & HA
+
+Failover, load balancing and hyperconverged clusters.
+Learn more
+
+#### Hosting & GPU Cloud
+
+Dedicated servers, colocation and private AI cloud.
+Learn more
+
+#### Virtualization & VDI
+
+GPU-accelerated virtual desktops and workstations.
+Learn more
+
+#### AI Storage & Data
+
+All-flash, parallel and object storage for AI pipelines.
+Learn more
+
+AI Factories & GPU Clusters
+
+### From One GPU Server to a Full AI Factory
+
+We design GPU clusters around your models and throughput targets, then deliver them as integrated, tested racks. Choose rack-scale NVLink systems for the largest models or HGX and PCIe servers for flexible enterprise AI.
+
+- NVIDIA Vera Rubin NVL72, GB300 NVL72 and HGX B300 / B200 platforms
+
+- Rail-optimised InfiniBand (Quantum-X800) or Spectrum-X Ethernet fabrics
+
+- Slurm, Kubernetes, NVIDIA Base Command Manager and Mission Control
+
+- NVIDIA AI Enterprise, NIM microservices and MLOps tooling
+
+- Liquid cooling design: CDUs, manifolds and facility integration
+
+Design My Cluster
+
+High-Performance Computing
+
+### HPC Clusters for Science and Engineering
+
+Plug-and-play HPC clusters for CFD, FEA, weather, seismic and life sciences, combining GPU-accelerated nodes, high-core-count CPU nodes and low-latency interconnects.
+
+- Supermicro SuperBlade, BigTwin and GrandTwin, and ASUS high-density nodes
+
+- InfiniBand fabric with in-network computing
+
+- Parallel file systems on all-flash NVMe storage
+
+- Job scheduling, user environments and application tuning
+
+Plan an HPC Cluster
+
+Server Clustering & High Availability
+
+### Keep Critical Services Running
+
+We build clustered server environments that survive hardware failures and scale out as you grow, for databases, ERP, web platforms and internal applications.
+
+- Failover clusters: VMware vSphere HA, Windows Server Failover Clustering, Proxmox
+
+- Hyperconverged infrastructure: vSAN, Nutanix, Azure Local
+
+- Kubernetes and OpenShift container platforms
+
+- Load balancing, shared storage and replication across sites
+
+- Backup and disaster recovery with Veeam
+
+Discuss Clustering
+
+Hosting & GPU Cloud
+
+### Capacity Without Building a Data Center
+
+Get GPU and server capacity in the UAE, run by our team, without the capex and lead time of your own facility. Suited to startups, research teams and enterprises with data residency requirements.
+
+- Dedicated bare-metal GPU and CPU servers
+
+- Colocation: rack space, power, cooling and remote hands
+
+- Private GPU cloud with multi-tenant isolation (BlueField DPUs)
+
+- Managed hosting with monitoring, patching and backups
+
+- Hybrid setups that burst from on-prem to hosted capacity
+
+Ask About Hosting
+
+Virtualization & VDI
+
+### GPU-Accelerated Virtual Workspaces
+
+Deliver virtual desktops and workstations to designers, engineers and knowledge workers anywhere, with GPU performance and central management.
+
+- NVIDIA vGPU with RTX PRO 6000 Blackwell and L40S
+
+- VMware Horizon, Citrix and Omnissa platforms
+
+- Right-sized profiles for CAD, BIM, media and office users
+
+Plan a VDI Rollout
+
+AI Storage & Data
+
+### Keep Your GPUs Fed With Data
+
+Storage architectures that match GPU throughput, from fast all-flash tiers for training to high-capacity object stores for data lakes and archives.
+
+- All-flash NVMe for training and checkpointing
+
+- Parallel and software-defined file systems
+
+- Object storage and JBOD expansion for data lakes
+
+- Backup, snapshot and replication policies
+
+See Storage Products
+
+### Not Sure Which Architecture Fits?
+
+Book a free scoping session with our solutions architects.
+
+Book a Session
+
+---
+
+## Services (https://planman.ae/services.html)
+
+Home / Services
+
+Services
+
+## From Requirements to After-Sales Support
+
+We cover every stage of your project: understanding the requirement, designing the solution, supplying the hardware, deploying it and supporting it for years after go-live.
+
+#### Requirement Analysis & Design
+
+Site surveys, stakeholder workshops, solution architecture, bill of materials and budget planning.
+
+- GPU, CPU and memory sizing
+
+- Network topology and fabric design
+
+- Rack elevation and facility requirements
+
+#### System & Rack Integration
+
+We build, configure and validate systems at server, rack and cluster level before shipping to site.
+
+- L10 system, L11 rack and L12 cluster integration
+
+- Firmware baselining and BIOS tuning
+
+- Burn-in, NCCL and HPL acceptance testing
+
+#### Onsite Deployment
+
+Rack and stack, structured cabling, fabric bring-up and OS and software stack installation at your data center.
+
+- Copper, fibre and optics labelling
+
+- InfiniBand and Ethernet fabric bring-up
+
+- Handover documentation
+
+#### Liquid Cooling Integration
+
+Direct liquid cooling for high-density GPU racks: CDU selection, manifolds, facility water and commissioning.
+
+- Liquid-to-liquid and liquid-to-air CDUs
+
+- Rear-door heat exchangers
+
+- Leak detection and monitoring
+
+#### Clustering & Platform Setup
+
+Configured, production-ready platforms on top of the hardware we deliver.
+
+- Slurm, Kubernetes and GPU Operator
+
+- VMware, Proxmox, Nutanix and Hyper-V HA clusters
+
+- NVIDIA AI Enterprise and vGPU licensing
+
+#### Hosting & Colocation
+
+Run your infrastructure in a UAE data center with our team handling the physical layer.
+
+- Dedicated and bare-metal GPU servers
+
+- Rack space, power and remote hands
+
+- Private GPU cloud environments
+
+#### Managed Services
+
+Ongoing operation of your environment with monitoring, patching and lifecycle management.
+
+- 24/7 health and performance monitoring
+
+- Firmware and driver lifecycle
+
+- Capacity planning and expansion
+
+#### After-Sales Support
+
+Local support after handover: warranty claims, vendor RMA, maintenance and upgrades to keep downtime to a minimum.
+
+- Local spares stocking options
+
+- Vendor warranty and RMA handling
+
+- Onsite break-fix
+
+#### Enterprise Hardware Supply
+
+Complete servers, storage, GPUs, networking and workstations from all premium brands, for end customers, resellers and integrators.
+
+- Dell, HPE, Lenovo, Cisco, NVIDIA and more
+
+- Project and bulk pricing
+
+- Export and regional logistics
+
+Built for Density
+
+### Liquid-Cooled, Rack-Ready, Tested
+
+Modern GPU racks draw more power than air alone can cool. We plan direct liquid cooling and power delivery with your facility team, then integrate and test every rack before it ships, so installation day is about plugging in, not troubleshooting.
+
+- CDU sizing, manifolds and facility water loops
+
+- Rack-level power, cabling and firmware baselines
+
+- Burn-in and performance validation before shipping
+
+Plan a Deployment
+
+Engagement Model
+
+### How a Project Runs
+
+##### Requirements
+
+Site visits, stakeholder workshops and a clear scope of what the business needs.
+
+##### Design
+
+Solution architecture, brand selection, bill of materials and budget.
+
+##### Supply
+
+Enterprise hardware from premium brands, sourced and delivered on schedule.
+
+##### Deployment
+
+Installation, configuration, migration, testing and handover.
+
+##### After-Sales Support
+
+Warranty and RMA handling, maintenance, upgrades and a local support team.
+
+### Ready to Transform Your Infrastructure?
+
+Talk to our engineers about your next deployment.
+
+Contact Our Team
+
+---
+
+## About (https://planman.ae/about.html)
+
+Home / About
+
+About Plan Man
+
+## The Engine for Your Digital Success
+
+A Dubai-based solution provider and enterprise hardware supplier for hospitality groups, universities, manufacturers and enterprises.
+
+Who We Are
+
+### Solution Provider. Hardware Supplier. Long-Term Partner.
+
+Plan Man helps organisations across the UAE plan, build and run their IT infrastructure. We focus on hospitality, education, manufacturing and corporate enterprise, supplying complete servers, storage, GPUs and networking from all premium brands.
+
+Our role goes beyond selling hardware. We gather your requirements, design the right solution, supply and deploy it, and stay with you through after-sales support, whether it's a new hotel, a university AI lab or a factory server room.
+
+Explore our services
+
+What We Do
+
+### Three Ways We Work With You
+
+#### Solution Design
+
+We gather requirements and design complete solutions, from a single server room to multi-site infrastructure and AI clusters.
+
+#### Deployment & Support
+
+We install, configure and hand over, then stay on with after-sales support, maintenance and upgrades.
+
+#### Enterprise Hardware Sales
+
+We supply complete servers, storage, GPUs and networking from all premium brands to end customers, resellers and integrators.
+
+#### Our Vision
+
+To be the region's most trusted partner for AI and data center infrastructure, helping every organisation turn accelerated computing into real business outcomes.
+
+#### Our Mission
+
+To deliver reliable, secure and high-performance infrastructure, designed with care, integrated with precision and supported locally, so our clients can focus on innovation.
+
+Leadership Message
+
+“At Plan Man, we strive to be at the forefront of technological innovation. Our team is passionate about delivering reliable and advanced IT solutions that empower your business. Focusing on the UAE's thriving markets, we provide tailored solutions that handle local demands. We value your trust and are committed to building lasting relationships with our clients and partners.”
+Plan Man Leadership Team
+
+### Let's Build Something Together
+
+Partners, customers and integrators: we'd like to hear from you.
+
+Get in Touch
+
+---
+
+## Contact (https://planman.ae/contact.html)
+
+Home / Contact
+
+Contact
+
+## Let's Talk About Your Project
+
+Tell us about your project or the hardware you need, whether it's a hotel fit-out, a campus lab, a factory server room or a bulk order. We'll reply within one business day.
+
+### Contact Information
+
+##### Office
+
+IFZA Properties, Dubai Silicon Oasis (DSO) Dubai, 412189, UAE
+
+##### Email
+
+Sales: sales@planman.ae Support: info@planman.ae
+
+##### Hotline
+
++971 58 522 5166
+
+##### Business Hours
+
+Monday to Saturday 9:00 AM – 6:00 PM (GST)
+
+### Send Us Your Requirements
+
+Full name *
+
+Company
+
+Work email *
+
+Phone *
+
+How can we help? *
+
+Select an option
+Hardware quote / bulk order
+New project: requirements & design
+After-sales support / RMA
+Hosting or colocation
+Channel partnership
+General inquiry
+
+Industry
+
+Select your sector
+Hospitality
+University / Education
+Manufacturing / Industrial
+Corporate enterprise
+Other
+
+Areas of interest
+
+Servers
+Storage
+GPUs / AI infrastructure
+Networking & security
+Virtualization / clustering
+Backup & disaster recovery
+
+Product(s) of interest
+
+Project details *
+
+Leave this field empty
+
+Send Request
+
+---
+
+## Frequently asked questions
+
+### What does Plan Man do?
+
+Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We handle IT projects end to end: requirement analysis, solution design, hardware supply, deployment and after-sales support, for hospitality groups, universities, manufacturers and enterprises across the UAE.
+
+### Which hardware brands does Plan Man supply?
+
+We supply complete servers, storage, GPUs, networking, workstations and power equipment from premium enterprise brands including Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, Seagate, Western Digital, AMD, Intel, APC and Eaton.
+
+### Does Plan Man supply NVIDIA GPU servers and AI infrastructure in the UAE?
+
+Yes. We supply and integrate NVIDIA-based AI infrastructure, from RTX PRO and HGX B200/B300 GPU servers to rack-scale GB300 NVL72 systems from Supermicro and ASUS, and we design and deploy GPU clusters, AI labs and inference platforms.
+
+### Which industries does Plan Man work with?
+
+We focus on hospitality (hotels, resorts and hotel groups), universities and education, manufacturing and industrial sites, and corporate enterprises in the UAE.
+
+### Does Plan Man provide installation and after-sales support?
+
+Yes. Our team handles installation, configuration, migration, testing and handover, and continues with after-sales support including warranty and RMA handling, maintenance and upgrades.
+
+### Where is Plan Man located and how do I request a quote?
+
+Plan Man is located at IFZA Properties, Dubai Silicon Oasis (DSO), Dubai, UAE. Call or WhatsApp +971 58 522 5166, email sales@planman.ae, or send your requirements through the contact form at https://planman.ae/contact.html. We reply within one business day.
+
+---
+
+## Product catalog (AI and data center platforms)
+
+Specifications summarised from public vendor information; final configurations are confirmed with a quote.
+
+### Rack-Scale AI Systems
+
+#### NVIDIA Vera Rubin NVL72 (NVIDIA)
+
+Next-generation rack-scale platform for agentic AI and reasoning, unifying 72 Rubin GPUs and 36 Vera CPUs in a single NVLink domain.
+
+- GPUs: 72× NVIDIA Rubin
+- CPUs: 36× NVIDIA Vera
+- Scale-up fabric: Sixth-generation NVLink & NVLink Switch
+- Networking: ConnectX-9 SuperNICs, BlueField-4 DPUs
+- Scale-out: Quantum-X800 InfiniBand or Spectrum-X Ethernet
+- Cooling: Liquid-cooled, third-generation MGX NVL72 rack
+
+#### NVIDIA DGX Vera Rubin NVL72 (NVIDIA)
+
+Turnkey, ready-to-deploy enterprise AI infrastructure built on the Vera Rubin platform and managed with NVIDIA Mission Control.
+
+- GPUs: 72× NVIDIA Rubin
+- CPUs: 36× NVIDIA Vera
+- Networking: ConnectX-9 SuperNICs, BlueField-4, Spectrum-X
+- Delivery: Turnkey DGX system with NVIDIA software stack
+- Use cases: Frontier model training, large-scale inference
+
+#### NVIDIA GB300 NVL72 (NVIDIA)
+
+Blackwell Ultra rack-scale system built for AI reasoning, training and data processing at scale.
+
+- GPUs: 72× NVIDIA Blackwell Ultra
+- CPUs: 36× NVIDIA Grace
+- GPU memory: 288 GB HBM3e per GPU
+- NVLink bandwidth: 1.8 TB/s GPU-to-GPU
+- Networking: ConnectX-8 SuperNICs, 800 Gb/s compute fabric
+- Cooling: Liquid-cooled rack
+
+#### NVIDIA GB200 NVL72 (NVIDIA)
+
+Liquid-cooled 72-GPU NVLink domain that acts as a single massive GPU for trillion-parameter LLM inference and training.
+
+- GPUs: 72× NVIDIA Blackwell
+- CPUs: 36× NVIDIA Grace
+- NVLink domain: 72 GPUs, 1.8 TB/s per GPU
+- Management: NVIDIA Mission Control
+- Cooling: Liquid-cooled rack
+
+#### Supermicro NVIDIA GB300 NVL72 SuperCluster (Supermicro)
+
+End-to-end liquid-cooled rack with 72 Blackwell Ultra GPUs — an exascale supercomputer in a single rack.
+
+- GPUs: 72× NVIDIA Blackwell Ultra, 288 GB HBM3e each
+- CPUs: 36× NVIDIA Grace (72-core Arm Neoverse V2)
+- NVLink: 1.8 TB/s across all 72 GPUs
+- Cooling: 250 kW liquid-to-liquid CDU or 200 kW liquid-to-air sidecar
+- Networking: 800 Gb/s compute fabric
+
+#### Supermicro NVIDIA GB200 NVL72 SuperCluster (Supermicro)
+
+Liquid-cooled 72-GPU NVLink rack with Supermicro DLC and rack-level integration.
+
+- GPUs: 72× NVIDIA Blackwell
+- CPUs: 36× NVIDIA Grace
+- NVLink: 72-GPU domain, 1.8 TB/s per GPU
+- Cooling: Direct liquid cooling with in-rack CDU
+
+#### ASUS AI POD (NVIDIA GB300 NVL72) (ASUS)
+
+ASUS rack-scale AI infrastructure built on NVIDIA Grace Blackwell Ultra, with liquid cooling and deployment services.
+
+- GPUs: 72× NVIDIA Blackwell Ultra
+- CPUs: 36× NVIDIA Grace
+- Cooling: Liquid-cooled rack
+- Services: ASUS Infrastructure Deployment Center (AIDC)
+
+### GPU & AI Servers
+
+#### NVIDIA HGX Rubin NVL8 (NVIDIA)
+
+Eight Rubin GPUs on sixth-generation NVLink — the building block for partner servers from Supermicro, ASUS and others.
+
+- GPUs: 8× NVIDIA Rubin
+- Interconnect: Sixth-generation NVLink
+- Host CPU: NVIDIA Vera or x86 baseboards
+- Form factor: HGX baseboard for OEM systems
+
+#### NVIDIA DGX Rubin NVL8 (NVIDIA)
+
+Liquid-cooled DGX system for training, post-training and inference across every AI workload.
+
+- GPUs: 8× NVIDIA Rubin
+- Interconnect: Sixth-generation NVLink
+- Cooling: Liquid-cooled
+- Software: NVIDIA DGX software stack
+
+#### NVIDIA HGX B300 (NVIDIA)
+
+Blackwell Ultra 8-GPU platform for AI reasoning, available in air- and liquid-cooled partner servers.
+
+- GPUs: 8× NVIDIA Blackwell Ultra
+- GPU memory: 288 GB HBM3e per GPU (2.3 TB total)
+- NVLink: 1.8 TB/s GPU-to-GPU
+- Networking: Integrated ConnectX-8 SuperNICs, 800 Gb/s
+
+#### NVIDIA HGX B200 (NVIDIA)
+
+The proven Blackwell 8-GPU platform for LLM training and high-volume inference.
+
+- GPUs: 8× NVIDIA Blackwell
+- GPU memory: 180 GB HBM3e per GPU
+- NVLink: 1.8 TB/s GPU-to-GPU
+- Networking: 1:1 GPU-to-NIC with ConnectX-7 or BlueField-3
+
+#### Supermicro 8U Air-Cooled HGX B300 System (Supermicro)
+
+Front-I/O air-cooled server for 8× 1100 W Blackwell Ultra GPUs with integrated 800 Gb/s networking.
+
+- GPUs: NVIDIA HGX B300 8-GPU (2.3 TB HBM3e)
+- CPUs: Dual Intel Xeon 6 or AMD EPYC 9005/9004
+- Networking: 8× front OSFP, integrated ConnectX-8 at 800 Gb/s
+- Form factor: 8U, air-cooled, front I/O
+
+#### Supermicro 4U Liquid-Cooled HGX B300 System (Supermicro)
+
+DLC-2 liquid-cooled 8-GPU node capturing up to 98% of heat for dense, efficient AI factories.
+
+- GPUs: NVIDIA HGX B300 8-GPU
+- Density: Up to 64 GPUs per rack
+- Cooling: DLC-2 direct liquid cooling, ~98% heat capture
+- Networking: Integrated ConnectX-8, 800 Gb/s
+
+#### Supermicro 2-OU OCP ORV3 HGX B300 System (Supermicro)
+
+The most compact hyperscale HGX B300 platform — up to 144 liquid-cooled GPUs in one 21-inch rack.
+
+- GPUs: NVIDIA HGX B300 8-GPU per node
+- Density: Up to 18 nodes / 144 GPUs per rack
+- Rack standard: 21-inch OCP ORV3, blind-mate manifolds
+- GPU power: Up to 1,100 W TDP per GPU sustained
+
+#### Supermicro 8U/10U Air-Cooled HGX B200 System (Supermicro)
+
+Best-selling air-cooled 8-GPU platform, redesigned for Blackwell with front or rear I/O.
+
+- GPUs: NVIDIA HGX B200 8-GPU, 180 GB HBM3e each
+- CPUs: Dual Intel Xeon 6 or AMD EPYC 9005/9004
+- Density: Up to 32 GPUs per rack
+- Networking: 1:1 GPU-to-NIC, ConnectX-7 or BlueField-3
+
+#### Supermicro 4U Liquid-Cooled HGX B200 System (Supermicro)
+
+Front-I/O DLC-2 system enabling up to 96 Blackwell GPUs in a single rack.
+
+- GPUs: NVIDIA HGX B200 8-GPU
+- Density: Up to 96 GPUs per rack
+- Cooling: DLC-2 direct liquid cooling
+- Form factor: 4U, front I/O
+
+#### Supermicro NVIDIA RTX PRO Servers (Supermicro)
+
+PCIe GPU servers for RTX PRO 6000 Blackwell, H200 NVL and L40S — enterprise AI from data center to edge.
+
+- GPUs: Multiple double-width PCIe GPUs
+- GPU options: RTX PRO 6000 Blackwell SE, H200 NVL, L40S
+- CPUs: Intel Xeon 6 or AMD EPYC
+- Workloads: Inference, fine-tuning, VDI, rendering
+
+#### ASUS XA NB3I-E12 (ASUS)
+
+9U NVIDIA HGX B300 8-GPU server with dual Intel Xeon 6 for heavy AI training and inference.
+
+- GPUs: NVIDIA HGX B300 8-GPU
+- CPUs: Dual Intel Xeon 6
+- Networking: 8× embedded ConnectX-8 InfiniBand, dual 10 GbE
+- Memory: 32 DIMM slots
+- Storage: 10× NVMe
+- Expansion: 5 PCIe slots
+- Form factor: 9U
+
+#### ASUS ESC8000A-E13X (ASUS)
+
+4U NVIDIA RTX PRO Server with ConnectX-8 SuperNICs and eight RTX PRO 6000 Blackwell GPUs.
+
+- GPUs: 8× RTX PRO 6000 Blackwell Server Edition
+- CPUs: Dual AMD EPYC 9005
+- Networking: 8× 400 Gb/s QSFP (ConnectX-8)
+- Memory: 24 DIMM slots
+- Expansion: 8× PCIe 6.0 + 2× PCIe 5.0
+- Storage: 8× 2.5" NVMe
+- Form factor: 4U
+
+#### ASUS ESC8000-E12P (ASUS)
+
+Intel Xeon 6 4U NVIDIA MGX server for eight dual-slot GPUs or Gaudi 3 accelerators.
+
+- GPUs: 8× dual-slot: H200, RTX PRO 6000 Blackwell SE or Intel Gaudi 3
+- CPUs: Dual Intel Xeon 6
+- Memory: Up to 32 DIMM
+- Expansion: 5× PCIe 5.0
+- Storage: 8× 2.5" NVMe
+- Form factor: 4U, NVIDIA MGX
+
+#### ASUS ESC8000A-E13 (ASUS)
+
+AMD EPYC 4U server supporting eight dual-slot NVIDIA H200 or RTX PRO 6000 Blackwell GPUs.
+
+- GPUs: 8× dual-slot: H200, RTX PRO 6000 Blackwell SE, AMD Instinct MI350P
+- CPUs: Dual AMD EPYC 9005/9004
+- Memory: Up to 24 DIMM
+- Storage: Up to 6× U.2 NVMe
+- Form factor: 4U
+
+#### ASUS ESC A8A-E12U (ASUS)
+
+7U eight-GPU AMD Instinct MI325X server for large AI models and HPC.
+
+- GPUs: 8× AMD Instinct MI325X
+- CPUs: Dual AMD EPYC 9005
+- Memory: 24 DIMM slots
+- Expansion: Up to 11 PCIe slots
+- Storage: 10× NVMe
+- Form factor: 7U
+
+#### ASUS ESC4000A-E12 (ASUS)
+
+Single-socket 2U GPU server for four dual-slot GPUs — ideal for inference and VDI.
+
+- GPUs: 4× dual-slot GPUs
+- CPU: Single AMD EPYC 9004/9005
+- Memory: Up to 12 DIMM
+- Expansion: 8× PCIe 5.0, OCP 3.0
+- Storage: 6× NVMe
+- Form factor: 2U
+
+#### ASUS ESC4000-E11 (ASUS)
+
+2U dual-socket GPU server with 5th Gen Intel Xeon Scalable and four dual-slot GPUs.
+
+- GPUs: 4× dual-slot GPUs
+- CPUs: Dual 5th Gen Intel Xeon Scalable
+- Memory: 16 DIMM
+- Power: 2× 2600 W Titanium PSUs
+- Form factor: 2U
+
+### Data Center GPUs
+
+#### NVIDIA RTX PRO 6000 Blackwell Server Edition (NVIDIA)
+
+Universal data center GPU for agentic AI, physical AI, scientific computing, rendering and video.
+
+- Architecture: NVIDIA Blackwell
+- Memory: 96 GB GDDR7
+- Form factor: PCIe, dual-slot, passive
+- Workloads: AI inference, digital twins, 3D graphics, vGPU
+
+#### NVIDIA RTX PRO 4500 Blackwell Server Edition (NVIDIA)
+
+Energy-efficient multi-workload accelerator for AI inference, data science, video and visual computing.
+
+- Architecture: NVIDIA Blackwell
+- Form factor: PCIe
+- Workloads: AI inference, data processing, video, VDI
+
+#### NVIDIA H200 NVL (NVIDIA)
+
+Hopper-generation PCIe GPU with large HBM3e memory for LLM inference and HPC in air-cooled racks.
+
+- Architecture: NVIDIA Hopper
+- Memory: 141 GB HBM3e
+- Form factor: PCIe, dual-slot, NVLink bridge support
+- Workloads: LLM inference, fine-tuning, HPC
+
+#### NVIDIA L40S (NVIDIA)
+
+Ada Lovelace universal GPU for generative AI inference, graphics and Omniverse workloads.
+
+- Architecture: NVIDIA Ada Lovelace
+- Memory: 48 GB GDDR6
+- Form factor: PCIe, dual-slot, passive
+- Workloads: GenAI inference, rendering, Omniverse
+
+### AI Networking
+
+#### NVIDIA Quantum-X800 InfiniBand (NVIDIA)
+
+End-to-end 800 Gb/s InfiniBand platform for the largest AI training clusters.
+
+- Speed: 800 Gb/s per port
+- Components: Switches, ConnectX-8 SuperNICs, LinkX cables
+- Features: In-network computing (SHARP), adaptive routing
+- Use case: Scale-out fabric for GPU clusters
+
+#### NVIDIA Spectrum-X Ethernet (NVIDIA)
+
+Ethernet platform purpose-built for AI, from single-cluster fabrics to multi-site AI factories with Spectrum-XGS.
+
+- Components: Spectrum-X switches + SuperNICs
+- Scale: Within and across data centers (Spectrum-XGS)
+- Features: RoCE, adaptive routing, congestion control
+- Use case: AI cloud, multi-tenant GPU clusters
+
+#### NVIDIA ConnectX-8 SuperNIC (NVIDIA)
+
+SuperNIC delivering up to 800 Gb/s for InfiniBand or Ethernet GPU-to-GPU networking.
+
+- Speed: Up to 800 Gb/s
+- Protocols: InfiniBand and Ethernet
+- Host interface: PCIe Gen6
+- Use case: East-west GPU compute fabric
+
+#### NVIDIA BlueField DPU (NVIDIA)
+
+Data processing unit that offloads networking, storage and security from host CPUs using NVIDIA DOCA.
+
+- Generations: BlueField-3, BlueField-4
+- Functions: Networking, storage, zero-trust security offload
+- Software: NVIDIA DOCA microservices
+- Use case: North-south fabric, multi-tenant isolation
+
+#### Supermicro Switches & Adapters (Supermicro)
+
+Ethernet switches and 10G–400G adapters, cables and transceivers validated with Supermicro systems.
+
+- Adapters: 10G / 25G / 100G / 200G / 400G, InfiniBand
+- Switches: Top-of-rack and management switches
+- Use case: Cluster management and data networks
+
+### Rack & Multi-Node Servers
+
+#### Supermicro Hyper Rackmount Servers (Supermicro)
+
+Flagship 1U/2U dual-processor rackmount servers for virtualization, databases and enterprise apps.
+
+- CPUs: Dual Intel Xeon 6 or AMD EPYC 9005
+- Form factor: 1U / 2U
+- Storage: All-NVMe and hybrid options
+- Use case: Virtualization, database, HCI
+
+#### Supermicro CloudDC Servers (Supermicro)
+
+Cost-optimised single- and dual-socket servers for cloud and hosting providers.
+
+- Form factor: 1U / 2U
+- Design: Tool-less serviceability, OCP 3.0 networking
+- Use case: Web hosting, cloud, VPS platforms
+
+#### Supermicro BigTwin & GrandTwin (Supermicro)
+
+Multi-node servers with shared power and cooling for high-density compute and HCI clusters.
+
+- Nodes: 2U 4-node (BigTwin) / 2U 4-node single-socket (GrandTwin)
+- CPUs: Intel Xeon 6 or AMD EPYC
+- Use case: HPC, HCI, cloud, hosting
+
+#### Supermicro SuperBlade & MicroBlade (Supermicro)
+
+Blade architectures with integrated switching for maximum density and energy efficiency.
+
+- Density: Up to 20 blades per 8U (SuperBlade)
+- Networking: Integrated Ethernet / InfiniBand switches
+- Use case: HPC clusters, private cloud
+
+#### ASUS RS Series Rack Servers (ASUS)
+
+1U and 2U rack servers with Intel Xeon 6 and AMD EPYC 9005 for virtualization and enterprise workloads.
+
+- CPUs: Intel Xeon 6 or AMD EPYC 9005
+- Form factor: 1U / 2U, single or dual socket
+- Management: ASMB iKVM, ASUS Control Center
+- Use case: Virtualization, database, web hosting
+
+#### ASUS High-Density Multi-Node Servers (ASUS)
+
+Multi-node 2U systems that maximise compute per rack unit for HPC and cloud.
+
+- Nodes: Multi-node 2U chassis
+- CPUs: Intel Xeon 6 or AMD EPYC
+- Use case: HPC, cloud hosting, HCI
+
+### Storage
+
+#### Supermicro All-Flash NVMe Storage (Supermicro)
+
+Petascale all-flash NVMe servers built to feed GPU clusters and AI data pipelines.
+
+- Media: E3.S / U.2 NVMe
+- Form factor: 1U / 2U
+- Use case: AI storage, parallel file systems, data lakes
+
+#### Supermicro Top-Loading Storage & JBOD (Supermicro)
+
+High-capacity top-loading storage servers and JBOD enclosures for object storage and backup.
+
+- Media: 3.5" SAS/SATA HDD with NVMe cache
+- Form factor: 4U high-density top-loading
+- Use case: Object storage, backup, archive
+
+#### ASUS Storage Solutions (ASUS)
+
+AI/HPC, block, unified and object storage plus JBOD expansion from the ASUS Infrastructure Solution Group.
+
+- Types: AI/HPC, block, unified, object, JBOD
+- Use case: GPU cluster data, backup, enterprise file
+
+### AI Workstations & Deskside
+
+#### NVIDIA DGX Spark (NVIDIA)
+
+Compact desktop AI supercomputer for prototyping, fine-tuning and running models locally.
+
+- Superchip: NVIDIA GB10 Grace Blackwell
+- Memory: 128 GB unified system memory
+- AI performance: Up to 1 petaFLOP (FP4)
+- Software: NVIDIA DGX OS and AI software stack
+
+#### NVIDIA DGX Station (NVIDIA)
+
+Deskside AI supercomputer for developers and research teams working on large models.
+
+- Superchip: NVIDIA GB300 Grace Blackwell Ultra Desktop
+- Memory: Up to 784 GB large coherent memory
+- Networking: ConnectX-8 SuperNIC
+- Form factor: Deskside workstation
+
+#### Supermicro Super AI Station (Supermicro)
+
+Deskside AI supercomputer that brings data-center-class compute to the lab or office.
+
+- Superchip: NVIDIA GB300 Grace Blackwell Ultra Desktop
+- Cooling: Liquid-cooled deskside chassis
+- Use case: Local model development and fine-tuning
+
+#### ASUS Ascent GX10 (ASUS)
+
+Compact personal AI supercomputer built on the NVIDIA GB10 Grace Blackwell Superchip.
+
+- Superchip: NVIDIA GB10 Grace Blackwell
+- Memory: 128 GB unified memory
+- Software: NVIDIA DGX OS / AI software stack
+- Form factor: Desktop mini PC
+
+### Edge Systems
+
+#### Supermicro Edge AI Systems (Supermicro)
+
+Short-depth rackmount and compact edge servers with GPU options for retail, telco and industry.
+
+- Form factor: Short-depth 1U/2U, compact fanless
+- GPU options: NVIDIA L4, RTX PRO and more
+- Use case: Edge inference, 5G, smart retail
+
+#### ASUS Edge & Tower Servers (ASUS)
+
+Edge servers and tower servers for branch offices, retail and on-site AI inference.
+
+- Form factor: Tower, short-depth edge
+- GPU options: Single and dual GPU configurations
+- Use case: SMB, branch IT, edge AI
+
+### Software & Management
+
+#### NVIDIA AI Enterprise (NVIDIA)
+
+Production-grade software platform with NIM microservices, frameworks and enterprise support for AI.
+
+- Includes: NIM microservices, NeMo, Triton, RAPIDS
+- Deployment: On-prem, cloud and edge
+- Licensing: Per-GPU subscription
+- Support: Enterprise support & security updates
+
+#### NVIDIA Virtual GPU (vGPU) (NVIDIA)
+
+Share data center GPUs across virtual desktops, workstations and compute VMs.
+
+- Editions: vPC/vApps, RTX Virtual Workstation, vCS
+- Hypervisors: VMware, Citrix, Nutanix, Red Hat and more
+- Use case: VDI, virtual workstations, AI in VMs
+
+#### Supermicro Data Center Building Block Solutions (DCBBS) (Supermicro)
+
+Complete data center building blocks: compute, storage, networking, liquid cooling, power and management software.
+
+- Scope: Rack-level integration with networking and cabling
+- Validation: Cluster-level L12 testing
+- Cooling: DLC-2 liquid cooling, CDUs, cooling towers
+
+#### ASUS Control Center Data Center Edition (ASUS)
+
+Centralised IT management for ASUS servers — monitoring, firmware updates and remote control at scale.
+
+- Features: Monitoring, BIOS/BMC updates, power control
+- Out-of-band: ASMB BMC integration
+- Use case: Fleet management across data centers

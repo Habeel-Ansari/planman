@@ -150,6 +150,11 @@ def write_svg(letters, theme, name, pad=8):
     """letters: RGBA image of the lettering only (mark erased), original coordinates."""
     lb = letters.getbbox()
     crop = letters.crop(lb)
+    # Keep the embedded lettering light: ~720px wide is plenty for 2x screens at nav/footer size,
+    # and a 64-colour palette keeps anti-aliasing smooth while cutting the file size.
+    if crop.width > 720:
+        crop = crop.resize((720, round(crop.height * 720 / crop.width)), Image.LANCZOS)
+    crop = crop.quantize(colors=64, method=Image.Quantize.FASTOCTREE)
     # overall bounds = lettering + mark (mark geometry spans roughly x 280..585, y 222..442)
     x0 = min(lb[0], 280) - pad
     y0 = min(lb[1], 222) - pad

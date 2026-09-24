@@ -2,7 +2,6 @@
    Plan Man — Enterprise AI & Data Center Solutions
    Dark, full-bleed design system
    ========================================================= */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700;800&display=swap');
 
 :root {
     /* Surfaces */
@@ -47,7 +46,7 @@
     --nav-h: 72px;
 
     --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-    --font-head: 'Inter Tight', 'Inter', system-ui, sans-serif;
+    --font-head: 'Inter', system-ui, sans-serif;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -1270,3 +1269,17 @@ html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *
 .btn .ph-circle-notch { animation: spin 1s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 @media (max-width: 400px) { .recaptcha-wrap { transform: scale(.88); transform-origin: left top; height: 70px; } }
+
+/* Accessibility: skip link (visible on keyboard focus) */
+.skip-link { position: fixed; left: 16px; top: -60px; z-index: 3000; padding: 10px 16px; border-radius: 10px; background: var(--accent); color: var(--accent-ink); font-weight: 600; transition: top .2s ease; }
+.skip-link:focus { top: 12px; }
+
+/* FAQ */
+.faq-list { display: grid; gap: 12px; }
+.faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 0 24px; transition: border-color .2s ease; }
+.faq-item[open] { border-color: var(--border-strong); }
+.faq-item summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-weight: 600; font-size: 18px; color: var(--text); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 24px; line-height: 1; color: var(--accent-text); transition: transform .3s var(--ease); }
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p { color: var(--text-2); padding: 0 0 22px; margin: 0; line-height: 1.6; }
