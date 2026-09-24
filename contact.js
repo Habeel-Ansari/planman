@@ -12,8 +12,8 @@
 //      https://www.google.com/recaptcha/admin (the SECRET key goes into the Apps Script
 //      Script properties as RECAPTCHA_SECRET — never into this file).
 // Until both are set, the form falls back to opening the visitor's email app.
-const FORM_ENDPOINT = 'https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec';
-const RECAPTCHA_SITE_KEY = 'YOUR_RECAPTCHA_SITE_KEY';
+const FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbwMyPqJRHmSYJCcL7K0S5KsIRLu2wjfT4DEkJATcJ5zUGgSP6fnVwjSOXX0GTG17dTU/exec';
+const RECAPTCHA_SITE_KEY = '6LfaOcwtAAAAANyTxqiWCC-t7BICUM8vZ5CPcDMh';
 const FALLBACK_EMAIL = 'sales@planman.com';
 const MIN_FILL_SECONDS = 4;
 
