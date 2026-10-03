@@ -59,23 +59,23 @@ How We Deliver
 
 One team stays with your project at every stage, so nothing gets lost between the people who sell, build and support it.
 
-##### Requirements
+#### Requirements
 
 Site visits, stakeholder workshops and a clear scope of what the business needs.
 
-##### Design
+#### Design
 
 Solution architecture, brand selection, bill of materials and budget.
 
-##### Supply
+#### Supply
 
 Enterprise hardware from premium brands, sourced and delivered on schedule.
 
-##### Deployment
+#### Deployment
 
 Installation, configuration, migration, testing and handover.
 
-##### After-Sales Support
+#### After-Sales Support
 
 Warranty and RMA handling, maintenance, upgrades and a local support team.
 
@@ -308,6 +308,8 @@ Industries
 
 We handle every project end to end: requirement analysis, solution design, hardware supply, deployment and after-sales support. We work with hotel groups, universities, manufacturers and enterprises across the UAE.
 
+### Industries We Serve
+
 #### Hospitality
 
 Hotels, resorts and hospitality groups.
@@ -420,23 +422,23 @@ Project Lifecycle
 
 Whatever your sector, the same team stays with your project from the first meeting to years of support.
 
-##### Requirements
+#### Requirements
 
 Site visits, stakeholder workshops and a clear scope of what the business needs.
 
-##### Design
+#### Design
 
 Solution architecture, brand selection, bill of materials and budget.
 
-##### Supply
+#### Supply
 
 Enterprise hardware from premium brands, sourced and delivered on schedule.
 
-##### Deployment
+#### Deployment
 
 Installation, configuration, migration, testing and handover.
 
-##### After-Sales Support
+#### After-Sales Support
 
 Warranty and RMA handling, maintenance, upgrades and a local support team.
 
@@ -539,6 +541,8 @@ Solutions
 ## Full-Stack Infrastructure, Engineered for Your Workload
 
 We combine NVIDIA accelerated computing with Supermicro and ASUS systems to deliver complete, validated solutions: compute, network, storage, cooling and software.
+
+### Solutions Overview
 
 #### AI Factories & GPU Clusters
 
@@ -688,6 +692,8 @@ Services
 
 We cover every stage of your project: understanding the requirement, designing the solution, supplying the hardware, deploying it and supporting it for years after go-live.
 
+### Our Services
+
 #### Requirement Analysis & Design
 
 Site surveys, stakeholder workshops, solution architecture, bill of materials and budget planning.
@@ -796,23 +802,23 @@ Engagement Model
 
 ### How a Project Runs
 
-##### Requirements
+#### Requirements
 
 Site visits, stakeholder workshops and a clear scope of what the business needs.
 
-##### Design
+#### Design
 
 Solution architecture, brand selection, bill of materials and budget.
 
-##### Supply
+#### Supply
 
 Enterprise hardware from premium brands, sourced and delivered on schedule.
 
-##### Deployment
+#### Deployment
 
 Installation, configuration, migration, testing and handover.
 
-##### After-Sales Support
+#### After-Sales Support
 
 Warranty and RMA handling, maintenance, upgrades and a local support team.
 
@@ -893,19 +899,19 @@ Tell us about your project or the hardware you need, whether it's a hotel fit-ou
 
 ### Contact Information
 
-##### Office
+#### Office
 
 IFZA Properties, Dubai Silicon Oasis (DSO) Dubai, 412189, UAE
 
-##### Email
+#### Email
 
 Sales: sales@planmanme.com Support: info@planmanme.com
 
-##### Hotline
+#### Hotline
 
 +971 58 522 5166
 
-##### Business Hours
+#### Business Hours
 
 Monday to Saturday 9:00 AM – 6:00 PM (GST)
 

@@ -57,7 +57,7 @@ const PAGES = [
     title: 'IT Design, Deployment & Support Services Dubai | Plan Man',
     description: 'Requirement analysis, solution design, rack integration, onsite deployment, liquid cooling, managed services and after-sales support from our Dubai team.' },
   { file: 'about.html', url: '/about.html', name: 'About', type: 'AboutPage', priority: '0.7',
-    title: 'About Plan Man | Enterprise IT Solution Provider in Dubai, UAE',
+    title: 'About Plan Man | IT Solution Provider in Dubai, UAE',
     description: 'Plan Man is a Dubai-based solution provider and enterprise hardware supplier for hospitality, education, manufacturing and corporate enterprise across the UAE.' },
   { file: 'contact.html', url: '/contact.html', name: 'Contact', type: 'ContactPage', priority: '0.8',
     title: 'Contact Plan Man | IT Hardware Quotes in Dubai, UAE',
@@ -138,6 +138,8 @@ vm.runInContext(read('data/products.js'), sandbox);
 vm.runInContext(read('data/product-details.js'), sandbox);
 const { PRODUCTS, BRANDS, CATEGORIES, CATEGORY_ART, PRODUCT_DETAILS } = sandbox.window;
 const productUrl = (p) => `/products/${p.id}.html`;
+const missingImages = PRODUCTS.filter((p) => !fs.existsSync(path.join(ROOT, 'assets/og/products', p.id + '.jpg'))).map((p) => p.id);
+if (missingImages.length) throw new Error(`Missing share images (run python tools/make-product-og.py): ${missingImages.join(', ')}`);
 const missingDetails = PRODUCTS.filter((p) => !PRODUCT_DETAILS[p.id]).map((p) => p.id);
 if (missingDetails.length) throw new Error(`data/product-details.js has no entry for: ${missingDetails.join(', ')}`);
 
@@ -169,7 +171,7 @@ function jsonLd(page) {
   const webpage = {
     '@type': page.type, '@id': `${url}#webpage`, url, name: page.title, description: page.description,
     isPartOf: { '@id': `${SITE}/#website` }, about: { '@id': `${SITE}/#organization` }, inLanguage: 'en',
-    primaryImageOfPage: { '@type': 'ImageObject', url: OG_IMAGE }, dateModified: TODAY,
+    primaryImageOfPage: { '@type': 'ImageObject', url: page.ogImage || OG_IMAGE }, dateModified: TODAY,
     ...(page.mainEntity ? { mainEntity: page.mainEntity } : {})
   };
   const graph = [org, website, webpage];
@@ -214,14 +216,14 @@ function headBlock(page) {
     `<meta property="og:title" content="${esc(page.title)}">`,
     `<meta property="og:description" content="${esc(page.description)}">`,
     `<meta property="og:url" content="${url}">`,
-    `<meta property="og:image" content="${OG_IMAGE}">`,
+    `<meta property="og:image" content="${page.ogImage || OG_IMAGE}">`,
     `<meta property="og:image:width" content="1200">`,
     `<meta property="og:image:height" content="630">`,
-    `<meta property="og:image:alt" content="Plan Man – Enterprise IT solutions and hardware in Dubai, UAE">`,
+    `<meta property="og:image:alt" content="${esc(page.ogAlt || 'Plan Man – Enterprise IT solutions and hardware in Dubai, UAE')}">`,
     `<meta name="twitter:card" content="summary_large_image">`,
     `<meta name="twitter:title" content="${esc(page.title)}">`,
     `<meta name="twitter:description" content="${esc(page.description)}">`,
-    `<meta name="twitter:image" content="${OG_IMAGE}">`,
+    `<meta name="twitter:image" content="${page.ogImage || OG_IMAGE}">`,
     `<link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">`,
     `<link rel="icon" type="image/png" sizes="256x256" href="assets/logo/favicon.png">`,
     `<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">`,
@@ -343,10 +345,21 @@ for (const page of PAGES) {
     const brand = BRANDS[p.brand];
     const cat = CATEGORIES[p.cat];
     const url = productUrl(p);
+    // Most informative title / description that fits in search results (~60 / ~160 characters)
     const named = !d.model || p.name.includes(d.model) ? p.name
       : p.name.endsWith(')') ? p.name.replace(/\)$/, `, ${d.model})`) : `${p.name} (${d.model})`;
-    const title = `${named} | Plan Man UAE`;
-    const description = `${p.summary.replace(/\s*[—–]\s*/g, ', ').replace(/\.$/, '')}. Supplied, deployed and supported in Dubai and the UAE by Plan Man.`;
+    const fit = (max, options) => options.find((o) => o.length <= max);
+    const title = fit(60, [
+      `${named} in Dubai, UAE | Plan Man`, `${named} | Plan Man UAE`, `${p.name} in Dubai, UAE | Plan Man`,
+      `${p.name} | Plan Man UAE`, `${p.name} | Plan Man`
+    ]) || p.name;
+    const summary = p.summary.replace(/\s*[—–]\s*/g, ', ').replace(/\.$/, '');
+    const description = fit(160, [
+      `${summary}. Supplied, deployed and supported in Dubai and the UAE by Plan Man.`,
+      `${summary}. Supplied and supported in the UAE by Plan Man.`,
+      `${summary}. Available in the UAE from Plan Man.`,
+      `${summary}.`
+    ]) || `${summary.slice(0, 157).replace(/\s+\S*$/, '')}…`;
     // same category (same brand first), then the same brand's other categories
     const related = [
       ...PRODUCTS.filter((x) => x.id !== p.id && x.cat === p.cat && x.brand === p.brand),
@@ -356,7 +369,7 @@ for (const page of PAGES) {
 
     const productLd = {
       '@type': 'Product', '@id': `${abs(url)}#product`, name: p.name, description: p.summary, url: abs(url),
-      brand: { '@type': 'Brand', name: brand }, category: cat, image: OG_IMAGE,
+      brand: { '@type': 'Brand', name: brand }, category: cat, image: abs(`/assets/og/products/${p.id}.jpg`),
       ...(d.model ? { model: d.model, mpn: d.model } : {}),
       additionalProperty: p.specs.map(([k, v]) => ({ '@type': 'PropertyValue', name: k, value: v })),
       isRelatedTo: related.map((r) => ({ '@type': 'Product', name: r.name, url: abs(productUrl(r)) })),
@@ -365,7 +378,8 @@ for (const page of PAGES) {
     const page = {
       file: `products/${p.id}.html`, url, name: p.name, type: 'ItemPage', title, description,
       crumbs: [['Home', '/'], ['Products', '/products.html'], [cat, `/products.html?cat=${p.cat}`], [p.name, url]],
-      mainEntity: { '@id': productLd['@id'] }, extraGraph: [productLd]
+      mainEntity: { '@id': productLd['@id'] }, extraGraph: [productLd],
+      ogImage: productLd.image, ogAlt: `${p.name}: ${brand} ${cat.toLowerCase()} supplied in Dubai, UAE by Plan Man`
     };
     const head = relink(headBlock(page));
 
