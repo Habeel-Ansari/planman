@@ -1,6 +1,7 @@
 /*
  * Plan Man product catalog.
- * Specs summarised from public vendor product pages (NVIDIA, Supermicro, ASUS), Sept 2026.
+ * Specs summarised from public vendor product pages (NVIDIA, Supermicro, ASUS), Oct 2026.
+ * Extended content for each product page lives in data/product-details.js.
  * Always confirm the final configuration and availability with the vendor before quoting.
  *
  * To add a product, copy an entry and edit it. Fields:
@@ -125,7 +126,7 @@ window.PRODUCTS = [
         summary: 'Blackwell Ultra 8-GPU platform for AI reasoning, available in air- and liquid-cooled partner servers.',
         specs: [
             ['GPUs', '8× NVIDIA Blackwell Ultra'],
-            ['GPU memory', '288 GB HBM3e per GPU (2.3 TB total)'],
+            ['GPU memory', '2.1 TB HBM3e total'],
             ['NVLink', '1.8 TB/s GPU-to-GPU'],
             ['Networking', 'Integrated ConnectX-8 SuperNICs, 800 Gb/s']
         ]
@@ -234,7 +235,7 @@ window.PRODUCTS = [
         summary: 'Compact desktop AI supercomputer for prototyping, fine-tuning and running models locally.',
         specs: [
             ['Superchip', 'NVIDIA GB10 Grace Blackwell'],
-            ['Memory', '128 GB unified system memory'],
+            ['Memory', 'Up to 128 GB unified system memory'],
             ['AI performance', 'Up to 1 petaFLOP (FP4)'],
             ['Software', 'NVIDIA DGX OS and AI software stack']
         ]
@@ -245,7 +246,7 @@ window.PRODUCTS = [
         summary: 'Deskside AI supercomputer for developers and research teams working on large models.',
         specs: [
             ['Superchip', 'NVIDIA GB300 Grace Blackwell Ultra Desktop'],
-            ['Memory', 'Up to 784 GB large coherent memory'],
+            ['Memory', '748 GB coherent memory'],
             ['Networking', 'ConnectX-8 SuperNIC'],
             ['Form factor', 'Deskside workstation']
         ]
@@ -266,7 +267,7 @@ window.PRODUCTS = [
         name: 'NVIDIA Virtual GPU (vGPU)',
         summary: 'Share data center GPUs across virtual desktops, workstations and compute VMs.',
         specs: [
-            ['Editions', 'vPC/vApps, RTX Virtual Workstation, vCS'],
+            ['Editions', 'vPC/vApps, RTX Virtual Workstation'],
             ['Hypervisors', 'VMware, Citrix, Nutanix, Red Hat and more'],
             ['Use case', 'VDI, virtual workstations, AI in VMs']
         ]

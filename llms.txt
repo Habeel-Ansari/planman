@@ -21,6 +21,61 @@
 - [About](https://planman.ae/about.html): Plan Man is a Dubai-based solution provider and enterprise hardware supplier for hospitality, education, manufacturing and corporate enterprise across the UAE.
 - [Contact](https://planman.ae/contact.html): Request a quote or discuss your IT project. Call or WhatsApp +971 58 522 5166, email sales@planman.ae or use our form. We reply within one business day.
 
+## Product pages
+
+- [NVIDIA Vera Rubin NVL72](https://planman.ae/products/nvidia-vera-rubin-nvl72.html): Next-generation rack-scale platform for agentic AI and reasoning, unifying 72 Rubin GPUs and 36 Vera CPUs in a single NVLink domain.
+- [NVIDIA DGX Vera Rubin NVL72](https://planman.ae/products/nvidia-dgx-vera-rubin-nvl72.html): Turnkey, ready-to-deploy enterprise AI infrastructure built on the Vera Rubin platform and managed with NVIDIA Mission Control.
+- [NVIDIA GB300 NVL72](https://planman.ae/products/nvidia-gb300-nvl72.html): Blackwell Ultra rack-scale system built for AI reasoning, training and data processing at scale.
+- [NVIDIA GB200 NVL72](https://planman.ae/products/nvidia-gb200-nvl72.html): Liquid-cooled 72-GPU NVLink domain that acts as a single massive GPU for trillion-parameter LLM inference and training.
+- [NVIDIA HGX Rubin NVL8](https://planman.ae/products/nvidia-hgx-rubin-nvl8.html): Eight Rubin GPUs on sixth-generation NVLink — the building block for partner servers from Supermicro, ASUS and others.
+- [NVIDIA DGX Rubin NVL8](https://planman.ae/products/nvidia-dgx-rubin-nvl8.html): Liquid-cooled DGX system for training, post-training and inference across every AI workload.
+- [NVIDIA HGX B300](https://planman.ae/products/nvidia-hgx-b300.html): Blackwell Ultra 8-GPU platform for AI reasoning, available in air- and liquid-cooled partner servers.
+- [NVIDIA HGX B200](https://planman.ae/products/nvidia-hgx-b200.html): The proven Blackwell 8-GPU platform for LLM training and high-volume inference.
+- [NVIDIA RTX PRO 6000 Blackwell Server Edition](https://planman.ae/products/nvidia-rtx-pro-6000-server.html): Universal data center GPU for agentic AI, physical AI, scientific computing, rendering and video.
+- [NVIDIA RTX PRO 4500 Blackwell Server Edition](https://planman.ae/products/nvidia-rtx-pro-4500-server.html): Energy-efficient multi-workload accelerator for AI inference, data science, video and visual computing.
+- [NVIDIA H200 NVL](https://planman.ae/products/nvidia-h200-nvl.html): Hopper-generation PCIe GPU with large HBM3e memory for LLM inference and HPC in air-cooled racks.
+- [NVIDIA L40S](https://planman.ae/products/nvidia-l40s.html): Ada Lovelace universal GPU for generative AI inference, graphics and Omniverse workloads.
+- [NVIDIA Quantum-X800 InfiniBand](https://planman.ae/products/nvidia-quantum-x800.html): End-to-end 800 Gb/s InfiniBand platform for the largest AI training clusters.
+- [NVIDIA Spectrum-X Ethernet](https://planman.ae/products/nvidia-spectrum-x.html): Ethernet platform purpose-built for AI, from single-cluster fabrics to multi-site AI factories with Spectrum-XGS.
+- [NVIDIA ConnectX-8 SuperNIC](https://planman.ae/products/nvidia-connectx-8.html): SuperNIC delivering up to 800 Gb/s for InfiniBand or Ethernet GPU-to-GPU networking.
+- [NVIDIA BlueField DPU](https://planman.ae/products/nvidia-bluefield.html): Data processing unit that offloads networking, storage and security from host CPUs using NVIDIA DOCA.
+- [NVIDIA DGX Spark](https://planman.ae/products/nvidia-dgx-spark.html): Compact desktop AI supercomputer for prototyping, fine-tuning and running models locally.
+- [NVIDIA DGX Station](https://planman.ae/products/nvidia-dgx-station.html): Deskside AI supercomputer for developers and research teams working on large models.
+- [NVIDIA AI Enterprise](https://planman.ae/products/nvidia-ai-enterprise.html): Production-grade software platform with NIM microservices, frameworks and enterprise support for AI.
+- [NVIDIA Virtual GPU (vGPU)](https://planman.ae/products/nvidia-vgpu.html): Share data center GPUs across virtual desktops, workstations and compute VMs.
+- [Supermicro NVIDIA GB300 NVL72 SuperCluster](https://planman.ae/products/smc-gb300-nvl72.html): End-to-end liquid-cooled rack with 72 Blackwell Ultra GPUs — an exascale supercomputer in a single rack.
+- [Supermicro NVIDIA GB200 NVL72 SuperCluster](https://planman.ae/products/smc-gb200-nvl72.html): Liquid-cooled 72-GPU NVLink rack with Supermicro DLC and rack-level integration.
+- [Supermicro 8U Air-Cooled HGX B300 System](https://planman.ae/products/smc-hgx-b300-8u.html): Front-I/O air-cooled server for 8× 1100 W Blackwell Ultra GPUs with integrated 800 Gb/s networking.
+- [Supermicro 4U Liquid-Cooled HGX B300 System](https://planman.ae/products/smc-hgx-b300-4u-lc.html): DLC-2 liquid-cooled 8-GPU node capturing up to 98% of heat for dense, efficient AI factories.
+- [Supermicro 2-OU OCP ORV3 HGX B300 System](https://planman.ae/products/smc-hgx-b300-orv3.html): The most compact hyperscale HGX B300 platform — up to 144 liquid-cooled GPUs in one 21-inch rack.
+- [Supermicro 8U/10U Air-Cooled HGX B200 System](https://planman.ae/products/smc-hgx-b200-air.html): Best-selling air-cooled 8-GPU platform, redesigned for Blackwell with front or rear I/O.
+- [Supermicro 4U Liquid-Cooled HGX B200 System](https://planman.ae/products/smc-hgx-b200-lc.html): Front-I/O DLC-2 system enabling up to 96 Blackwell GPUs in a single rack.
+- [Supermicro NVIDIA RTX PRO Servers](https://planman.ae/products/smc-rtx-pro-server.html): PCIe GPU servers for RTX PRO 6000 Blackwell, H200 NVL and L40S — enterprise AI from data center to edge.
+- [Supermicro Super AI Station](https://planman.ae/products/smc-super-ai-station.html): Deskside AI supercomputer that brings data-center-class compute to the lab or office.
+- [Supermicro Hyper Rackmount Servers](https://planman.ae/products/smc-hyper.html): Flagship 1U/2U dual-processor rackmount servers for virtualization, databases and enterprise apps.
+- [Supermicro CloudDC Servers](https://planman.ae/products/smc-cloud-dc.html): Cost-optimised single- and dual-socket servers for cloud and hosting providers.
+- [Supermicro BigTwin & GrandTwin](https://planman.ae/products/smc-twin.html): Multi-node servers with shared power and cooling for high-density compute and HCI clusters.
+- [Supermicro SuperBlade & MicroBlade](https://planman.ae/products/smc-superblade.html): Blade architectures with integrated switching for maximum density and energy efficiency.
+- [Supermicro All-Flash NVMe Storage](https://planman.ae/products/smc-petascale.html): Petascale all-flash NVMe servers built to feed GPU clusters and AI data pipelines.
+- [Supermicro Top-Loading Storage & JBOD](https://planman.ae/products/smc-top-loading.html): High-capacity top-loading storage servers and JBOD enclosures for object storage and backup.
+- [Supermicro Edge AI Systems](https://planman.ae/products/smc-edge.html): Short-depth rackmount and compact edge servers with GPU options for retail, telco and industry.
+- [Supermicro Switches & Adapters](https://planman.ae/products/smc-networking.html): Ethernet switches and 10G–400G adapters, cables and transceivers validated with Supermicro systems.
+- [Supermicro Data Center Building Block Solutions (DCBBS)](https://planman.ae/products/smc-dcbbs.html): Complete data center building blocks: compute, storage, networking, liquid cooling, power and management software.
+- [ASUS AI POD (NVIDIA GB300 NVL72)](https://planman.ae/products/asus-ai-pod.html): ASUS rack-scale AI infrastructure built on NVIDIA Grace Blackwell Ultra, with liquid cooling and deployment services.
+- [ASUS XA NB3I-E12](https://planman.ae/products/asus-xa-nb3i-e12.html): 9U NVIDIA HGX B300 8-GPU server with dual Intel Xeon 6 for heavy AI training and inference.
+- [ASUS ESC8000A-E13X](https://planman.ae/products/asus-esc8000a-e13x.html): 4U NVIDIA RTX PRO Server with ConnectX-8 SuperNICs and eight RTX PRO 6000 Blackwell GPUs.
+- [ASUS ESC8000-E12P](https://planman.ae/products/asus-esc8000-e12p.html): Intel Xeon 6 4U NVIDIA MGX server for eight dual-slot GPUs or Gaudi 3 accelerators.
+- [ASUS ESC8000A-E13](https://planman.ae/products/asus-esc8000a-e13.html): AMD EPYC 4U server supporting eight dual-slot NVIDIA H200 or RTX PRO 6000 Blackwell GPUs.
+- [ASUS ESC A8A-E12U](https://planman.ae/products/asus-esc-a8a-e12u.html): 7U eight-GPU AMD Instinct MI325X server for large AI models and HPC.
+- [ASUS ESC4000A-E12](https://planman.ae/products/asus-esc4000a-e12.html): Single-socket 2U GPU server for four dual-slot GPUs — ideal for inference and VDI.
+- [ASUS ESC4000-E11](https://planman.ae/products/asus-esc4000-e11.html): 2U dual-socket GPU server with 5th Gen Intel Xeon Scalable and four dual-slot GPUs.
+- [ASUS RS Series Rack Servers](https://planman.ae/products/asus-rs-series.html): 1U and 2U rack servers with Intel Xeon 6 and AMD EPYC 9005 for virtualization and enterprise workloads.
+- [ASUS High-Density Multi-Node Servers](https://planman.ae/products/asus-high-density.html): Multi-node 2U systems that maximise compute per rack unit for HPC and cloud.
+- [ASUS Storage Solutions](https://planman.ae/products/asus-storage.html): AI/HPC, block, unified and object storage plus JBOD expansion from the ASUS Infrastructure Solution Group.
+- [ASUS Edge & Tower Servers](https://planman.ae/products/asus-edge.html): Edge servers and tower servers for branch offices, retail and on-site AI inference.
+- [ASUS Ascent GX10](https://planman.ae/products/asus-ascent-gx10.html): Compact personal AI supercomputer built on the NVIDIA GB10 Grace Blackwell Superchip.
+- [ASUS Control Center Data Center Edition](https://planman.ae/products/asus-acc.html): Centralised IT management for ASUS servers — monitoring, firmware updates and remote control at scale.
+
 ## Frequently asked questions
 
 - **What does Plan Man do?** Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We handle IT projects end to end: requirement analysis, solution design, hardware supply, deployment and after-sales support, for hospitality groups, universities, manufacturers and enterprises across the UAE.

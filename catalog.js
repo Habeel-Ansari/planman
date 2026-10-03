@@ -11,6 +11,7 @@
     const cats = window.CATEGORIES;
     const catArt = window.CATEGORY_ART || {};
     const art = (p) => `assets/illustrations/${p.art || catArt[p.cat] || 'servers'}.svg`;
+    const page = (p) => `products/${p.id}.html`;
 
     const params = new URLSearchParams(location.search);
     const state = {
@@ -60,11 +61,11 @@
             </div>
             <div class="product-body">
                 <div class="product-cat">${esc(cats[p.cat])}</div>
-                <h3>${esc(p.name)}</h3>
+                <h3><a href="${page(p)}">${esc(p.name)}</a></h3>
                 <p>${esc(p.summary)}</p>
                 <ul class="spec-list">${top}</ul>
                 <div class="product-actions">
-                    <button class="btn btn-ghost btn-sm" data-details="${p.id}">Specs</button>
+                    <a class="btn btn-ghost btn-sm" href="${page(p)}">Details</a>
                     <a class="btn btn-primary btn-sm" href="contact.html?product=${encodeURIComponent(p.name)}">Request Quote</a>
                 </div>
             </div>
@@ -103,56 +104,6 @@
     search.addEventListener('input', () => {
         clearTimeout(t);
         t = setTimeout(() => { state.q = search.value.trim(); render(); }, 150);
-    });
-
-    // Detail modal
-    const modal = document.getElementById('product-modal');
-    const modalContent = document.getElementById('modal-content');
-    let lastFocus;
-
-    function openModal(id) {
-        const p = products.find((x) => x.id === id);
-        if (!p) return;
-        lastFocus = document.activeElement;
-        modalContent.innerHTML = `
-            <div class="product-card" data-brand="${p.brand}" style="border:0;background:none">
-                <div class="product-visual">
-                    <span class="tag tag-${p.brand}">${esc(brands[p.brand])}</span>
-                    <img src="${art(p)}" alt="">
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="product-cat">${esc(cats[p.cat])}</div>
-                <h3 id="modal-title">${esc(p.name)}</h3>
-                <p>${esc(p.summary)}</p>
-                <table class="spec-table"><tbody>
-                    ${p.specs.map(([k, v]) => `<tr><th scope="row">${esc(k)}</th><td>${esc(v)}</td></tr>`).join('')}
-                </tbody></table>
-                <div class="modal-actions">
-                    <a class="btn btn-primary" href="contact.html?product=${encodeURIComponent(p.name)}">Request a Quote <i class="ph ph-arrow-right"></i></a>
-                    <a class="btn btn-ghost" href="contact.html?product=${encodeURIComponent(p.name)}&type=design">Talk to a Solutions Architect</a>
-                </div>
-                <p class="form-note">Configurations vary by region and availability. Plan Man will confirm the final bill of materials, lead time and pricing with you.</p>
-            </div>`;
-        modal.classList.add('open');
-        document.body.style.overflow = 'hidden';
-        modal.querySelector('.modal-close').focus();
-    }
-    function closeModal() {
-        modal.classList.remove('open');
-        document.body.style.overflow = '';
-        if (lastFocus) lastFocus.focus();
-    }
-
-    grid.addEventListener('click', (e) => {
-        const b = e.target.closest('[data-details]');
-        if (b) openModal(b.dataset.details);
-    });
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal || e.target.closest('.modal-close')) closeModal();
-    });
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
     });
 
     render();
