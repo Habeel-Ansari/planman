@@ -89,7 +89,7 @@
         if (state.brand !== 'all') qs.set('brand', state.brand);
         if (state.cat !== 'all') qs.set('cat', state.cat);
         if (state.q) qs.set('q', state.q);
-        history.replaceState(null, '', location.pathname + (qs.toString() ? '?' + qs : ''));
+        history.replaceState(null, '', location.pathname + (qs.toString() ? '?' + qs : '') + location.hash);
     }
 
     brandWrap.addEventListener('click', (e) => {

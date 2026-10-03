@@ -164,6 +164,15 @@ topBtn.setAttribute('aria-label', 'Back to top');
 topBtn.innerHTML = '<i class="ph-bold ph-caret-up"></i>';
 topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' }));
 
+// ---------- Links to a section on another page (e.g. products.html?cat=servers#catalog) ----------
+// The browser's own jump is lost to smooth scrolling and late layout, so repeat it once the page has loaded.
+if (location.hash.length > 1) {
+    window.addEventListener('load', () => {
+        const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+        if (target) target.scrollIntoView({ behavior: 'instant', block: 'start' });
+    });
+}
+
 // Floating actions (bottom-right): back-to-top above, WhatsApp in the corner
 const WHATSAPP_NUMBER = '971585225166';
 const WHATSAPP_TEXT = "Hi Plan Man, I'd like to discuss a project.";

@@ -194,6 +194,7 @@ h1, h2, h3, h4, h5 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.0
 .card:hover .card-icon { background: transparent; }
 .industry-card img, .hw-card img { width: calc(100% + 72px); margin: -36px -36px 24px; border-bottom: 0; }
 .hw-card img { height: 190px; }
+a.card:hover .link-arrow i { transform: translateX(4px); }
 .brand-list span { border: 0; background: var(--bg); color: var(--text-2); font-weight: 500; }
 .section-alt .brand-list span { background: var(--bg-elev); }
 

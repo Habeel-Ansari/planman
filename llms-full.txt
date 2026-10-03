@@ -93,11 +93,15 @@ Complete rack, tower, blade and multi-node servers, configured to order.
 
 Dell PowerEdge HPE ProLiant Lenovo ThinkSystem Supermicro ASUS Cisco UCS
 
+Browse servers
+
 #### Storage & Drives
 
 SAN, NAS, all-flash arrays, backup targets and enterprise HDD/SSD.
 
 Dell HPE NetApp Pure Storage Synology QNAP Seagate Western Digital
+
+Browse storage
 
 #### GPUs & Accelerators
 
@@ -105,11 +109,15 @@ Data center GPUs, AI servers and professional graphics for any workload.
 
 NVIDIA AMD Instinct Intel Gaudi
 
+Browse GPUs
+
 #### Networking & Security
 
 Core, access and data center switching, wireless, firewalls and optics.
 
 Cisco HPE Aruba Juniper Fortinet NVIDIA Networking
+
+Browse networking
 
 #### Workstations & PCs
 
@@ -117,11 +125,15 @@ Engineering workstations, business laptops and desktops at scale.
 
 Dell Precision HP Z Lenovo ThinkStation ASUS
 
+Request a quote
+
 #### Power, Racks & Cooling
 
 UPS, PDUs, racks and cooling for server rooms and data centers.
 
 APC Eaton Vertiv
+
+Request a quote
 
 Need something not listed? We source across the market. Send us your part numbers .
 
@@ -460,11 +472,15 @@ Complete rack, tower, blade and multi-node servers, configured to order.
 
 Dell PowerEdge HPE ProLiant Lenovo ThinkSystem Supermicro ASUS Cisco UCS
 
+Browse servers
+
 #### Storage & Drives
 
 SAN, NAS, all-flash arrays, backup targets and enterprise HDD/SSD.
 
 Dell HPE NetApp Pure Storage Synology QNAP Seagate Western Digital
+
+Browse storage
 
 #### GPUs & Accelerators
 
@@ -472,11 +488,15 @@ Data center GPUs, AI servers and professional graphics for any workload.
 
 NVIDIA AMD Instinct Intel Gaudi
 
+Browse GPUs
+
 #### Networking & Security
 
 Core, access and data center switching, wireless, firewalls and optics.
 
 Cisco HPE Aruba Juniper Fortinet NVIDIA Networking
+
+Browse networking
 
 #### Workstations & PCs
 
@@ -484,11 +504,15 @@ Engineering workstations, business laptops and desktops at scale.
 
 Dell Precision HP Z Lenovo ThinkStation ASUS
 
+Request a quote
+
 #### Power, Racks & Cooling
 
 UPS, PDUs, racks and cooling for server rooms and data centers.
 
 APC Eaton Vertiv
+
+Request a quote
 
 Featured Catalog
 
