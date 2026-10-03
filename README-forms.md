@@ -14,7 +14,7 @@ Gmail account, about **1,500/day** on Google Workspace. Enquiries are always sav
 if the daily email quota runs out.
 
 Until the two values in `contact.js` are filled in, the form falls back to opening the visitor's
-email app (addressed to sales@planman.ae), so the website keeps working in the meantime.
+email app (addressed to sales@planmanme.com), so the website keeps working in the meantime.
 
 ---
 
@@ -41,7 +41,7 @@ In Apps Script → **Project Settings** (gear icon) → **Script properties** �
 | Property | Value |
 |---|---|
 | `RECAPTCHA_SECRET` | the reCAPTCHA **Secret key** |
-| `NOTIFY_EMAIL` | who gets enquiries, e.g. `sales@planman.ae` (comma-separate several). `setup` pre-fills your own address. |
+| `NOTIFY_EMAIL` | who gets enquiries, e.g. `sales@planmanme.com` (comma-separate several). `setup` pre-fills your own address. |
 | `ALLOWED_HOSTNAMES` | *(recommended)* `planman.ae,www.planman.ae,localhost` |
 | `AUTO_REPLY` | `true` to send customers a confirmation email, otherwise `false` |
 

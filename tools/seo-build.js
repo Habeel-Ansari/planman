@@ -31,8 +31,8 @@ const BUSINESS = {
   description: 'Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We take projects from requirements and design through hardware supply, deployment and after-sales support for hospitality groups, universities, manufacturers and enterprises across the UAE, supplying servers, storage, GPUs and networking from all premium brands.',
   phone: '+971585225166',
   phoneDisplay: '+971 58 522 5166',
-  email: 'sales@planman.ae',
-  supportEmail: 'info@planman.ae',
+  email: 'sales@planmanme.com',
+  supportEmail: 'info@planmanme.com',
   street: 'IFZA Properties, Dubai Silicon Oasis (DSO)',
   city: 'Dubai',
   country: 'AE',
@@ -61,7 +61,7 @@ const PAGES = [
     description: 'Plan Man is a Dubai-based solution provider and enterprise hardware supplier for hospitality, education, manufacturing and corporate enterprise across the UAE.' },
   { file: 'contact.html', url: '/contact.html', name: 'Contact', type: 'ContactPage', priority: '0.8',
     title: 'Contact Plan Man | IT Hardware Quotes in Dubai, UAE',
-    description: 'Request a quote or discuss your IT project. Call or WhatsApp +971 58 522 5166, email sales@planman.ae or use our form. We reply within one business day.' }
+    description: 'Request a quote or discuss your IT project. Call or WhatsApp +971 58 522 5166, email sales@planmanme.com or use our form. We reply within one business day.' }
 ];
 
 const FAQ = [
