@@ -254,8 +254,16 @@ html[data-theme="light"] .section-alt .tab-list { background: #e8e8ed; }
 .cat-nav button[aria-pressed="true"] { background: var(--surface); }
 .product-visual { border-bottom: 0; margin: 8px 8px 0; border-radius: 18px; }
 .product-body h3 { font-size: 21px; }
+/* Whole card opens the product page: the title link is stretched over the card,
+   and the Request Quote button sits above it so it stays separately clickable */
+.product-card { position: relative; }
+.product-body h3 { transition: color .2s ease; }
 .product-body h3 a { color: inherit; }
-.product-body h3 a:hover { color: var(--accent-text); }
+.product-body h3 a::after { content: ''; position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
+.product-body h3 a:focus-visible { outline: none; }
+.product-body h3 a:focus-visible::after { outline: 2px solid var(--accent); outline-offset: -2px; border-radius: var(--radius-card); }
+.product-card:hover .product-body h3, .product-card:focus-within .product-body h3 { color: var(--accent-text); }
+.product-actions .btn { position: relative; z-index: 2; }
 .modal-dialog { border: 0; border-radius: 28px; }
 .modal .product-visual { margin: 0; border-radius: 0; }
 

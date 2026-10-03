@@ -242,7 +242,7 @@ function catalogHtml() {
   return PRODUCTS.map((p) => {
     const top = p.specs.slice(0, 3).map(([k, v]) => `<li><strong>${e(k)}:</strong> ${e(v)}</li>`).join('');
     const art = p.art || CATEGORY_ART[p.cat] || 'servers';
-    return `<article class="product-card" data-brand="${p.brand}"><div class="product-visual"><span class="tag tag-${p.brand}">${e(BRANDS[p.brand])}</span>${p.isNew ? '<span class="badge-new">New</span>' : ''}<img src="assets/illustrations/${art}.svg" alt="" width="400" height="300" loading="lazy"></div><div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="products/${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-ghost btn-sm" href="products/${p.id}.html">Details</a><a class="btn btn-primary btn-sm" href="contact.html?product=${encodeURIComponent(p.name)}">Request Quote</a></div></div></article>`;
+    return `<article class="product-card" data-brand="${p.brand}"><div class="product-visual"><span class="tag tag-${p.brand}">${e(BRANDS[p.brand])}</span>${p.isNew ? '<span class="badge-new">New</span>' : ''}<img src="assets/illustrations/${art}.svg" alt="" width="400" height="300" loading="lazy"></div><div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="products/${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="contact.html?product=${encodeURIComponent(p.name)}">Request Quote</a></div></div></article>`;
   }).join('\n');
 }
 
@@ -330,7 +330,7 @@ for (const page of PAGES) {
 
   const relatedCard = (p) => {
     const top = p.specs.slice(0, 3).map(([k, v]) => `<li><strong>${e(k)}:</strong> ${e(v)}</li>`).join('');
-    return `<article class="product-card" data-brand="${p.brand}"><div class="product-visual"><span class="tag tag-${p.brand}">${e(BRANDS[p.brand])}</span>${p.isNew ? '<span class="badge-new">New</span>' : ''}<img src="../assets/illustrations/${artOf(p)}.svg" alt="" width="400" height="300" loading="lazy"></div><div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-ghost btn-sm" href="${p.id}.html">Details</a><a class="btn btn-primary btn-sm" href="${quote(p)}">Request Quote</a></div></div></article>`;
+    return `<article class="product-card" data-brand="${p.brand}"><div class="product-visual"><span class="tag tag-${p.brand}">${e(BRANDS[p.brand])}</span>${p.isNew ? '<span class="badge-new">New</span>' : ''}<img src="../assets/illustrations/${artOf(p)}.svg" alt="" width="400" height="300" loading="lazy"></div><div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="${quote(p)}">Request Quote</a></div></div></article>`;
   };
 
   fs.mkdirSync(path.join(ROOT, 'products'), { recursive: true });

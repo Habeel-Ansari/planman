@@ -64,8 +64,7 @@
                 <h3><a href="${page(p)}">${esc(p.name)}</a></h3>
                 <p>${esc(p.summary)}</p>
                 <ul class="spec-list">${top}</ul>
-                <div class="product-actions">
-                    <a class="btn btn-ghost btn-sm" href="${page(p)}">Details</a>
+                <div class="product-actions">
                     <a class="btn btn-primary btn-sm" href="contact.html?product=${encodeURIComponent(p.name)}">Request Quote</a>
                 </div>
             </div>
