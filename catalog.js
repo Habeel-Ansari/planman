@@ -26,6 +26,21 @@
     const meta = document.getElementById('results-meta');
     search.value = state.q;
 
+    // Page header follows the active filter, so a menu link to a category or brand visibly changes the page
+    const heroTitle = document.getElementById('catalog-title');
+    const heroLead = document.getElementById('catalog-lead');
+    const hero = heroTitle && { title: heroTitle.textContent, lead: heroLead.textContent, doc: document.title };
+    function renderHero() {
+        if (!hero) return;
+        const b = state.brand !== 'all' ? brands[state.brand] : '';
+        const c = state.cat !== 'all' ? cats[state.cat] : '';
+        const filtered = b || c;
+        heroTitle.textContent = !filtered ? hero.title : b && c ? `${b} ${c}` : c || `${b} Products`;
+        heroLead.textContent = !filtered ? hero.lead
+            : (c && (window.CATEGORY_LEADS || {})[state.cat]) || (window.BRAND_LEADS || {})[state.brand] || hero.lead;
+        document.title = filtered ? `${heroTitle.textContent} | Plan Man` : hero.doc;
+    }
+
     const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
     function matches(p, ignore) {
@@ -64,7 +79,7 @@
                 <h3><a href="${page(p)}">${esc(p.name)}</a></h3>
                 <p>${esc(p.summary)}</p>
                 <ul class="spec-list">${top}</ul>
-                <div class="product-actions">
+                <div class="product-actions">
                     <a class="btn btn-primary btn-sm" href="contact.html?product=${encodeURIComponent(p.name)}">Request Quote</a>
                 </div>
             </div>
@@ -83,6 +98,7 @@
         meta.textContent = `${list.length} product${list.length === 1 ? '' : 's'}${parts.length ? ' · ' + parts.join(' · ') : ''}${state.q ? ` · “${state.q}”` : ''}`;
 
         renderFilters();
+        renderHero();
 
         const qs = new URLSearchParams();
         if (state.brand !== 'all') qs.set('brand', state.brand);

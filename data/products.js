@@ -33,6 +33,24 @@ window.CATEGORIES = {
     'software': 'Software & Management'
 };
 
+// Intro line shown in the products page header when a category or brand is selected
+window.CATEGORY_LEADS = {
+    'rack-scale': 'Liquid-cooled NVL72 racks with 72 GPUs in one NVLink domain, built for training and AI reasoning at scale.',
+    'gpu-servers': 'Eight-GPU HGX servers and PCIe GPU servers for AI training, inference and HPC, air- or liquid-cooled.',
+    'accelerators': 'Data center GPUs for AI inference, training, rendering and virtual workstations.',
+    'networking': 'InfiniBand and Ethernet fabrics, SuperNICs and DPUs that connect GPU clusters at up to 800 Gb/s.',
+    'servers': 'Rackmount, multi-node and blade servers for virtualization, databases, cloud and HPC.',
+    'storage': 'All-flash NVMe, high-capacity and object storage to feed GPU clusters and protect enterprise data.',
+    'desktop-ai': 'Desktop and deskside AI supercomputers for building, fine-tuning and running models locally.',
+    'edge': 'Short-depth and compact servers for AI and computing at branch, retail, telco and factory sites.',
+    'software': 'AI software, GPU virtualization and infrastructure management to run your platform.'
+};
+window.BRAND_LEADS = {
+    nvidia: 'NVIDIA rack-scale systems, HGX platforms, data center GPUs, networking, DGX systems and AI software.',
+    supermicro: 'Supermicro GPU servers, NVL72 SuperClusters, enterprise servers, storage and data center building blocks.',
+    asus: 'ASUS AI PODs, GPU servers, rack and multi-node servers, storage and management software.'
+};
+
 // Illustration shown for each category (files in assets/illustrations/)
 window.CATEGORY_ART = {
     'rack-scale': 'rack',

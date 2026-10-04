@@ -164,6 +164,9 @@ h1, h2, h3, h4, h5 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.0
 .page-hero h1 { margin-left: auto; margin-right: auto; }
 .page-hero .lead { margin: 0 auto; }
 .breadcrumb { display: none; }
+/* Products page: short header so the catalog starts near the top */
+.catalog-hero { padding: calc(var(--nav-h) + 56px) 0 40px; }
+.catalog-hero .lead { max-width: 760px; font-size: clamp(17px, 1.4vw, 20px); }
 
 /* ---------- Sections ---------- */
 .section { padding: 128px 0; }

@@ -25,6 +25,7 @@ ErrorDocument 404 /404.html
     AddType image/svg+xml .svg
     AddType application/manifest+json .webmanifest
     AddType text/plain .txt
+    AddType image/x-icon .ico
     AddCharset utf-8 .html .css .js .txt .xml .svg .webmanifest
 </IfModule>
 
@@ -46,6 +47,7 @@ ErrorDocument 404 /404.html
     ExpiresByType image/svg+xml "access plus 1 month"
     ExpiresByType image/png "access plus 1 month"
     ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 month"
 </IfModule>
 
 <IfModule mod_headers.c>

@@ -27,6 +27,7 @@ const OG_IMAGE = `${SITE}/assets/og/planman-og.png`;
 const BUSINESS = {
   name: 'Plan Man',
   legalHint: 'Plan Man',
+  alternateNames: ['Planman', 'PlanMan', 'Plan Man UAE', 'Planman UAE'],
   tagline: 'The Engine For Your Digital Success',
   description: 'Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We take projects from requirements and design through hardware supply, deployment and after-sales support for hospitality groups, universities, manufacturers and enterprises across the UAE, supplying servers, storage, GPUs and networking from all premium brands.',
   phone: '+971585225166',
@@ -150,6 +151,7 @@ function jsonLd(page) {
     '@type': 'LocalBusiness',
     '@id': `${SITE}/#organization`,
     name: BUSINESS.name,
+    alternateName: BUSINESS.alternateNames,
     url: `${SITE}/`,
     logo: { '@type': 'ImageObject', url: `${SITE}/assets/logo/planman-logo.png`, width: 1423, height: 243 },
     image: OG_IMAGE,
@@ -167,7 +169,7 @@ function jsonLd(page) {
     knowsAbout: ['Enterprise servers', 'Data storage', 'NVIDIA GPU servers', 'AI infrastructure', 'High-performance computing', 'Server clustering', 'Virtualization', 'Networking', 'Liquid cooling', 'IT infrastructure for hospitality', 'IT infrastructure for education', 'IT infrastructure for manufacturing'],
     priceRange: 'Quote on request'
   };
-  const website = { '@type': 'WebSite', '@id': `${SITE}/#website`, url: `${SITE}/`, name: BUSINESS.name, description: BUSINESS.description, publisher: { '@id': `${SITE}/#organization` }, inLanguage: 'en' };
+  const website = { '@type': 'WebSite', '@id': `${SITE}/#website`, url: `${SITE}/`, name: BUSINESS.name, alternateName: BUSINESS.alternateNames, description: BUSINESS.description, publisher: { '@id': `${SITE}/#organization` }, inLanguage: 'en' };
   const webpage = {
     '@type': page.type, '@id': `${url}#webpage`, url, name: page.title, description: page.description,
     isPartOf: { '@id': `${SITE}/#website` }, about: { '@id': `${SITE}/#organization` }, inLanguage: 'en',
@@ -224,10 +226,11 @@ function headBlock(page) {
     `<meta name="twitter:title" content="${esc(page.title)}">`,
     `<meta name="twitter:description" content="${esc(page.description)}">`,
     `<meta name="twitter:image" content="${page.ogImage || OG_IMAGE}">`,
-    `<link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">`,
-    `<link rel="icon" type="image/png" sizes="256x256" href="assets/logo/favicon.png">`,
-    `<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">`,
-    `<link rel="manifest" href="site.webmanifest">`,
+    `<link rel="icon" href="/favicon.ico" sizes="any">`,
+    `<link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg">`,
+    `<link rel="icon" type="image/png" sizes="256x256" href="/assets/logo/favicon.png">`,
+    `<link rel="apple-touch-icon" href="/assets/logo/apple-touch-icon.png">`,
+    `<link rel="manifest" href="/site.webmanifest">`,
     `<link rel="preconnect" href="https://fonts.googleapis.com">`,
     `<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>`,
     `<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>`,
