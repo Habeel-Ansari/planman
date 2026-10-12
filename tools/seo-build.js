@@ -138,6 +138,9 @@ vm.createContext(sandbox);
 vm.runInContext(read('data/products.js'), sandbox);
 vm.runInContext(read('data/product-details.js'), sandbox);
 const { PRODUCTS, BRANDS, CATEGORIES, CATEGORY_ART, PRODUCT_DETAILS } = sandbox.window;
+const COLLECTIONS = sandbox.window.COLLECTIONS || {};
+const badgeHtml = (p, esc) => p.isNew ? '<span class="badge-new">New</span>'
+  : COLLECTIONS[p.series] ? `<span class="badge-new badge-series">${esc(COLLECTIONS[p.series].badge)}</span>` : '';
 const productUrl = (p) => `/products/${p.id}.html`;
 const missingImages = PRODUCTS.filter((p) => !fs.existsSync(path.join(ROOT, 'assets/og/products', p.id + '.jpg'))).map((p) => p.id);
 if (missingImages.length) throw new Error(`Missing share images (run python tools/make-product-og.py): ${missingImages.join(', ')}`);
@@ -247,7 +250,7 @@ function catalogHtml() {
   return PRODUCTS.map((p) => {
     const top = p.specs.slice(0, 3).map(([k, v]) => `<li><strong>${e(k)}:</strong> ${e(v)}</li>`).join('');
     const art = p.art || CATEGORY_ART[p.cat] || 'servers';
-    return `<article class="product-card" data-brand="${p.brand}"><div class="product-visual"><span class="tag tag-${p.brand}">${e(BRANDS[p.brand])}</span>${p.isNew ? '<span class="badge-new">New</span>' : ''}<img src="assets/illustrations/${art}.svg" alt="" width="400" height="300" loading="lazy"></div><div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="products/${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="contact.html?product=${encodeURIComponent(p.name)}">Request Quote</a></div></div></article>`;
+    return `<article class="product-card" data-brand="${p.brand}"><div class="product-visual"><span class="tag tag-${p.brand}">${e(BRANDS[p.brand])}</span>${badgeHtml(p, e)}<img src="assets/illustrations/${art}.svg" alt="" width="400" height="300" loading="lazy"></div><div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="products/${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="contact.html?product=${encodeURIComponent(p.name)}">Request Quote</a></div></div></article>`;
   }).join('\n');
 }
 
@@ -335,7 +338,7 @@ for (const page of PAGES) {
 
   const relatedCard = (p) => {
     const top = p.specs.slice(0, 3).map(([k, v]) => `<li><strong>${e(k)}:</strong> ${e(v)}</li>`).join('');
-    return `<article class="product-card" data-brand="${p.brand}"><div class="product-visual"><span class="tag tag-${p.brand}">${e(BRANDS[p.brand])}</span>${p.isNew ? '<span class="badge-new">New</span>' : ''}<img src="../assets/illustrations/${artOf(p)}.svg" alt="" width="400" height="300" loading="lazy"></div><div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="${quote(p)}">Request Quote</a></div></div></article>`;
+    return `<article class="product-card" data-brand="${p.brand}"><div class="product-visual"><span class="tag tag-${p.brand}">${e(BRANDS[p.brand])}</span>${badgeHtml(p, e)}<img src="../assets/illustrations/${artOf(p)}.svg" alt="" width="400" height="300" loading="lazy"></div><div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="${quote(p)}">Request Quote</a></div></div></article>`;
   };
 
   fs.mkdirSync(path.join(ROOT, 'products'), { recursive: true });
@@ -430,7 +433,7 @@ ${head}
                     <a href="../products.html">Products</a><i class="ph ph-caret-right" aria-hidden="true"></i>
                     <a href="../products.html?cat=${p.cat}">${e(cat)}</a>
                 </nav>
-                <div class="pd-meta"><span class="tag tag-${p.brand}">${e(brand)}</span>${p.isNew ? '<span class="badge-new">New</span>' : ''}<span class="pd-cat">${e(cat)}</span></div>
+                <div class="pd-meta"><span class="tag tag-${p.brand}">${e(brand)}</span>${badgeHtml(p, e)}<span class="pd-cat">${e(cat)}</span>${COLLECTIONS[p.series] ? `<a class="pd-series" href="../products.html?cat=${p.series}">${e(COLLECTIONS[p.series].name)}</a>` : ''}</div>
                 <h1 class="h1">${e(p.name)}</h1>
 ${d.model ? `                <p class="pd-model">Model <strong>${e(d.model)}</strong></p>\n` : ''}                <p class="lead">${e(p.summary)}</p>
                 <ul class="pd-keyspecs" aria-label="Key specifications">${keySpecs}</ul>

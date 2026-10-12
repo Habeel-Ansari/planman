@@ -1,6 +1,7 @@
 // ===== Product catalog (products.html) =====
-// Reads window.PRODUCTS / BRANDS / CATEGORIES from data/products.js.
+// Reads window.PRODUCTS / BRANDS / CATEGORIES / COLLECTIONS from data/products.js.
 // Supports deep links: products.html?brand=nvidia&cat=gpu-servers&q=b300
+// A collection key (e.g. cat=gold) works like a category but matches products by their `series`.
 
 (function () {
     const grid = document.getElementById('product-grid');
@@ -9,6 +10,9 @@
     const products = window.PRODUCTS;
     const brands = window.BRANDS;
     const cats = window.CATEGORIES;
+    const cols = window.COLLECTIONS || {};
+    const label = (c) => cats[c] || (cols[c] && cols[c].name);
+    const inCat = (p, c) => c === 'all' || p.cat === c || (!!cols[c] && p.series === c);
     const catArt = window.CATEGORY_ART || {};
     const art = (p) => `assets/illustrations/${p.art || catArt[p.cat] || 'servers'}.svg`;
     const page = (p) => `products/${p.id}.html`;
@@ -16,7 +20,7 @@
     const params = new URLSearchParams(location.search);
     const state = {
         brand: brands[params.get('brand')] ? params.get('brand') : 'all',
-        cat: cats[params.get('cat')] ? params.get('cat') : 'all',
+        cat: label(params.get('cat')) ? params.get('cat') : 'all',
         q: params.get('q') || ''
     };
 
@@ -33,11 +37,11 @@
     function renderHero() {
         if (!hero) return;
         const b = state.brand !== 'all' ? brands[state.brand] : '';
-        const c = state.cat !== 'all' ? cats[state.cat] : '';
+        const c = state.cat !== 'all' ? label(state.cat) : '';
         const filtered = b || c;
         heroTitle.textContent = !filtered ? hero.title : b && c ? `${b} ${c}` : c || `${b} Products`;
         heroLead.textContent = !filtered ? hero.lead
-            : (c && (window.CATEGORY_LEADS || {})[state.cat]) || (window.BRAND_LEADS || {})[state.brand] || hero.lead;
+            : (c && ((window.CATEGORY_LEADS || {})[state.cat] || (cols[state.cat] || {}).lead)) || (window.BRAND_LEADS || {})[state.brand] || hero.lead;
         document.title = filtered ? `${heroTitle.textContent} | Plan Man` : hero.doc;
     }
 
@@ -45,9 +49,9 @@
 
     function matches(p, ignore) {
         if (ignore !== 'brand' && state.brand !== 'all' && p.brand !== state.brand) return false;
-        if (ignore !== 'cat' && state.cat !== 'all' && p.cat !== state.cat) return false;
+        if (ignore !== 'cat' && !inCat(p, state.cat)) return false;
         if (state.q) {
-            const hay = (p.name + ' ' + p.summary + ' ' + p.specs.map((s) => s.join(' ')).join(' ') + ' ' + brands[p.brand] + ' ' + cats[p.cat]).toLowerCase();
+            const hay = (p.name + ' ' + p.summary + ' ' + p.specs.map((s) => s.join(' ')).join(' ') + ' ' + brands[p.brand] + ' ' + cats[p.cat] + (cols[p.series] ? ' ' + cols[p.series].name + ' ' + cols[p.series].badge : '')).toLowerCase();
             if (!state.q.toLowerCase().split(/\s+/).every((w) => hay.includes(w))) return false;
         }
         return true;
@@ -59,10 +63,11 @@
             `<button class="chip" data-brand="${b}" aria-pressed="${state.brand === b}">${b === 'all' ? 'All brands' : esc(brands[b])} <span class="count">${brandCount(b)}</span></button>`
         ).join('');
 
-        const catCount = (c) => products.filter((p) => (c === 'all' || p.cat === c) && matches(p, 'cat')).length;
-        catWrap.innerHTML = ['all', ...Object.keys(cats)].map((c) =>
-            `<li><button data-cat="${c}" aria-pressed="${state.cat === c}"><span>${c === 'all' ? 'All products' : esc(cats[c])}</span><span class="count">${catCount(c)}</span></button></li>`
-        ).join('');
+        const catCount = (c) => products.filter((p) => inCat(p, c) && matches(p, 'cat')).length;
+        const item = (c, text, cls = '') =>
+            `<li${cls ? ` class="${cls}"` : ''}><button data-cat="${c}" aria-pressed="${state.cat === c}"><span>${esc(text)}</span><span class="count">${catCount(c)}</span></button></li>`;
+        catWrap.innerHTML = item('all', 'All products') + Object.keys(cats).map((c) => item(c, cats[c])).join('')
+            + Object.keys(cols).map((c) => item(c, cols[c].nav || cols[c].name, 'cat-collection')).join('');
     }
 
     function card(p, i) {
@@ -71,7 +76,7 @@
         <article class="product-card" data-brand="${p.brand}" style="--i:${Math.min(i, 12)}">
             <div class="product-visual">
                 <span class="tag tag-${p.brand}">${esc(brands[p.brand])}</span>
-                ${p.isNew ? '<span class="badge-new">New</span>' : ''}
+                ${p.isNew ? '<span class="badge-new">New</span>' : cols[p.series] ? `<span class="badge-new badge-series">${esc(cols[p.series].badge)}</span>` : ''}
                 <img src="${art(p)}" alt="" loading="lazy">
             </div>
             <div class="product-body">
@@ -94,7 +99,7 @@
 
         const parts = [];
         if (state.brand !== 'all') parts.push(brands[state.brand]);
-        if (state.cat !== 'all') parts.push(cats[state.cat]);
+        if (state.cat !== 'all') parts.push(label(state.cat));
         meta.textContent = `${list.length} product${list.length === 1 ? '' : 's'}${parts.length ? ' · ' + parts.join(' · ') : ''}${state.q ? ` · “${state.q}”` : ''}`;
 
         renderFilters();

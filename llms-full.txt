@@ -2,7 +2,7 @@
 
 > Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We take projects from requirements and design through hardware supply, deployment and after-sales support for hospitality groups, universities, manufacturers and enterprises across the UAE, supplying servers, storage, GPUs and networking from all premium brands.
 
-Source: https://planman.ae/ · Generated 2026-10-04 · Contact: +971 58 522 5166 · sales@planmanme.com
+Source: https://planman.ae/ · Generated 2026-10-12 · Contact: +971 58 522 5166 · sales@planmanme.com
 
 ---
 
@@ -461,6 +461,8 @@ Products
 Browse NVIDIA, Supermicro and ASUS platforms with full specifications and request a quote for any product. We also supply servers, storage and networking from every premium brand.
 
 Categories
+
+### Product Catalog
 
 Enterprise Hardware Sales
 
@@ -1604,6 +1606,387 @@ Use cases: AI inference and fine-tuning, Agentic AI, Rendering and 3D, Digital t
 
 Source: Supermicro RTX PRO Blackwell Server Edition solutions (https://www.supermicro.com/en/accelerators/nvidia/supermicro-rtx-pro-bse); Supermicro PCIe GPU systems (https://www.supermicro.com/en/accelerators/nvidia/pcie-gpu)
 
+#### Supermicro 8U 8-GPU System SYS-822GS-NB3RT-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-sys-822gs-nb3rt-01-g2.html
+Model: SYS-822GS-NB3RT-01-G2
+
+Ready-to-ship Gold Series 8U 8-GPU System (Large-Scale AI Inference Serving) with 2× Intel Xeon 6768P, NVIDIA HGX B300 8-GPU, 2TB DDR5-6400 and 960GB flash storage.
+
+The Supermicro SYS-822GS-NB3RT-01-G2 is a pre-configured Gold Series GPU SuperServer, recommended by Supermicro for Large-Scale AI Inference Serving. It ships with 2× Intel Xeon 6768P (64C/2.4GHz), NVIDIA HGX B300 8-GPU, 2TB DDR5-6400 of memory and 1× 960GB M.2 NVMe SSD, with networking (8-port 800G IB or 16-port 400GbE) already installed.
+
+It is built on the GPU SuperServer platform: dual-socket Intel 8U System with NVIDIA HGX B300 8-GPU. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 2× Intel Xeon 6768P (64C/2.4GHz)
+- GPUs: NVIDIA HGX B300 8-GPU
+- Memory: 2TB DDR5-6400
+- Boot / M.2: 1× 960GB M.2 NVMe SSD
+- Networking: 8-port 800G IB or 16-port 400GbE
+- Power: Redundant 6600W Titanium Level
+
+Platform:
+- Form factor: 8U Rackmount
+- Dimensions (W × H × D): 449 x 356 x 950mm (17.6" x 13.8" x 37.4")
+- Processor support: Dual Socket E2 (LGA-4710); Intel Xeon 6700 series processors with P-cores; Up to 86C/172T; Up to 336MB Cache per CPU
+- Motherboard: Super X14DBG-LC
+- Chassis: CSE-GP807TS-R000NP
+
+GPU support:
+- Max GPU Count: 8 onboard GPUs
+- Supported GPU: NVIDIA SXM: HGX B300 8-GPU (288GB)
+- GPU-GPU Interconnect: NVIDIA NVLink with NVSwitch
+
+Memory & storage:
+- Slot Count: 32 DIMM slots
+- Max Memory (1DPC): Up to 4TB 6400MT/s ECC DDR5 RDIMM
+- Max Memory (2DPC): Up to 8TB 6000MT/s ECC DDR5 RDIMM
+- Drive bays / M.2: 2 M.2 NVMe slots (M-key; RAID support via S3808N controller)
+
+I/O, power & cooling:
+- LAN: 2 RJ45 10 GbE LAN ports (Intel X710); 8 OSFP 800 GbE LAN ports (NVIDIA ConnectX-8 SuperNIC)
+- USB: 1 USB 3.0 Type-A port (Front); 1 USB 2.0 Type-A port (Front)
+- Video: 1 VGA port; 1 mini-DP port
+- Power supplies: 6x 6600W Redundant (3 + 3) Titanium Level (96%) power supplies
+- Cooling: Up to 12 heavy duty fans with optimal fan speed control
+
+Physical & environment:
+- Net weight: 263 lbs (119 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: Large-Scale AI Inference Serving.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); SYS-822GS-NB3RT-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/sys-822gs-nb3rt-01-g2)
+
+#### Supermicro 8U 8-GPU System SYS-822GS-NB3RT-02-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-sys-822gs-nb3rt-02-g2.html
+Model: SYS-822GS-NB3RT-02-G2
+
+Ready-to-ship Gold Series 8U 8-GPU System (Large-Scale AI Inference Serving) with 2× Intel Xeon 6776P, NVIDIA HGX B300 8-GPU, 2TB DDR5-6400 and 960GB flash storage.
+
+The Supermicro SYS-822GS-NB3RT-02-G2 is a pre-configured Gold Series GPU SuperServer, recommended by Supermicro for Large-Scale AI Inference Serving. It ships with 2× Intel Xeon 6776P (64C/2.4GHz), NVIDIA HGX B300 8-GPU, 2TB DDR5-6400 of memory and 1× 960GB M.2 NVMe SSD, with networking (1× NVIDIA BlueField-3 B3220; 8-port 800G IB or 16-port 400GbE) already installed.
+
+It is built on the GPU SuperServer platform: dual-socket Intel 8U System with NVIDIA HGX B300 8-GPU. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 2× Intel Xeon 6776P (64C/2.4GHz)
+- GPUs: NVIDIA HGX B300 8-GPU
+- Memory: 2TB DDR5-6400
+- Boot / M.2: 1× 960GB M.2 NVMe SSD
+- Networking: 1× NVIDIA BlueField-3 B3220
+- Networking: 8-port 800G IB or 16-port 400GbE
+- Power: Redundant 6600W Titanium Level
+
+Platform:
+- Form factor: 8U Rackmount
+- Dimensions (W × H × D): 449 x 356 x 950mm (17.6" x 13.8" x 37.4")
+- Processor support: Dual Socket E2 (LGA-4710); Intel Xeon 6700 series processors with P-cores; Up to 86C/172T; Up to 336MB Cache per CPU
+- Motherboard: Super X14DBG-LC
+- Chassis: CSE-GP807TS-R000NP
+
+GPU support:
+- Max GPU Count: 8 onboard GPUs
+- Supported GPU: NVIDIA SXM: HGX B300 8-GPU (288GB)
+- GPU-GPU Interconnect: NVIDIA NVLink with NVSwitch
+
+Memory & storage:
+- Slot Count: 32 DIMM slots
+- Max Memory (1DPC): Up to 4TB 6400MT/s ECC DDR5 RDIMM
+- Max Memory (2DPC): Up to 8TB 6000MT/s ECC DDR5 RDIMM
+- Drive bays / M.2: 2 M.2 NVMe slots (M-key; RAID support via S3808N controller)
+
+I/O, power & cooling:
+- LAN: 2 RJ45 10 GbE LAN ports (Intel X710); 8 OSFP 800 GbE LAN ports (NVIDIA ConnectX-8 SuperNIC)
+- USB: 1 USB 3.0 Type-A port (Front); 1 USB 2.0 Type-A port (Front)
+- Video: 1 VGA port; 1 mini-DP port
+- Power supplies: 6x 6600W Redundant (3 + 3) Titanium Level (96%) power supplies
+- Cooling: Up to 12 heavy duty fans with optimal fan speed control
+
+Physical & environment:
+- Net weight: 263 lbs (119 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: Large-Scale AI Inference Serving.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); SYS-822GS-NB3RT-02-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/sys-822gs-nb3rt-02-g2)
+
+#### Supermicro 8U 8-GPU System AS -8126GS-NB3RT-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-as-8126gs-nb3rt-01-g2.html
+Model: AS -8126GS-NB3RT-01-G2
+
+Ready-to-ship Gold Series 8U 8-GPU System (Large-Scale AI Inference Serving) with 2× AMD EPYC 9575F, NVIDIA HGX B300 8-GPU, 3TB DDR5-6400 and 65.28TB flash storage.
+
+The Supermicro AS -8126GS-NB3RT-01-G2 is a pre-configured Gold Series GPU SuperServer, recommended by Supermicro for Large-Scale AI Inference Serving. It ships with 2× AMD EPYC 9575F (128C/3.3GHz), NVIDIA HGX B300 8-GPU, 3TB DDR5-6400 of memory and 8× 7.6TB E1.S NVMe SSD, 2× 1.9TB M.2 NVMe SSD, with networking (8-port 800GbE/XDR800; 2× 2-port 200GbE/NDR200) already installed.
+
+It is built on the GPU SuperServer platform: dual-socket AMD 8U GPU System with NVIDIA HGX B300 NVL8. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 2× AMD EPYC 9575F (128C/3.3GHz)
+- GPUs: NVIDIA HGX B300 8-GPU
+- Memory: 3TB DDR5-6400
+- Storage: 8× 7.6TB E1.S NVMe SSD
+- Boot / M.2: 2× 1.9TB M.2 NVMe SSD
+- Networking: 8-port 800GbE/XDR800
+- Networking: 2× 2-port 200GbE/NDR200
+- Power: Redundant 6600W Titanium Level
+
+Platform:
+- Form factor: 8U Rackmount
+- Dimensions (W × H × D): 449 x 356 x 950mm (17.6" x 13.8" x 37.4")
+- Processor support: Dual processor(s); AMD EPYC 9005 Series Processors; Up to 384C/768T
+- Motherboard: Super H14DSG-OM
+- Chassis: CSE-GP807TS-R000NP
+
+GPU support:
+- Max GPU Count: 8 onboard GPUs
+- Supported GPU: NVIDIA SXM: HGX B300 8-GPU (288GB)
+- CPU-GPU Interconnect: PCIe 5.0 x16 CPU-to-GPU Interconnect
+- GPU-GPU Interconnect: NVIDIA NVLink with NVSwitch
+
+Memory & storage:
+- Slot Count: 24 DIMM slots
+- Max Memory (1DPC): Up to 6TB 4800MT/s ECC DDR5 RDIMM
+- Max Memory (1DPC): Up to 6TB 6400MT/s ECC DDR5 RDIMM
+- Drive bays / M.2: 2 M.2 NVMe slots (M-key)
+
+I/O, power & cooling:
+- USB: 1 USB 3.0 Type-A port (Front); 1 USB 2.0 Type-A port (Front)
+- Video: 1 VGA port; 1 mini-DP port
+- Power supplies: 6x 6600W Redundant (3 + 3) Titanium Level (96%) power supplies
+- Cooling: Up to 12 heavy duty fans with optimal fan speed control
+
+Physical & environment:
+- Net weight: 263 lbs (119 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: Large-Scale AI Inference Serving.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); AS -8126GS-NB3RT-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/as%20-8126gs-nb3rt-01-g2)
+
+#### Supermicro 2U 2-GPU System SYS-212GB-FNR-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-sys-212gb-fnr-01-g2.html
+Model: SYS-212GB-FNR-01-G2
+
+Ready-to-ship Gold Series 2U 2-GPU System (SaaS - Agent Flow AI Inference) with 1× Intel Xeon 6731P, 2× NVIDIA RTX PRO 6000 Blackwell Server Edition, 512GB DDR5-6400 and 8.64TB flash storage.
+
+The Supermicro SYS-212GB-FNR-01-G2 is a pre-configured Gold Series GPU SuperServer, recommended by Supermicro for SaaS - Agent Flow AI Inference. It ships with 1× Intel Xeon 6731P (32C/2.5GHz), 2× NVIDIA RTX PRO 6000 Blackwell Server Edition, 96GB GDDR7, 512GB DDR5-6400 of memory and 2× 3.84TB E1.S SSD, 1× 960GB M.2 NVMe SSD, with networking (1× dual 10GbE RJ45) already installed.
+
+It is built on the GPU SuperServer platform: single-socket Intel 2U PCIe GPU System with up to 4 NVIDIA RTX PRO 6000 Blackwell Server Edition or NVIDIA H200. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 1× Intel Xeon 6731P (32C/2.5GHz)
+- GPUs: 2× NVIDIA RTX PRO 6000 Blackwell Server Edition, 96GB GDDR7
+- Memory: 512GB DDR5-6400
+- Storage: 2× 3.84TB E1.S SSD
+- Boot / M.2: 1× 960GB M.2 NVMe SSD
+- Networking: 1× dual 10GbE RJ45
+- Power: 2× 2700W Titanium Level
+
+Platform:
+- Form factor: 2U Rackmount
+- Dimensions (W × H × D): 438.4 x 87 x 900mm (17.3" x 3.43" x 35.43")
+- Processor support: Single Socket E2 (LGA-4710); Intel Xeon 6700/6500 series processors with P-cores; Up to 80C/160T
+- Motherboard: Super X14SBGM
+- Chassis: CSE-MG204-R000NDFP
+
+GPU support:
+- Max GPU Count: Up to 4 double-width GPUs
+- Supported GPU: NVIDIA PCIe: H200 NVL (141GB), NVIDIA RTX PRO 6000 Blackwell Server Edition
+- CPU-GPU Interconnect: PCIe 5.0 x16 CPU-to-GPU Interconnect
+- GPU-GPU Interconnect: NVIDIA NVLink Bridge (optional)
+
+Memory & storage:
+- Slot Count: 16 DIMM slots/8 Channels
+- Max Memory (1DPC): Up to 1TB 6400MT/s ECC DDR5 RDIMM
+- Max Memory (1DPC): Up to 512GB 8000MT/s ECC DDR5 MRDIMM
+- Max Memory (2DPC): Up to 2TB 5200MT/s ECC DDR5 RDIMM
+- Drive bays / M.2: 2 M.2 PCIe 5.0 x2 NVMe slots (M-key 2280/22110)
+
+I/O, power & cooling:
+- LAN: 1 RJ45 1 GbE Dedicated BMC LAN port
+- USB: 1 USB 3.0 Type-A port (Rear)
+- Video: 1 mini-DP port
+- Expansion: 2 M.2 PCIe 5.0 x2 NVMe slots (M-key 2280/22110)
+- Power supplies: 2x 2700W Redundant Titanium Level (96%) power supplies
+- Cooling: 5x 8cm heavy duty fans with optimal fan speed control
+
+Physical & environment:
+- Net weight: 66 lbs (30 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: SaaS - Agent Flow AI Inference.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); SYS-212GB-FNR-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/sys-212gb-fnr-01-g2)
+
+#### Supermicro 4U 4-GPU System SYS-422GA-NRT-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-sys-422ga-nrt-01-g2.html
+Model: SYS-422GA-NRT-01-G2
+
+Ready-to-ship Gold Series 4U 4-GPU System (PaaS - Agent Flow AI Inference) with 2× Intel Xeon 6960P, 4× NVIDIA RTX PRO 6000 Blackwell Server Edition, 1TB DDR5-6400 and 8.64TB flash storage.
+
+The Supermicro SYS-422GA-NRT-01-G2 is a pre-configured Gold Series GPU SuperServer, recommended by Supermicro for PaaS - Agent Flow AI Inference. It ships with 2× Intel Xeon 6960P (144 cores/2.7GHz), 4× NVIDIA RTX PRO 6000 Blackwell Server Edition, 96GB GDDR7, 1TB DDR5-6400 of memory and 2× 3.84TB NVMe SSD, 1× 960GB M.2 NVMe SSD, with networking (1× dual 10GbE RJ45) already installed.
+
+It is built on the GPU SuperServer platform: dual-socket Intel 4U Dual-Root PCIe GPU System with up to 8 GPUs. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 2× Intel Xeon 6960P (144 cores/2.7GHz)
+- GPUs: 4× NVIDIA RTX PRO 6000 Blackwell Server Edition, 96GB GDDR7
+- Memory: 1TB DDR5-6400
+- Storage: 2× 3.84TB NVMe SSD
+- Boot / M.2: 1× 960GB M.2 NVMe SSD
+- Networking: 1× dual 10GbE RJ45
+- Power: 4× 3200W Titanium Level
+
+Platform:
+- Form factor: 4U Rackmount
+- Dimensions (W × H × D): 437 x 178 x 737mm (17.2" x 7" x 29")
+- Processor support: Dual Socket BR (LGA-7529); Intel Xeon 6900 series processors with P-cores; Up to 128C/256T; Up to 504MB Cache per CPU
+- Motherboard: Super X14DBG-AP
+- Chassis: CSE-418G3TS-R6K40P
+
+GPU support:
+- Max GPU Count: Up to 2 quad-width or 2 triple-width or 8 double-width or 10 single-width GPUs
+- NVIDIA PCIe: H200 NVL (141GB), NVIDIA RTX PRO 4500 Blackwell Server Edition, NVIDIA RTX PRO 6000 Blackwell; Max-Q Workstation Edition, NVIDIA RTX PRO 6000 Blackwell Server Edition
+- CPU-GPU Interconnect: PCIe 5.0 x16 Switch Dual-Root
+- GPU-GPU Interconnect: NVIDIA NVLink Bridge (optional)
+
+Memory & storage:
+- Slot Count: 24 DIMM slots
+- Max Memory (1DPC): Up to 6TB 6400MT/s ECC DDR5 RDIMM
+- Max Memory (1DPC): Up to 6TB 8800MT/s ECC DDR5 MRDIMM
+- Drive bays / M.2: 2 M.2 NVMe slots (M-key)
+
+I/O, power & cooling:
+- LAN: 2 RJ45 10 GbE LAN ports (Intel X710)
+- USB: 2 USB 3.0 Type-A ports (Rear)
+- Video: 1 VGA port
+- Expansion: 2 M.2 PCIe 5.0 x4 NVMe slots (B+M-key)
+- Power supplies: 4x 3200W Redundant (3 + 1) Titanium Level (96%) power supplies
+- Cooling: 10x 8cm heavy duty fans with optimal fan speed control
+
+Physical & environment:
+- Net weight: 65.5 lbs (29.7 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: PaaS - Agent Flow AI Inference.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); SYS-422GA-NRT-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/sys-422ga-nrt-01-g2)
+
+#### Supermicro 4U 8-GPU System SYS-422GA-NRT-02-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-sys-422ga-nrt-02-g2.html
+Model: SYS-422GA-NRT-02-G2
+
+Ready-to-ship Gold Series 4U 8-GPU System (PaaS - Agent Flow AI Inference) with 2× Intel Xeon 6962P, 8× NVIDIA RTX PRO 6000 Blackwell Server Edition, 1.5TB DDR5-6400 and 8.64TB flash storage.
+
+The Supermicro SYS-422GA-NRT-02-G2 is a pre-configured Gold Series GPU SuperServer, recommended by Supermicro for PaaS - Agent Flow AI Inference. It ships with 2× Intel Xeon 6962P (144C/2.7GHz), 8× NVIDIA RTX PRO 6000 Blackwell Server Edition, 1.5TB DDR5-6400 of memory and 2× 3.84TB NVMe SSD, 1× 960GB M.2 NVMe SSD, with networking (2× 1-port 400GbE/400G NDR; 1× 2-port 200GbE/NDR200; 1× 2-port 10GbE RJ45) already installed.
+
+It is built on the GPU SuperServer platform: dual-socket Intel 4U Dual-Root PCIe GPU System with up to 8 GPUs. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 2× Intel Xeon 6962P (144C/2.7GHz)
+- GPUs: 8× NVIDIA RTX PRO 6000 Blackwell Server Edition
+- Memory: 1.5TB DDR5-6400
+- Storage: 2× 3.84TB NVMe SSD
+- Boot / M.2: 1× 960GB M.2 NVMe SSD
+- Networking: 2× 1-port 400GbE/400G NDR
+- Networking: 1× 2-port 200GbE/NDR200
+- Networking: 1× 2-port 10GbE RJ45
+- Power: 4× 3200W Titanium Level
+
+Platform:
+- Form factor: 4U Rackmount
+- Dimensions (W × H × D): 437 x 178 x 737mm (17.2" x 7" x 29")
+- Processor support: Dual Socket BR (LGA-7529); Intel Xeon 6900 series processors with P-cores; Up to 128C/256T; Up to 504MB Cache per CPU
+- Motherboard: Super X14DBG-AP
+- Chassis: CSE-418G3TS-R6K40P
+
+GPU support:
+- Max GPU Count: Up to 2 quad-width or 2 triple-width or 8 double-width or 10 single-width GPUs
+- NVIDIA PCIe: H200 NVL (141GB), NVIDIA RTX PRO 4500 Blackwell Server Edition, NVIDIA RTX PRO 6000 Blackwell; Max-Q Workstation Edition, NVIDIA RTX PRO 6000 Blackwell Server Edition
+- CPU-GPU Interconnect: PCIe 5.0 x16 Switch Dual-Root
+- GPU-GPU Interconnect: NVIDIA NVLink Bridge (optional)
+
+Memory & storage:
+- Slot Count: 24 DIMM slots
+- Max Memory (1DPC): Up to 6TB 6400MT/s ECC DDR5 RDIMM
+- Max Memory (1DPC): Up to 6TB 8800MT/s ECC DDR5 MRDIMM
+- Drive bays / M.2: 2 M.2 NVMe slots (M-key)
+
+I/O, power & cooling:
+- LAN: 2 RJ45 10 GbE LAN ports (Intel X710)
+- USB: 2 USB 3.0 Type-A ports (Rear)
+- Video: 1 VGA port
+- Expansion: 2 M.2 PCIe 5.0 x4 NVMe slots (B+M-key)
+- Power supplies: 4x 3200W Redundant (3 + 1) Titanium Level (96%) power supplies
+- Cooling: 10x 8cm heavy duty fans with optimal fan speed control
+
+Physical & environment:
+- Net weight: 65.5 lbs (29.7 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: PaaS - Agent Flow AI Inference.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); SYS-422GA-NRT-02-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/sys-422ga-nrt-02-g2)
+
+#### Supermicro 5U 2-GPU System AS -5126GS-TNRT-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-as-5126gs-tnrt-01-g2.html
+Model: AS -5126GS-TNRT-01-G2
+
+Ready-to-ship Gold Series 5U 2-GPU System (SaaS - Agent Flow AI Inference) with 2× AMD EPYC 9355, 2× NVIDIA RTX PRO 6000 Blackwell Server Edition, 1.5TB DDR5-6400 and 960GB flash storage.
+
+The Supermicro AS -5126GS-TNRT-01-G2 is a pre-configured Gold Series GPU SuperServer, recommended by Supermicro for SaaS - Agent Flow AI Inference. It ships with 2× AMD EPYC 9355 (32C/3.55GHz), 2× NVIDIA RTX PRO 6000 Blackwell Server Edition, 1.5TB DDR5-6400 of memory and 1× 960GB M.2 NVMe SSD, with networking (1× dual 10GbE RJ45) already installed.
+
+It is built on the GPU SuperServer platform: dual-socket AMD 5U System with 8 PCIe GPUs. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 2× AMD EPYC 9355 (32C/3.55GHz)
+- GPUs: 2× NVIDIA RTX PRO 6000 Blackwell Server Edition
+- Memory: 1.5TB DDR5-6400
+- Storage: 1× 960GB M.2 NVMe SSD
+- Networking: 1× dual 10GbE RJ45
+- Power: 6× 2700W Titanium Level
+
+Platform:
+- Form factor: 5U Rackmount
+- Dimensions (W × H × D): 438 x 222.5 x 786.1mm (17.2" x 8.75" x 31")
+- Processor support: Dual processor(s); AMD EPYC 9005/9004 Series Processors; Up to 192C/384T
+- Motherboard: Super H14DSG-O-CPU
+- Chassis: CSE-528G2TS-R000NDP
+
+GPU support:
+- Max GPU Count: Up to 8 double-width GPUs
+- NVIDIA PCIe: H100 NVL, H200 NVL (141GB), L40S, NVIDIA RTX PRO 6000 Blackwell Server Edition
+- AMD PCIe: AMD Instinct MI350P
+- CPU-GPU Interconnect: Direct Attached
+- GPU-GPU Interconnect: NVIDIA NVLink Bridge (optional), AMD Infinity Fabric Link (optional)
+
+Memory & storage:
+- Slot Count: 24 DIMM slots
+- Max Memory (1DPC): Up to 6TB 6400MT/s ECC DDR5 RDIMM (AMD EPYC 9005 Series Processor)
+- Max Memory (1DPC): Up to 6TB 4800MT/s ECC DDR5 RDIMM (AMD EPYC 9004 Series Processor)
+- Drive bays / M.2: 1 M.2 PCIe 3.0 x4 NVMe slot (M-key)
+
+I/O, power & cooling:
+- LAN: 1 RJ45 1 GbE Dedicated BMC LAN port; 2 RJ45 10 GBASE-T LAN ports
+- USB: 2 ports (rear)
+- Video: 1 VGA port
+- Power supplies: 6x 2700W Redundant (4 + 2) Titanium Level (96%) power supplies
+- Cooling: Up to 10 heavy duty fans with optimal fan speed control
+
+Physical & environment:
+- Net weight: 65.5 lbs (29.7 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: SaaS - Agent Flow AI Inference.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); AS -5126GS-TNRT-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/as%20-5126gs-tnrt-01-g2)
+
 #### ASUS XA NB3I-E12 (ASUS)
 
 Page: https://planman.ae/products/asus-xa-nb3i-e12.html
@@ -2270,6 +2653,318 @@ Use cases: HPC clusters, Private cloud, Cloud service providers, Enterprise data
 
 Source: Supermicro SuperBlade (https://www.supermicro.com/en/products/superblade); Supermicro MicroBlade (https://www.supermicro.com/en/products/microblade)
 
+#### Supermicro 1U Hyper SYS-112H-TN-02-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-sys-112h-tn-02-g2.html
+Model: SYS-112H-TN-02-G2
+
+Ready-to-ship Gold Series 1U Hyper (IaaS – Compute/Virtualization Bare Metal) with 1× Intel Xeon 6731P, 1TB DDR5-6000 and 1.9TB flash storage.
+
+The Supermicro SYS-112H-TN-02-G2 is a pre-configured Gold Series Hyper SuperServer, recommended by Supermicro for IaaS – Compute/Virtualization Bare Metal. It ships with 1× Intel Xeon 6731P (32C/2.5GHz), 1TB DDR5-6000 of memory and 2× 960GB M.2 NVMe SSD, with networking (1× quad 25GbE SFP28) already installed.
+
+It is built on the Hyper SuperServer platform: 1U single-socket Hyper supporting up to 12 hot-swap 2.5" NVMe/SAS/SATA bays and up to 3 PCIe 5.0 + 1 PCIe 5.0 AIOM slots. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 1× Intel Xeon 6731P (32C/2.5GHz)
+- Memory: 1TB DDR5-6000
+- Storage: 2× 960GB M.2 NVMe SSD
+- Networking: 1× quad 25GbE SFP28
+- Power: 2× 1200W Titanium Level
+
+Platform:
+- Form factor: 1U Rackmount
+- Dimensions (W × H × D): 437 x 43 x 778.7mm (17.2" x 1.7" x 30.66")
+- Processor support: Single Socket E2 (LGA-4710); Intel Xeon 6700/6500 series processors with P-cores or 6700 series processors with E-cores; P-cores: Up to 86C/172T; Up to 336MB Cache; E-cores: Up to 144C/144T; Up to 108MB Cache
+- Motherboard: Super X14SBH
+- Chassis: CSE-HS101-R000NFP
+
+GPU support:
+- Max GPU Count: Up to 1 double-width or 3 single-width GPUs
+- NVIDIA PCIe: L4, L40S, NVIDIA RTX PRO 4500 Blackwell Server Edition
+- Intel PCIe: Intel Data Center GPU Flex 170
+- CPU-GPU Interconnect: PCIe 5.0 x16 CPU-to-GPU Interconnect
+
+Memory & storage:
+- Slot Count: 16 DIMM slots
+- Max Memory (1DPC): Up to 2TB 6400MT/s ECC DDR5 RDIMM
+- Max Memory (1DPC): Up to 512GB 8000MT/s ECC DDR5 MRDIMM
+- Max Memory (2DPC): Up to 4TB 6000MT/s ECC DDR5 RDIMM
+- Drive bays / M.2: 2 M.2 NVMe slots (M-key 2280/22110/25110; VROC required for RAID)
+
+I/O, power & cooling:
+- LAN: 1 RJ45 1 GbE Dedicated BMC LAN port
+- USB: 2 USB 3.2 Gen1 ports (Rear); 1 USB 3.2 Gen1 port (Front)
+- Video: 1 VGA port
+- Power supplies: 2x 1200W Redundant (1 + 1) Titanium Level (96%) power supplies
+- Cooling: Up to 8 counter-rotating 40x40x56mm Fan(s)
+
+Physical & environment:
+- Net weight: 19.2 lbs (8.7 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: IaaS – Compute/Virtualization Bare Metal.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); SYS-112H-TN-02-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/sys-112h-tn-02-g2)
+
+#### Supermicro 2U Hyper AS -2115HS-TNR-02-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-as-2115hs-tnr-02-g2.html
+Model: AS -2115HS-TNR-02-G2
+
+Ready-to-ship Gold Series 2U Hyper (In-Memory Databases & Analytics) with 1× AMD EPYC 9655P, 768GB DDR5-6400 and 15.36TB flash storage.
+
+The Supermicro AS -2115HS-TNR-02-G2 is a pre-configured Gold Series Hyper A+ Server, recommended by Supermicro for In-Memory Databases & Analytics. It ships with 1× AMD EPYC 9655P (96C/2.6GHz), 768GB DDR5-6400 of memory and 2× 7.68TB NVMe SSD, with networking (1× dual 25GbE SFP28) already installed.
+
+It is built on the Hyper A+ Server platform: 2U single-socket Hyper with 24 hot-swap 2.5" drive bays and 1 PCIe 5.0 slot. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 1× AMD EPYC 9655P (96C/2.6GHz)
+- Memory: 768GB DDR5-6400
+- Storage: 2× 7.68TB NVMe SSD
+- Networking: 1× dual 25GbE SFP28
+- Power: 2× 1600W Titanium Level
+
+Platform:
+- Form factor: 2U
+- Dimensions (W × H × D): 437 x 88.9 x 760mm (17.2" x 3.5" x 29.9")
+- Processor support: Single processor(s); AMD EPYC 9004/9005 Series Processors; Up to 160C/320T
+- Motherboard: Super H13SSH
+- Chassis: CSE-HS219-R1K63P-A
+
+GPU support:
+- Max GPU Count: Up to 2 double-width GPUs
+- Supported GPU: NVIDIA PCIe: RTX 6000 Ada Generation, RTX A6000
+- CPU-GPU Interconnect: PCIe 5.0 x16 CPU-to-GPU Interconnect
+- GPU-GPU Interconnect: PCIe
+
+Memory & storage:
+- Slot Count: 24 DIMM slots
+- Max Memory (1DPC): Up to 3TB 4800MT/s ECC DDR5 RDIMM (AMD EPYC 9004 Series Processor)
+- Max Memory (2DPC): Up to 6TB 4000MT/s ECC DDR5 RDIMM (AMD EPYC 9004 Series Processor)
+- Max Memory (1DPC): Up to 3TB 5200MT/s ECC DDR5 RDIMM (AMD EPYC 9005 Series Processor)
+- Max Memory (2DPC): Up to 6TB 4400MT/s ECC DDR5 1R RDIMM (AMD EPYC 9005 Series Processor)
+- Max Memory (2DPC): Up to 6TB 4000MT/s ECC DDR5 2R RDIMM (AMD EPYC 9005 Series Processor)
+- Drive bays / M.2: M.2:; 1 M.2 PCIe 3.0 x4 NVMe slot (M-key 22110(default)/2280); 1 M.2 PCIe 3.0 x2 NVMe slot (M-key 22110(default)/2280)
+
+I/O, power & cooling:
+- LAN: 1 RJ45 1 GbE Dedicated BMC LAN port
+- USB: 2 USB 3.0 ports (rear)
+- Video: 1 VGA port
+- Power supplies: 2x 1600W Redundant (1 + 1) Titanium Level (96%) power supplies
+- Cooling: Up to 4x 8cm heavy duty fans with optimal fan speed control
+
+Physical & environment:
+- Net weight: 39 lbs (17.7 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: In-Memory Databases & Analytics.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); AS -2115HS-TNR-02-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/as%20-2115hs-tnr-02-g2)
+
+#### Supermicro 2U Hyper AS -2126HS-TN-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-as-2126hs-tn-01-g2.html
+Model: AS -2126HS-TN-01-G2
+
+Ready-to-ship Gold Series 2U Hyper (Virtualization & Private Cloud Consolidation) with 2× AMD EPYC 9965, 1.5TB DDR5-6400 and 1.92TB flash storage.
+
+The Supermicro AS -2126HS-TN-01-G2 is a pre-configured Gold Series Hyper SuperServer, recommended by Supermicro for Virtualization & Private Cloud Consolidation. It ships with 2× AMD EPYC 9965 (192C/2.25GHz), 1.5TB DDR5-6400 of memory and 2× 960GB M.2 NVMe SSD, with networking (1× dual 25GbE SFP28) already installed.
+
+It is built on the Hyper SuperServer platform: 2U Hyper with up to 24 hot-swap 2.5" NVMe/SAS/SATA bays and 4 PCIe 5.0 x16 slots + 1 PCIe 5.0 x16 AIOM slot. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 2× AMD EPYC 9965 (192C/2.25GHz)
+- Memory: 1.5TB DDR5-6400
+- Storage: 2× 960GB M.2 NVMe SSD
+- Networking: 1× dual 25GbE SFP28
+- Power: 2× 2000W Titanium Level
+
+Platform:
+- Form factor: 2U Rackmount
+- Dimensions (W × H × D): 437 x 88.9 x 806.2mm (17.2" x 3.5" x 31.74")
+- Processor support: Dual processor(s); AMD EPYC 9005/9004 Series Processors; Up to 384C/768T
+- Motherboard: Super H14DSH
+- Chassis: CSE-HS201-R000NFP
+
+GPU support:
+- Max GPU Count: Up to 3 double-width GPUs
+- NVIDIA PCIe: H100 NVL, A16, L4, L40, L40S, NVIDIA RTX PRO 2000 Blackwell, NVIDIA RTX PRO 4500 Blackwell,; NVIDIA RTX PRO 5000 Blackwell, NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, RTX 2000 Ada, RTX; 4500 Ada, RTX 5000 Ada, RTX 6000 Ada Generation
+- AMD PCIe: Instinct MI210
+- GPU-GPU Interconnect: PCIe
+
+Memory & storage:
+- Slot Count: 24 DIMM slots
+- Max Memory (1DPC): Up to 6TB 6400MT/s ECC DDR5 RDIMM (AMD EPYC 9005 Series Processor)
+- Max Memory (1DPC): Up to 6TB 4800MT/s ECC DDR5 RDIMM (AMD EPYC 9004 Series Processor)
+- Drive bays / M.2: 2 M.2 PCIe 3.0 x4 NVMe slots (M-key 2280/22110)
+
+I/O, power & cooling:
+- LAN: 1 RJ45 1 GbE Dedicated BMC LAN port
+- USB: 2 USB 3.0 ports (rear)
+- Video: 1 VGA port
+- Expansion: Up to 4 CXL 2.0 x16 devices
+- Power supplies: 2x 2000W Redundant (1 + 1) Titanium Level (96%) power supplies
+- Cooling: Up to 6 counter-rotating 60x60x56mm Fan(s)
+
+Physical & environment:
+- Net weight: 45 lbs (20.5 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: Virtualization & Private Cloud Consolidation.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); AS -2126HS-TN-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/as%20-2126hs-tn-01-g2)
+
+#### Supermicro 2U Hyper SYS-222H-TN-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-sys-222h-tn-01-g2.html
+Model: SYS-222H-TN-01-G2
+
+Ready-to-ship Gold Series 2U Hyper (Virtualization & Private Cloud Consolidation) with 2× Intel Xeon 6740P, 1TB DDR5-6400 and 7.68TB flash storage.
+
+The Supermicro SYS-222H-TN-01-G2 is a pre-configured Gold Series Hyper SuperServer, recommended by Supermicro for Virtualization & Private Cloud Consolidation. It ships with 2× Intel Xeon 6740P (48C/2.1GHz), 1TB DDR5-6400 of memory and 2× 3.8TB U.2 NVMe SSD, with networking (1× dual 25GbE SFP28) already installed.
+
+It is built on the Hyper SuperServer platform: 2U Hyper with 8 hot-swap 2.5" NVMe/SAS/SATA bays and 4 PCIe 5.0 slots + up to 2 PCIe 5.0 x16 AIOM slots. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 2× Intel Xeon 6740P (48C/2.1GHz)
+- Memory: 1TB DDR5-6400
+- Storage: 2× 3.8TB U.2 NVMe SSD
+- Networking: 1× dual 25GbE SFP28
+- Power: 2× 2000W Titanium Level
+
+Platform:
+- Form factor: 2U Rackmount
+- Dimensions (W × H × D): 438.4 x 88 x 755.2mm (17.3" x 3.5" x 29.73")
+- Processor support: Dual Socket E2 (LGA-4710); Intel Xeon 6700/6500 series processors with P-cores or 6700 series processors with E-cores; P-cores: Up to 86C/172T; Up to 336MB Cache per CPU; E-cores: Up to 144C/144T; Up to 108MB Cache per CPU
+- Motherboard: Super X14DBM-SP
+- Chassis: CSE-HS219-R000NP
+
+GPU support:
+- Max GPU Count: Up to 4 double-width or 8 single-width GPUs
+- NVIDIA PCIe: H100 NVL, A1000, A16, L4, L40S, NVIDIA RTX PRO 4000 Blackwell, NVIDIA RTX PRO 4500 Blackwell,; NVIDIA RTX PRO 4500 Blackwell Server Edition, NVIDIA RTX PRO 5000 Blackwell, NVIDIA RTX PRO 6000; Blackwell Max-Q Workstation Edition, NVIDIA RTX PRO 6000 Blackwell Server Edition, RTX 2000 Ada, RTX 4000; Ada Generation, RTX 5000 Ada, RTX 6000 Ada Generation
+
+Memory & storage:
+- Slot Count: 32 DIMM slots
+- Max Memory (1DPC): Up to 4TB 6400MT/s ECC DDR5 RDIMM
+- Max Memory (1DPC): Up to 1TB 8000MT/s ECC DDR5 MRDIMM (P-core only)
+- Max Memory (2DPC): Up to 8TB 6000MT/s ECC DDR5 RDIMM
+- Drive bays / M.2: 2 M.2 PCIe 5.0 x2 NVMe slots (M-key 2280/22110)
+
+I/O, power & cooling:
+- LAN: 1 RJ45 1 GbE Dedicated BMC LAN port
+- USB: 2 USB 3.2 Gen1 ports (Header); 2 USB 3.2 Gen1 ports (Rear)
+- Video: 1 VGA port
+- Expansion: Up to 4 CXL 2.0 x16/x8 devices
+- Power supplies: 2x 1200W Redundant (1 + 1) Titanium Level (96%) Hot-plug power supplies
+- Cooling: Up to 4x 8cm heavy duty fans with optimal fan speed control; Direct to Chip (D2C) Cold Plate (optional)
+
+Physical & environment:
+- Net weight: 40 lbs (18.2 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: Virtualization & Private Cloud Consolidation.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); SYS-222H-TN-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/sys-222h-tn-01-g2)
+
+#### Supermicro 1U Hyper AS -1126HS-TN-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-as-1126hs-tn-01-g2.html
+Model: AS -1126HS-TN-01-G2
+
+Ready-to-ship Gold Series 1U Hyper (IaaS – Compute/Virtualization Bare Metal) with 2× AMD EPYC 9355, 1.5TB DDR5-6400 and 1.92TB flash storage.
+
+The Supermicro AS -1126HS-TN-01-G2 is a pre-configured Gold Series Hyper SuperServer, recommended by Supermicro for IaaS – Compute/Virtualization Bare Metal. It ships with 2× AMD EPYC 9355 (32C/3.55GHz), 1.5TB DDR5-6400 of memory and 2× 960GB M.2 NVMe SSD, with networking (1× dual 25GbE SFP28) already installed.
+
+It is built on the Hyper SuperServer platform: 1U Hyper with up to 12 hot-swap 2.5" NVMe/SAS/SATA bays and 3 PCIe 5.0 x16 slots + 1 PCIe 5.0 x16 AIOM slot. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 2× AMD EPYC 9355 (32C/3.55GHz)
+- Memory: 1.5TB DDR5-6400
+- Storage: 2× 960GB M.2 NVMe SSD
+- Networking: 1× dual 25GbE SFP28
+- Power: 2× 1600W Titanium Level
+
+Platform:
+- Form factor: 1U Rackmount
+- Dimensions (W × H × D): 437 x 43 x 778.7mm (17.2" x 1.7" x 30.66")
+- Processor support: Dual processor(s); AMD EPYC 9005/9004 Series Processors; Up to 384C/768T
+- Motherboard: Super H14DSH
+- Chassis: CSE-HS101-R000NFP
+
+Memory & storage:
+- Slot Count: 24 DIMM slots
+- Max Memory (1DPC): Up to 6TB 6400MT/s ECC DDR5 RDIMM (AMD EPYC 9005 Series Processor)
+- Max Memory (1DPC): Up to 6TB 4800MT/s ECC DDR5 RDIMM (AMD EPYC 9004 Series Processor)
+- Drive bays / M.2: 2 M.2 PCIe 3.0 x4 NVMe slots (M-key 2280/22110)
+
+I/O, power & cooling:
+- LAN: 1 RJ45 1 GbE Dedicated BMC LAN port
+- USB: 2 USB 3.0 ports (rear); 1 USB 3.0 port (front)
+- Video: 1 VGA port
+- Expansion: Up to 4 CXL 2.0 x16 devices
+- Power supplies: 2x 1600W Redundant (1 + 1) Titanium Level (96%) power supplies
+- Cooling: Up to 8 counter-rotating 40x40x56mm Fan(s)
+
+Physical & environment:
+- Net weight: 19.2 lbs (8.7 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: IaaS – Compute/Virtualization Bare Metal.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); AS -1126HS-TN-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/as%20-1126hs-tn-01-g2)
+
+#### Supermicro 1U Mainstream AS -1015A-MT-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-as-1015a-mt-01-g2.html
+Model: AS -1015A-MT-01-G2
+
+Ready-to-ship Gold Series 1U Mainstream (Remote Office/Branch Office Infrastructure) with 1× AMD EPYC 4564P, 32GB DDR5-5600 and 1.92TB flash storage.
+
+The Supermicro AS -1015A-MT-01-G2 is a pre-configured Gold Series Mainstream A+ Server, recommended by Supermicro for Remote Office/Branch Office Infrastructure. It ships with 1× AMD EPYC 4564P (16C/4.5GHz), 32GB DDR5-5600 of memory and 1× 1.92TB M.2 NVMe SSD, with networking (1× dual 1GbE; 1× dedicated IPMI) already installed.
+
+It is built on the Mainstream A+ Server platform: 1U single-socket Mainstream with up to 4 internal 2.5" SATA bays and 1 PCIe 5.0 slot. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 1× AMD EPYC 4564P (16C/4.5GHz)
+- Memory: 32GB DDR5-5600
+- Storage: 1× 1.92TB M.2 NVMe SSD
+- Networking: 1× dual 1GbE
+- Networking: 1× dedicated IPMI
+- Power: 1× 500W Platinum Level
+- Warranty: System Warranty includes three years of labor, three years of parts, and one year cross-ship
+
+Platform:
+- Form factor: 1U
+- Dimensions (W × H × D): 437 x 43 x 429mm (17.2" x 1.7" x 16.9")
+- Processor support: Single processor(s); AMD EPYC 4004 / 4005 or AMD Ryzen 7000 / 9000 Series Processors; Up to 16C/32T
+- Motherboard: Super H13SAE-MF
+- Chassis: CSE-514-505
+
+GPU support:
+- Max GPU Count: Up to 1 single-width GPU
+- NVIDIA PCIe: A2, L4, NVIDIA RTX PRO 4500 Blackwell Server Edition, RTX 4000 Ada Generation, RTX A4000
+- AMD PCIe: Radeon Pro W7500
+- CPU-GPU Interconnect: PCIe 5.0 x16 CPU-to-GPU Interconnect
+
+Memory & storage:
+- Slot Count: 4 DIMM slots
+- Max Memory (2DPC): Up to 192GB 5200MT/s ECC/non-ECC DDR5 UDIMM
+- Drive bays / M.2: 2 M.2 PCIe 5.0 x4 NVMe slots (M-key 2280/22110)
+
+I/O, power & cooling:
+- LAN: 1 RJ45 1 GbE Dedicated BMC LAN port
+- USB: 3 Type-A ports (Rear); 2 Type-C ports (Rear); 1 Type-C port (Rear)
+- Video: 1 VGA port; 1 DisplayPort 1.4 port; 1 port(s) supporting 4K@60Hz as specified in HDMI 2 (Rear)
+- Power supplies: 1x 500W Platinum Level (93%) power supply
+- Cooling: Up to 6x 40mm Fan(s)
+
+Physical & environment:
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: Remote Office/Branch Office Infrastructure.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); AS -1015A-MT-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/as%20-1015a-mt-01-g2)
+
 #### ASUS RS Series Rack Servers (ASUS)
 
 Page: https://planman.ae/products/asus-rs-series.html
@@ -2378,6 +3073,109 @@ Top-loading JBODs:
 Use cases: Object storage (Ceph, MinIO and others), Backup targets, Archive, Video surveillance retention, Cold data tiers for AI.
 
 Source: Supermicro SSG-640SP-E1CR90 (https://www.supermicro.com/en/products/system/storage/4u/ssg-640sp-e1cr90); Supermicro storage chassis and JBODs (https://www.supermicro.com/en/products/storage/chassis)
+
+#### Supermicro 2U Simply Double ASG-2015S-E1CR24L-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-asg-2015s-e1cr24l-01-g2.html
+Model: ASG-2015S-E1CR24L-01-G2
+
+Ready-to-ship Gold Series 2U Simply Double (Big Data Analytics/Content Repository) with 1× AMD EPYC 9334, 512GB DDR5-4800 and 528TB raw capacity.
+
+The Supermicro ASG-2015S-E1CR24L-01-G2 is a pre-configured Gold Series Storage A+ Server, recommended by Supermicro for Big Data Analytics/Content Repository. It ships with 1× AMD EPYC 9334 (32C/2.7GHz), 512GB DDR5-4800 of memory and 24× 22TB 3.5" SAS3 HDD, 1× 960GB 2.5" SATA SSD, with networking (1× dual 100GbE QSFP28) already installed.
+
+It is built on the Storage A+ Server platform: 2U front/top-loading storage server with 24 hot-swap 3.5" SAS/SATA bays and PCIe 5.0. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 1× AMD EPYC 9334 (32C/2.7GHz)
+- Memory: 512GB DDR5-4800
+- Storage: 24× 22TB 3.5" SAS3 HDD
+- Storage: 1× 960GB 2.5" SATA SSD
+- Networking: 1× dual 100GbE QSFP28
+- Power: 2× 1600W Titanium Level
+- Storage controller: Broadcom 3808 HBA
+
+Platform:
+- Form factor: 2U Rackmount
+- Dimensions (W × H × D): (17.2" x 3.5" x 34")
+- Processor support: Single processor(s); AMD EPYC 9004/9005 Series Processors; Up to 84C/168T; Up to 384MB Cache
+- Motherboard: Super H13SSW
+- Chassis: CSE-826S3TS-R1K62P1
+
+Memory & storage:
+- Slot Count: 12 DIMM slots
+- Max Memory (1DPC): Up to 3TB 4800MT/s ECC DDR5 RDIMM (AMD EPYC 9004 Series Processor)
+- Max Memory (1DPC): Up to 4.5TB 6000MT/s ECC DDR5 RDIMM (AMD EPYC 9005 Series Processor)
+- Drive bays / M.2: 2 M.2 NVMe slots (M-key 2280/22110)
+
+I/O, power & cooling:
+- LAN: 1 RJ45 1 GbE Dedicated BMC LAN port
+- USB: 2 USB 3.0 ports (rear)
+- Video: 1 VGA port
+- Power supplies: 2x 1600W Redundant (1 + 1) Titanium Level (96%) power supplies
+- Cooling: Up to 4 Heavy Duty 8cm Fan(s)
+
+Physical & environment:
+- Net weight: 52 lbs (23.59 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: Big Data Analytics/Content Repository.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); ASG-2015S-E1CR24L-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/asg-2015s-e1cr24l-01-g2)
+
+#### Supermicro 2U CloudDC AS -2015CS-TNR-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-as-2015cs-tnr-01-g2.html
+Model: AS -2015CS-TNR-01-G2
+
+Ready-to-ship Gold Series 2U CloudDC (Storage Hardware for IaaS) with 1× AMD EPYC 9455P, 768GB DDR5-6400 and 192TB raw capacity.
+
+The Supermicro AS -2015CS-TNR-01-G2 is a pre-configured Gold Series CloudDC A+ Server, recommended by Supermicro for Storage Hardware for IaaS. It ships with 1× AMD EPYC 9455P (48C/3.15GHz), 768GB DDR5-6400 of memory and 2× 3.8TB U.2 NVMe SSD, 8× 24TB 3.5" SATA HDD, 2× 240GB 2.5" SATA SSD, with networking (1× dual 25GbE SFP28) already installed.
+
+It is built on the CloudDC A+ Server platform: 2U CloudDC with 12 hot-swap 3.5" NVMe/SAS/SATA bays and 4 PCIe 5.0 x16 slots + 2 AIOM slots. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 1× AMD EPYC 9455P (48C/3.15GHz)
+- Memory: 768GB DDR5-6400
+- Storage: 2× 3.8TB U.2 NVMe SSD
+- Storage: 8× 24TB 3.5" SATA HDD
+- Storage: 2× 240GB 2.5" SATA SSD
+- Networking: 1× dual 25GbE SFP28
+- Power: 2× 1200W Titanium Level
+
+Platform:
+- Form factor: 2U Rackmount
+- Dimensions (W × H × D): 437 x 89 x 648mm (17.2" x 3.5" x 25.5")
+- Processor support: Single processor(s); AMD EPYC 9004/9005 Series Processors; Up to 160C/320T
+- Motherboard: Super H13SSW
+- Chassis: CSE-LA26TS-R1K23AWP1
+
+GPU support:
+- Max GPU Count: Up to 2 double-width or 4 single-width GPUs
+- Supported GPU: NVIDIA PCIe: A100, A16, A2, A30, A40, L4, L40, L40S, RTX 6000 Ada Generation, RTX A4000
+- CPU-GPU Interconnect: PCIe 5.0 x16 CPU-to-GPU Interconnect
+- GPU-GPU Interconnect: PCIe
+
+Memory & storage:
+- Slot Count: 12 DIMM slots
+- Max Memory (1DPC): Up to 3TB 4800MT/s ECC DDR5 RDIMM (AMD EPYC 9004 Series Processor, MB; R1.x/R2.0/R2.01)
+- Max Memory (1DPC): Up to 3TB 6000MT/s ECC DDR5 RDIMM (AMD EPYC 9005 Series Processor, MB R2.0)
+- Max Memory (1DPC): Up to 3TB 6400MT/s ECC DDR5 RDIMM (AMD EPYC 9005 Series Processor, MB R2.01)
+- Drive bays / M.2: 2 M.2 PCIe 3.0 x2 NVMe slots (M-key 2280/22110)
+
+I/O, power & cooling:
+- LAN: 1 RJ45 1 GbE Dedicated BMC LAN port
+- USB: 2 USB 3.0 ports (rear)
+- Video: 1 VGA port
+- Power supplies: 2x 1200W Redundant (1 + 1) Titanium Level (96%) power supplies
+- Cooling: Up to 3x 8cm heavy duty fans with optimal fan speed control
+
+Physical & environment:
+- Net weight: 33 lbs (15 kg)
+- Operating temperature: 10°C to 35°C (50°F to 95°F)
+
+Use cases: Storage Hardware for IaaS.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); AS -2015CS-TNR-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/as%20-2015cs-tnr-01-g2)
 
 #### ASUS Storage Solutions (ASUS)
 
@@ -2519,6 +3317,59 @@ Use cases: Local model development, Fine-tuning and inference, Agentic AI protot
 
 Source: Supermicro Super AI Station (https://www.supermicro.com/en/accelerators/nvidia/super-ai-station); Super AI Station datasheet (https://www.supermicro.com/datasheet/datasheet_Supermicro_Super_AI_Station.pdf)
 
+#### Supermicro Super AI Station ARS-511GD-NB-LCC-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-ars-511gd-nb-lcc-01-g2.html
+Model: ARS-511GD-NB-LCC-01-G2
+
+Ready-to-ship Gold Series Super AI Station (AI Agent Development and Deployment) with 1 NVIDIA Grace 72-core ARM Neoverse V2 CPU, 1 NVIDIA Blackwell Ultra (B300) GPU, 748 GB coherent memory and 3.84TB flash storage.
+
+The Supermicro ARS-511GD-NB-LCC-01-G2 is a pre-configured Gold Series GPU SuperServer, recommended by Supermicro for AI Agent Development and Deployment. It ships with 1 NVIDIA Grace 72-core ARM Neoverse V2 CPU, 1 NVIDIA Blackwell Ultra (B300) GPU, 748 GB of Coherent Memory and 2× 960GB M.2 NVMe SSD, 2× 1.92TB M.2 NVMe SSD, with networking (NVIDIA ConnectX-8 SuperNIC) already installed.
+
+It is built on the GPU SuperServer platform: Super AI Station with NVIDIA GB300 Grace Blackwell Ultra Desktop Superchip. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 1 NVIDIA Grace 72-core ARM Neoverse V2 CPU
+- GPUs: 1 NVIDIA Blackwell Ultra (B300) GPU
+- Memory: 748 GB of Coherent Memory
+- Boot / M.2: 2× 960GB M.2 NVMe SSD
+- Boot / M.2: 2× 1.92TB M.2 NVMe SSD
+- Networking: NVIDIA ConnectX-8 SuperNIC
+
+Platform:
+- Form factor: Tower or 5U
+- Dimensions (W × H × D): 454.7 x 218.4 x 701mm (17.9" x 8.6" x 27.6")
+- Processor support: Single processor(s); NVIDIA 72-core NVIDIA Grace CPU on NVIDIA GB300 Grace Blackwell Ultra Superchip; 72C/72T
+- Motherboard: Super GPU-NVGB300-WSHPM
+- Chassis: CSE-759TS-R0CNBP
+
+GPU support:
+- Max GPU Count: 1 double-width GPU, and 1 onboard GPU
+- NVIDIA PCIe: NVIDIA RTX PRO 2000 Blackwell, NVIDIA RTX PRO 4000 Blackwell SFF Edition, NVIDIA RTX PRO 6000; Blackwell Max-Q Workstation Edition, NVIDIA RTX PRO 6000 Blackwell Workstation Edition
+- NVIDIA: B300 GPU on NVIDIA GB300 Grace Blackwell Ultra Superchip
+- CPU-GPU Interconnect: NVIDIA NVLink-C2C
+
+Memory & storage:
+- Memory: Onboard Memory; 496GB ECC LPDDR5X
+- Additional GPU Memory: 252GB ECC HBM3e
+- Drive bays / M.2: 2 M.2 PCIe 5.0 x4 NVMe slots (M-key 2280); 2 M.2 PCIe 6.0 x4 NVMe slots (M-key 2280)
+
+I/O, power & cooling:
+- LAN: 1 RJ45 1 GbE Dedicated BMC LAN port; 1 RJ45 10 GbE LAN port; 2 QSFP 400 GbE LAN ports (NVIDIA ConnectX-8 SuperNIC)
+- USB: 2 USB 3.0 Type-A ports (Front); 4 USB 3.0 Gen2 Type-A ports (Rear)
+- Video: 1 mini-DP port
+- Expansion: 1 M.2 PCIe 2.0 x1 slot (E-key 2230; Optional WiFi/Bluetooth module)
+- Power supplies: 1x 1600W Titanium Level (94%) power supply
+- Cooling: 2x 140mm Fan(s); 2x 80mm Fan(s); 1x 60mm Fan(s); Direct to Chip (D2C) Cold Plate
+
+Physical & environment:
+- Net weight: 88 lbs (40 kg)
+- Operating temperature: 15°C to 32°C (59°F to 90°F)
+
+Use cases: AI Agent Development and Deployment.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); ARS-511GD-NB-LCC-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/ars-511gd-nb-lcc-01-g2)
+
 #### ASUS Ascent GX10 (ASUS)
 
 Page: https://planman.ae/products/asus-ascent-gx10.html
@@ -2575,6 +3426,97 @@ Representative systems:
 Use cases: Edge AI inference, Video analytics, Smart retail, 5G, O-RAN and MEC, Industrial automation.
 
 Source: Supermicro Edge AI and IoT systems (https://www.supermicro.com/en/products/edge/servers); Supermicro Edge AI solutions (https://www.supermicro.com/en/solutions/edge-ai)
+
+#### Supermicro Compact Edge System AS -E300-14GR-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-as-e300-14gr-01-g2.html
+Model: AS -E300-14GR-01-G2
+
+Ready-to-ship Gold Series Compact Edge System (Branch Office / Store Appliance) with 1× AMD EPYC 4545P, 32GB DDR5-5600 and 960GB flash storage.
+
+The Supermicro AS -E300-14GR-01-G2 is a pre-configured Gold Series IoT SuperServer, recommended by Supermicro for Branch Office / Store Appliance. It ships with 1× AMD EPYC 4545P (16C/3.0GHz), 32GB DDR5-5600 of memory and 1× 960GB M.2 NVMe SSD, with networking (4× 1GbE RJ45; 1× dedicated IPMI Port) already installed.
+
+It is built on the IoT SuperServer platform: Mini-1U Embedded System with AMD EPYC 4004/4005 or Ryzen 7000/9000 Series Processor up to 65W TDP. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 1× AMD EPYC 4545P (16C/3.0GHz)
+- Memory: 32GB DDR5-5600
+- Storage: 1× 960GB M.2 NVMe SSD
+- Networking: 4× 1GbE RJ45
+- Networking: 1× dedicated IPMI Port
+- Power: 180W Power Adapter
+
+Platform:
+- Form factor: Fan-based Embedded
+- Dimensions (W × H × D): 264.8 x 43 x 225.8mm (10.43" x 1.69" x 8.89")
+- Processor support: Single Socket AM5 (LGA-1718); AMD EPYC 4005/4004 Series Processor; 16C/32T; 64MB Cache
+- Motherboard: Super H14SRV-HLN4F
+- Chassis: CSE-E300
+
+Memory & storage:
+- Slot Count: 4 DIMM slots
+- Max Memory (1DPC): 192GB 5600MT/s ECC/non-ECC DDR5 UDIMM
+- Drive bays / M.2: M.2:; 1 M.2 PCIe 5.0 x4 NVMe slot (M-key 2280); 1 M.2 PCIe 5.0 x4 NVMe slot (M-key 22110)
+
+I/O, power & cooling:
+- LAN: 4 RJ45 1 GbE LAN ports (Intel I350-AM4); 1 RJ45 1 GbE Dedicated BMC LAN port (ASPEED AST2600)
+- USB: 1 USB 3.2 Gen2 Type-C port (Rear); 2 USB 3.2 Gen2 Type-A ports (Rear); 1 USB 3.2 Gen1 Type-A port (Rear)
+- Video: 1 HDMI 2.1 port(s) (Rear); 1 Mini-DP port (Rear)
+- Power supplies: 1x 180W power supply
+- Cooling: Up to 1 CPU heatsink with 70x70x15mm Fan(s); Up to 2x 4-PIN PWM 40x40x28mm Fan(s)
+
+Physical & environment:
+- Net weight: 3.7 lbs (1.6 kg)
+- Operating temperature: 0°C to 40°C (32°F to 104°F) with 0.7 m/s airflow
+
+Use cases: Branch Office / Store Appliance, Retail Store Appliance.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); AS -E300-14GR-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/as%20-e300-14gr-01-g2)
+
+#### Supermicro 1U Ultra-Short Depth SYS-111AD-HN2-01-G2 (Supermicro)
+
+Page: https://planman.ae/products/smc-gold-sys-111ad-hn2-01-g2.html
+Model: SYS-111AD-HN2-01-G2
+
+Ready-to-ship Gold Series 1U Ultra-Short Depth (Self-Checkout Kiosk - Retail) with 1× Intel Core i7-12700E, 64GB DDR5-5600 and 3.84TB flash storage.
+
+The Supermicro SYS-111AD-HN2-01-G2 is a pre-configured Gold Series IoT SuperServer, recommended by Supermicro for Self-Checkout Kiosk - Retail. It ships with 1× Intel Core i7-12700E (12C/2.1GHz), 64GB DDR5-5600 of memory and 2× 1.92TB 2.5" SATA SSD, with networking (1× dual 2.5GbE RJ45) already installed.
+
+It is built on the IoT SuperServer platform: Intel Single Socket LGA-1700 support 12th & 13th Gen, 200W Low Noise AC-DC PWS, 1U edge platform. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on.
+
+Gold Series configuration (as shipped):
+- Processors: 1× Intel Core i7-12700E (12C/2.1GHz)
+- Memory: 64GB DDR5-5600
+- Storage: 2× 1.92TB 2.5" SATA SSD
+- Networking: 1× dual 2.5GbE RJ45
+- Power: 1× 200W Gold Level
+
+Platform:
+- Form factor: 1U Rackmount
+- Dimensions (W × H × D): 437 x 43 x 287mm (17.2" x 1.7" x 11.3")
+- Processor support: Single L0 (LGA-1700); Intel Core 3/5/7 (Series 2) and 14th/13th/12th Gen Core i3/i5/i7/i9 Processors; Up to 12C/20T
+- Motherboard: Super X13SAZ-F
+- Chassis: CSE-510FT-203B
+
+Memory & storage:
+- Slot Count: 4 DIMM slots
+- Max Memory (2DPC): Up to 128GB 4400MT/s ECC/non-ECC DDR5 UDIMM
+- Drive bays / M.2: 1 M.2 NVMe slot (M-key 2280/22110)
+
+I/O, power & cooling:
+- LAN: 1 RJ45 1 GbE Dedicated BMC LAN port; 2 RJ45 2.5 GbE LAN ports
+- USB: 4 USB 3.2 Gen2 Type-A ports (Rear)
+- Video: 1 VGA port; 1 DVI-D port; 2 DisplayPort 1.4 ports; 1 port(s) supporting 4K@60Hz as specified in HDMI 2.0b
+- Power supplies: 1x 200W Gold Level (91%) power supply
+- Cooling: Up to 4x 4-PIN PWM 40x28mm Fan(s)
+
+Physical & environment:
+- Net weight: 10 lbs (4.54 kg)
+- Operating temperature: 0°C to 40°C (32°F to 104°F)
+
+Use cases: Self-Checkout Kiosk - Retail.
+
+Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); SYS-111AD-HN2-01-G2 datasheet (https://www.supermicro.com/en/products/system/datasheet/sys-111ad-hn2-01-g2)
 
 #### ASUS Edge & Tower Servers (ASUS)
 

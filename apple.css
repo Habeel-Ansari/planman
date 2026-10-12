@@ -257,6 +257,15 @@ html[data-theme="light"] .section-alt .tab-list { background: #e8e8ed; }
 .cat-nav button[aria-pressed="true"] { background: var(--surface); }
 .product-visual { border-bottom: 0; margin: 8px 8px 0; border-radius: 18px; }
 .product-body h3 { font-size: 21px; }
+/* Collection badge (e.g. Supermicro Gold Series "Ready to ship") and its sidebar entry */
+.badge-series { background: #b7791f !important; color: #fff !important; }
+.cat-nav li.cat-collection { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
+.cat-nav li.cat-collection button span:first-child { color: #b7791f; font-weight: 600; }
+html[data-theme="dark"] .cat-nav li.cat-collection button span:first-child { color: #f0b54a; }
+.pd-series { font-size: 13px; font-weight: 600; color: #b7791f; }
+.pd-series:hover { text-decoration: underline; text-underline-offset: 3px; }
+html[data-theme="dark"] .pd-series { color: #f0b54a; }
+
 /* Whole card opens the product page: the title link is stretched over the card,
    and the Request Quote button sits above it so it stays separately clickable */
 .product-card { position: relative; }

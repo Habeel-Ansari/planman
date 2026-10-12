@@ -52,7 +52,7 @@ def fit_title(draw, text, width, max_lines=2):
     return f, lines[:max_lines]
 
 
-products = json.loads(subprocess.run(["node", "-e", DUMP], cwd=ROOT, capture_output=True, text=True, check=True).stdout)
+products = json.loads(subprocess.run(["node", "-e", DUMP], cwd=ROOT, capture_output=True, text=True, encoding="utf-8", check=True).stdout)
 logo = Image.open(ROOT / "assets" / "logo" / "planman-logo-dark.png" if (ROOT / "assets" / "logo" / "planman-logo-dark.png").exists() else ROOT / "assets" / "logo" / "planman-logo.png").convert("RGBA")
 logo = logo.resize((300, round(logo.height * 300 / logo.width)), Image.LANCZOS)
 label = font(["segoeuisb.ttf", "segoeui.ttf", "arial.ttf"], 26)
