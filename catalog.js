@@ -103,7 +103,13 @@
     // A collection with groups (Supermicro Gold Series) is shown section by section, each with its own tabs,
     // mirroring the vendor's page. Products join a section/tab through seriesGroup: 'section/tab'.
     function groupedHtml(groups, list) {
-        return groups.map((g) => {
+        // overview bar: every section with its count, so the whole collection is visible at a glance
+        const counts = groups.map((g) => [g, list.filter((p) => (p.seriesGroup || '').split('/')[0] === g.key).length]).filter(([, n]) => n);
+        const overview = `<nav class="series-overview" aria-label="Sections">
+                <span class="series-overview-label">${list.length} systems in ${counts.length} section${counts.length === 1 ? '' : 's'}</span>
+                ${counts.map(([g, n]) => `<a class="chip" href="#series-${g.key}">${esc(g.name)} <span class="count">${n}</span></a>`).join('')}
+            </nav>`;
+        return overview + groups.map((g) => {
             const inGroup = list.filter((p) => (p.seriesGroup || '').split('/')[0] === g.key);
             if (!inGroup.length) return '';
             const subs = g.subs.filter(([k]) => inGroup.some((p) => p.seriesGroup === `${g.key}/${k}`));
@@ -154,6 +160,17 @@
     });
     // section tabs inside a grouped collection: one selected tab per section
     grid.addEventListener('click', (e) => {
+        const jump = e.target.closest('.series-overview a[href^="#series-"]');
+        if (jump) {
+            e.preventDefault();
+            const target = document.getElementById(jump.getAttribute('href').slice(1));
+            if (!target) return;
+            const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+            target.scrollIntoView({ behavior: reduce ? 'instant' : 'smooth', block: 'start' });
+            // if smooth scrolling did not happen (some browsers/embedded views), jump there directly
+            setTimeout(() => { if (Math.abs(target.getBoundingClientRect().top) > 150) target.scrollIntoView({ behavior: 'instant', block: 'start' }); }, 900);
+            return;
+        }
         const b = e.target.closest('button[data-sub]');
         if (!b) return;
         const g = (cols[state.cat].groups || []).find((x) => x.key === b.dataset.group);

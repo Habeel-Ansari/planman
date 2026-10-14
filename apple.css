@@ -267,8 +267,11 @@ html[data-theme="light"] .section-alt .tab-list { background: #e8e8ed; }
 
 /* Grouped collection view (Supermicro Gold Series): sections with sub-category tabs */
 .product-grid.is-grouped { display: block; }
+.series-overview { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 36px; padding: 16px 18px; border-radius: 18px; background: var(--surface); }
+.series-overview-label { font-weight: 600; margin-right: 6px; }
+html[data-theme="light"] .series-overview .chip { background: var(--bg); }
 .series-group + .series-group { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border); }
-.series-group { scroll-margin-top: calc(var(--nav-h) + 24px); }
+.series-group { scroll-margin-top: calc(var(--nav-h) + 96px); } /* clears the sticky menu and filter bar */
 .series-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px; margin-bottom: 22px; }
 .series-head h3 { font-size: 26px; letter-spacing: -0.02em; }
 .series-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
