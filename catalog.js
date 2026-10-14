@@ -14,7 +14,7 @@
     const label = (c) => cats[c] || (cols[c] && cols[c].name);
     const inCat = (p, c) => c === 'all' || p.cat === c || (!!cols[c] && p.series === c);
     const catArt = window.CATEGORY_ART || {};
-    const art = (p) => `assets/illustrations/${p.art || catArt[p.cat] || 'servers'}.svg`;
+    const art = (p) => p.img || `assets/illustrations/${p.art || catArt[p.cat] || 'servers'}.svg`;
     const page = (p) => `products/${p.id}.html`;
 
     const params = new URLSearchParams(location.search);
@@ -33,6 +33,7 @@
     // Page header follows the active filter, so a menu link to a category or brand visibly changes the page
     const heroTitle = document.getElementById('catalog-title');
     const heroLead = document.getElementById('catalog-lead');
+    const heroLogo = document.getElementById('catalog-logo');
     const hero = heroTitle && { title: heroTitle.textContent, lead: heroLead.textContent, doc: document.title };
     function renderHero() {
         if (!hero) return;
@@ -43,6 +44,8 @@
         heroLead.textContent = !filtered ? hero.lead
             : (c && ((window.CATEGORY_LEADS || {})[state.cat] || (cols[state.cat] || {}).lead)) || (window.BRAND_LEADS || {})[state.brand] || hero.lead;
         document.title = filtered ? `${heroTitle.textContent} | Plan Man` : hero.doc;
+        const logo = (cols[state.cat] || {}).logo;
+        if (heroLogo) { heroLogo.hidden = !logo; if (logo) { heroLogo.src = logo; heroLogo.alt = cols[state.cat].name.split(' ')[0]; } }
     }
 
     const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -66,18 +69,22 @@
         const catCount = (c) => products.filter((p) => inCat(p, c) && matches(p, 'cat')).length;
         const item = (c, text, cls = '') =>
             `<li${cls ? ` class="${cls}"` : ''}><button data-cat="${c}" aria-pressed="${state.cat === c}"><span>${esc(text)}</span><span class="count">${catCount(c)}</span></button></li>`;
-        catWrap.innerHTML = item('all', 'All products') + Object.keys(cats).map((c) => item(c, cats[c])).join('')
-            + Object.keys(cols).map((c) => item(c, cols[c].nav || cols[c].name, 'cat-collection')).join('');
+        // the selected category or collection is listed right under "All products"
+        const keys = [...Object.keys(cats), ...Object.keys(cols)];
+        const ordered = state.cat === 'all' ? keys : [state.cat, ...keys.filter((c) => c !== state.cat)];
+        catWrap.innerHTML = item('all', 'All products') + ordered.map((c) => cols[c]
+            ? item(c, cols[c].nav || cols[c].name, c === state.cat ? 'cat-collection is-pinned' : 'cat-collection')
+            : item(c, cats[c])).join('');
     }
 
     function card(p, i) {
         const top = p.specs.slice(0, 3).map(([k, v]) => `<li><strong>${esc(k)}:</strong> ${esc(v)}</li>`).join('');
         return `
         <article class="product-card" data-brand="${p.brand}" style="--i:${Math.min(i, 12)}">
-            <div class="product-visual">
+            <div class="product-visual${p.img ? ' has-photo' : ''}">
                 <span class="tag tag-${p.brand}">${esc(brands[p.brand])}</span>
                 ${p.isNew ? '<span class="badge-new">New</span>' : cols[p.series] ? `<span class="badge-new badge-series">${esc(cols[p.series].badge)}</span>` : ''}
-                <img src="${art(p)}" alt="" loading="lazy">
+                <img src="${art(p)}" alt="${p.img ? esc(p.name) : ''}" loading="lazy"${p.imgSize ? ` width="${p.imgSize[0]}" height="${p.imgSize[1]}"` : ''}>
             </div>
             <div class="product-body">
                 <div class="product-cat">${esc(cats[p.cat])}</div>

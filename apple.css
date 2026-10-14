@@ -257,9 +257,20 @@ html[data-theme="light"] .section-alt .tab-list { background: #e8e8ed; }
 .cat-nav button[aria-pressed="true"] { background: var(--surface); }
 .product-visual { border-bottom: 0; margin: 8px 8px 0; border-radius: 18px; }
 .product-body h3 { font-size: 21px; }
+/* Product photos (instead of illustrations): fit inside the panel without distortion */
+.product-visual.has-photo img { width: 86%; height: 74%; max-width: none; object-fit: contain; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .45)); }
+.product-card:hover .product-visual.has-photo img { transform: translateY(-3px) scale(1.03); }
+
+/* Brand logo in the products page header (shown for collections such as Supermicro Gold Series) */
+.catalog-logo { display: block; height: 72px; width: auto; margin: 0 auto 14px; }
+.catalog-logo[hidden] { display: none; }
+
 /* Collection badge (e.g. Supermicro Gold Series "Ready to ship") and its sidebar entry */
 .badge-series { background: #b7791f !important; color: #fff !important; }
 .cat-nav li.cat-collection { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
+.cat-nav li.cat-collection.is-pinned { margin-top: 0; padding-top: 0; border-top: 0; }
+/* Sidebar heading ("Categories") */
+.cat-nav .cat-nav-title { color: var(--accent-text); font-weight: 700; font-size: 13px; letter-spacing: .12em; }
 .cat-nav li.cat-collection button span:first-child { color: #b7791f; font-weight: 600; }
 html[data-theme="dark"] .cat-nav li.cat-collection button span:first-child { color: #f0b54a; }
 .pd-series { font-size: 13px; font-weight: 600; color: #b7791f; }

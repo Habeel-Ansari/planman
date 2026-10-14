@@ -139,6 +139,14 @@ vm.runInContext(read('data/products.js'), sandbox);
 vm.runInContext(read('data/product-details.js'), sandbox);
 const { PRODUCTS, BRANDS, CATEGORIES, CATEGORY_ART, PRODUCT_DETAILS } = sandbox.window;
 const COLLECTIONS = sandbox.window.COLLECTIONS || {};
+// Card image: the product photo when there is one, otherwise the category illustration
+const cardVisual = (p, esc, prefix = '') => {
+  const ill = p.art || CATEGORY_ART[p.cat] || 'servers';
+  const img = p.img
+    ? `<img src="${prefix}${p.img}" alt="${esc(p.name)}" width="${p.imgSize[0]}" height="${p.imgSize[1]}" loading="lazy">`
+    : `<img src="${prefix}assets/illustrations/${ill}.svg" alt="" width="400" height="300" loading="lazy">`;
+  return `<div class="product-visual${p.img ? ' has-photo' : ''}"><span class="tag tag-${p.brand}">${esc(BRANDS[p.brand])}</span>${badgeHtml(p, esc)}${img}</div>`;
+};
 const badgeHtml = (p, esc) => p.isNew ? '<span class="badge-new">New</span>'
   : COLLECTIONS[p.series] ? `<span class="badge-new badge-series">${esc(COLLECTIONS[p.series].badge)}</span>` : '';
 const productUrl = (p) => `/products/${p.id}.html`;
@@ -249,8 +257,7 @@ function catalogHtml() {
   const e = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   return PRODUCTS.map((p) => {
     const top = p.specs.slice(0, 3).map(([k, v]) => `<li><strong>${e(k)}:</strong> ${e(v)}</li>`).join('');
-    const art = p.art || CATEGORY_ART[p.cat] || 'servers';
-    return `<article class="product-card" data-brand="${p.brand}"><div class="product-visual"><span class="tag tag-${p.brand}">${e(BRANDS[p.brand])}</span>${badgeHtml(p, e)}<img src="assets/illustrations/${art}.svg" alt="" width="400" height="300" loading="lazy"></div><div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="products/${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="contact.html?product=${encodeURIComponent(p.name)}">Request Quote</a></div></div></article>`;
+    return `<article class="product-card" data-brand="${p.brand}">${cardVisual(p, e)}<div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="products/${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="contact.html?product=${encodeURIComponent(p.name)}">Request Quote</a></div></div></article>`;
   }).join('\n');
 }
 
@@ -338,7 +345,7 @@ for (const page of PAGES) {
 
   const relatedCard = (p) => {
     const top = p.specs.slice(0, 3).map(([k, v]) => `<li><strong>${e(k)}:</strong> ${e(v)}</li>`).join('');
-    return `<article class="product-card" data-brand="${p.brand}"><div class="product-visual"><span class="tag tag-${p.brand}">${e(BRANDS[p.brand])}</span>${badgeHtml(p, e)}<img src="../assets/illustrations/${artOf(p)}.svg" alt="" width="400" height="300" loading="lazy"></div><div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="${quote(p)}">Request Quote</a></div></div></article>`;
+    return `<article class="product-card" data-brand="${p.brand}">${cardVisual(p, e, '../')}<div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="${quote(p)}">Request Quote</a></div></div></article>`;
   };
 
   fs.mkdirSync(path.join(ROOT, 'products'), { recursive: true });
@@ -375,7 +382,7 @@ for (const page of PAGES) {
 
     const productLd = {
       '@type': 'Product', '@id': `${abs(url)}#product`, name: p.name, description: p.summary, url: abs(url),
-      brand: { '@type': 'Brand', name: brand }, category: cat, image: abs(`/assets/og/products/${p.id}.jpg`),
+      brand: { '@type': 'Brand', name: brand }, category: cat, image: p.img ? [abs('/' + p.img), abs(`/assets/og/products/${p.id}.jpg`)] : abs(`/assets/og/products/${p.id}.jpg`),
       ...(d.model ? { model: d.model, mpn: d.model } : {}),
       additionalProperty: p.specs.map(([k, v]) => ({ '@type': 'PropertyValue', name: k, value: v })),
       isRelatedTo: related.map((r) => ({ '@type': 'Product', name: r.name, url: abs(productUrl(r)) })),
@@ -385,7 +392,7 @@ for (const page of PAGES) {
       file: `products/${p.id}.html`, url, name: p.name, type: 'ItemPage', title, description,
       crumbs: [['Home', '/'], ['Products', '/products.html'], [cat, `/products.html?cat=${p.cat}`], [p.name, url]],
       mainEntity: { '@id': productLd['@id'] }, extraGraph: [productLd],
-      ogImage: productLd.image, ogAlt: `${p.name}: ${brand} ${cat.toLowerCase()} supplied in Dubai, UAE by Plan Man`
+      ogImage: abs(`/assets/og/products/${p.id}.jpg`), ogAlt: `${p.name}: ${brand} ${cat.toLowerCase()} supplied in Dubai, UAE by Plan Man`
     };
     const head = relink(headBlock(page));
 
@@ -418,7 +425,7 @@ ${head}
     <script>(function(){var d=document.documentElement,t='light';d.classList.add('js');try{t=localStorage.getItem('pm-theme')||t}catch(e){}d.setAttribute('data-theme',t)})()</script>
     <link rel="stylesheet" href="../styles.css?v=${ver('styles.css')}">
     <link rel="stylesheet" href="../apple.css?v=${ver('apple.css')}">
-    <link rel="stylesheet" href="../product.css?v=1">
+    <link rel="stylesheet" href="../product.css?v=2">
 </head>
 <body>
     <!-- Generated by tools/seo-build.js from data/products.js and data/product-details.js. Edit those, not this file. -->
@@ -442,8 +449,10 @@ ${d.model ? `                <p class="pd-model">Model <strong>${e(d.model)}</st
                     <a class="btn btn-ghost" href="${quote(p, '&type=design')}">Talk to a Solutions Architect</a>
                 </div>
             </div>
-            <div class="pd-art">
-                <img src="../assets/illustrations/${artOf(p)}.svg" alt="${e(ILLUSTRATION_ALT[artOf(p)] || '')}" width="${(svgSize[artOf(p)] || [400])[0]}" height="${(svgSize[artOf(p)] || [, 300])[1]}">
+            <div class="pd-art${p.img ? ' has-photo' : ''}">
+                ${p.img
+                  ? `<img src="../${p.img}" alt="${e(p.name)}" width="${p.imgSize[0]}" height="${p.imgSize[1]}" fetchpriority="high">`
+                  : `<img src="../assets/illustrations/${artOf(p)}.svg" alt="${e(ILLUSTRATION_ALT[artOf(p)] || '')}" width="${(svgSize[artOf(p)] || [400])[0]}" height="${(svgSize[artOf(p)] || [, 300])[1]}">`}
                 <i class="ph ${p.icon || 'ph-cube'}" aria-hidden="true"></i>
             </div>
         </div>

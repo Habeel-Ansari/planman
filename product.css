@@ -39,6 +39,8 @@
 .pd-hero[data-brand="supermicro"] { --glow: rgba(77, 163, 255, .18); }
 .pd-hero[data-brand="asus"] { --glow: rgba(200, 162, 255, .18); }
 .pd-art img { width: 78%; height: auto; }
+.pd-art.has-photo img { width: 84%; height: auto; max-height: 80%; object-fit: contain; filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .5)); }
+.pd-art.has-photo .ph { display: none; }
 .pd-art .ph { position: absolute; right: 24px; bottom: 20px; font-size: 40px; color: rgba(255, 255, 255, .5); }
 
 /* ---------- In-page navigation ---------- */
