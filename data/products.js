@@ -1145,3 +1145,6 @@ window.PRODUCTS = [
         ]
     }
 ];
+
+// Pre-booking products are listed first everywhere (catalog, brand / category pages); the order is otherwise unchanged
+window.PRODUCTS.sort((a, b) => (b.preorder ? 1 : 0) - (a.preorder ? 1 : 0));

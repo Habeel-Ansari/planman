@@ -3512,6 +3512,96 @@ Source: ASUS storage solutions (https://www.asus.com/event/asus-storage-solution
 
 ### AI Workstations & Deskside
 
+#### ASUS ExpertCenter Pro ET900N G3 (ASUS)
+
+Page: https://planman.ae/products/asus-expertcenter-pro-et900n-g3.html
+Model: ET900N G3
+
+Deskside AI supercomputer on NVIDIA DGX Station architecture with the GB300 Grace Blackwell Ultra Desktop Superchip.
+
+The ASUS ExpertCenter Pro ET900N G3 is a deskside AI supercomputer built on NVIDIA DGX Station architecture. It is powered by the NVIDIA GB300 Grace Blackwell Ultra Desktop Superchip with 748 GB of coherent memory and up to 20 petaFLOPS of AI performance, in a standard tower form factor.
+
+It runs the NVIDIA AI software stack and supports NVIDIA NemoClaw and NVIDIA AI Enterprise, so teams can develop, fine-tune and run large models and autonomous AI agents locally. NVIDIA NVLink-C2C and two ConnectX-8 SuperNIC ports provide the bandwidth to scale beyond a single system.
+
+Closed-loop AIO liquid cooling sustains performance under heavy AI workloads while keeping noise to about 50 dB in Auto mode, and an ASPEED BMC with IPMI and Redfish allows remote management like a server.
+
+Compute:
+- Superchip: NVIDIA GB300 Grace Blackwell Ultra Desktop Superchip
+- CPU: NVIDIA Grace, 72 Arm Neoverse V2 cores
+- GPU: NVIDIA Blackwell Ultra
+- AI performance: Up to 20 PFLOPS
+- Interconnect: NVIDIA NVLink-C2C
+
+Memory & storage:
+- Coherent memory: 748 GB
+- CPU memory: 496 GB LPDDR5X (396 GB/s)
+- GPU memory: 252 GB HBM3e (7.1 TB/s)
+- Storage: 4× M.2 2280: 2× PCIe 5.0 x4 (OS, RAID 1) and 2× PCIe 6.0 x4 (data); includes 2× 2 TB NVMe SSDs for the OS
+
+Expansion & graphics:
+- PCIe slots: 3× PCIe 5.0 x16 slots (x16, x8, x8)
+- Optional graphics: One NVIDIA RTX PRO 6000 Blackwell Max-Q, RTX PRO 4000 Blackwell SFF or RTX PRO 2000 Blackwell
+
+Networking & I/O:
+- Networking: 2× NVIDIA ConnectX-8 SuperNIC QSFP112 (400G), 1× Marvell 10 GbE, 1× 1 GbE BMC management
+- Front I/O: 2× USB-C 10 Gbps, 2× USB-A 10 Gbps, 1× USB 2.0, headphone and microphone jacks
+- Rear I/O: 4× USB-A 10 Gbps, Micro USB COM (BMC), mini DisplayPort (BMC), 3× audio jacks
+
+Management & software:
+- Operating system: Ubuntu with NVIDIA AI developer tools
+- Software: NVIDIA AI software stack, NVIDIA AI Enterprise, NVIDIA NemoClaw, ASUS Zenni AI Hub
+- Management: ASPEED AST2600 BMC, IPMI 2.0 and DMTF Redfish; TPM 2.0
+
+Physical:
+- Power supply: 1600 W 80 PLUS Titanium ATX
+- Cooling: Closed-loop AIO liquid cooling, about 50 dB in Auto mode
+- Dimensions: 584 × 232 × 565 mm (23.0 × 9.1 × 22.3 in)
+- Weight: 27 kg net, 32 kg gross
+- Operating temperature: 10 °C to 35 °C
+
+Use cases: Local LLM training and fine-tuning, Autonomous AI agents, Healthcare and medical research, Automotive and aerospace engineering, Smart infrastructure, AI development teams.
+
+Source: ASUS ExpertCenter Pro ET900N G3 (https://www.asus.com/displays-desktops/workstations/performance/expertcenter-pro-et900n-g3/); ExpertCenter Pro ET900N G3 tech specs (https://www.asus.com/displays-desktops/workstations/performance/expertcenter-pro-et900n-g3/techspec/)
+
+#### ASUS ProArt GR1X Mini PC (ASUS)
+
+Page: https://planman.ae/products/asus-proart-gr1x.html
+Model: ProArt GR1X
+
+Windows mini PC powered by NVIDIA RTX Spark, with up to 128 GB unified memory for local AI agents and creative work.
+
+The ASUS ProArt GR1X is a compact Windows mini PC powered by the NVIDIA RTX Spark superchip, which pairs a 6144-core NVIDIA Blackwell RTX GPU with a 20-core NVIDIA Grace CPU. It delivers up to 1 petaFLOP of FP4 AI performance and up to 128 GB of unified memory in a 150 × 150 × 51 mm chassis of about 1.1 litres.
+
+It is built to run AI agents around the clock and larger models locally, with native NVIDIA CUDA support for developers, NVIDIA Studio acceleration for creators, and RTX graphics for 3D and gaming. A 140 W design with engineered cooling keeps performance steady through long workloads.
+
+Compute:
+- Superchip: NVIDIA RTX Spark N1X
+- CPU: 20-core NVIDIA Grace
+- GPU: NVIDIA Blackwell RTX, 6144 cores
+- AI performance: Up to 1 petaFLOP (FP4)
+- TDP: 140 W
+
+Memory & storage:
+- Memory: 64 GB or 128 GB LPDDR5X unified memory
+- Storage: 1 TB or 2 TB M.2 NVMe PCIe 4.0, or 4 TB M.2 NVMe PCIe 5.0; dual M.2 slots
+
+Connectivity:
+- Wireless: Wi-Fi 7 2×2, Bluetooth 5.4
+- LAN: 1× 10G RJ45
+- Rear I/O: 1× USB 3.2 Gen 2×2 Type-C with PD input, 3× USB 3.2 Gen 2×2 Type-C (DisplayPort Alt Mode), 1× HDMI 2.1, Kensington lock slot
+- Displays: Up to four 4K displays
+
+Physical:
+- Operating system: Windows 11 Pro or Windows 11 Home
+- Power: 240 W adapter
+- Dimensions: 150 × 150 × 51 mm
+- Weight: 1.48 kg
+- Colours: Black (anodized) or Silver (sandblasted)
+
+Use cases: Always-on AI agents, Local LLM development, Video editing and 3D rendering, AI-assisted creative work, Compact office workstation.
+
+Source: ASUS ProArt GR1X Mini PC (https://www.asus.com/displays-desktops/mini-pcs/proart-mini-pc-series/proart-gr1x-mini-pc/); ProArt GR1X tech specs (https://www.asus.com/displays-desktops/mini-pcs/proart-mini-pc-series/proart-gr1x-mini-pc/techspec/)
+
 #### NVIDIA DGX Spark (NVIDIA)
 
 Page: https://planman.ae/products/nvidia-dgx-spark.html
@@ -3716,96 +3806,6 @@ Physical:
 Use cases: Local LLM development, Fine-tuning and inference, AI education and research, Prototyping before data center deployment.
 
 Source: ASUS Ascent GX10 specifications (https://www.asus.com/networking-iot-servers/desktop-ai-supercomputer/ultra-small-ai-supercomputers/asus-ascent-gx10/techspec/)
-
-#### ASUS ExpertCenter Pro ET900N G3 (ASUS)
-
-Page: https://planman.ae/products/asus-expertcenter-pro-et900n-g3.html
-Model: ET900N G3
-
-Deskside AI supercomputer on NVIDIA DGX Station architecture with the GB300 Grace Blackwell Ultra Desktop Superchip.
-
-The ASUS ExpertCenter Pro ET900N G3 is a deskside AI supercomputer built on NVIDIA DGX Station architecture. It is powered by the NVIDIA GB300 Grace Blackwell Ultra Desktop Superchip with 748 GB of coherent memory and up to 20 petaFLOPS of AI performance, in a standard tower form factor.
-
-It runs the NVIDIA AI software stack and supports NVIDIA NemoClaw and NVIDIA AI Enterprise, so teams can develop, fine-tune and run large models and autonomous AI agents locally. NVIDIA NVLink-C2C and two ConnectX-8 SuperNIC ports provide the bandwidth to scale beyond a single system.
-
-Closed-loop AIO liquid cooling sustains performance under heavy AI workloads while keeping noise to about 50 dB in Auto mode, and an ASPEED BMC with IPMI and Redfish allows remote management like a server.
-
-Compute:
-- Superchip: NVIDIA GB300 Grace Blackwell Ultra Desktop Superchip
-- CPU: NVIDIA Grace, 72 Arm Neoverse V2 cores
-- GPU: NVIDIA Blackwell Ultra
-- AI performance: Up to 20 PFLOPS
-- Interconnect: NVIDIA NVLink-C2C
-
-Memory & storage:
-- Coherent memory: 748 GB
-- CPU memory: 496 GB LPDDR5X (396 GB/s)
-- GPU memory: 252 GB HBM3e (7.1 TB/s)
-- Storage: 4× M.2 2280: 2× PCIe 5.0 x4 (OS, RAID 1) and 2× PCIe 6.0 x4 (data); includes 2× 2 TB NVMe SSDs for the OS
-
-Expansion & graphics:
-- PCIe slots: 3× PCIe 5.0 x16 slots (x16, x8, x8)
-- Optional graphics: One NVIDIA RTX PRO 6000 Blackwell Max-Q, RTX PRO 4000 Blackwell SFF or RTX PRO 2000 Blackwell
-
-Networking & I/O:
-- Networking: 2× NVIDIA ConnectX-8 SuperNIC QSFP112 (400G), 1× Marvell 10 GbE, 1× 1 GbE BMC management
-- Front I/O: 2× USB-C 10 Gbps, 2× USB-A 10 Gbps, 1× USB 2.0, headphone and microphone jacks
-- Rear I/O: 4× USB-A 10 Gbps, Micro USB COM (BMC), mini DisplayPort (BMC), 3× audio jacks
-
-Management & software:
-- Operating system: Ubuntu with NVIDIA AI developer tools
-- Software: NVIDIA AI software stack, NVIDIA AI Enterprise, NVIDIA NemoClaw, ASUS Zenni AI Hub
-- Management: ASPEED AST2600 BMC, IPMI 2.0 and DMTF Redfish; TPM 2.0
-
-Physical:
-- Power supply: 1600 W 80 PLUS Titanium ATX
-- Cooling: Closed-loop AIO liquid cooling, about 50 dB in Auto mode
-- Dimensions: 584 × 232 × 565 mm (23.0 × 9.1 × 22.3 in)
-- Weight: 27 kg net, 32 kg gross
-- Operating temperature: 10 °C to 35 °C
-
-Use cases: Local LLM training and fine-tuning, Autonomous AI agents, Healthcare and medical research, Automotive and aerospace engineering, Smart infrastructure, AI development teams.
-
-Source: ASUS ExpertCenter Pro ET900N G3 (https://www.asus.com/displays-desktops/workstations/performance/expertcenter-pro-et900n-g3/); ExpertCenter Pro ET900N G3 tech specs (https://www.asus.com/displays-desktops/workstations/performance/expertcenter-pro-et900n-g3/techspec/)
-
-#### ASUS ProArt GR1X Mini PC (ASUS)
-
-Page: https://planman.ae/products/asus-proart-gr1x.html
-Model: ProArt GR1X
-
-Windows mini PC powered by NVIDIA RTX Spark, with up to 128 GB unified memory for local AI agents and creative work.
-
-The ASUS ProArt GR1X is a compact Windows mini PC powered by the NVIDIA RTX Spark superchip, which pairs a 6144-core NVIDIA Blackwell RTX GPU with a 20-core NVIDIA Grace CPU. It delivers up to 1 petaFLOP of FP4 AI performance and up to 128 GB of unified memory in a 150 × 150 × 51 mm chassis of about 1.1 litres.
-
-It is built to run AI agents around the clock and larger models locally, with native NVIDIA CUDA support for developers, NVIDIA Studio acceleration for creators, and RTX graphics for 3D and gaming. A 140 W design with engineered cooling keeps performance steady through long workloads.
-
-Compute:
-- Superchip: NVIDIA RTX Spark N1X
-- CPU: 20-core NVIDIA Grace
-- GPU: NVIDIA Blackwell RTX, 6144 cores
-- AI performance: Up to 1 petaFLOP (FP4)
-- TDP: 140 W
-
-Memory & storage:
-- Memory: 64 GB or 128 GB LPDDR5X unified memory
-- Storage: 1 TB or 2 TB M.2 NVMe PCIe 4.0, or 4 TB M.2 NVMe PCIe 5.0; dual M.2 slots
-
-Connectivity:
-- Wireless: Wi-Fi 7 2×2, Bluetooth 5.4
-- LAN: 1× 10G RJ45
-- Rear I/O: 1× USB 3.2 Gen 2×2 Type-C with PD input, 3× USB 3.2 Gen 2×2 Type-C (DisplayPort Alt Mode), 1× HDMI 2.1, Kensington lock slot
-- Displays: Up to four 4K displays
-
-Physical:
-- Operating system: Windows 11 Pro or Windows 11 Home
-- Power: 240 W adapter
-- Dimensions: 150 × 150 × 51 mm
-- Weight: 1.48 kg
-- Colours: Black (anodized) or Silver (sandblasted)
-
-Use cases: Always-on AI agents, Local LLM development, Video editing and 3D rendering, AI-assisted creative work, Compact office workstation.
-
-Source: ASUS ProArt GR1X Mini PC (https://www.asus.com/displays-desktops/mini-pcs/proart-mini-pc-series/proart-gr1x-mini-pc/); ProArt GR1X tech specs (https://www.asus.com/displays-desktops/mini-pcs/proart-mini-pc-series/proart-gr1x-mini-pc/techspec/)
 
 ### Desktops & Client PCs
 

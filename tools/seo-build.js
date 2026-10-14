@@ -179,6 +179,7 @@ const fitText = (max, options) => options.find((o) => o.length <= max);
 // lower-case a label for use mid-sentence, keeping acronyms (GPU, AI, PCs)
 const lc = (s) => s.split(' ').map((w) => /[A-Z]{2}/.test(w) ? w : w.toLowerCase()).join(' ');
 const plural = (n, one, many = `${one}s`) => `${n} ${n === 1 ? one : many}`;
+const preorderFirst = (keys, hasPreorder) => [...keys.filter(hasPreorder), ...keys.filter((k) => !hasPreorder(k))];
 const listText = (a) => a.length < 2 ? a.join('') : `${a.slice(0, -1).join(', ')} and ${a[a.length - 1]}`;
 const LANDINGS = (() => {
   const { CATEGORY_LEADS = {}, BRAND_LEADS = {}, BRAND_LOGOS = {}, BRAND_LOGOS_DARK = {} } = sandbox.window;
@@ -191,7 +192,7 @@ const LANDINGS = (() => {
   for (const [b, brand] of Object.entries(BRANDS)) {
     const items = PRODUCTS.filter((p) => p.brand === b);
     if (!items.length) continue;
-    const cats = Object.keys(CATEGORIES).filter((c) => items.some((p) => p.cat === c));
+    const cats = preorderFirst(Object.keys(CATEGORIES).filter((c) => items.some((p) => p.cat === c)), (c) => items.some((p) => p.cat === c && p.preorder));
     out.push({
       kind: 'brand', key: b, url: landingUrl('brand', b), name: `${brand} Products`, h1: `${brand} Products in Dubai, UAE`,
       title: BRAND_TITLES[b] || `${brand} Products in Dubai, UAE | Plan Man`, lead: BRAND_LEADS[b] || '', logo: BRAND_LOGOS[b], logoDark: BRAND_LOGOS_DARK[b],
@@ -203,7 +204,7 @@ const LANDINGS = (() => {
   for (const [c, label] of Object.entries(CATEGORIES)) {
     const items = PRODUCTS.filter((p) => p.cat === c);
     if (!items.length) continue;
-    const brands = Object.keys(BRANDS).filter((b) => items.some((p) => p.brand === b));
+    const brands = preorderFirst(Object.keys(BRANDS).filter((b) => items.some((p) => p.brand === b)), (b) => items.some((p) => p.brand === b && p.preorder));
     out.push({
       kind: 'cat', key: c, url: landingUrl('cat', c), name: label, h1: `${label} in Dubai, UAE`,
       title: fitText(60, [`${label} in Dubai, UAE | Plan Man`, `${label} in Dubai | Plan Man`, `${label} | Plan Man UAE`]) || label,

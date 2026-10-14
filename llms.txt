@@ -42,6 +42,9 @@
 
 ## Product pages
 
+- [ASUS ExpertCenter Pro ET900N G3](https://planman.ae/products/asus-expertcenter-pro-et900n-g3.html): Deskside AI supercomputer on NVIDIA DGX Station architecture with the GB300 Grace Blackwell Ultra Desktop Superchip.
+- [ASUS ProArt GR1X Mini PC](https://planman.ae/products/asus-proart-gr1x.html): Windows mini PC powered by NVIDIA RTX Spark, with up to 128 GB unified memory for local AI agents and creative work.
+- [MSI Prestige N16 Flip AI+](https://planman.ae/products/msi-prestige-n16-flip-ai-plus.html): 16-inch 2-in-1 AI laptop powered by NVIDIA RTX Spark, with up to 128 GB unified memory and an OLED touch display.
 - [NVIDIA Vera Rubin NVL72](https://planman.ae/products/nvidia-vera-rubin-nvl72.html): Next-generation rack-scale platform for agentic AI and reasoning, unifying 72 Rubin GPUs and 36 Vera CPUs in a single NVLink domain.
 - [NVIDIA DGX Vera Rubin NVL72](https://planman.ae/products/nvidia-dgx-vera-rubin-nvl72.html): Turnkey, ready-to-deploy enterprise AI infrastructure built on the Vera Rubin platform and managed with NVIDIA Mission Control.
 - [NVIDIA GB300 NVL72](https://planman.ae/products/nvidia-gb300-nvl72.html): Blackwell Ultra rack-scale system built for AI reasoning, training and data processing at scale.
@@ -121,9 +124,6 @@
 - [ASUS Edge & Tower Servers](https://planman.ae/products/asus-edge.html): Edge servers and tower servers for branch offices, retail and on-site AI inference.
 - [ASUS Ascent GX10](https://planman.ae/products/asus-ascent-gx10.html): Compact personal AI supercomputer built on the NVIDIA GB10 Grace Blackwell Superchip.
 - [ASUS Control Center Data Center Edition](https://planman.ae/products/asus-acc.html): Centralised IT management for ASUS servers — monitoring, firmware updates and remote control at scale.
-- [ASUS ExpertCenter Pro ET900N G3](https://planman.ae/products/asus-expertcenter-pro-et900n-g3.html): Deskside AI supercomputer on NVIDIA DGX Station architecture with the GB300 Grace Blackwell Ultra Desktop Superchip.
-- [ASUS ProArt GR1X Mini PC](https://planman.ae/products/asus-proart-gr1x.html): Windows mini PC powered by NVIDIA RTX Spark, with up to 128 GB unified memory for local AI agents and creative work.
-- [MSI Prestige N16 Flip AI+](https://planman.ae/products/msi-prestige-n16-flip-ai-plus.html): 16-inch 2-in-1 AI laptop powered by NVIDIA RTX Spark, with up to 128 GB unified memory and an OLED touch display.
 
 ## Frequently asked questions
 
