@@ -1726,6 +1726,489 @@ window.PRODUCT_DETAILS = {
         useCases: ["IaaS – Compute/Virtualization Bare Metal"]
     },
 
+    "smc-gold-as-1115cs-tnr-01-g2": {
+        model: "AS -1115CS-TNR-01-G2",
+        sources: [['Supermicro Gold Series', "https://www.supermicro.com/en/products/gold-series"], ["AS -1115CS-TNR-01-G2 datasheet", "https://www.supermicro.com/en/products/system/datasheet/as%20-1115cs-tnr-01-g2"]],
+        overview: [
+            "The Supermicro AS -1115CS-TNR-01-G2 is a pre-configured Gold Series CloudDC A+ Server, recommended by Supermicro for Compute/Metadata Node for AI Storage Cluster. It ships with 1× AMD EPYC 9555P (64C/3.2GHz), 384GB DDR5-6400 of memory and 1× 960GB U.2 NVMe SSD, with networking (2× NVIDIA ConnectX-7 VPI dual 200G QSFP56; 1× quad 1GbE RJ45) already installed.",
+            "It is built on the CloudDC A+ Server platform: 1U CloudDC with 10 hot-swap 2.5\" NVMe/SAS/SATA bays and 2 PCIe 5.0 x16 slots + 2 AIOM slots. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on."
+        ],
+        highlights: [
+            ["ph-cpu", "Processors", "1× AMD EPYC 9555P (64C/3.2GHz)"],
+            ["ph-memory", "Memory", "384GB DDR5-6400"],
+            ["ph-hard-drives", "Storage", "1× 960GB U.2 NVMe SSD"],
+            ["ph-plugs-connected", "Networking", "2× NVIDIA ConnectX-7 VPI dual 200G QSFP56; 1× quad 1GbE RJ45"],
+            ["ph-lightning", "Power", "2× 860W Platinum Level"],
+            ["ph-truck", "Ready to ship", "Pre-configured and pre-tested; in most cases ships from Supermicro within a few days."]
+        ],
+        specs: [
+            ["Gold Series configuration (as shipped)", [
+                ["Processors", "1× AMD EPYC 9555P (64C/3.2GHz)"],
+                ["Memory", "384GB DDR5-6400"],
+                ["Storage", "1× 960GB U.2 NVMe SSD"],
+                ["Networking", "2× NVIDIA ConnectX-7 VPI dual 200G QSFP56"],
+                ["Networking", "1× quad 1GbE RJ45"],
+                ["Power", "2× 860W Platinum Level"]
+            ]],
+            ["Platform", [
+                ["Form factor", "1U Rackmount"],
+                ["Dimensions (W × H × D)", "437 x 43 x 597mm (17.2\" x 1.7\" x 23.5\")"],
+                ["Processor support", "Single processor(s); AMD EPYC 9004/9005 Series Processors; Up to 160C/320T"],
+                ["Motherboard", "Super H13SSW"],
+                ["Chassis", "CSE-LB16TS-R860AWP-A"]
+            ]],
+            ["GPU support", [
+                ["Max GPU Count", "Up to 2 single-width GPUs"],
+                ["Supported GPU", "NVIDIA PCIe: A2, L4"],
+                ["CPU-GPU Interconnect", "PCIe 5.0 x16 CPU-to-GPU Interconnect"],
+                ["GPU-GPU Interconnect", "PCIe"]
+            ]],
+            ["Memory & storage", [
+                ["Slot Count", "12 DIMM slots"],
+                ["Max Memory (1DPC)", "Up to 3TB 4800MT/s ECC DDR5 RDIMM (AMD EPYC 9004 Series Processor, MB; R1.x/R2.0/R2.01)"],
+                ["Max Memory (1DPC)", "Up to 3TB 6000MT/s ECC DDR5 RDIMM (AMD EPYC 9005 Series Processor, MB R2.0)"],
+                ["Max Memory (1DPC)", "Up to 3TB 6400MT/s ECC DDR5 RDIMM (AMD EPYC 9005 Series Processor, MB R2.01)"],
+                ["Drive bays / M.2", "2 M.2 PCIe 3.0 x2 NVMe slots (M-key 2280/22110)"]
+            ]],
+            ["I/O, power & cooling", [
+                ["LAN", "1 RJ45 1 GbE Dedicated BMC LAN port"],
+                ["USB", "2 USB 3.0 ports (rear); 2 USB 2.0 ports (front)"],
+                ["Video", "1 VGA port"],
+                ["Power supplies", "2x 860W Redundant (1 + 1) Platinum Level (94%) power supplies"],
+                ["Cooling", "Up to 6x 4cm heavy duty fans with optimal fan speed control"]
+            ]],
+            ["Physical & environment", [
+                ["Net weight", "25 lbs (11.3 kg)"],
+                ["Operating temperature", "10°C to 35°C (50°F to 95°F)"]
+            ]]
+        ],
+        useCases: ["Compute/Metadata Node for AI Storage Cluster"]
+    },
+
+    "smc-gold-as-1115cs-tnr-02-g2": {
+        model: "AS -1115CS-TNR-02-G2",
+        sources: [['Supermicro Gold Series', "https://www.supermicro.com/en/products/gold-series"], ["AS -1115CS-TNR-02-G2 datasheet", "https://www.supermicro.com/en/products/system/datasheet/as%20-1115cs-tnr-02-g2"]],
+        overview: [
+            "The Supermicro AS -1115CS-TNR-02-G2 is a pre-configured Gold Series CloudDC A+ Server, recommended by Supermicro for Compute Node for Web Hosting & SMB Infrastructure. It ships with 1× AMD EPYC 9115 (16C/2.6GHz), 64GB DDR5-6400 of memory and 1× 960GB M.2 NVMe SSD, with networking (1× 2-port 10GbE RJ45) already installed.",
+            "It is built on the CloudDC A+ Server platform: 1U CloudDC with 10 hot-swap 2.5\" NVMe/SAS/SATA bays and 2 PCIe 5.0 x16 slots + 2 AIOM slots. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on."
+        ],
+        highlights: [
+            ["ph-cpu", "Processors", "1× AMD EPYC 9115 (16C/2.6GHz)"],
+            ["ph-memory", "Memory", "64GB DDR5-6400"],
+            ["ph-hard-drives", "Storage", "1× 960GB M.2 NVMe SSD"],
+            ["ph-plugs-connected", "Networking", "1× 2-port 10GbE RJ45"],
+            ["ph-lightning", "Power", "2× 860W Platinum Level"],
+            ["ph-truck", "Ready to ship", "Pre-configured and pre-tested; in most cases ships from Supermicro within a few days."]
+        ],
+        specs: [
+            ["Gold Series configuration (as shipped)", [
+                ["Processors", "1× AMD EPYC 9115 (16C/2.6GHz)"],
+                ["Memory", "64GB DDR5-6400"],
+                ["Storage", "1× 960GB M.2 NVMe SSD"],
+                ["Networking", "1× 2-port 10GbE RJ45"],
+                ["Power", "2× 860W Platinum Level"]
+            ]],
+            ["Platform", [
+                ["Form factor", "1U Rackmount"],
+                ["Dimensions (W × H × D)", "437 x 43 x 597mm (17.2\" x 1.7\" x 23.5\")"],
+                ["Processor support", "Single processor(s); AMD EPYC 9004/9005 Series Processors; Up to 160C/320T"],
+                ["Motherboard", "Super H13SSW"],
+                ["Chassis", "CSE-LB16TS-R860AWP-A"]
+            ]],
+            ["GPU support", [
+                ["Max GPU Count", "Up to 2 single-width GPUs"],
+                ["Supported GPU", "NVIDIA PCIe: A2, L4"],
+                ["CPU-GPU Interconnect", "PCIe 5.0 x16 CPU-to-GPU Interconnect"],
+                ["GPU-GPU Interconnect", "PCIe"]
+            ]],
+            ["Memory & storage", [
+                ["Slot Count", "12 DIMM slots"],
+                ["Max Memory (1DPC)", "Up to 3TB 4800MT/s ECC DDR5 RDIMM (AMD EPYC 9004 Series Processor, MB; R1.x/R2.0/R2.01)"],
+                ["Max Memory (1DPC)", "Up to 3TB 6000MT/s ECC DDR5 RDIMM (AMD EPYC 9005 Series Processor, MB R2.0)"],
+                ["Max Memory (1DPC)", "Up to 3TB 6400MT/s ECC DDR5 RDIMM (AMD EPYC 9005 Series Processor, MB R2.01)"],
+                ["Drive bays / M.2", "2 M.2 PCIe 3.0 x2 NVMe slots (M-key 2280/22110)"]
+            ]],
+            ["I/O, power & cooling", [
+                ["LAN", "1 RJ45 1 GbE Dedicated BMC LAN port"],
+                ["USB", "2 USB 3.0 ports (rear); 2 USB 2.0 ports (front)"],
+                ["Video", "1 VGA port"],
+                ["Power supplies", "2x 860W Redundant (1 + 1) Platinum Level (94%) power supplies"],
+                ["Cooling", "Up to 6x 4cm heavy duty fans with optimal fan speed control"]
+            ]],
+            ["Physical & environment", [
+                ["Net weight", "25 lbs (11.3 kg)"],
+                ["Operating temperature", "10°C to 35°C (50°F to 95°F)"]
+            ]]
+        ],
+        useCases: ["Compute Node for Web Hosting & SMB Infrastructure"]
+    },
+
+    "smc-gold-sbi-612b-1ne34-01-g2": {
+        model: "SBI-612B-1NE34-01-G2",
+        sources: [['Supermicro Gold Series', "https://www.supermicro.com/en/products/gold-series"], ["SBI-612B-1NE34-01-G2 datasheet", "https://www.supermicro.com/en/products/system/datasheet/sbi-612b-1ne34-01-g2"]],
+        overview: [
+            "The Supermicro SBI-612B-1NE34-01-G2 is a pre-configured Gold Series SuperBlade SuperServer, recommended by Supermicro for FSI, AI, EDA, 3D Rendering & Simulation. It ships with 1× Intel Xeon 6517P (16C/3.2GHz) per node, 128GB DDR5-6400 of memory per node and 1× 1.92TB M.2 NVMe SSD per node, with networking (Up to 4× 25G Ethernet switches on the enclosure) already installed.",
+            "It is a 6U SuperBlade SuperServer. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on."
+        ],
+        highlights: [
+            ["ph-cpu", "Processors", "1× Intel Xeon 6517P (16C/3.2GHz) per node"],
+            ["ph-memory", "Memory", "128GB DDR5-6400 per node"],
+            ["ph-hard-drives", "Storage", "1× 1.92TB M.2 NVMe SSD per node"],
+            ["ph-plugs-connected", "Networking", "Up to 4× 25G Ethernet switches on the enclosure"],
+            ["ph-truck", "Ready to ship", "Pre-configured and pre-tested; in most cases ships from Supermicro within a few days."]
+        ],
+        specs: [
+            ["Gold Series configuration (as shipped)", [
+                ["Processors", "1× Intel Xeon 6517P (16C/3.2GHz) per node"],
+                ["Memory", "128GB DDR5-6400 per node"],
+                ["Storage", "1× 1.92TB M.2 NVMe SSD per node"],
+                ["Networking", "Up to 4× 25G Ethernet switches on the enclosure"]
+            ]],
+            ["Platform", [
+                ["Form factor", "6U"],
+                ["Processor support", "Single Socket E2 (LGA-4710); Intel Xeon 6700/6500 series processors with P-cores or 6700 series processors with E-cores"],
+                ["Motherboard", "Super B14SBE-CPU-25G"],
+                ["Chassis", "CSE-6U"]
+            ]],
+            ["GPU support", [
+                ["Max GPU Count", "Up to 1 double-width or 2 single-width GPUs"],
+                ["Supported GPU", "NVIDIA PCIe: H100 NVL, L40S"]
+            ]],
+            ["Memory & storage", [
+                ["Slot Count", "16 DIMM slots/16 Channels"],
+                ["Max Memory (1DPC)", "Up to 4TB 6400MT/s ECC DDR5 RDIMM"]
+            ]],
+            ["I/O, power & cooling", [
+                ["Power supplies", "1x 3000W Redundant Platinum Level (94%) power supply"],
+                ["Cooling", "N/A"]
+            ]],
+            ["Physical & environment", [
+                ["Operating temperature", "10°C to 35°C (50°F to 95°F)"]
+            ]]
+        ],
+        useCases: ["FSI, AI, EDA, 3D Rendering & Simulation"]
+    },
+
+    "smc-gold-as-3015mr-h8tnr-01-g2": {
+        model: "AS -3015MR-H8TNR-01-G2",
+        sources: [['Supermicro Gold Series', "https://www.supermicro.com/en/products/gold-series"], ["AS -3015MR-H8TNR-01-G2 datasheet", "https://www.supermicro.com/en/products/system/datasheet/as%20-3015mr-h8tnr-01-g2"]],
+        overview: [
+            "The Supermicro AS -3015MR-H8TNR-01-G2 is a pre-configured Gold Series MicroCloud A+ Server, recommended by Supermicro for Hosting & Cloud Gaming. It ships with 1× AMD EPYC 4565P (16C/4.3GHz) per node, 64GB DDR5-5600 of memory per node and 2× 1.92TB U.2 NVMe SSD per node, with networking (2-port 10GbE/25GbE AOC per node) already installed.",
+            "It is built on the MicroCloud A+ Server platform: 3U 8-Node MicroCloud with single-width GPU support. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on."
+        ],
+        highlights: [
+            ["ph-cpu", "Processors", "1× AMD EPYC 4565P (16C/4.3GHz) per node"],
+            ["ph-memory", "Memory", "64GB DDR5-5600 per node"],
+            ["ph-hard-drives", "Storage", "2× 1.92TB U.2 NVMe SSD per node"],
+            ["ph-plugs-connected", "Networking", "2-port 10GbE/25GbE AOC per node"],
+            ["ph-lightning", "Power", "2× 2200W Titanium Level"],
+            ["ph-shield-check", "Warranty", "System Warranty includes three years of labor, three years of parts, and one year cross-ship"],
+            ["ph-truck", "Ready to ship", "Pre-configured and pre-tested; in most cases ships from Supermicro within a few days."]
+        ],
+        specs: [
+            ["Gold Series configuration (as shipped)", [
+                ["Processors", "1× AMD EPYC 4565P (16C/4.3GHz) per node"],
+                ["Memory", "64GB DDR5-5600 per node"],
+                ["Storage", "2× 1.92TB U.2 NVMe SSD per node"],
+                ["Networking", "2-port 10GbE/25GbE AOC per node"],
+                ["Power", "2× 2200W Titanium Level"],
+                ["Warranty", "System Warranty includes three years of labor, three years of parts, and one year cross-ship"]
+            ]],
+            ["Platform", [
+                ["Form factor", "3U Rackmount"],
+                ["Dimensions (W × H × D)", "438 x 132 x 589mm (17.26\" x 5.21\" x 23.2\")"],
+                ["Processor support", "Single Socket AM5 (LGA-1718); AMD EPYC 4005/4004 Series Processor; Up to 16C/32T; Up to 128MB Cache"],
+                ["Motherboard", "Super H13SRD-F"],
+                ["Chassis", "CSE-938NH-R2K20BP2"]
+            ]],
+            ["GPU support", [
+                ["Max GPU Count", "Up to 1 single-width GPU"],
+                ["Supported GPU", "NVIDIA PCIe: A2, L4, T4"]
+            ]],
+            ["Memory & storage", [
+                ["Slot Count", "4 DIMM slots"],
+                ["Max Memory (1DPC)", "Up to 192GB 5600MT/s ECC/non-ECC DDR5 UDIMM"],
+                ["Max Memory (2DPC)", "Up to 192GB 3600MT/s ECC/non-ECC DDR5 UDIMM"],
+                ["Drive bays / M.2", "1 M.2 NVMe slot (M-key 2280/22110)"]
+            ]],
+            ["I/O, power & cooling", [
+                ["USB", "2 USB 2.0 ports; 1 Type-C port (front)"],
+                ["Video", "1 port"],
+                ["Power supplies", "2x 2200W Redundant (1 + 1) Titanium Level (96%) power supplies"],
+                ["Cooling", "Up to 4 Heavy Duty 8cm Fan(s)"]
+            ]],
+            ["Physical & environment", [
+                ["Net weight", "62.2 lbs (28.21 kg)"],
+                ["Operating temperature", "10°C to 35°C (50°F to 95°F)"]
+            ]]
+        ],
+        useCases: ["Hosting & Cloud Gaming"]
+    },
+
+    "smc-gold-sys-511e-wr-01-g2": {
+        model: "SYS-511E-WR-01-G2",
+        sources: [['Supermicro Gold Series', "https://www.supermicro.com/en/products/gold-series"], ["SYS-511E-WR-01-G2 datasheet", "https://www.supermicro.com/en/products/system/datasheet/sys-511e-wr-01-g2"]],
+        overview: [
+            "The Supermicro SYS-511E-WR-01-G2 is a pre-configured Gold Series Single-Socket SuperServer, recommended by Supermicro for Virtualization and Cloud Infrastructure. It ships with 1× Intel Xeon 4510 (12C/2.4GHz), 64GB DDR5-4400 of memory and 1× 960GB M.2 NVMe SSD, with networking (2-port 1GbE) already installed.",
+            "It is built on the Single-Socket SuperServer platform: 1U single-socket WIO with 4 hot-swap 3.5\" SAS/SATA bays and 3 PCIe 5.0 slots. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on."
+        ],
+        highlights: [
+            ["ph-cpu", "Processors", "1× Intel Xeon 4510 (12C/2.4GHz)"],
+            ["ph-memory", "Memory", "64GB DDR5-4400"],
+            ["ph-hard-drives", "Storage", "1× 960GB M.2 NVMe SSD"],
+            ["ph-plugs-connected", "Networking", "2-port 1GbE"],
+            ["ph-lightning", "Power", "Redundant 860W Titanium Level"],
+            ["ph-truck", "Ready to ship", "Pre-configured and pre-tested; in most cases ships from Supermicro within a few days."]
+        ],
+        specs: [
+            ["Gold Series configuration (as shipped)", [
+                ["Processors", "1× Intel Xeon 4510 (12C/2.4GHz)"],
+                ["Memory", "64GB DDR5-4400"],
+                ["Boot / M.2", "1× 960GB M.2 NVMe SSD"],
+                ["Networking", "2-port 1GbE"],
+                ["Power", "Redundant 860W Titanium Level"]
+            ]],
+            ["Platform", [
+                ["Form factor", "1U"],
+                ["Dimensions (W × H × D)", "437 x 43 x 650mm (17.2\" x 1.7\" x 25.6\")"],
+                ["Processor support", "Single Socket E (LGA-4677); 5th Gen Intel Xeon4th Gen Intel Xeon Scalable processors; Up to 52C/104T; Up to 300MB Cache"],
+                ["Motherboard", "Super X13SEW-F"],
+                ["Chassis", "CSE-815BTS-R000WNP"]
+            ]],
+            ["GPU support", [
+                ["Max GPU Count", "Up to 1 double-width or 2 single-width GPUs"],
+                ["NVIDIA PCIe", "A1000, L4, NVIDIA RTX PRO 4000 Blackwell, RTX 4000 Ada Generation"],
+                ["NVIDIA", "RTX A400"],
+                ["CPU-GPU Interconnect", "PCIe 5.0 x16 CPU-to-GPU Interconnect"]
+            ]],
+            ["Memory & storage", [
+                ["Slot Count", "8 DIMM slots/8 Channels"],
+                ["Max Memory (1DPC)", "Up to 2TB 5600MT/s ECC DDR5 RDIMM"],
+                ["Drive bays / M.2", "1 M.2 PCIe 3.0 x2 NVMe slot (M-key 2280/22110); Peripheral Bays: 2 2.5\" peripheral bays (optional)"]
+            ]],
+            ["I/O, power & cooling", [
+                ["LAN", "2 RJ45 1 GbE LAN ports; 1 RJ45 1 GbE Dedicated BMC LAN port (IPMI shared on LAN port 1)"],
+                ["USB", "2 USB 3.2 Gen1 Type-A ports (rear); 2 USB 2.0 Type-A ports (rear); 2 USB 3.2 Gen1 ports (Header); 1 USB 2.0 Type-A port (Header)"],
+                ["Video", "1 VGA port"],
+                ["Power supplies", "2x 860W Redundant (1 + 1) Titanium Level (96%) power supplies"],
+                ["Cooling", "Up to 5 middle cooling PWM 40x40x56mm Fan(s); Up to 1 AOC cooling Fan(s) (optional)"]
+            ]],
+            ["Physical & environment", [
+                ["Net weight", "21.5 lbs (9.75 kg)"],
+                ["Operating temperature", "10°C to 35°C (50°F to 95°F)"]
+            ]]
+        ],
+        useCases: ["Virtualization and Cloud Infrastructure"]
+    },
+
+    "smc-gold-sys-c542i-11302u": {
+        model: "SYS-C542i-11302U",
+        sources: [['Supermicro Gold Series', "https://www.supermicro.com/en/products/gold-series"], ["SYS-C542i-11302U datasheet", "https://www.supermicro.com/en/products/system/datasheet/sys-c542i-11302u"]],
+        overview: [
+            "The Supermicro SYS-C542i-11302U is a pre-configured Gold Series Client System SuperServer, recommended by Supermicro for Private/Sovereign AI Endpoint. It ships with 1× Intel Core Ultra 7 Processor 265 (20C/5.3GHz), 32GB DDR5-5600 of memory and 1TB NVMe SSD, with networking (1GbE) already installed.",
+            "It is built on the Client System SuperServer platform: High-performance mid-tower AI PC for SMBs, creators, and AI developers. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on."
+        ],
+        highlights: [
+            ["ph-cpu", "Processors", "1× Intel Core Ultra 7 Processor 265 (20C/5.3GHz)"],
+            ["ph-memory", "Memory", "32GB DDR5-5600"],
+            ["ph-hard-drives", "Storage", "1TB NVMe SSD"],
+            ["ph-plugs-connected", "Networking", "1GbE"],
+            ["ph-lightning", "Power", "1000W 80+ Gold Level"],
+            ["ph-truck", "Ready to ship", "Pre-configured and pre-tested; in most cases ships from Supermicro within a few days."]
+        ],
+        specs: [
+            ["Gold Series configuration (as shipped)", [
+                ["Processors", "1× Intel Core Ultra 7 Processor 265 (20C/5.3GHz)"],
+                ["Memory", "32GB DDR5-5600"],
+                ["Boot / M.2", "1TB NVMe SSD"],
+                ["Networking", "1GbE Networking"],
+                ["Power", "1000W 80+ Gold Level"]
+            ]],
+            ["Platform", [
+                ["Form factor", "Mid-Tower"],
+                ["Dimensions (W × H × D)", "205 x 450 x 470mm (8.07\" x 17.72\" x 18.5\")"],
+                ["Processor support", "Single LGA-1851; Intel Core Ultra (Series 2) U7-265, Max 5.30GHz; 20C/20T; 30MB Cache"],
+                ["Motherboard", "Super C9B860-MW"],
+                ["Chassis", "CSE-GS3B-000NBP"]
+            ]],
+            ["Memory & storage", [
+                ["Slot Count", "4 DIMM slots/2 Channels"],
+                ["Max Memory (1DPC)", "256GB 5600MT/s non-ECC DDR5 UDIMM"],
+                ["Drive bays / M.2", "1 M.2 PCIe 4.0 x4 NVMe slot (M-key 2280(default)); 1 M.2 PCIe 5.0 x4 NVMe slot (M-key 2280(default); Capacity 1TB)"]
+            ]],
+            ["I/O, power & cooling", [
+                ["LAN", "1 RJ45 1 GbE LAN port"],
+                ["USB", "2 USB 3.2 Gen1 Type-A ports (rear); 2 USB 2.0 Type-A ports (rear); 2 USB 3.2 Gen1 Type-A ports (front); 1 Thunderbolt 4 Type-C port (Rear); 1 USB 3.2 Gen2x2 Type-C port (Front)"],
+                ["Video", "1 DisplayPort 2.1 port (Rear); 1 DisplayPort over USB Type-C port (Rear); 1 port(s) supporting 8K@60Hz as specified in HDMI 2.1 (Rear)"],
+                ["Power supplies", "1x 1000W Gold Level (90%) power supply"],
+                ["Cooling", "Up to 3 Front 120mm Fan(s); Up to 1 Rear 120mm Fan(s); Up to 3 Top 120mm Fan(s) (optional)"]
+            ]],
+            ["Physical & environment", [
+                ["Net weight", "28 lbs (12.7 kg)"],
+                ["Operating temperature", "10°C to 35°C (50°F to 95°F)"]
+            ]]
+        ],
+        useCases: ["Private/Sovereign AI Endpoint", "SMB - Local Al & Automation"]
+    },
+
+    "smc-gold-as-c521d-31101u": {
+        model: "AS -C521D-31101U",
+        sources: [['Supermicro Gold Series', "https://www.supermicro.com/en/products/gold-series"], ["AS -C521D-31101U datasheet", "https://www.supermicro.com/en/products/system/datasheet/as%20-c521d-31101u"]],
+        overview: [
+            "The Supermicro AS -C521D-31101U is a pre-configured Gold Series Client System SuperServer, recommended by Supermicro for Commercial SMB Desktop. It ships with 1× AMD EPYC 4124P (4C/5.3GHz), 16GB DDR5-5600 of memory and 1× 1TB M.2 NVMe SSD, with networking (1-port 5GbE) already installed.",
+            "It is a Compact Mini-Tower Client System SuperServer. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on."
+        ],
+        highlights: [
+            ["ph-cpu", "Processors", "1× AMD EPYC 4124P (4C/5.3GHz)"],
+            ["ph-memory", "Memory", "16GB DDR5-5600"],
+            ["ph-hard-drives", "Storage", "1× 1TB M.2 NVMe SSD"],
+            ["ph-plugs-connected", "Networking", "1-port 5GbE"],
+            ["ph-lightning", "Power", "1× 300W Gold Level"],
+            ["ph-windows-logo", "Operating system", "Windows 11 Home"],
+            ["ph-truck", "Ready to ship", "Pre-configured and pre-tested; in most cases ships from Supermicro within a few days."]
+        ],
+        specs: [
+            ["Gold Series configuration (as shipped)", [
+                ["Processors", "1× AMD EPYC 4124P (4C/5.3GHz)"],
+                ["Memory", "16GB DDR5-5600"],
+                ["Boot / M.2", "1× 1TB M.2 NVMe SSD"],
+                ["Networking", "1-port 5GbE"],
+                ["Power", "1× 300W Gold Level"],
+                ["Operating system", "Windows 11 Home"]
+            ]],
+            ["Platform", [
+                ["Form factor", "Compact Mini-Tower"],
+                ["Dimensions (W × H × D)", "92 x 341 x 290mm (3.62\" x 13.43\" x 11.42\")"],
+                ["Processor support", "Single Socket AM5 (LGA-1718); AMD EPYC 4005/4004 Series Processor; 4C/8T; 16MB Cache"],
+                ["Motherboard", "Super CARAM5-M"],
+                ["Chassis", "CSE-GS2B-000NBP"]
+            ]],
+            ["Memory & storage", [
+                ["Slot Count", "2 DIMM slots/2 Channels"],
+                ["Max Memory (1DPC)", "16GB 5600MT/s non-ECC DDR5 UDIMM"],
+                ["Drive bays / M.2", "1 M.2 PCIe 4.0 x4 NVMe slot (M-key 2280(default)/22110); 1 M.2 PCIe 5.0 x4 NVMe slot (M-key 2280(default)/22110)"]
+            ]],
+            ["I/O, power & cooling", [
+                ["LAN", "1 RJ45 5 GbE LAN port (5G Realtek Ethernet RTL8126)"],
+                ["USB", "2 USB 3.2 Gen2 Type-A ports (Rear); 4 USB 2.0 Type-A ports (Rear); 2 USB 4.0 Type-C ports (Rear); 2 USB 3.2 Gen1 Type-A ports (Header); 2 USB 3.2 Gen2 Type-C ports (Header)"],
+                ["Video", "2 USB 4.0 (DP 2.0 Alt Mode) ports (Rear); 1 port(s) supporting 4K@60Hz as specified in HDMI 2.1 (Rear)"],
+                ["Expansion", "1 M.2 PCIe 4.0 x4 slot (M-key 2280/22110); 1 M.2 PCIe 5.0 x4 slot (M-key 2280/22110)"],
+                ["Power supplies", "1x 300W Gold Level (90%) power supply"],
+                ["Cooling", "1 CPU Fan(s)"]
+            ]],
+            ["Physical & environment", [
+                ["Net weight", "6.17 lbs (2.8 kg)"],
+                ["Operating temperature", "10°C to 35°C (50°F to 95°F)"]
+            ]]
+        ],
+        useCases: ["Commercial SMB Desktop"]
+    },
+
+    "smc-gold-as-c521d-21101u": {
+        model: "AS -C521D-21101U",
+        sources: [['Supermicro Gold Series', "https://www.supermicro.com/en/products/gold-series"], ["AS -C521D-21101U datasheet", "https://www.supermicro.com/en/products/system/datasheet/as%20-c521d-21101u"]],
+        overview: [
+            "The Supermicro AS -C521D-21101U is a pre-configured Gold Series Client System SuperServer, recommended by Supermicro for Business AI Desktop. It ships with 1× AMD EPYC 4245P (6C/5.4GHz), 16GB DDR5-5600 of memory and 1× 1TB M.2 NVMe SSD, with networking (1-port 5GbE) already installed.",
+            "It is a Compact Mini-Tower Client System SuperServer. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on."
+        ],
+        highlights: [
+            ["ph-cpu", "Processors", "1× AMD EPYC 4245P (6C/5.4GHz)"],
+            ["ph-memory", "Memory", "16GB DDR5-5600"],
+            ["ph-hard-drives", "Storage", "1× 1TB M.2 NVMe SSD"],
+            ["ph-plugs-connected", "Networking", "1-port 5GbE"],
+            ["ph-lightning", "Power", "1× 300W Gold Level"],
+            ["ph-windows-logo", "Operating system", "Windows 11 Home"],
+            ["ph-truck", "Ready to ship", "Pre-configured and pre-tested; in most cases ships from Supermicro within a few days."]
+        ],
+        specs: [
+            ["Gold Series configuration (as shipped)", [
+                ["Processors", "1× AMD EPYC 4245P (6C/5.4GHz)"],
+                ["Memory", "16GB DDR5-5600"],
+                ["Boot / M.2", "1× 1TB M.2 NVMe SSD"],
+                ["Networking", "1-port 5GbE"],
+                ["Power", "1× 300W Gold Level"],
+                ["Operating system", "Windows 11 Home"]
+            ]],
+            ["Platform", [
+                ["Form factor", "Compact Mini-Tower"],
+                ["Dimensions (W × H × D)", "92 x 341 x 290mm (3.62\" x 13.43\" x 11.42\")"],
+                ["Processor support", "Single Socket AM5 (LGA-1718); AMD EPYC 4005/4004 Series Processor; 6C/12T; 32MB Cache"],
+                ["Motherboard", "Super CARAM5-M"],
+                ["Chassis", "CSE-GS2B-000NBP"]
+            ]],
+            ["Memory & storage", [
+                ["Slot Count", "2 DIMM slots/2 Channels"],
+                ["Max Memory (1DPC)", "16GB 5600MT/s non-ECC DDR5 UDIMM"],
+                ["Drive bays / M.2", "1 M.2 PCIe 4.0 x4 NVMe slot (M-key 2280(default)/22110); 1 M.2 PCIe 5.0 x4 NVMe slot (M-key 2280(default)/22110)"]
+            ]],
+            ["I/O, power & cooling", [
+                ["LAN", "1 RJ45 5 GbE LAN port (5G Realtek Ethernet RTL8126)"],
+                ["USB", "2 USB 3.2 Gen2 Type-A ports (Rear); 4 USB 2.0 Type-A ports (Rear); 2 USB 4.0 Type-C ports (Rear); 2 USB 3.2 Gen1 Type-A ports (Header); 2 USB 3.2 Gen2 Type-C ports (Header)"],
+                ["Video", "2 USB 4.0 (DP 2.0 Alt Mode) ports (Rear); 1 port(s) supporting 4K@60Hz as specified in HDMI 2.1 (Rear)"],
+                ["Power supplies", "1x 300W Gold Level (90%) power supply"],
+                ["Cooling", "1 CPU Fan(s)"]
+            ]],
+            ["Physical & environment", [
+                ["Net weight", "6.17 lbs (2.8 kg)"],
+                ["Operating temperature", "10°C to 35°C (50°F to 95°F)"]
+            ]]
+        ],
+        useCases: ["Business AI Desktop"]
+    },
+
+    "smc-gold-as-c521d-11302u": {
+        model: "AS -C521D-11302U",
+        sources: [['Supermicro Gold Series', "https://www.supermicro.com/en/products/gold-series"], ["AS -C521D-11302U datasheet", "https://www.supermicro.com/en/products/system/datasheet/as%20-c521d-11302u"]],
+        overview: [
+            "The Supermicro AS -C521D-11302U is a pre-configured Gold Series Client System SuperServer, recommended by Supermicro for Compact AI-Ready Slim Tower. It ships with 1× AMD Ryzen 9700X (8C/5.5GHz), 32GB DDR5-5600 of memory and 1× 1TB M.2 NVMe SSD, with networking (1-port 5GbE) already installed.",
+            "It is a Compact Mini-Tower Client System SuperServer. Gold Series systems are Supermicro's best-selling configurations: every component is installed and tested before shipping, and in most cases the system leaves Supermicro's warehouse within a few days, ready to rack and power on."
+        ],
+        highlights: [
+            ["ph-cpu", "Processors", "1× AMD Ryzen 9700X (8C/5.5GHz)"],
+            ["ph-memory", "Memory", "32GB DDR5-5600"],
+            ["ph-hard-drives", "Storage", "1× 1TB M.2 NVMe SSD"],
+            ["ph-plugs-connected", "Networking", "1-port 5GbE"],
+            ["ph-lightning", "Power", "1× 300W Gold Level"],
+            ["ph-windows-logo", "Operating system", "Windows 11 Pro"],
+            ["ph-truck", "Ready to ship", "Pre-configured and pre-tested; in most cases ships from Supermicro within a few days."]
+        ],
+        specs: [
+            ["Gold Series configuration (as shipped)", [
+                ["Processors", "1× AMD Ryzen 9700X (8C/5.5GHz)"],
+                ["Memory", "32GB DDR5-5600"],
+                ["Boot / M.2", "1× 1TB M.2 NVMe SSD"],
+                ["Networking", "1-port 5GbE"],
+                ["Power", "1× 300W Gold Level"],
+                ["Operating system", "Windows 11 Pro"]
+            ]],
+            ["Platform", [
+                ["Form factor", "Compact Mini-Tower"],
+                ["Dimensions (W × H × D)", "92 x 341 x 290mm (3.62\" x 13.43\" x 11.42\")"],
+                ["Processor support", "Single AM5 (LGA-1718); AMD Ryzen 9000 Series Processors; 8C/16T; 40MB Cache"],
+                ["Motherboard", "Super CARAM5-M"],
+                ["Chassis", "CSE-GS2B-000NBP"]
+            ]],
+            ["Memory & storage", [
+                ["Slot Count", "2 DIMM slots/2 Channels"],
+                ["Max Memory (1DPC)", "32GB 5600MT/s non-ECC DDR5 UDIMM"],
+                ["Drive bays / M.2", "Default: Total 2 bays; 1 internal fixed 3.5\" SATA drive bay; 1 internal fixed 2.5\" SATA drive bay; M.2:; 1 M.2 PCIe 4.0 x4 NVMe slot (M-key 2280(default)/22110); 1 M.2 PCIe 5.0 x4 NVMe slot (M-key 2280(default)/22110)"]
+            ]],
+            ["I/O, power & cooling", [
+                ["LAN", "1 RJ45 5 GbE LAN port (5G Realtek Ethernet RTL8126)"],
+                ["USB", "2 USB 3.2 Gen2 Type-A ports (Rear); 4 USB 2.0 Type-A ports (Rear); 2 USB 4.0 Type-C ports (Rear); 2 USB 3.2 Gen1 Type-A ports (Header); 2 USB 3.2 Gen2 Type-C ports (Header)"],
+                ["Video", "2 USB 4.0 (DP 2.0 Alt Mode) ports (Rear); 1 port(s) supporting 4K@60Hz as specified in HDMI 2.1 (Rear)"],
+                ["Expansion", "1 M.2 PCIe 4.0 x4 slot (M-key 2280/22110); 1 M.2 PCIe 5.0 x4 slot (M-key 2280/22110)"],
+                ["Power supplies", "1x 300W Gold Level (90%) power supply"],
+                ["Cooling", "1 CPU Fan(s)"]
+            ]],
+            ["Physical & environment", [
+                ["Net weight", "6.17 lbs (2.8 kg)"],
+                ["Operating temperature", "10°C to 35°C (50°F to 95°F)"]
+            ]]
+        ],
+        useCases: ["Compact AI-Ready Slim Tower"]
+    },
+
     "smc-gold-sys-822gs-nb3rt-01-g2": {
         model: "SYS-822GS-NB3RT-01-G2",
         sources: [['Supermicro Gold Series', "https://www.supermicro.com/en/products/gold-series"], ["SYS-822GS-NB3RT-01-G2 datasheet", "https://www.supermicro.com/en/products/system/datasheet/sys-822gs-nb3rt-01-g2"]],

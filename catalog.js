@@ -21,7 +21,9 @@
     const state = {
         brand: brands[params.get('brand')] ? params.get('brand') : 'all',
         cat: label(params.get('cat')) ? params.get('cat') : 'all',
-        q: params.get('q') || ''
+        q: params.get('q') || '',
+        // selected tab per section of a grouped collection, e.g. ?cat=gold&sub=multi-node,client-system
+        sub: new Set((params.get('sub') || '').split(',').filter(Boolean))
     };
 
     const brandWrap = document.getElementById('brand-filter');
@@ -98,10 +100,32 @@
         </article>`;
     }
 
+    // A collection with groups (Supermicro Gold Series) is shown section by section, each with its own tabs,
+    // mirroring the vendor's page. Products join a section/tab through seriesGroup: 'section/tab'.
+    function groupedHtml(groups, list) {
+        return groups.map((g) => {
+            const inGroup = list.filter((p) => (p.seriesGroup || '').split('/')[0] === g.key);
+            if (!inGroup.length) return '';
+            const subs = g.subs.filter(([k]) => inGroup.some((p) => p.seriesGroup === `${g.key}/${k}`));
+            const active = subs.map(([k]) => k).find((k) => state.sub.has(k)) || 'all';
+            const shown = active === 'all' ? inGroup : inGroup.filter((p) => p.seriesGroup === `${g.key}/${active}`);
+            const tab = (k, text, n) => `<button class="chip" data-sub="${k}" data-group="${g.key}" aria-pressed="${active === k}">${esc(text)} <span class="count">${n}</span></button>`;
+            const tabs = subs.length > 1
+                ? `<div class="series-tabs" role="group" aria-label="${esc(g.name)} categories">${tab('all', 'All', inGroup.length)}${subs.map(([k, n]) => tab(k, n, inGroup.filter((p) => p.seriesGroup === `${g.key}/${k}`).length)).join('')}</div>`
+                : `<div class="series-tabs"><span class="chip" aria-pressed="true">${esc(subs[0][1])} <span class="count">${inGroup.length}</span></span></div>`;
+            return `<section class="series-group" id="series-${g.key}">
+                <div class="series-head"><h3>${esc(g.name)}</h3>${tabs}</div>
+                <div class="product-grid">${shown.map((p, i) => card(p, i)).join('')}</div>
+            </section>`;
+        }).join('');
+    }
+
     function render() {
         const list = products.filter((p) => matches(p));
+        const groups = (cols[state.cat] || {}).groups;
+        grid.classList.toggle('is-grouped', !!(groups && list.length));
         grid.innerHTML = list.length
-            ? list.map((p, i) => card(p, i)).join('')
+            ? (groups ? groupedHtml(groups, list) : list.map((p, i) => card(p, i)).join(''))
             : `<div class="empty-state" style="grid-column:1/-1"><i class="ph ph-magnifying-glass"></i>No products match your filters. <br>Try a different search, or <a class="accent" href="contact.html">ask our engineers</a> — we source beyond this catalog.</div>`;
 
         const parts = [];
@@ -116,6 +140,7 @@
         if (state.brand !== 'all') qs.set('brand', state.brand);
         if (state.cat !== 'all') qs.set('cat', state.cat);
         if (state.q) qs.set('q', state.q);
+        if (groups && state.sub.size) qs.set('sub', [...state.sub].join(','));
         history.replaceState(null, '', location.pathname + (qs.toString() ? '?' + qs : '') + location.hash);
     }
 
@@ -125,7 +150,16 @@
     });
     catWrap.addEventListener('click', (e) => {
         const b = e.target.closest('[data-cat]');
-        if (b) { state.cat = b.dataset.cat; render(); }
+        if (b) { state.cat = b.dataset.cat; state.sub.clear(); render(); }
+    });
+    // section tabs inside a grouped collection: one selected tab per section
+    grid.addEventListener('click', (e) => {
+        const b = e.target.closest('button[data-sub]');
+        if (!b) return;
+        const g = (cols[state.cat].groups || []).find((x) => x.key === b.dataset.group);
+        g.subs.forEach(([k]) => state.sub.delete(k));
+        if (b.dataset.sub !== 'all') state.sub.add(b.dataset.sub);
+        render();
     });
     let t;
     search.addEventListener('input', () => {
@@ -134,4 +168,10 @@
     });
 
     render();
+
+    // deep link to a tab (e.g. from a product page): bring its section into view
+    if (state.sub.size) {
+        const sec = [...grid.querySelectorAll('.series-group')].find((s) => s.querySelector('button[aria-pressed="true"]:not([data-sub="all"])'));
+        if (sec) window.addEventListener('load', () => sec.scrollIntoView({ behavior: 'instant', block: 'start' }));
+    }
 })();

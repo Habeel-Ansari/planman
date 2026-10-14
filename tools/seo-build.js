@@ -147,6 +147,13 @@ const cardVisual = (p, esc, prefix = '') => {
     : `<img src="${prefix}assets/illustrations/${ill}.svg" alt="" width="400" height="300" loading="lazy">`;
   return `<div class="product-visual${p.img ? ' has-photo' : ''}"><span class="tag tag-${p.brand}">${esc(BRANDS[p.brand])}</span>${badgeHtml(p, esc)}${img}</div>`;
 };
+// "Supermicro Gold Series · Multi-Node" label on product pages, linking to that tab of the collection view
+const seriesLink = (p, esc) => {
+  const col = COLLECTIONS[p.series]; if (!col) return '';
+  const [gk, sk] = (p.seriesGroup || '').split('/');
+  const sub = ((col.groups || []).find((g) => g.key === gk) || { subs: [] }).subs.find(([k]) => k === sk);
+  return `<a class="pd-series" href="../products.html?cat=${p.series}${sub ? '&amp;sub=' + sub[0] : ''}">${esc(col.name)}${sub ? ' · ' + esc(sub[1]) : ''}</a>`;
+};
 const badgeHtml = (p, esc) => p.isNew ? '<span class="badge-new">New</span>'
   : COLLECTIONS[p.series] ? `<span class="badge-new badge-series">${esc(COLLECTIONS[p.series].badge)}</span>` : '';
 const productUrl = (p) => `/products/${p.id}.html`;
@@ -440,7 +447,7 @@ ${head}
                     <a href="../products.html">Products</a><i class="ph ph-caret-right" aria-hidden="true"></i>
                     <a href="../products.html?cat=${p.cat}">${e(cat)}</a>
                 </nav>
-                <div class="pd-meta"><span class="tag tag-${p.brand}">${e(brand)}</span>${badgeHtml(p, e)}<span class="pd-cat">${e(cat)}</span>${COLLECTIONS[p.series] ? `<a class="pd-series" href="../products.html?cat=${p.series}">${e(COLLECTIONS[p.series].name)}</a>` : ''}</div>
+                <div class="pd-meta"><span class="tag tag-${p.brand}">${e(brand)}</span>${badgeHtml(p, e)}<span class="pd-cat">${e(cat)}</span>${seriesLink(p, e)}</div>
                 <h1 class="h1">${e(p.name)}</h1>
 ${d.model ? `                <p class="pd-model">Model <strong>${e(d.model)}</strong></p>\n` : ''}                <p class="lead">${e(p.summary)}</p>
                 <ul class="pd-keyspecs" aria-label="Key specifications">${keySpecs}</ul>

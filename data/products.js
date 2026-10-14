@@ -15,6 +15,7 @@
  *   isNew    optional, shows a "New" badge
  *   img      optional product photo (assets/products/<id>.webp) with imgSize [width, height]; replaces the illustration
  *   series   optional collection key from COLLECTIONS below (e.g. 'gold' for Supermicro Gold Series)
+ *   seriesGroup  optional 'section/tab' within that collection's groups (e.g. 'enterprise-compute/multi-node')
  */
 
 window.BRANDS = {
@@ -31,6 +32,7 @@ window.CATEGORIES = {
     'servers': 'Rack & Multi-Node Servers',
     'storage': 'Storage',
     'desktop-ai': 'AI Workstations & Deskside',
+    'client': 'Desktops & Client PCs',
     'edge': 'Edge Systems',
     'software': 'Software & Management'
 };
@@ -44,6 +46,7 @@ window.CATEGORY_LEADS = {
     'servers': 'Rackmount, multi-node and blade servers for virtualization, databases, cloud and HPC.',
     'storage': 'All-flash NVMe, high-capacity and object storage to feed GPU clusters and protect enterprise data.',
     'desktop-ai': 'Desktop and deskside AI supercomputers for building, fine-tuning and running models locally.',
+    'client': 'Business desktops and AI PCs for offices, SMBs and local AI work, pre-configured with Windows.',
     'edge': 'Short-depth and compact servers for AI and computing at branch, retail, telco and factory sites.',
     'software': 'AI software, GPU virtualization and infrastructure management to run your platform.'
 };
@@ -61,6 +64,14 @@ window.COLLECTIONS = {
         nav: 'Gold Series · Ready to Ship',
         badge: 'Ready to ship',
         logo: 'assets/brands/supermicro.svg',
+        // Sections and tabs as on supermicro.com/en/products/gold-series; products join one via seriesGroup: 'section/tab'
+        groups: [
+            { key: 'enterprise-compute', name: 'Enterprise Compute', subs: [['enterprise-data-center', 'Enterprise Data Center'], ['cloud-data-center', 'Cloud Data Center'], ['multi-node', 'Multi-Node'], ['wio', 'WIO']] },
+            { key: 'enterprise-ai', name: 'Enterprise AI', subs: [['ai-systems', 'AI Systems']] },
+            { key: 'enterprise-storage', name: 'Enterprise Storage', subs: [['storage-systems', 'Storage Systems']] },
+            { key: 'intelligent-edge', name: 'Intelligent Edge', subs: [['edgeiot', 'Edge/IoT']] },
+            { key: 'client-workstation', name: 'Client & Workstation', subs: [['workstation', 'Workstation'], ['client-system', 'Client System']] }
+        ],
         lead: 'Supermicro’s best-selling servers, pre-configured with CPUs, GPUs, memory, storage and networking, tested and ready to ship within days.'
     }
 };
@@ -74,6 +85,7 @@ window.CATEGORY_ART = {
     'servers': 'servers',
     'storage': 'storage',
     'desktop-ai': 'desktop',
+    'client': 'desktop',
     'edge': 'edge',
     'software': 'software'
 };
@@ -500,7 +512,7 @@ window.PRODUCTS = [
     /* ---------------- Supermicro Gold Series (pre-configured, ready to ship) ----------------
        Source: https://www.supermicro.com/en/products/gold-series and each system's datasheet. */
     {
-        id: "smc-gold-sys-112h-tn-02-g2", brand: 'supermicro', cat: "servers", series: 'gold', icon: "ph-hard-drives",
+        id: "smc-gold-sys-112h-tn-02-g2", brand: 'supermicro', cat: "servers", series: 'gold', seriesGroup: 'enterprise-compute/enterprise-data-center', icon: "ph-hard-drives",
         img: 'assets/products/smc-gold-sys-112h-tn-02-g2.webp', imgSize: [602, 98],
         name: "Supermicro 1U Hyper SYS-112H-TN-02-G2",
         summary: "Ready-to-ship Gold Series 1U Hyper (IaaS – Compute/Virtualization Bare Metal) with 1× Intel Xeon 6731P, 1TB DDR5-6000 and 1.9TB flash storage.",
@@ -514,7 +526,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-as-2115hs-tnr-02-g2", brand: 'supermicro', cat: "servers", series: 'gold', icon: "ph-hard-drives",
+        id: "smc-gold-as-2115hs-tnr-02-g2", brand: 'supermicro', cat: "servers", series: 'gold', seriesGroup: 'enterprise-compute/enterprise-data-center', icon: "ph-hard-drives",
         img: 'assets/products/smc-gold-as-2115hs-tnr-02-g2.webp', imgSize: [700, 211],
         name: "Supermicro 2U Hyper AS -2115HS-TNR-02-G2",
         summary: "Ready-to-ship Gold Series 2U Hyper (In-Memory Databases & Analytics) with 1× AMD EPYC 9655P, 768GB DDR5-6400 and 15.36TB flash storage.",
@@ -528,7 +540,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-as-2126hs-tn-01-g2", brand: 'supermicro', cat: "servers", series: 'gold', icon: "ph-hard-drives",
+        id: "smc-gold-as-2126hs-tn-01-g2", brand: 'supermicro', cat: "servers", series: 'gold', seriesGroup: 'enterprise-compute/enterprise-data-center', icon: "ph-hard-drives",
         img: 'assets/products/smc-gold-as-2126hs-tn-01-g2.webp', imgSize: [700, 219],
         name: "Supermicro 2U Hyper AS -2126HS-TN-01-G2",
         summary: "Ready-to-ship Gold Series 2U Hyper (Virtualization & Private Cloud Consolidation) with 2× AMD EPYC 9965, 1.5TB DDR5-6400 and 1.92TB flash storage.",
@@ -542,7 +554,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-sys-222h-tn-01-g2", brand: 'supermicro', cat: "servers", series: 'gold', icon: "ph-hard-drives",
+        id: "smc-gold-sys-222h-tn-01-g2", brand: 'supermicro', cat: "servers", series: 'gold', seriesGroup: 'enterprise-compute/enterprise-data-center', icon: "ph-hard-drives",
         img: 'assets/products/smc-gold-sys-222h-tn-01-g2.webp', imgSize: [700, 221],
         name: "Supermicro 2U Hyper SYS-222H-TN-01-G2",
         summary: "Ready-to-ship Gold Series 2U Hyper (Virtualization & Private Cloud Consolidation) with 2× Intel Xeon 6740P, 1TB DDR5-6400 and 7.68TB flash storage.",
@@ -556,7 +568,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-as-1126hs-tn-01-g2", brand: 'supermicro', cat: "servers", series: 'gold', icon: "ph-hard-drives",
+        id: "smc-gold-as-1126hs-tn-01-g2", brand: 'supermicro', cat: "servers", series: 'gold', seriesGroup: 'enterprise-compute/enterprise-data-center', icon: "ph-hard-drives",
         img: 'assets/products/smc-gold-as-1126hs-tn-01-g2.webp', imgSize: [700, 119],
         name: "Supermicro 1U Hyper AS -1126HS-TN-01-G2",
         summary: "Ready-to-ship Gold Series 1U Hyper (IaaS – Compute/Virtualization Bare Metal) with 2× AMD EPYC 9355, 1.5TB DDR5-6400 and 1.92TB flash storage.",
@@ -570,7 +582,136 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-sys-822gs-nb3rt-01-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', icon: "ph-graphics-card",
+        id: "smc-gold-as-1115cs-tnr-01-g2", brand: 'supermicro', cat: "servers", series: 'gold', seriesGroup: 'enterprise-compute/cloud-data-center', icon: "ph-hard-drives",
+        img: 'assets/products/smc-gold-as-1115cs-tnr-01-g2.webp', imgSize: [423, 92],
+        name: "Supermicro 1U CloudDC AS -1115CS-TNR-01-G2",
+        summary: "Ready-to-ship Gold Series 1U CloudDC (Compute/Metadata Node for AI Storage Cluster) with 1× AMD EPYC 9555P, 384GB DDR5-6400 and 960GB flash storage.",
+        specs: [
+            ["CPU", "1× AMD EPYC 9555P (64C/3.2GHz)"],
+            ["Memory", "384GB DDR5-6400"],
+            ["Storage", "1× 960GB U.2 NVMe SSD"],
+            ["Networking", "200GbE/NDR200"],
+            ["Form factor", "1U Rackmount"],
+            ["Availability", "Gold Series, pre-configured and ready to ship"]
+        ]
+    },
+    {
+        id: "smc-gold-as-1115cs-tnr-02-g2", brand: 'supermicro', cat: "servers", series: 'gold', seriesGroup: 'enterprise-compute/cloud-data-center', icon: "ph-hard-drives",
+        img: 'assets/products/smc-gold-as-1115cs-tnr-02-g2.webp', imgSize: [423, 92],
+        name: "Supermicro 1U CloudDC AS -1115CS-TNR-02-G2",
+        summary: "Ready-to-ship Gold Series 1U CloudDC (Compute Node for Web Hosting & SMB Infrastructure) with 1× AMD EPYC 9115, 64GB DDR5-6400 and 960GB flash storage.",
+        specs: [
+            ["CPU", "1× AMD EPYC 9115 (16C/2.6GHz)"],
+            ["Memory", "64GB DDR5-6400"],
+            ["Storage", "1× 960GB M.2 NVMe SSD"],
+            ["Networking", "10GbE"],
+            ["Form factor", "1U Rackmount"],
+            ["Availability", "Gold Series, pre-configured and ready to ship"]
+        ]
+    },
+    {
+        id: "smc-gold-sbi-612b-1ne34-01-g2", brand: 'supermicro', cat: "servers", series: 'gold', seriesGroup: 'enterprise-compute/multi-node', icon: "ph-hard-drives",
+        img: 'assets/products/smc-gold-sbi-612b-1ne34-01-g2.webp', imgSize: [700, 384],
+        name: "Supermicro 6U SuperBlade SBI-612B-1NE34-01-G2",
+        summary: "Ready-to-ship Gold Series 6U SuperBlade (FSI, AI, EDA, 3D Rendering & Simulation) with 1× Intel Xeon 6517P per node, 128GB DDR5-6400 per node and 1.92TB flash storage per node.",
+        specs: [
+            ["CPU", "1× Intel Xeon 6517P (16C/3.2GHz) per node"],
+            ["Memory", "128GB DDR5-6400 per node"],
+            ["Storage", "1× 1.92TB M.2 NVMe SSD per node"],
+            ["Networking", "Up to 4× 25G Ethernet switches on the enclosure"],
+            ["Form factor", "6U"],
+            ["Availability", "Gold Series, pre-configured and ready to ship"]
+        ]
+    },
+    {
+        id: "smc-gold-as-3015mr-h8tnr-01-g2", brand: 'supermicro', cat: "servers", series: 'gold', seriesGroup: 'enterprise-compute/multi-node', icon: "ph-hard-drives",
+        img: 'assets/products/smc-gold-as-3015mr-h8tnr-01-g2.webp', imgSize: [700, 245],
+        name: "Supermicro 3U 8-Node MicroCloud AS -3015MR-H8TNR-01-G2",
+        summary: "Ready-to-ship Gold Series 3U 8-Node MicroCloud (Hosting & Cloud Gaming) with 1× AMD EPYC 4565P per node, 64GB DDR5-5600 per node and 3.84TB flash storage per node.",
+        specs: [
+            ["CPU", "1× AMD EPYC 4565P (16C/4.3GHz) per node"],
+            ["Memory", "64GB DDR5-5600 per node"],
+            ["Storage", "2× 1.92TB U.2 NVMe SSD per node"],
+            ["Networking", "2-port 10GbE/25GbE AOC (MLP or LP PCIe NIC) per node"],
+            ["Form factor", "3U Rackmount"],
+            ["Availability", "Gold Series, pre-configured and ready to ship"]
+        ]
+    },
+    {
+        id: "smc-gold-sys-511e-wr-01-g2", brand: 'supermicro', cat: "servers", series: 'gold', seriesGroup: 'enterprise-compute/wio', icon: "ph-hard-drives",
+        img: 'assets/products/smc-gold-sys-511e-wr-01-g2.webp', imgSize: [700, 163],
+        name: "Supermicro 1U WIO SYS-511E-WR-01-G2",
+        summary: "Ready-to-ship Gold Series 1U WIO (Virtualization and Cloud Infrastructure) with 1× Intel Xeon 4510, 64GB DDR5-4400 and 960GB flash storage.",
+        specs: [
+            ["CPU", "1× Intel Xeon 4510 (12C/2.4GHz)"],
+            ["Memory", "64GB DDR5-4400"],
+            ["Storage", "1× 960GB M.2 NVMe SSD"],
+            ["Networking", "1GbE"],
+            ["Form factor", "1U"],
+            ["Availability", "Gold Series, pre-configured and ready to ship"]
+        ]
+    },
+    {
+        id: "smc-gold-sys-c542i-11302u", brand: 'supermicro', cat: "client", series: 'gold', seriesGroup: 'client-workstation/client-system', icon: "ph-desktop",
+        img: 'assets/products/smc-gold-sys-c542i-11302u.webp', imgSize: [400, 868],
+        name: "Supermicro Mid-Tower AI PC SYS-C542i-11302U",
+        summary: "Ready-to-ship Gold Series Mid-Tower AI PC (Private/Sovereign AI Endpoint) with 1× Intel Core Ultra 7 Processor 265, 32GB DDR5-5600 and 1TB flash storage.",
+        specs: [
+            ["CPU", "1× Intel Core Ultra 7 Processor 265 (20C/5.3GHz)"],
+            ["Memory", "32GB DDR5-5600"],
+            ["Storage", "1TB NVMe SSD"],
+            ["Networking", "1GbE"],
+            ["Form factor", "Mid-Tower"],
+            ["Availability", "Gold Series, pre-configured and ready to ship"]
+        ]
+    },
+    {
+        id: "smc-gold-as-c521d-31101u", brand: 'supermicro', cat: "client", series: 'gold', seriesGroup: 'client-workstation/client-system', icon: "ph-desktop",
+        img: 'assets/products/smc-gold-as-c521d-31101u.webp', imgSize: [486, 723],
+        name: "Supermicro Slim Tower System AS -C521D-31101U",
+        summary: "Ready-to-ship Gold Series Slim Tower System (Commercial SMB Desktop) with 1× AMD EPYC 4124P, 16GB DDR5-5600 and 1TB flash storage.",
+        specs: [
+            ["CPU", "1× AMD EPYC 4124P (4C/5.3GHz)"],
+            ["Memory", "16GB DDR5-5600"],
+            ["Storage", "1× 1TB M.2 NVMe SSD"],
+            ["Networking", "5GbE"],
+            ["Operating system", "Windows 11 Home"],
+            ["Form factor", "Compact Mini-Tower"],
+            ["Availability", "Gold Series, pre-configured and ready to ship"]
+        ]
+    },
+    {
+        id: "smc-gold-as-c521d-21101u", brand: 'supermicro', cat: "client", series: 'gold', seriesGroup: 'client-workstation/client-system', icon: "ph-desktop",
+        img: 'assets/products/smc-gold-as-c521d-21101u.webp', imgSize: [400, 1029],
+        name: "Supermicro Slim Tower System AS -C521D-21101U",
+        summary: "Ready-to-ship Gold Series Slim Tower System (Business AI Desktop) with 1× AMD EPYC 4245P, 16GB DDR5-5600 and 1TB flash storage.",
+        specs: [
+            ["CPU", "1× AMD EPYC 4245P (6C/5.4GHz)"],
+            ["Memory", "16GB DDR5-5600"],
+            ["Storage", "1× 1TB M.2 NVMe SSD"],
+            ["Networking", "5GbE"],
+            ["Operating system", "Windows 11 Home"],
+            ["Form factor", "Compact Mini-Tower"],
+            ["Availability", "Gold Series, pre-configured and ready to ship"]
+        ]
+    },
+    {
+        id: "smc-gold-as-c521d-11302u", brand: 'supermicro', cat: "client", series: 'gold', seriesGroup: 'client-workstation/client-system', icon: "ph-desktop",
+        img: 'assets/products/smc-gold-as-c521d-11302u.webp', imgSize: [400, 1029],
+        name: "Supermicro Slim Tower System AS -C521D-11302U",
+        summary: "Ready-to-ship Gold Series Slim Tower System (Compact AI-Ready Slim Tower) with 1× AMD Ryzen 9700X, 32GB DDR5-5600 and 1TB flash storage.",
+        specs: [
+            ["CPU", "1× AMD Ryzen 9700X (8C/5.5GHz)"],
+            ["Memory", "32GB DDR5-5600"],
+            ["Storage", "1× 1TB M.2 NVMe SSD"],
+            ["Networking", "5GbE"],
+            ["Operating system", "Windows 11 Pro"],
+            ["Form factor", "Compact Mini-Tower"],
+            ["Availability", "Gold Series, pre-configured and ready to ship"]
+        ]
+    },
+    {
+        id: "smc-gold-sys-822gs-nb3rt-01-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', seriesGroup: 'enterprise-ai/ai-systems', icon: "ph-graphics-card",
         img: 'assets/products/smc-gold-sys-822gs-nb3rt-01-g2.webp', imgSize: [700, 507],
         name: "Supermicro 8U 8-GPU System SYS-822GS-NB3RT-01-G2",
         summary: "Ready-to-ship Gold Series 8U 8-GPU System (Large-Scale AI Inference Serving) with 2× Intel Xeon 6768P, NVIDIA HGX B300 8-GPU, 2TB DDR5-6400 and 960GB flash storage.",
@@ -584,7 +725,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-sys-822gs-nb3rt-02-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', icon: "ph-graphics-card",
+        id: "smc-gold-sys-822gs-nb3rt-02-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', seriesGroup: 'enterprise-ai/ai-systems', icon: "ph-graphics-card",
         img: 'assets/products/smc-gold-sys-822gs-nb3rt-02-g2.webp', imgSize: [500, 364],
         name: "Supermicro 8U 8-GPU System SYS-822GS-NB3RT-02-G2",
         summary: "Ready-to-ship Gold Series 8U 8-GPU System (Large-Scale AI Inference Serving) with 2× Intel Xeon 6776P, NVIDIA HGX B300 8-GPU, 2TB DDR5-6400 and 960GB flash storage.",
@@ -598,7 +739,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-as-8126gs-nb3rt-01-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', icon: "ph-graphics-card",
+        id: "smc-gold-as-8126gs-nb3rt-01-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', seriesGroup: 'enterprise-ai/ai-systems', icon: "ph-graphics-card",
         img: 'assets/products/smc-gold-as-8126gs-nb3rt-01-g2.webp', imgSize: [700, 512],
         name: "Supermicro 8U 8-GPU System AS -8126GS-NB3RT-01-G2",
         summary: "Ready-to-ship Gold Series 8U 8-GPU System (Large-Scale AI Inference Serving) with 2× AMD EPYC 9575F, NVIDIA HGX B300 8-GPU, 3TB DDR5-6400 and 65.28TB flash storage.",
@@ -612,7 +753,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-sys-212gb-fnr-01-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', icon: "ph-graphics-card",
+        id: "smc-gold-sys-212gb-fnr-01-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', seriesGroup: 'enterprise-ai/ai-systems', icon: "ph-graphics-card",
         img: 'assets/products/smc-gold-sys-212gb-fnr-01-g2.webp', imgSize: [688, 137],
         name: "Supermicro 2U 2-GPU System SYS-212GB-FNR-01-G2",
         summary: "Ready-to-ship Gold Series 2U 2-GPU System (SaaS - Agent Flow AI Inference) with 1× Intel Xeon 6731P, 2× NVIDIA RTX PRO 6000 Blackwell Server Edition, 512GB DDR5-6400 and 8.64TB flash storage.",
@@ -626,7 +767,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-sys-422ga-nrt-01-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', icon: "ph-graphics-card",
+        id: "smc-gold-sys-422ga-nrt-01-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', seriesGroup: 'enterprise-ai/ai-systems', icon: "ph-graphics-card",
         img: 'assets/products/smc-gold-sys-422ga-nrt-01-g2.webp', imgSize: [503, 225],
         name: "Supermicro 4U 4-GPU System SYS-422GA-NRT-01-G2",
         summary: "Ready-to-ship Gold Series 4U 4-GPU System (PaaS - Agent Flow AI Inference) with 2× Intel Xeon 6960P, 4× NVIDIA RTX PRO 6000 Blackwell Server Edition, 1TB DDR5-6400 and 8.64TB flash storage.",
@@ -640,7 +781,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-sys-422ga-nrt-02-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', icon: "ph-graphics-card",
+        id: "smc-gold-sys-422ga-nrt-02-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', seriesGroup: 'enterprise-ai/ai-systems', icon: "ph-graphics-card",
         img: 'assets/products/smc-gold-sys-422ga-nrt-02-g2.webp', imgSize: [500, 216],
         name: "Supermicro 4U 8-GPU System SYS-422GA-NRT-02-G2",
         summary: "Ready-to-ship Gold Series 4U 8-GPU System (PaaS - Agent Flow AI Inference) with 2× Intel Xeon 6962P, 8× NVIDIA RTX PRO 6000 Blackwell Server Edition, 1.5TB DDR5-6400 and 8.64TB flash storage.",
@@ -654,7 +795,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-as-5126gs-tnrt-01-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', icon: "ph-graphics-card",
+        id: "smc-gold-as-5126gs-tnrt-01-g2", brand: 'supermicro', cat: "gpu-servers", series: 'gold', seriesGroup: 'enterprise-ai/ai-systems', icon: "ph-graphics-card",
         img: 'assets/products/smc-gold-as-5126gs-tnrt-01-g2.webp', imgSize: [700, 361],
         name: "Supermicro 5U 2-GPU System AS -5126GS-TNRT-01-G2",
         summary: "Ready-to-ship Gold Series 5U 2-GPU System (SaaS - Agent Flow AI Inference) with 2× AMD EPYC 9355, 2× NVIDIA RTX PRO 6000 Blackwell Server Edition, 1.5TB DDR5-6400 and 960GB flash storage.",
@@ -668,7 +809,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-ars-511gd-nb-lcc-01-g2", brand: 'supermicro', cat: "desktop-ai", series: 'gold', icon: "ph-desktop-tower",
+        id: "smc-gold-ars-511gd-nb-lcc-01-g2", brand: 'supermicro', cat: "desktop-ai", series: 'gold', seriesGroup: 'enterprise-ai/ai-systems', icon: "ph-desktop-tower",
         img: 'assets/products/smc-gold-ars-511gd-nb-lcc-01-g2.webp', imgSize: [500, 770],
         name: "Supermicro Super AI Station ARS-511GD-NB-LCC-01-G2",
         summary: "Ready-to-ship Gold Series Super AI Station (AI Agent Development and Deployment) with 1 NVIDIA Grace 72-core ARM Neoverse V2 CPU, 1 NVIDIA Blackwell Ultra (B300) GPU, 748 GB coherent memory and 3.84TB flash storage.",
@@ -682,7 +823,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-asg-2015s-e1cr24l-01-g2", brand: 'supermicro', cat: "storage", series: 'gold', icon: "ph-database",
+        id: "smc-gold-asg-2015s-e1cr24l-01-g2", brand: 'supermicro', cat: "storage", series: 'gold', seriesGroup: 'enterprise-storage/storage-systems', icon: "ph-database",
         img: 'assets/products/smc-gold-asg-2015s-e1cr24l-01-g2.webp', imgSize: [523, 162],
         name: "Supermicro 2U Simply Double ASG-2015S-E1CR24L-01-G2",
         summary: "Ready-to-ship Gold Series 2U Simply Double (Big Data Analytics/Content Repository) with 1× AMD EPYC 9334, 512GB DDR5-4800 and 528TB raw capacity.",
@@ -696,7 +837,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-as-2015cs-tnr-01-g2", brand: 'supermicro', cat: "storage", series: 'gold', icon: "ph-database",
+        id: "smc-gold-as-2015cs-tnr-01-g2", brand: 'supermicro', cat: "storage", series: 'gold', seriesGroup: 'enterprise-storage/storage-systems', icon: "ph-database",
         img: 'assets/products/smc-gold-as-2015cs-tnr-01-g2.webp', imgSize: [502, 145],
         name: "Supermicro 2U CloudDC AS -2015CS-TNR-01-G2",
         summary: "Ready-to-ship Gold Series 2U CloudDC (Storage Hardware for IaaS) with 1× AMD EPYC 9455P, 768GB DDR5-6400 and 192TB raw capacity.",
@@ -710,7 +851,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-as-e300-14gr-01-g2", brand: 'supermicro', cat: "edge", series: 'gold', icon: "ph-broadcast",
+        id: "smc-gold-as-e300-14gr-01-g2", brand: 'supermicro', cat: "edge", series: 'gold', seriesGroup: 'intelligent-edge/edgeiot', icon: "ph-broadcast",
         img: 'assets/products/smc-gold-as-e300-14gr-01-g2.webp', imgSize: [700, 150],
         name: "Supermicro Compact Edge System AS -E300-14GR-01-G2",
         summary: "Ready-to-ship Gold Series Compact Edge System (Branch Office / Store Appliance) with 1× AMD EPYC 4545P, 32GB DDR5-5600 and 960GB flash storage.",
@@ -724,7 +865,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-sys-111ad-hn2-01-g2", brand: 'supermicro', cat: "edge", series: 'gold', icon: "ph-broadcast",
+        id: "smc-gold-sys-111ad-hn2-01-g2", brand: 'supermicro', cat: "edge", series: 'gold', seriesGroup: 'intelligent-edge/edgeiot', icon: "ph-broadcast",
         img: 'assets/products/smc-gold-sys-111ad-hn2-01-g2.webp', imgSize: [700, 222],
         name: "Supermicro 1U Ultra-Short Depth SYS-111AD-HN2-01-G2",
         summary: "Ready-to-ship Gold Series 1U Ultra-Short Depth (Self-Checkout Kiosk - Retail) with 1× Intel Core i7-12700E, 64GB DDR5-5600 and 3.84TB flash storage.",
@@ -738,7 +879,7 @@ window.PRODUCTS = [
         ]
     },
     {
-        id: "smc-gold-as-1015a-mt-01-g2", brand: 'supermicro', cat: "servers", series: 'gold', icon: "ph-hard-drives",
+        id: "smc-gold-as-1015a-mt-01-g2", brand: 'supermicro', cat: "servers", series: 'gold', seriesGroup: 'client-workstation/workstation', icon: "ph-hard-drives",
         img: 'assets/products/smc-gold-as-1015a-mt-01-g2.webp', imgSize: [700, 114],
         name: "Supermicro 1U Mainstream AS -1015A-MT-01-G2",
         summary: "Ready-to-ship Gold Series 1U Mainstream (Remote Office/Branch Office Infrastructure) with 1× AMD EPYC 4564P, 32GB DDR5-5600 and 1.92TB flash storage.",

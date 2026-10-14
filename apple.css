@@ -265,6 +265,16 @@ html[data-theme="light"] .section-alt .tab-list { background: #e8e8ed; }
 .catalog-logo { display: block; height: 72px; width: auto; margin: 0 auto 14px; }
 .catalog-logo[hidden] { display: none; }
 
+/* Grouped collection view (Supermicro Gold Series): sections with sub-category tabs */
+.product-grid.is-grouped { display: block; }
+.series-group + .series-group { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--border); }
+.series-group { scroll-margin-top: calc(var(--nav-h) + 24px); }
+.series-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px; margin-bottom: 22px; }
+.series-head h3 { font-size: 26px; letter-spacing: -0.02em; }
+.series-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+.series-tabs .chip { cursor: pointer; }
+.series-tabs span.chip { cursor: default; }
+
 /* Collection badge (e.g. Supermicro Gold Series "Ready to ship") and its sidebar entry */
 .badge-series { background: #b7791f !important; color: #fff !important; }
 .cat-nav li.cat-collection { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
