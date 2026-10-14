@@ -13,6 +13,8 @@
  *   specs    array of [label, value] pairs (first 3 shown on the card, all in the detail view)
  *   art      optional illustration name in assets/illustrations (defaults to the category's art)
  *   isNew    optional, shows a "New" badge
+ *   preorder optional, shows a "Pre-booking" badge, adds the product to the home page pre-booking banner
+ *            and turns its quote buttons into "Pre-book" (contact form type=prebook)
  *   img      optional product photo (assets/products/<id>.webp) with imgSize [width, height]; replaces the illustration
  *            imgAlt optional alt text when the photo shows one model of a product family
  *   series   optional collection key from COLLECTIONS below (e.g. 'gold' for Supermicro Gold Series)
@@ -22,7 +24,8 @@
 window.BRANDS = {
     nvidia: 'NVIDIA',
     supermicro: 'Supermicro',
-    asus: 'ASUS'
+    asus: 'ASUS',
+    msi: 'MSI'
 };
 
 window.CATEGORIES = {
@@ -34,6 +37,7 @@ window.CATEGORIES = {
     'storage': 'Storage',
     'desktop-ai': 'AI Workstations & Deskside',
     'client': 'Desktops & Client PCs',
+    'laptops': 'AI Laptops',
     'edge': 'Edge Systems',
     'software': 'Software & Management'
 };
@@ -48,6 +52,7 @@ window.CATEGORY_LEADS = {
     'storage': 'All-flash NVMe, high-capacity and object storage to feed GPU clusters and protect enterprise data.',
     'desktop-ai': 'Desktop and deskside AI supercomputers for building, fine-tuning and running models locally.',
     'client': 'Business desktops and AI PCs for offices, SMBs and local AI work, pre-configured with Windows.',
+    'laptops': 'Windows laptops with NVIDIA RTX Spark for running AI models and agents locally, wherever you work.',
     'edge': 'Short-depth and compact servers for AI and computing at branch, retail, telco and factory sites.',
     'software': 'AI software, GPU virtualization and infrastructure management to run your platform.'
 };
@@ -59,7 +64,8 @@ window.BRAND_LOGOS = {
 window.BRAND_LEADS = {
     nvidia: 'NVIDIA rack-scale systems, HGX platforms, data center GPUs, networking, DGX systems and AI software.',
     supermicro: 'Supermicro GPU servers, NVL72 SuperClusters, enterprise servers, storage and data center building blocks.',
-    asus: 'ASUS AI PODs, GPU servers, rack and multi-node servers, storage and management software.'
+    asus: 'ASUS AI PODs, GPU servers, rack and multi-node servers, storage, AI workstations and mini PCs.',
+    msi: 'MSI business laptops for AI, development and creative work, including NVIDIA RTX Spark models.'
 };
 
 // Collections: extra catalog filters that group products across categories (products.html?cat=<key>).
@@ -92,6 +98,7 @@ window.CATEGORY_ART = {
     'storage': 'storage',
     'desktop-ai': 'desktop',
     'client': 'desktop',
+    'laptops': 'desktop',
     'edge': 'edge',
     'software': 'software'
 };
@@ -1092,6 +1099,44 @@ window.PRODUCTS = [
             ['Features', 'Monitoring, BIOS/BMC updates, power control'],
             ['Out-of-band', 'ASMB BMC integration'],
             ['Use case', 'Fleet management across data centers']
+        ]
+    },
+
+    /* ---------------- Pre-booking (new launches) ---------------- */
+    {
+        id: 'asus-expertcenter-pro-et900n-g3', brand: 'asus', cat: 'desktop-ai', preorder: true, icon: 'ph-desktop-tower',
+        img: 'assets/products/asus-expertcenter-pro-et900n-g3.webp', imgSize: [602, 900],
+        name: 'ASUS ExpertCenter Pro ET900N G3',
+        summary: 'Deskside AI supercomputer on NVIDIA DGX Station architecture with the GB300 Grace Blackwell Ultra Desktop Superchip.',
+        specs: [
+            ['Superchip', 'NVIDIA GB300 Grace Blackwell Ultra'],
+            ['Memory', '748 GB coherent memory'],
+            ['AI performance', 'Up to 20 PFLOPS'],
+            ['Networking', 'NVIDIA ConnectX-8 SuperNIC']
+        ]
+    },
+    {
+        id: 'asus-proart-gr1x', brand: 'asus', cat: 'desktop-ai', preorder: true, icon: 'ph-desktop',
+        img: 'assets/products/asus-proart-gr1x.webp', imgSize: [656, 338],
+        name: 'ASUS ProArt GR1X Mini PC',
+        summary: 'Windows mini PC powered by NVIDIA RTX Spark, with up to 128 GB unified memory for local AI agents and creative work.',
+        specs: [
+            ['Superchip', 'NVIDIA RTX Spark N1X'],
+            ['Memory', 'Up to 128 GB unified memory'],
+            ['AI performance', 'Up to 1 PFLOP FP4'],
+            ['Size', '150 × 150 × 51 mm']
+        ]
+    },
+    {
+        id: 'msi-prestige-n16-flip-ai-plus', brand: 'msi', cat: 'laptops', preorder: true, icon: 'ph-laptop',
+        img: 'assets/products/msi-prestige-n16-flip-ai-plus.webp', imgSize: [900, 644],
+        name: 'MSI Prestige N16 Flip AI+',
+        summary: '16-inch 2-in-1 AI laptop powered by NVIDIA RTX Spark, with up to 128 GB unified memory and an OLED touch display.',
+        specs: [
+            ['Superchip', 'NVIDIA RTX Spark N1X'],
+            ['Memory', '64 GB or 128 GB unified memory'],
+            ['Display', '16" OLED touch, 120 Hz, 100% DCI-P3'],
+            ['Storage', '1 TB or 2 TB NVMe SSD']
         ]
     }
 ];

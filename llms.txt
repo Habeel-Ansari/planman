@@ -25,7 +25,8 @@
 
 - [NVIDIA Products](https://planman.ae/products/nvidia.html): NVIDIA rack-scale systems, HGX platforms, data center GPUs, networking, DGX systems and AI software. Supplied and supported in the UAE by Plan Man.
 - [Supermicro Products](https://planman.ae/products/supermicro.html): Supermicro GPU servers, NVL72 SuperClusters, enterprise servers, storage and data center building blocks. Supplied and supported in the UAE by Plan Man.
-- [ASUS Products](https://planman.ae/products/asus.html): ASUS AI PODs, GPU servers, rack and multi-node servers, storage and management software. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
+- [ASUS Products](https://planman.ae/products/asus.html): ASUS AI PODs, GPU servers, rack and multi-node servers, storage, AI workstations and mini PCs. Supplied and supported in the UAE by Plan Man.
+- [MSI Products](https://planman.ae/products/msi.html): MSI business laptops for AI, development and creative work, including NVIDIA RTX Spark models. Supplied and supported in the UAE by Plan Man.
 - [Rack-Scale AI Systems](https://planman.ae/products/rack-scale-ai-systems.html): Liquid-cooled NVL72 racks with 72 GPUs in one NVLink domain, built for training and AI reasoning at scale. Supplied and supported in the UAE by Plan Man.
 - [GPU & AI Servers](https://planman.ae/products/gpu-ai-servers.html): Eight-GPU HGX servers and PCIe GPU servers for AI training, inference and HPC, air- or liquid-cooled. Supplied and supported in the UAE by Plan Man.
 - [Data Center GPUs](https://planman.ae/products/data-center-gpus.html): Data center GPUs for AI inference, training, rendering and virtual workstations. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
@@ -34,6 +35,7 @@
 - [Storage](https://planman.ae/products/enterprise-storage.html): All-flash NVMe, high-capacity and object storage to feed GPU clusters and protect enterprise data. Supplied and supported in the UAE by Plan Man.
 - [AI Workstations & Deskside](https://planman.ae/products/ai-workstations.html): Desktop and deskside AI supercomputers for building, fine-tuning and running models locally. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
 - [Desktops & Client PCs](https://planman.ae/products/desktops-client-pcs.html): Business desktops and AI PCs for offices, SMBs and local AI work, pre-configured with Windows. Supplied and supported in the UAE by Plan Man.
+- [AI Laptops](https://planman.ae/products/ai-laptops.html): Windows laptops with NVIDIA RTX Spark for running AI models and agents locally, wherever you work. Supplied and supported in the UAE by Plan Man.
 - [Edge Systems](https://planman.ae/products/edge-servers.html): Short-depth and compact servers for AI and computing at branch, retail, telco and factory sites. Supplied and supported in the UAE by Plan Man.
 - [Software & Management](https://planman.ae/products/ai-software-management.html): AI software, GPU virtualization and infrastructure management to run your platform. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
 - [Supermicro Gold Series](https://planman.ae/products/supermicro-gold-series.html): Supermicro’s best-selling servers, pre-configured with CPUs, GPUs, memory, storage and networking, tested and ready to ship within days.
@@ -119,6 +121,9 @@
 - [ASUS Edge & Tower Servers](https://planman.ae/products/asus-edge.html): Edge servers and tower servers for branch offices, retail and on-site AI inference.
 - [ASUS Ascent GX10](https://planman.ae/products/asus-ascent-gx10.html): Compact personal AI supercomputer built on the NVIDIA GB10 Grace Blackwell Superchip.
 - [ASUS Control Center Data Center Edition](https://planman.ae/products/asus-acc.html): Centralised IT management for ASUS servers — monitoring, firmware updates and remote control at scale.
+- [ASUS ExpertCenter Pro ET900N G3](https://planman.ae/products/asus-expertcenter-pro-et900n-g3.html): Deskside AI supercomputer on NVIDIA DGX Station architecture with the GB300 Grace Blackwell Ultra Desktop Superchip.
+- [ASUS ProArt GR1X Mini PC](https://planman.ae/products/asus-proart-gr1x.html): Windows mini PC powered by NVIDIA RTX Spark, with up to 128 GB unified memory for local AI agents and creative work.
+- [MSI Prestige N16 Flip AI+](https://planman.ae/products/msi-prestige-n16-flip-ai-plus.html): 16-inch 2-in-1 AI laptop powered by NVIDIA RTX Spark, with up to 128 GB unified memory and an OLED touch display.
 
 ## Frequently asked questions
 

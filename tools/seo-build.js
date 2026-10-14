@@ -154,7 +154,7 @@ const seriesLink = (p, esc) => {
   const sub = ((col.groups || []).find((g) => g.key === gk) || { subs: [] }).subs.find(([k]) => k === sk);
   return `<a class="pd-series" href="${landingUrl('collection', p.series).replace('/products/', '')}${gk ? '#' + gk : ''}">${esc(col.name)}${sub ? ' · ' + esc(sub[1]) : ''}</a>`;
 };
-const badgeHtml = (p, esc) => p.isNew ? '<span class="badge-new">New</span>'
+const badgeHtml = (p, esc) => p.preorder ? '<span class="badge-new badge-preorder">Pre-booking</span>' : p.isNew ? '<span class="badge-new">New</span>'
   : COLLECTIONS[p.series] ? `<span class="badge-new badge-series">${esc(COLLECTIONS[p.series].badge)}</span>` : '';
 const productUrl = (p) => `/products/${p.id}.html`;
 // Indexable landing pages for each brand, category and collection (products/<slug>.html). The catalog's
@@ -163,12 +163,13 @@ const productUrl = (p) => `/products/${p.id}.html`;
 const CAT_SLUG = {
   'rack-scale': 'rack-scale-ai-systems', 'gpu-servers': 'gpu-ai-servers', accelerators: 'data-center-gpus',
   networking: 'ai-networking', servers: 'rack-multi-node-servers', storage: 'enterprise-storage',
-  'desktop-ai': 'ai-workstations', client: 'desktops-client-pcs', edge: 'edge-servers', software: 'ai-software-management'
+  'desktop-ai': 'ai-workstations', client: 'desktops-client-pcs', laptops: 'ai-laptops', edge: 'edge-servers', software: 'ai-software-management'
 };
 const BRAND_TITLES = {
   nvidia: 'NVIDIA AI Systems, GPUs & Networking in Dubai | Plan Man',
   supermicro: 'Supermicro Servers & GPU Systems in Dubai, UAE | Plan Man',
-  asus: 'ASUS Servers & AI Systems in Dubai, UAE | Plan Man'
+  asus: 'ASUS Servers & AI Systems in Dubai, UAE | Plan Man',
+  msi: 'MSI AI Laptops in Dubai, UAE | Plan Man'
 };
 const COLLECTION_SLUG = { gold: 'supermicro-gold-series' };
 const COLLECTION_TITLES = { gold: 'Supermicro Gold Series Servers in Dubai, UAE | Plan Man' };
@@ -337,7 +338,7 @@ function catalogHtml() {
   const e = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   return PRODUCTS.map((p) => {
     const top = p.specs.slice(0, 3).map(([k, v]) => `<li><strong>${e(k)}:</strong> ${e(v)}</li>`).join('');
-    return `<article class="product-card" data-brand="${p.brand}">${cardVisual(p, e)}<div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="products/${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="contact.html?product=${encodeURIComponent(p.name)}">Request Quote</a></div></div></article>`;
+    return `<article class="product-card" data-brand="${p.brand}">${cardVisual(p, e)}<div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="products/${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="contact.html?product=${encodeURIComponent(p.name)}${p.preorder ? '&amp;type=prebook' : ''}">${p.preorder ? 'Pre-book' : 'Request Quote'}</a></div></div></article>`;
   }).join('\n');
 }
 
@@ -351,6 +352,37 @@ function faqHtml() {
             </div>
             <div class="faq-list">
 ${FAQ.map(([q, a]) => `                <details class="faq-item"><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('\n')}
+            </div>
+        </div>
+    </section>`;
+}
+
+/* ------------------------------------------------------------------ pre-booking banner (home page) */
+// Every product with `preorder: true` in data/products.js, shown under the hero and linked to its product page
+function prebookHtml() {
+  const items = PRODUCTS.filter((p) => p.preorder);
+  if (!items.length) return '';
+  const card = (p) => `
+                    <a class="prebook-card" href="products/${p.id}.html">
+                        <div class="prebook-img">${p.img ? `<img src="${p.img}" alt="${esc(p.imgAlt || p.name)}" width="${p.imgSize[0]}" height="${p.imgSize[1]}" loading="lazy">` : ''}</div>
+                        <span class="prebook-brand">${esc(BRANDS[p.brand])} · ${esc(CATEGORIES[p.cat])}</span>
+                        <h3>${esc(p.name)}</h3>
+                        <p>${esc(p.specs.slice(0, 2).map(([, v]) => v).join(' · '))}</p>
+                        <span class="prebook-cta">Book now <i class="ph ph-arrow-right" aria-hidden="true"></i></span>
+                    </a>`;
+  return `    <section class="prebook" id="pre-booking" aria-labelledby="prebook-title">
+        <div class="container">
+            <div class="prebook-panel force-dark">
+                <div class="prebook-head">
+                    <div>
+                        <span class="prebook-pill"><span class="prebook-dot" aria-hidden="true"></span>Pre-booking now open</span>
+                        <h2 class="h2" id="prebook-title">Be First to Get the New AI Computers</h2>
+                        <p class="lead">The first NVIDIA RTX Spark and GB300 desktops and laptops are about to reach the UAE. Pre-book now and we will allocate units from the first shipments in booking order.</p>
+                    </div>
+                    <a class="btn btn-primary" href="contact.html?type=prebook">Pre-book Now <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="prebook-grid">${items.map(card).join('')}
+                </div>
             </div>
         </div>
     </section>`;
@@ -405,6 +437,7 @@ for (const page of PAGES) {
   }
   if (page.file === 'index.html') {
     html = block(html, 'FAQ', faqHtml(), (h, w) => h.replace(/(\s*<!-- CTA -->)/, `\n${w}\n$1`));
+    html = block(html, 'PREBOOK', prebookHtml(), (h, w) => h.replace(/(\n\s*<!-- Industries -->)/, `\n\n${w}\n$1`));
   }
 
   write(page.file, html);
@@ -423,11 +456,12 @@ for (const page of PAGES) {
   const footerHtml = relink(between('<footer class="site-footer', '<script src="data/products.js')).trimEnd();
   const ver = (f) => (shell.match(new RegExp(`${f.replace('.', '\\.')}\\?v=(\\d+)`)) || [, '1'])[1];
   const artOf = (p) => p.art || CATEGORY_ART[p.cat] || 'servers';
-  const quote = (p, extra = '') => `../contact.html?product=${encodeURIComponent(p.name)}${extra}`;
+  const quote = (p, extra = '') => `../contact.html?product=${encodeURIComponent(p.name)}${extra || (p.preorder ? '&type=prebook' : '')}`;
+  const cta = (p) => p.preorder ? 'Pre-book Now' : 'Request a Quote';
 
   const relatedCard = (p) => {
     const top = p.specs.slice(0, 3).map(([k, v]) => `<li><strong>${e(k)}:</strong> ${e(v)}</li>`).join('');
-    return `<article class="product-card" data-brand="${p.brand}">${cardVisual(p, e, '../')}<div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="${quote(p)}">Request Quote</a></div></div></article>`;
+    return `<article class="product-card" data-brand="${p.brand}">${cardVisual(p, e, '../')}<div class="product-body"><div class="product-cat">${e(CATEGORIES[p.cat])}</div><h3><a href="${p.id}.html">${e(p.name)}</a></h3><p>${e(p.summary)}</p><ul class="spec-list">${top}</ul><div class="product-actions"><a class="btn btn-primary btn-sm" href="${quote(p)}">${p.preorder ? 'Pre-book' : 'Request Quote'}</a></div></div></article>`;
   };
 
   fs.mkdirSync(path.join(ROOT, 'products'), { recursive: true });
@@ -450,6 +484,7 @@ for (const page of PAGES) {
     ]) || p.name;
     const summary = p.summary.replace(/\s*[—–]\s*/g, ', ').replace(/\.$/, '');
     const description = fit(160, [
+      ...(p.preorder ? [`${summary}. Pre-booking now open in Dubai and the UAE at Plan Man.`, `${summary}. Pre-book now at Plan Man UAE.`] : []),
       `${summary}. Supplied, deployed and supported in Dubai and the UAE by Plan Man.`,
       `${summary}. Supplied and supported in the UAE by Plan Man.`,
       `${summary}. Available in the UAE from Plan Man.`,
@@ -490,7 +525,7 @@ ${rows.map(([k, v]) => `                        <tr><th scope="row">${e(k)}</th>
                 </div>`).join('');
     const models = d.models ? `
             <div class="pd-models">
-                <h3>Models in this family</h3>
+                <h3>${d.modelsTitle || (p.preorder ? 'Available configurations' : 'Models in this family')}</h3>
                 <table class="spec-table"><tbody>
 ${d.models.map(([m, t]) => `                    <tr><th scope="row">${e(m)}</th><td>${e(t)}</td></tr>`).join('\n')}
                 </tbody></table>
@@ -526,8 +561,10 @@ ${head}
                 <h1 class="h1">${e(p.name)}</h1>
 ${d.model ? `                <p class="pd-model">Model <strong>${e(d.model)}</strong></p>\n` : ''}                <p class="lead">${e(p.summary)}</p>
                 <ul class="pd-keyspecs" aria-label="Key specifications">${keySpecs}</ul>
+${p.preorder ? `                <p class="pd-preorder"><i class="ph ph-clock-countdown" aria-hidden="true"></i><span><strong>Pre-booking open.</strong> Launching soon. Book now to get priority allocation from the first shipments to the UAE.</span></p>
+` : ''}
                 <div class="pd-actions">
-                    <a class="btn btn-primary" href="${quote(p)}">Request a Quote <i class="ph ph-arrow-right"></i></a>
+                    <a class="btn btn-primary" href="${quote(p)}">${cta(p)} <i class="ph ph-arrow-right"></i></a>
                     <a class="btn btn-ghost" href="${quote(p, '&type=design')}">Talk to a Solutions Architect</a>
                 </div>
             </div>
@@ -549,7 +586,7 @@ ${d.model ? `                <p class="pd-model">Model <strong>${e(d.model)}</st
                 <li><a href="#use-cases">Use cases</a></li>
                 <li><a href="#related">Related</a></li>
             </ul>
-            <a class="btn btn-primary btn-sm" href="${quote(p)}">Request Quote</a>
+            <a class="btn btn-primary btn-sm" href="${quote(p)}">${p.preorder ? 'Pre-book' : 'Request Quote'}</a>
         </div>
     </nav>
 
@@ -627,10 +664,10 @@ ${d.specNote ? `            <p class="pd-note">${e(d.specNote)}</p>\n` : ''}    
     <section class="cta-band">
         <div class="container">
             <div>
-                <h2 class="h2">Get a Quote</h2>
-                <p class="lead">Tell us your workload and timeline for the ${e(p.name)}. We reply within one business day with a configuration, pricing and lead time.</p>
+                <h2 class="h2">${p.preorder ? 'Pre-book Yours' : 'Get a Quote'}</h2>
+                <p class="lead">${p.preorder ? `Pre-booking for the ${e(p.name)} is open. Reserve yours now and we will allocate units from the first shipments to the UAE in booking order, then confirm the configuration, pricing and delivery date.` : `Tell us your workload and timeline for the ${e(p.name)}. We reply within one business day with a configuration, pricing and lead time.`}</p>
             </div>
-            <a href="${quote(p)}" class="btn btn-primary">Request a Quote <i class="ph ph-arrow-right"></i></a>
+            <a href="${quote(p)}" class="btn btn-primary">${cta(p)} <i class="ph ph-arrow-right"></i></a>
         </div>
     </section>
     </main>

@@ -378,3 +378,44 @@ a.tag:hover { text-decoration: none; filter: brightness(1.1); }
 .footer-bottom .credit { display: inline-block; margin-top: 4px; }
 .footer-bottom .credit a { color: var(--text-2); font-weight: 500; }
 .footer-bottom .credit a:hover { color: var(--accent-text); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- MSI brand ---------- */
+:root { --tag-msi: #c8102e; }
+html[data-theme="dark"], .force-dark { --tag-msi: #ff6b7d; }
+.tag-msi { color: var(--tag-msi); border-color: rgba(228, 0, 43, .35); }
+.product-card[data-brand="msi"] { --glow: rgba(255, 90, 110, .14); --glow-solid: var(--tag-msi); }
+.pd-hero[data-brand="msi"] { --glow: rgba(255, 90, 110, .16); }
+
+/* ---------- Pre-booking (badge, product page notice, home page banner) ---------- */
+.badge-preorder { background: #15803d !important; color: #fff !important; }
+.pd-preorder { display: flex; align-items: flex-start; gap: 10px; margin: 0 0 24px; padding: 12px 16px; border-radius: 14px; font-size: 15px; line-height: 1.5; color: var(--text); background: rgba(22, 163, 74, .1); border: 1px solid rgba(22, 163, 74, .3); }
+.pd-preorder i { font-size: 20px; color: #16a34a; flex: none; margin-top: 1px; }
+
+.prebook { padding: 48px 0 8px; }
+.prebook-panel {
+    position: relative; overflow: hidden; border-radius: 32px; padding: clamp(28px, 4vw, 56px); color: var(--text);
+    background:
+        radial-gradient(circle at 88% 0%, rgba(118, 185, 0, .22), transparent 50%),
+        radial-gradient(circle at 0% 100%, rgba(0, 113, 227, .28), transparent 55%),
+        #050607;
+}
+.prebook-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px 48px; margin-bottom: 36px; }
+.prebook-head .h2 { margin: 16px 0 0; }
+.prebook-head .lead { max-width: 660px; margin-top: 12px; color: var(--text-2); }
+.prebook-pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; background: rgba(118, 185, 0, .16); color: #a3dc55; font-size: 13px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+.prebook-dot { width: 8px; height: 8px; border-radius: 50%; background: #76b900; animation: prebook-pulse 1.8s infinite; }
+@keyframes prebook-pulse { 0% { box-shadow: 0 0 0 0 rgba(118, 185, 0, .6); } 70% { box-shadow: 0 0 0 10px rgba(118, 185, 0, 0); } 100% { box-shadow: 0 0 0 0 rgba(118, 185, 0, 0); } }
+@media (prefers-reduced-motion: reduce) { .prebook-dot { animation: none; } }
+.prebook-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+.prebook-card { display: flex; flex-direction: column; padding: 20px; border-radius: 22px; color: var(--text); background: rgba(255, 255, 255, .04); border: 1px solid rgba(255, 255, 255, .08); transition: transform .4s var(--ease, ease), border-color .3s, background .3s; }
+.prebook-card:hover { transform: translateY(-4px); border-color: rgba(255, 255, 255, .2); background: rgba(255, 255, 255, .07); }
+.prebook-img { height: 190px; display: grid; place-items: center; margin-bottom: 18px; }
+.prebook-img img { width: auto; height: auto; max-width: 88%; max-height: 190px; object-fit: contain; filter: drop-shadow(0 16px 24px rgba(0, 0, 0, .55)); transition: transform .5s var(--ease, ease); }
+.prebook-card:hover .prebook-img img { transform: scale(1.04); }
+.prebook-brand { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); }
+.prebook-card h3 { font-size: 20px; line-height: 1.25; margin: 6px 0 8px; }
+.prebook-card p { flex: 1; font-size: 15px; color: var(--text-2); }
+.prebook-cta { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-weight: 600; color: var(--accent-text); }
+.prebook-card:hover .prebook-cta i { transform: translateX(3px); }
+.prebook-cta i { transition: transform .3s; }
+@media (max-width: 600px) { .prebook-img { height: 160px; } .prebook-img img { max-height: 160px; } .prebook-panel { border-radius: 24px; } }

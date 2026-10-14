@@ -19,7 +19,39 @@ Request a Quote
 
 Brands we supply
 
-Dell HPE Lenovo NVIDIA Supermicro ASUS Cisco NetApp Pure Storage Synology QNAP Seagate Western Digital AMD Intel APC Eaton Dell HPE Lenovo NVIDIA Supermicro ASUS Cisco NetApp Pure Storage Synology QNAP Seagate Western Digital AMD Intel APC Eaton
+Dell HPE Lenovo NVIDIA Supermicro ASUS MSI Cisco NetApp Pure Storage Synology QNAP Seagate Western Digital AMD Intel APC Eaton Dell HPE Lenovo NVIDIA Supermicro ASUS MSI Cisco NetApp Pure Storage Synology QNAP Seagate Western Digital AMD Intel APC Eaton
+
+Pre-booking now open
+
+### Be First to Get the New AI Computers
+
+The first NVIDIA RTX Spark and GB300 desktops and laptops are about to reach the UAE. Pre-book now and we will allocate units from the first shipments in booking order.
+
+Pre-book Now
+
+ASUS · AI Workstations & Deskside
+
+#### ASUS ExpertCenter Pro ET900N G3
+
+NVIDIA GB300 Grace Blackwell Ultra · 748 GB coherent memory
+
+Book now
+
+ASUS · AI Workstations & Deskside
+
+#### ASUS ProArt GR1X Mini PC
+
+NVIDIA RTX Spark N1X · Up to 128 GB unified memory
+
+Book now
+
+MSI · AI Laptops
+
+#### MSI Prestige N16 Flip AI+
+
+NVIDIA RTX Spark N1X · 64 GB or 128 GB unified memory
+
+Book now
 
 Industries We Serve
 
@@ -478,6 +510,7 @@ Browse
 - Storage
 - AI Workstations & Deskside
 - Desktops & Client PCs
+- AI Laptops
 - Edge Systems
 - Software & Management
 
@@ -486,6 +519,7 @@ Browse
 - NVIDIA
 - Supermicro
 - ASUS
+- MSI
 
 #### Collections
 
@@ -951,6 +985,7 @@ Phone *
 How can we help? *
 
 Select an option
+Pre-book a new device
 Hardware quote / bulk order
 New project: requirements & design
 After-sales support / RMA
@@ -3682,6 +3717,96 @@ Use cases: Local LLM development, Fine-tuning and inference, AI education and re
 
 Source: ASUS Ascent GX10 specifications (https://www.asus.com/networking-iot-servers/desktop-ai-supercomputer/ultra-small-ai-supercomputers/asus-ascent-gx10/techspec/)
 
+#### ASUS ExpertCenter Pro ET900N G3 (ASUS)
+
+Page: https://planman.ae/products/asus-expertcenter-pro-et900n-g3.html
+Model: ET900N G3
+
+Deskside AI supercomputer on NVIDIA DGX Station architecture with the GB300 Grace Blackwell Ultra Desktop Superchip.
+
+The ASUS ExpertCenter Pro ET900N G3 is a deskside AI supercomputer built on NVIDIA DGX Station architecture. It is powered by the NVIDIA GB300 Grace Blackwell Ultra Desktop Superchip with 748 GB of coherent memory and up to 20 petaFLOPS of AI performance, in a standard tower form factor.
+
+It runs the NVIDIA AI software stack and supports NVIDIA NemoClaw and NVIDIA AI Enterprise, so teams can develop, fine-tune and run large models and autonomous AI agents locally. NVIDIA NVLink-C2C and two ConnectX-8 SuperNIC ports provide the bandwidth to scale beyond a single system.
+
+Closed-loop AIO liquid cooling sustains performance under heavy AI workloads while keeping noise to about 50 dB in Auto mode, and an ASPEED BMC with IPMI and Redfish allows remote management like a server.
+
+Compute:
+- Superchip: NVIDIA GB300 Grace Blackwell Ultra Desktop Superchip
+- CPU: NVIDIA Grace, 72 Arm Neoverse V2 cores
+- GPU: NVIDIA Blackwell Ultra
+- AI performance: Up to 20 PFLOPS
+- Interconnect: NVIDIA NVLink-C2C
+
+Memory & storage:
+- Coherent memory: 748 GB
+- CPU memory: 496 GB LPDDR5X (396 GB/s)
+- GPU memory: 252 GB HBM3e (7.1 TB/s)
+- Storage: 4× M.2 2280: 2× PCIe 5.0 x4 (OS, RAID 1) and 2× PCIe 6.0 x4 (data); includes 2× 2 TB NVMe SSDs for the OS
+
+Expansion & graphics:
+- PCIe slots: 3× PCIe 5.0 x16 slots (x16, x8, x8)
+- Optional graphics: One NVIDIA RTX PRO 6000 Blackwell Max-Q, RTX PRO 4000 Blackwell SFF or RTX PRO 2000 Blackwell
+
+Networking & I/O:
+- Networking: 2× NVIDIA ConnectX-8 SuperNIC QSFP112 (400G), 1× Marvell 10 GbE, 1× 1 GbE BMC management
+- Front I/O: 2× USB-C 10 Gbps, 2× USB-A 10 Gbps, 1× USB 2.0, headphone and microphone jacks
+- Rear I/O: 4× USB-A 10 Gbps, Micro USB COM (BMC), mini DisplayPort (BMC), 3× audio jacks
+
+Management & software:
+- Operating system: Ubuntu with NVIDIA AI developer tools
+- Software: NVIDIA AI software stack, NVIDIA AI Enterprise, NVIDIA NemoClaw, ASUS Zenni AI Hub
+- Management: ASPEED AST2600 BMC, IPMI 2.0 and DMTF Redfish; TPM 2.0
+
+Physical:
+- Power supply: 1600 W 80 PLUS Titanium ATX
+- Cooling: Closed-loop AIO liquid cooling, about 50 dB in Auto mode
+- Dimensions: 584 × 232 × 565 mm (23.0 × 9.1 × 22.3 in)
+- Weight: 27 kg net, 32 kg gross
+- Operating temperature: 10 °C to 35 °C
+
+Use cases: Local LLM training and fine-tuning, Autonomous AI agents, Healthcare and medical research, Automotive and aerospace engineering, Smart infrastructure, AI development teams.
+
+Source: ASUS ExpertCenter Pro ET900N G3 (https://www.asus.com/displays-desktops/workstations/performance/expertcenter-pro-et900n-g3/); ExpertCenter Pro ET900N G3 tech specs (https://www.asus.com/displays-desktops/workstations/performance/expertcenter-pro-et900n-g3/techspec/)
+
+#### ASUS ProArt GR1X Mini PC (ASUS)
+
+Page: https://planman.ae/products/asus-proart-gr1x.html
+Model: ProArt GR1X
+
+Windows mini PC powered by NVIDIA RTX Spark, with up to 128 GB unified memory for local AI agents and creative work.
+
+The ASUS ProArt GR1X is a compact Windows mini PC powered by the NVIDIA RTX Spark superchip, which pairs a 6144-core NVIDIA Blackwell RTX GPU with a 20-core NVIDIA Grace CPU. It delivers up to 1 petaFLOP of FP4 AI performance and up to 128 GB of unified memory in a 150 × 150 × 51 mm chassis of about 1.1 litres.
+
+It is built to run AI agents around the clock and larger models locally, with native NVIDIA CUDA support for developers, NVIDIA Studio acceleration for creators, and RTX graphics for 3D and gaming. A 140 W design with engineered cooling keeps performance steady through long workloads.
+
+Compute:
+- Superchip: NVIDIA RTX Spark N1X
+- CPU: 20-core NVIDIA Grace
+- GPU: NVIDIA Blackwell RTX, 6144 cores
+- AI performance: Up to 1 petaFLOP (FP4)
+- TDP: 140 W
+
+Memory & storage:
+- Memory: 64 GB or 128 GB LPDDR5X unified memory
+- Storage: 1 TB or 2 TB M.2 NVMe PCIe 4.0, or 4 TB M.2 NVMe PCIe 5.0; dual M.2 slots
+
+Connectivity:
+- Wireless: Wi-Fi 7 2×2, Bluetooth 5.4
+- LAN: 1× 10G RJ45
+- Rear I/O: 1× USB 3.2 Gen 2×2 Type-C with PD input, 3× USB 3.2 Gen 2×2 Type-C (DisplayPort Alt Mode), 1× HDMI 2.1, Kensington lock slot
+- Displays: Up to four 4K displays
+
+Physical:
+- Operating system: Windows 11 Pro or Windows 11 Home
+- Power: 240 W adapter
+- Dimensions: 150 × 150 × 51 mm
+- Weight: 1.48 kg
+- Colours: Black (anodized) or Silver (sandblasted)
+
+Use cases: Always-on AI agents, Local LLM development, Video editing and 3D rendering, AI-assisted creative work, Compact office workstation.
+
+Source: ASUS ProArt GR1X Mini PC (https://www.asus.com/displays-desktops/mini-pcs/proart-mini-pc-series/proart-gr1x-mini-pc/); ProArt GR1X tech specs (https://www.asus.com/displays-desktops/mini-pcs/proart-mini-pc-series/proart-gr1x-mini-pc/techspec/)
+
 ### Desktops & Client PCs
 
 #### Supermicro Mid-Tower AI PC SYS-C542i-11302U (Supermicro)
@@ -3868,6 +3993,61 @@ Physical & environment:
 Use cases: Compact AI-Ready Slim Tower.
 
 Source: Supermicro Gold Series (https://www.supermicro.com/en/products/gold-series); AS -C521D-11302U datasheet (https://www.supermicro.com/en/products/system/datasheet/as%20-c521d-11302u)
+
+### AI Laptops
+
+#### MSI Prestige N16 Flip AI+ (MSI)
+
+Page: https://planman.ae/products/msi-prestige-n16-flip-ai-plus.html
+Model: Prestige N16 Flip AI+ C1XM
+
+16-inch 2-in-1 AI laptop powered by NVIDIA RTX Spark, with up to 128 GB unified memory and an OLED touch display.
+
+The MSI Prestige N16 Flip AI+ is a 16-inch 2-in-1 Copilot+ PC powered by NVIDIA RTX Spark, with a 6144-core NVIDIA Blackwell RTX GPU and a 20-core NVIDIA Grace CPU. With up to 128 GB of unified memory it can run larger AI models and agents locally, for developers, creators and professionals.
+
+A 360° convertible OLED touch display with MSI Nano Pen support, a 99.9 Wh battery with 140 W USB-C fast charging, and a vapor chamber cooler with Intra Flow keep it productive away from the desk. Plan Man offers it in two configurations: 64 GB / 1 TB with a 2.8K OLED display, and 128 GB / 2 TB with a UHD+ Tandem OLED display.
+
+Platform:
+- Processor: NVIDIA RTX Spark N1X with 6144-core GPU and 20-core CPU
+- Graphics: NVIDIA Blackwell RTX GPU, 6144 cores
+- Chipset: Integrated SoC
+- Operating system: Windows 11 Pro
+
+Memory & storage:
+- Memory: 64 GB or 128 GB LPDDR5x-9400 unified memory
+- Storage: 1 TB or 2 TB M.2 NVMe PCIe Gen4 SSD
+
+Display:
+- Config 1: 16" 16:10 2.8K (2880 × 1800) OLED, 120 Hz, 100% DCI-P3, touch, Gorilla Glass
+- Config 2: 16" 16:10 UHD+ (3840 × 2400) Tandem OLED, 120 Hz, 100% DCI-P3, touch, Gorilla Glass
+- Certification: VESA DisplayHDR True Black 1000; SGS low blue light
+- Pen: MSI Nano Pen support
+
+Connectivity:
+- Wireless: MediaTek Wi-Fi 7, Bluetooth 5.4
+- Ports: 2× USB4 Type-C (DisplayPort, PD 3.1, Thunderbolt 4 compatible), 2× USB-A 3.2 Gen 2, HDMI 2.1 (8K @ 120 Hz), SD card reader, audio combo jack
+- Webcam: FHD IR camera with HDR and shutter
+
+Design & security:
+- Keyboard: 4-zone RGB keyboard with Copilot key
+- Security: dTPM 2.0, Microsoft Pluton, fingerprint reader
+- Audio: 2× 2 W speakers, 2× 2 W woofers, array microphone
+- Colour: Platinum Gray
+
+Power & physical:
+- Battery: 4-cell, 99.9 Wh
+- Adapter: 140 W USB-C PD
+- Dimensions: 357.7 × 254.3 × 13.9–16.9 mm
+- Weight: 1.9 kg
+- Warranty: 2 years
+
+Models:
+- Config 1 · 64 GB / 1 TB: NVIDIA RTX Spark N1X, 64 GB LPDDR5x-9400, 1 TB NVMe PCIe Gen4 SSD, 16" 2.8K OLED 120 Hz touch, MSI Nano Pen, Windows 11 Pro, 2-year warranty
+- Config 2 · 128 GB / 2 TB: NVIDIA RTX Spark N1X, 128 GB LPDDR5x-9400, 2 TB NVMe PCIe Gen4 SSD, 16" UHD+ Tandem OLED 120 Hz touch, MSI Nano Pen, Windows 11 Pro, 2-year warranty
+
+Use cases: Local AI agents and LLMs, Software development, Video and 3D creation, Executive and field work, Presentations and pen input.
+
+Source: MSI Prestige N16 Flip AI+ (https://www.msi.com/Business-Productivity/Prestige-N16-Flip-AI-Plus-C1XMX); Prestige N16 Flip AI+ specifications (https://www.msi.com/Business-Productivity/Prestige-N16-Flip-AI-Plus-C1XMX/Specification)
 
 ### Edge Systems
 

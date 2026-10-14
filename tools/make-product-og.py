@@ -13,7 +13,7 @@ OUT = ROOT / "assets" / "og" / "products"
 OUT.mkdir(parents=True, exist_ok=True)
 W, H = 1200, 630
 FONTS = Path("C:/Windows/Fonts")
-BRAND_COLOR = {"nvidia": (118, 185, 0), "supermicro": (77, 163, 255), "asus": (200, 162, 255)}
+BRAND_COLOR = {"nvidia": (118, 185, 0), "supermicro": (77, 163, 255), "asus": (200, 162, 255), "msi": (255, 90, 110)}
 
 DUMP = """
 const vm = require('vm'), fs = require('fs'), s = { window: {} };

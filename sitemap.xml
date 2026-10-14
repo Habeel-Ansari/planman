@@ -10,6 +10,7 @@
   <url><loc>https://planman.ae/products/nvidia.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://planman.ae/products/supermicro.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://planman.ae/products/asus.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
+  <url><loc>https://planman.ae/products/msi.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://planman.ae/products/rack-scale-ai-systems.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://planman.ae/products/gpu-ai-servers.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://planman.ae/products/data-center-gpus.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
@@ -18,6 +19,7 @@
   <url><loc>https://planman.ae/products/enterprise-storage.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://planman.ae/products/ai-workstations.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://planman.ae/products/desktops-client-pcs.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
+  <url><loc>https://planman.ae/products/ai-laptops.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://planman.ae/products/edge-servers.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://planman.ae/products/ai-software-management.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
   <url><loc>https://planman.ae/products/supermicro-gold-series.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
@@ -100,4 +102,7 @@
   <url><loc>https://planman.ae/products/asus-edge.html</loc><lastmod>2026-10-14</lastmod><priority>0.7</priority><image:image><image:loc>https://planman.ae/assets/products/asus-edge.webp</image:loc></image:image></url>
   <url><loc>https://planman.ae/products/asus-ascent-gx10.html</loc><lastmod>2026-10-14</lastmod><priority>0.7</priority><image:image><image:loc>https://planman.ae/assets/products/asus-ascent-gx10.webp</image:loc></image:image></url>
   <url><loc>https://planman.ae/products/asus-acc.html</loc><lastmod>2026-10-14</lastmod><priority>0.7</priority></url>
+  <url><loc>https://planman.ae/products/asus-expertcenter-pro-et900n-g3.html</loc><lastmod>2026-10-14</lastmod><priority>0.7</priority><image:image><image:loc>https://planman.ae/assets/products/asus-expertcenter-pro-et900n-g3.webp</image:loc></image:image></url>
+  <url><loc>https://planman.ae/products/asus-proart-gr1x.html</loc><lastmod>2026-10-14</lastmod><priority>0.7</priority><image:image><image:loc>https://planman.ae/assets/products/asus-proart-gr1x.webp</image:loc></image:image></url>
+  <url><loc>https://planman.ae/products/msi-prestige-n16-flip-ai-plus.html</loc><lastmod>2026-10-14</lastmod><priority>0.7</priority><image:image><image:loc>https://planman.ae/assets/products/msi-prestige-n16-flip-ai-plus.webp</image:loc></image:image></url>
 </urlset>
