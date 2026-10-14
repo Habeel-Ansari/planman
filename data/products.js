@@ -14,6 +14,7 @@
  *   art      optional illustration name in assets/illustrations (defaults to the category's art)
  *   isNew    optional, shows a "New" badge
  *   img      optional product photo (assets/products/<id>.webp) with imgSize [width, height]; replaces the illustration
+ *            imgAlt optional alt text when the photo shows one model of a product family
  *   series   optional collection key from COLLECTIONS below (e.g. 'gold' for Supermicro Gold Series)
  *   seriesGroup  optional 'section/tab' within that collection's groups (e.g. 'enterprise-compute/multi-node')
  */
@@ -49,6 +50,11 @@ window.CATEGORY_LEADS = {
     'client': 'Business desktops and AI PCs for offices, SMBs and local AI work, pre-configured with Windows.',
     'edge': 'Short-depth and compact servers for AI and computing at branch, retail, telco and factory sites.',
     'software': 'AI software, GPU virtualization and infrastructure management to run your platform.'
+};
+// Brand logo shown in the products page header when that brand is selected (files in assets/brands/)
+window.BRAND_LOGOS = {
+    supermicro: 'assets/brands/supermicro.svg',
+    asus: 'assets/brands/asus.svg'
 };
 window.BRAND_LEADS = {
     nvidia: 'NVIDIA rack-scale systems, HGX platforms, data center GPUs, networking, DGX systems and AI software.',
@@ -896,6 +902,7 @@ window.PRODUCTS = [
     /* ---------------- ASUS ---------------- */
     {
         id: 'asus-ai-pod', brand: 'asus', cat: 'rack-scale', icon: 'ph-cube-transparent',
+        img: 'assets/products/asus-ai-pod.webp', imgSize: [305, 800],
         name: 'ASUS AI POD (NVIDIA GB300 NVL72)',
         summary: 'ASUS rack-scale AI infrastructure built on NVIDIA Grace Blackwell Ultra, with liquid cooling and deployment services.',
         specs: [
@@ -907,6 +914,7 @@ window.PRODUCTS = [
     },
     {
         id: 'asus-xa-nb3i-e12', brand: 'asus', cat: 'gpu-servers', icon: 'ph-hard-drives',
+        img: 'assets/products/asus-xa-nb3i-e12.webp', imgSize: [554, 512],
         name: 'ASUS XA NB3I-E12',
         summary: '9U NVIDIA HGX B300 8-GPU server with dual Intel Xeon 6 for heavy AI training and inference.',
         specs: [
@@ -921,6 +929,7 @@ window.PRODUCTS = [
     },
     {
         id: 'asus-esc8000a-e13x', brand: 'asus', cat: 'gpu-servers', isNew: true, icon: 'ph-graphics-card',
+        img: 'assets/products/asus-esc8000a-e13x.webp', imgSize: [732, 470],
         name: 'ASUS ESC8000A-E13X',
         summary: '4U NVIDIA RTX PRO Server with ConnectX-8 SuperNICs and eight RTX PRO 6000 Blackwell GPUs.',
         specs: [
@@ -935,6 +944,7 @@ window.PRODUCTS = [
     },
     {
         id: 'asus-esc8000-e12p', brand: 'asus', cat: 'gpu-servers', icon: 'ph-graphics-card',
+        img: 'assets/products/asus-esc8000-e12p.webp', imgSize: [732, 470],
         name: 'ASUS ESC8000-E12P',
         summary: 'Intel Xeon 6 4U NVIDIA MGX server for eight dual-slot GPUs or Gaudi 3 accelerators.',
         specs: [
@@ -948,6 +958,7 @@ window.PRODUCTS = [
     },
     {
         id: 'asus-esc8000a-e13', brand: 'asus', cat: 'gpu-servers', icon: 'ph-graphics-card',
+        img: 'assets/products/asus-esc8000a-e13.webp', imgSize: [732, 470],
         name: 'ASUS ESC8000A-E13',
         summary: 'AMD EPYC 4U server supporting eight dual-slot NVIDIA H200 or RTX PRO 6000 Blackwell GPUs.',
         specs: [
@@ -960,6 +971,7 @@ window.PRODUCTS = [
     },
     {
         id: 'asus-esc-a8a-e12u', brand: 'asus', cat: 'gpu-servers', icon: 'ph-hard-drives',
+        img: 'assets/products/asus-esc-a8a-e12u.webp', imgSize: [766, 548],
         name: 'ASUS ESC A8A-E12U',
         summary: '7U eight-GPU AMD Instinct MI325X server for large AI models and HPC.',
         specs: [
@@ -973,6 +985,7 @@ window.PRODUCTS = [
     },
     {
         id: 'asus-esc4000a-e12', brand: 'asus', cat: 'gpu-servers', icon: 'ph-graphics-card',
+        img: 'assets/products/asus-esc4000a-e12.webp', imgSize: [755, 388],
         name: 'ASUS ESC4000A-E12',
         summary: 'Single-socket 2U GPU server for four dual-slot GPUs — ideal for inference and VDI.',
         specs: [
@@ -986,6 +999,7 @@ window.PRODUCTS = [
     },
     {
         id: 'asus-esc4000-e11', brand: 'asus', cat: 'gpu-servers', icon: 'ph-graphics-card',
+        img: 'assets/products/asus-esc4000-e11.webp', imgSize: [754, 386],
         name: 'ASUS ESC4000-E11',
         summary: '2U dual-socket GPU server with 5th Gen Intel Xeon Scalable and four dual-slot GPUs.',
         specs: [
@@ -998,6 +1012,7 @@ window.PRODUCTS = [
     },
     {
         id: 'asus-rs-series', brand: 'asus', cat: 'servers', icon: 'ph-hard-drives',
+        img: 'assets/products/asus-rs-series.webp', imgSize: [724, 451], imgAlt: "ASUS RS720A-E13-RS24U, shown as an example of the RS Series",
         name: 'ASUS RS Series Rack Servers',
         summary: '1U and 2U rack servers with Intel Xeon 6 and AMD EPYC 9005 for virtualization and enterprise workloads.',
         specs: [
@@ -1009,6 +1024,7 @@ window.PRODUCTS = [
     },
     {
         id: 'asus-high-density', brand: 'asus', cat: 'servers', icon: 'ph-squares-four',
+        img: 'assets/products/asus-high-density.webp', imgSize: [774, 658], imgAlt: "ASUS RS720QA-E12-RS8U, shown as an example of ASUS high-density servers",
         name: 'ASUS High-Density Multi-Node Servers',
         summary: 'Multi-node 2U systems that maximise compute per rack unit for HPC and cloud.',
         specs: [
@@ -1019,6 +1035,7 @@ window.PRODUCTS = [
     },
     {
         id: 'asus-storage', brand: 'asus', cat: 'storage', icon: 'ph-database',
+        img: 'assets/products/asus-storage.webp', imgSize: [709, 426], imgAlt: "ASUS OJ340A-RS60 object storage server, one of the ASUS storage systems",
         name: 'ASUS Storage Solutions',
         summary: 'AI/HPC, block, unified and object storage plus JBOD expansion from the ASUS Infrastructure Solution Group.',
         specs: [
@@ -1028,6 +1045,7 @@ window.PRODUCTS = [
     },
     {
         id: 'asus-edge', brand: 'asus', cat: 'edge', icon: 'ph-broadcast',
+        img: 'assets/products/asus-edge.webp', imgSize: [756, 276], imgAlt: "ASUS EG500-E11-RS4-R, shown as an example of ASUS edge servers",
         name: 'ASUS Edge & Tower Servers',
         summary: 'Edge servers and tower servers for branch offices, retail and on-site AI inference.',
         specs: [
@@ -1038,6 +1056,7 @@ window.PRODUCTS = [
     },
     {
         id: 'asus-ascent-gx10', brand: 'asus', cat: 'desktop-ai', icon: 'ph-desktop-tower',
+        img: 'assets/products/asus-ascent-gx10.webp', imgSize: [681, 257],
         name: 'ASUS Ascent GX10',
         summary: 'Compact personal AI supercomputer built on the NVIDIA GB10 Grace Blackwell Superchip.',
         specs: [

@@ -143,7 +143,7 @@ const COLLECTIONS = sandbox.window.COLLECTIONS || {};
 const cardVisual = (p, esc, prefix = '') => {
   const ill = p.art || CATEGORY_ART[p.cat] || 'servers';
   const img = p.img
-    ? `<img src="${prefix}${p.img}" alt="${esc(p.name)}" width="${p.imgSize[0]}" height="${p.imgSize[1]}" loading="lazy">`
+    ? `<img src="${prefix}${p.img}" alt="${esc(p.imgAlt || p.name)}" width="${p.imgSize[0]}" height="${p.imgSize[1]}" loading="lazy">`
     : `<img src="${prefix}assets/illustrations/${ill}.svg" alt="" width="400" height="300" loading="lazy">`;
   return `<div class="product-visual${p.img ? ' has-photo' : ''}"><span class="tag tag-${p.brand}">${esc(BRANDS[p.brand])}</span>${badgeHtml(p, esc)}${img}</div>`;
 };
@@ -458,7 +458,7 @@ ${d.model ? `                <p class="pd-model">Model <strong>${e(d.model)}</st
             </div>
             <div class="pd-art${p.img ? ' has-photo' : ''}">
                 ${p.img
-                  ? `<img src="../${p.img}" alt="${e(p.name)}" width="${p.imgSize[0]}" height="${p.imgSize[1]}" fetchpriority="high">`
+                  ? `<img src="../${p.img}" alt="${e(p.imgAlt || p.name)}" width="${p.imgSize[0]}" height="${p.imgSize[1]}" fetchpriority="high">`
                   : `<img src="../assets/illustrations/${artOf(p)}.svg" alt="${e(ILLUSTRATION_ALT[artOf(p)] || '')}" width="${(svgSize[artOf(p)] || [400])[0]}" height="${(svgSize[artOf(p)] || [, 300])[1]}">`}
                 <i class="ph ${p.icon || 'ph-cube'}" aria-hidden="true"></i>
             </div>

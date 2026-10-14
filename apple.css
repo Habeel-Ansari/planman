@@ -264,6 +264,8 @@ html[data-theme="light"] .section-alt .tab-list { background: #e8e8ed; }
 /* Brand logo in the products page header (shown for collections such as Supermicro Gold Series) */
 .catalog-logo { display: block; height: 72px; width: auto; margin: 0 auto 14px; }
 .catalog-logo[hidden] { display: none; }
+.catalog-logo[data-brand="asus"] { height: 40px; margin-bottom: 20px; }
+html[data-theme="dark"] .catalog-logo[data-brand="asus"] { filter: invert(1); }
 
 /* Grouped collection view (Supermicro Gold Series): sections with sub-category tabs */
 .product-grid.is-grouped { display: block; }

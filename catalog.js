@@ -46,8 +46,12 @@
         heroLead.textContent = !filtered ? hero.lead
             : (c && ((window.CATEGORY_LEADS || {})[state.cat] || (cols[state.cat] || {}).lead)) || (window.BRAND_LEADS || {})[state.brand] || hero.lead;
         document.title = filtered ? `${heroTitle.textContent} | Plan Man` : hero.doc;
-        const logo = (cols[state.cat] || {}).logo;
-        if (heroLogo) { heroLogo.hidden = !logo; if (logo) { heroLogo.src = logo; heroLogo.alt = cols[state.cat].name.split(' ')[0]; } }
+        // collection logo (e.g. Supermicro Gold Series), otherwise the selected brand's logo
+        const logo = (cols[state.cat] || {}).logo || (window.BRAND_LOGOS || {})[state.brand];
+        if (heroLogo) {
+            heroLogo.hidden = !logo;
+            if (logo) { heroLogo.src = logo; heroLogo.alt = cols[state.cat] ? cols[state.cat].name.split(' ')[0] : brands[state.brand]; heroLogo.dataset.brand = logo.split('/').pop().split('.')[0]; }
+        }
     }
 
     const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -74,7 +78,7 @@
         // the selected category or collection is listed right under "All products"
         const keys = [...Object.keys(cats), ...Object.keys(cols)];
         const ordered = state.cat === 'all' ? keys : [state.cat, ...keys.filter((c) => c !== state.cat)];
-        catWrap.innerHTML = item('all', 'All products') + ordered.map((c) => cols[c]
+        catWrap.innerHTML = item('all', state.brand !== 'all' ? `All ${brands[state.brand]} products` : 'All products') + ordered.map((c) => cols[c]
             ? item(c, cols[c].nav || cols[c].name, c === state.cat ? 'cat-collection is-pinned' : 'cat-collection')
             : item(c, cats[c])).join('');
     }
@@ -86,7 +90,7 @@
             <div class="product-visual${p.img ? ' has-photo' : ''}">
                 <span class="tag tag-${p.brand}">${esc(brands[p.brand])}</span>
                 ${p.isNew ? '<span class="badge-new">New</span>' : cols[p.series] ? `<span class="badge-new badge-series">${esc(cols[p.series].badge)}</span>` : ''}
-                <img src="${art(p)}" alt="${p.img ? esc(p.name) : ''}" loading="lazy"${p.imgSize ? ` width="${p.imgSize[0]}" height="${p.imgSize[1]}"` : ''}>
+                <img src="${art(p)}" alt="${p.img ? esc(p.imgAlt || p.name) : ''}" loading="lazy"${p.imgSize ? ` width="${p.imgSize[0]}" height="${p.imgSize[1]}"` : ''}>
             </div>
             <div class="product-body">
                 <div class="product-cat">${esc(cats[p.cat])}</div>
