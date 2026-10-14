@@ -152,15 +152,88 @@ const seriesLink = (p, esc) => {
   const col = COLLECTIONS[p.series]; if (!col) return '';
   const [gk, sk] = (p.seriesGroup || '').split('/');
   const sub = ((col.groups || []).find((g) => g.key === gk) || { subs: [] }).subs.find(([k]) => k === sk);
-  return `<a class="pd-series" href="../products.html?cat=${p.series}${sub ? '&amp;sub=' + sub[0] : ''}">${esc(col.name)}${sub ? ' · ' + esc(sub[1]) : ''}</a>`;
+  return `<a class="pd-series" href="${landingUrl('collection', p.series).replace('/products/', '')}${gk ? '#' + gk : ''}">${esc(col.name)}${sub ? ' · ' + esc(sub[1]) : ''}</a>`;
 };
 const badgeHtml = (p, esc) => p.isNew ? '<span class="badge-new">New</span>'
   : COLLECTIONS[p.series] ? `<span class="badge-new badge-series">${esc(COLLECTIONS[p.series].badge)}</span>` : '';
 const productUrl = (p) => `/products/${p.id}.html`;
+// Indexable landing pages for each brand, category and collection (products/<slug>.html). The catalog's
+// ?cat= / ?brand= filter views all canonicalise to products.html, so these are what rank for
+// searches like "GPU servers Dubai" or "Supermicro Gold Series UAE".
+const CAT_SLUG = {
+  'rack-scale': 'rack-scale-ai-systems', 'gpu-servers': 'gpu-ai-servers', accelerators: 'data-center-gpus',
+  networking: 'ai-networking', servers: 'rack-multi-node-servers', storage: 'enterprise-storage',
+  'desktop-ai': 'ai-workstations', client: 'desktops-client-pcs', edge: 'edge-servers', software: 'ai-software-management'
+};
+const BRAND_TITLES = {
+  nvidia: 'NVIDIA AI Systems, GPUs & Networking in Dubai | Plan Man',
+  supermicro: 'Supermicro Servers & GPU Systems in Dubai, UAE | Plan Man',
+  asus: 'ASUS Servers & AI Systems in Dubai, UAE | Plan Man'
+};
+const COLLECTION_SLUG = { gold: 'supermicro-gold-series' };
+const COLLECTION_TITLES = { gold: 'Supermicro Gold Series Servers in Dubai, UAE | Plan Man' };
+const catSlug = (c) => CAT_SLUG[c] || c;
+const landingUrl = (kind, key) => `/products/${kind === 'cat' ? catSlug(key) : kind === 'collection' ? COLLECTION_SLUG[key] || key : key}.html`;
+const fitText = (max, options) => options.find((o) => o.length <= max);
+// lower-case a label for use mid-sentence, keeping acronyms (GPU, AI, PCs)
+const lc = (s) => s.split(' ').map((w) => /[A-Z]{2}/.test(w) ? w : w.toLowerCase()).join(' ');
+const listText = (a) => a.length < 2 ? a.join('') : `${a.slice(0, -1).join(', ')} and ${a[a.length - 1]}`;
+const LANDINGS = (() => {
+  const { CATEGORY_LEADS = {}, BRAND_LEADS = {}, BRAND_LOGOS = {} } = sandbox.window;
+  const out = [];
+  const describe = (lead) => fitText(160, [
+    `${lead} Supplied, deployed and supported in Dubai and the UAE by Plan Man.`,
+    `${lead} Supplied and supported in the UAE by Plan Man.`,
+    `${lead} Available in the UAE from Plan Man.`, lead
+  ]) || lead;
+  for (const [b, brand] of Object.entries(BRANDS)) {
+    const items = PRODUCTS.filter((p) => p.brand === b);
+    if (!items.length) continue;
+    const cats = Object.keys(CATEGORIES).filter((c) => items.some((p) => p.cat === c));
+    out.push({
+      kind: 'brand', key: b, url: landingUrl('brand', b), name: `${brand} Products`, h1: `${brand} Products in Dubai, UAE`,
+      title: BRAND_TITLES[b] || `${brand} Products in Dubai, UAE | Plan Man`, lead: BRAND_LEADS[b] || '', logo: BRAND_LOGOS[b],
+      description: describe(BRAND_LEADS[b] || `${brand} products supplied in the UAE.`), items, catalog: `products.html?brand=${b}`,
+      intro: `Plan Man supplies ${brand} ${listText(cats.map((c) => lc(CATEGORIES[c])))} to organisations in Dubai and across the UAE. The ${items.length} ${brand} products below link to full specifications taken from ${brand}'s official product information. We size each configuration to your workload, supply genuine hardware with manufacturer warranty, and handle integration, deployment and after-sales support.`,
+      groups: cats.map((c) => ({ id: catSlug(c), name: CATEGORIES[c], items: items.filter((p) => p.cat === c), more: [`All ${CATEGORIES[c]}`, `${catSlug(c)}.html`] }))
+    });
+  }
+  for (const [c, label] of Object.entries(CATEGORIES)) {
+    const items = PRODUCTS.filter((p) => p.cat === c);
+    if (!items.length) continue;
+    const brands = Object.keys(BRANDS).filter((b) => items.some((p) => p.brand === b));
+    out.push({
+      kind: 'cat', key: c, url: landingUrl('cat', c), name: label, h1: `${label} in Dubai, UAE`,
+      title: fitText(60, [`${label} in Dubai, UAE | Plan Man`, `${label} in Dubai | Plan Man`, `${label} | Plan Man UAE`]) || label,
+      lead: CATEGORY_LEADS[c] || '', description: describe(CATEGORY_LEADS[c] || `${label} supplied in the UAE.`), items, catalog: `products.html?cat=${c}`,
+      intro: `Plan Man supplies ${lc(label)} from ${listText(brands.map((b) => BRANDS[b]))} in Dubai and across the UAE. Compare the ${items.length} platforms below, open any of them for full specifications, or tell us your workload and we will recommend and quote the right configuration, then deliver, deploy and support it.`,
+      groups: brands.map((b) => ({ id: b, name: BRANDS[b], items: items.filter((p) => p.brand === b), more: [`All ${BRANDS[b]} products`, `${b}.html`] }))
+    });
+  }
+  for (const [k, col] of Object.entries(COLLECTIONS)) {
+    const items = PRODUCTS.filter((p) => p.series === k);
+    if (!items.length) continue;
+    const groups = (col.groups || []).map((g) => ({ id: g.key, name: g.name, sub: g.subs.map(([, n]) => n).join(' · '), items: items.filter((p) => (p.seriesGroup || '').split('/')[0] === g.key) })).filter((g) => g.items.length);
+    out.push({
+      kind: 'collection', key: k, url: landingUrl('collection', k), name: col.name, h1: `${col.name} in Dubai, UAE`,
+      title: COLLECTION_TITLES[k] || `${col.name} in Dubai, UAE | Plan Man`, lead: col.lead || '', logo: col.logo,
+      description: describe(col.lead || `${col.name} supplied in the UAE.`), items, catalog: `products.html?cat=${k}`,
+      intro: `The ${col.name} is a range of ${items.length} pre-configured systems across ${listText(groups.map((g) => lc(g.name)))}. Because every model is a fixed, tested configuration, lead times are short. Plan Man supplies them in Dubai and across the UAE and handles installation and after-sales support.`,
+      groups
+    });
+  }
+  return out;
+})();
 const missingImages = PRODUCTS.filter((p) => !fs.existsSync(path.join(ROOT, 'assets/og/products', p.id + '.jpg'))).map((p) => p.id);
 if (missingImages.length) throw new Error(`Missing share images (run python tools/make-product-og.py): ${missingImages.join(', ')}`);
 const missingDetails = PRODUCTS.filter((p) => !PRODUCT_DETAILS[p.id]).map((p) => p.id);
 if (missingDetails.length) throw new Error(`data/product-details.js has no entry for: ${missingDetails.join(', ')}`);
+
+// footer product links go to the indexable landing pages rather than the catalog's filter URLs
+const footerLinks = (html) => html.replace(/<footer class="site-footer[\s\S]*?<\/footer>/, (f) => f.replace(/href="products\.html\?(cat|brand)=([\w-]+)"/g, (m, kind, key) => {
+  const l = LANDINGS.find((x) => x.key === key && (kind === 'brand' ? x.kind === 'brand' : x.kind !== 'brand'));
+  return l ? `href="${l.url.slice(1)}"` : m;
+}));
 
 /* ------------------------------------------------------------------ JSON-LD */
 function jsonLd(page) {
@@ -311,6 +384,8 @@ for (const page of PAGES) {
   }
   if (!html.includes('class="skip-link"')) html = html.replace(/<body>/, '<body>\n    <a class="skip-link" href="#main">Skip to content</a>');
 
+  html = footerLinks(html);
+
   // dead social links
   html = html.replace(/\s*<div class="socials">[\s\S]*?<\/div>/, '');
 
@@ -357,7 +432,7 @@ for (const page of PAGES) {
 
   fs.mkdirSync(path.join(ROOT, 'products'), { recursive: true });
   for (const f of fs.readdirSync(path.join(ROOT, 'products'))) {
-    if (f.endsWith('.html') && !PRODUCTS.some((p) => `${p.id}.html` === f)) fs.unlinkSync(path.join(ROOT, 'products', f));
+    if (f.endsWith('.html') && !PRODUCTS.some((p) => `${p.id}.html` === f) && !LANDINGS.some((l) => l.url === `/products/${f}`)) fs.unlinkSync(path.join(ROOT, 'products', f));
   }
 
   for (const p of PRODUCTS) {
@@ -392,14 +467,14 @@ for (const page of PAGES) {
       brand: { '@type': 'Brand', name: brand }, category: cat, image: p.img ? [abs('/' + p.img), abs(`/assets/og/products/${p.id}.jpg`)] : abs(`/assets/og/products/${p.id}.jpg`),
       ...(d.model ? { model: d.model, mpn: d.model } : {}),
       additionalProperty: p.specs.map(([k, v]) => ({ '@type': 'PropertyValue', name: k, value: v })),
-      isRelatedTo: related.map((r) => ({ '@type': 'Product', name: r.name, url: abs(productUrl(r)) })),
+      isRelatedTo: related.map((r) => ({ '@id': `${abs(productUrl(r))}#product` })),
       subjectOf: d.sources.map(([n, u]) => ({ '@type': 'WebPage', name: n, url: u }))
     };
     const page = {
       file: `products/${p.id}.html`, url, name: p.name, type: 'ItemPage', title, description,
-      crumbs: [['Home', '/'], ['Products', '/products.html'], [cat, `/products.html?cat=${p.cat}`], [p.name, url]],
+      crumbs: [['Home', '/'], ['Products', '/products.html'], [cat, landingUrl('cat', p.cat)], [p.name, url]],
       mainEntity: { '@id': productLd['@id'] }, extraGraph: [productLd],
-      ogImage: abs(`/assets/og/products/${p.id}.jpg`), ogAlt: `${p.name}: ${brand} ${cat.toLowerCase()} supplied in Dubai, UAE by Plan Man`
+      ogImage: abs(`/assets/og/products/${p.id}.jpg`), ogAlt: `${p.name}: ${brand} ${lc(cat)} supplied in Dubai, UAE by Plan Man`
     };
     const head = relink(headBlock(page));
 
@@ -445,9 +520,9 @@ ${head}
                 <nav class="pd-crumbs" aria-label="Breadcrumb">
                     <a href="/">Home</a><i class="ph ph-caret-right" aria-hidden="true"></i>
                     <a href="../products.html">Products</a><i class="ph ph-caret-right" aria-hidden="true"></i>
-                    <a href="../products.html?cat=${p.cat}">${e(cat)}</a>
+                    <a href="${catSlug(p.cat)}.html">${e(cat)}</a>
                 </nav>
-                <div class="pd-meta"><span class="tag tag-${p.brand}">${e(brand)}</span>${badgeHtml(p, e)}<span class="pd-cat">${e(cat)}</span>${seriesLink(p, e)}</div>
+                <div class="pd-meta"><a class="tag tag-${p.brand}" href="${p.brand}.html">${e(brand)}</a>${badgeHtml(p, e)}<span class="pd-cat">${e(cat)}</span>${seriesLink(p, e)}</div>
                 <h1 class="h1">${e(p.name)}</h1>
 ${d.model ? `                <p class="pd-model">Model <strong>${e(d.model)}</strong></p>\n` : ''}                <p class="lead">${e(p.summary)}</p>
                 <ul class="pd-keyspecs" aria-label="Key specifications">${keySpecs}</ul>
@@ -541,6 +616,7 @@ ${d.specNote ? `            <p class="pd-note">${e(d.specNote)}</p>\n` : ''}    
             <div class="section-head reveal">
                 <span class="eyebrow">Related</span>
                 <h2 class="h2">You May Also Consider</h2>
+                <p class="lp-links"><a href="${catSlug(p.cat)}.html">All ${e(cat)} <i class="ph ph-arrow-right" aria-hidden="true"></i></a><a href="${p.brand}.html">All ${e(brand)} products <i class="ph ph-arrow-right" aria-hidden="true"></i></a></p>
             </div>
             <div class="pd-related reveal-stagger">
                 ${related.map(relatedCard).join('\n                ')}
@@ -567,11 +643,132 @@ ${d.specNote ? `            <p class="pd-note">${e(d.specNote)}</p>\n` : ''}    
     write(page.file, html);
   }
   console.log(`wrote ${PRODUCTS.length} product pages in products/`);
+
+  // brand / category / collection landing pages
+  const clash = LANDINGS.filter((l) => PRODUCTS.some((p) => productUrl(p) === l.url));
+  if (clash.length) throw new Error(`Landing page URL clashes with a product page: ${clash.map((l) => l.url).join(', ')}`);
+  const browseLinks = (skip) => {
+    const row = (kind, label) => {
+      const ls = LANDINGS.filter((l) => l.kind === kind && l.url !== skip);
+      return ls.length ? `<div class="lp-browse-row"><h3>${label}</h3><ul class="pd-chips">${ls.map((l) => `<li><a href="${l.url.replace('/products/', '')}">${e(l.kind === 'brand' ? BRANDS[l.key] : l.name)}</a></li>`).join('')}</ul></div>` : '';
+    };
+    return row('cat', 'By category') + row('brand', 'By brand') + row('collection', 'Collections');
+  };
+  for (const l of LANDINGS) {
+    const page = {
+      file: `products${l.url.slice('/products'.length)}`, url: l.url, name: l.name, type: 'CollectionPage', title: l.title, description: l.description,
+      crumbs: [['Home', '/'], ['Products', '/products.html'], [l.name, l.url]],
+      mainEntity: { '@type': 'ItemList', name: l.name, numberOfItems: l.items.length,
+        itemListElement: l.items.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: abs(productUrl(p)) })) },
+      ogAlt: `${l.name} supplied in Dubai, UAE by Plan Man`
+    };
+    const quoteHref = `../contact.html?product=${encodeURIComponent(l.name)}`;
+    const groups = l.groups.map((g) => `
+    <section class="section${l.groups.indexOf(g) % 2 ? ' section-alt' : ''} lp-group" id="${g.id}">
+        <div class="container">
+            <div class="lp-group-head">
+                <div>
+                    <h2 class="h2">${e(g.name)} <span class="lp-count">${g.items.length}</span></h2>${g.sub ? `\n                    <p class="lp-sub">${e(g.sub)}</p>` : ''}
+                </div>${g.more ? `\n                <a class="lp-more" href="${g.more[1]}">${e(g.more[0])} <i class="ph ph-arrow-right" aria-hidden="true"></i></a>` : ''}
+            </div>
+            <div class="pd-related">
+                ${g.items.map(relatedCard).join('\n                ')}
+            </div>
+        </div>
+    </section>`).join('\n');
+    const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO:START (generated by tools/seo-build.js) -->
+${relink(headBlock(page))}
+<!-- SEO:END -->
+    <script>(function(){var d=document.documentElement,t='light';d.classList.add('js');try{t=localStorage.getItem('pm-theme')||t}catch(e){}d.setAttribute('data-theme',t)})()</script>
+    <link rel="stylesheet" href="../styles.css?v=${ver('styles.css')}">
+    <link rel="stylesheet" href="../apple.css?v=${ver('apple.css')}">
+    <link rel="stylesheet" href="../product.css?v=3">
+</head>
+<body>
+    <!-- Generated by tools/seo-build.js from data/products.js. Edit that, not this file. -->
+    ${navHtml}
+    <main id="main">
+
+    <header class="page-hero catalog-hero lp-hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <nav class="pd-crumbs" aria-label="Breadcrumb">
+                <a href="/">Home</a><i class="ph ph-caret-right" aria-hidden="true"></i>
+                <a href="../products.html">Products</a><i class="ph ph-caret-right" aria-hidden="true"></i>
+                <span aria-current="page">${e(l.name)}</span>
+            </nav>
+${l.logo ? `            <img class="catalog-logo" src="../${l.logo}" alt="${e(l.kind === 'brand' ? BRANDS[l.key] : 'Supermicro')} logo" width="232" height="123"${l.kind === 'brand' ? ` data-brand="${l.key}"` : ''}>\n` : ''}            <span class="eyebrow">${l.items.length} products</span>
+            <h1 class="h1">${e(l.h1)}</h1>
+            <p class="lead">${e(l.lead)}</p>
+            <div class="lp-actions">
+                <a class="btn btn-primary" href="${quoteHref}">Request a Quote <i class="ph ph-arrow-right"></i></a>
+                <a class="btn btn-ghost" href="../${l.catalog}">Filter in the catalog</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section lp-intro-section">
+        <div class="container">
+            <p class="lp-intro">${e(l.intro)}</p>${l.groups.length > 1 ? `
+            <nav class="lp-jump" aria-label="Sections">${l.groups.map((g) => `<a href="#${g.id}">${e(g.name)} <span>${g.items.length}</span></a>`).join('')}</nav>` : ''}
+        </div>
+    </section>
+${groups}
+
+    <section class="section lp-browse" aria-labelledby="browse-title">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Browse</span>
+                <h2 class="h2" id="browse-title">More Products</h2>
+            </div>
+            ${browseLinks(l.url)}
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <div class="container">
+            <div>
+                <h2 class="h2">Get a Quote</h2>
+                <p class="lead">Tell us your workload, quantities and timeline. We reply within one business day with a configuration, pricing and lead time.</p>
+            </div>
+            <a href="${quoteHref}" class="btn btn-primary">Request a Quote <i class="ph ph-arrow-right"></i></a>
+        </div>
+    </section>
+    </main>
+
+    ${footerHtml}
+    <script src="../main.js?v=${ver('main.js')}"></script>
+</body>
+</html>
+`;
+    write(page.file, html);
+  }
+  console.log(`wrote ${LANDINGS.length} brand / category / collection pages in products/`);
+  // the products page links to every landing page (crawlable, and useful as a browse menu)
+  {
+    let ph = read('products.html').replace(/\r\n/g, '\n');
+    const browse = `    <section class="section lp-browse" id="browse" aria-labelledby="browse-title">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Browse</span>
+                <h2 class="h2" id="browse-title">Browse by Category and Brand</h2>
+            </div>
+            ${browseLinks('').replace(/href="(?!https?:|\/)/g, 'href="products/')}
+        </div>
+    </section>`;
+    ph = block(ph, 'BROWSE', browse, (h, w) => h.replace(/(\n\s*<section class="section section-alt" id="hardware">)/, `\n${w}\n$1`));
+    write('products.html', ph);
+  }
 }
 
 /* ------------------------------------------------------------------ 404 page head */
 {
-  let html = read('404.html').replace(/\r\n/g, '\n').replace(/href="index\.html"/g, 'href="/"');
+  let html = footerLinks(read('404.html').replace(/\r\n/g, '\n').replace(/href="index\.html"/g, 'href="/"'));
   const page = { file: '404.html', url: '/404.html', name: 'Page not found', type: 'WebPage', title: 'Page Not Found | Plan Man', description: 'The page you were looking for could not be found. Explore Plan Man enterprise IT solutions and hardware in Dubai, UAE.' };
   html = html.replace(/\s*<title>[\s\S]*?<\/title>/, '').replace(/\s*<meta name="description"[^>]*>/, '')
     .replace(/\s*<link rel="icon"[^>]*>/g, '').replace(/\s*<link rel="apple-touch-icon"[^>]*>/g, '')
@@ -582,10 +779,12 @@ ${d.specNote ? `            <p class="pd-note">${e(d.specNote)}</p>\n` : ''}    
 }
 
 /* ------------------------------------------------------------------ sitemap / robots / manifest */
+const imageTag = (p) => p.img ? `<image:image><image:loc>${abs('/' + p.img)}</image:loc></image:image>` : '';
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${PAGES.map((p) => `  <url><loc>${abs(p.url)}</loc><lastmod>${TODAY}</lastmod><priority>${p.priority}</priority></url>`).join('\n')}
-${PRODUCTS.map((p) => `  <url><loc>${abs(productUrl(p))}</loc><lastmod>${TODAY}</lastmod><priority>0.7</priority></url>`).join('\n')}
+${LANDINGS.map((l) => `  <url><loc>${abs(l.url)}</loc><lastmod>${TODAY}</lastmod><priority>0.8</priority></url>`).join('\n')}
+${PRODUCTS.map((p) => `  <url><loc>${abs(productUrl(p))}</loc><lastmod>${TODAY}</lastmod><priority>0.7</priority>${imageTag(p)}</url>`).join('\n')}
 </urlset>
 `);
 
@@ -638,6 +837,10 @@ write('llms.txt', `# Plan Man
 ## Pages
 
 ${PAGES.map((p) => `- [${p.name}](${abs(p.url)}): ${p.description}`).join('\n')}
+
+## Brand, category and collection pages
+
+${LANDINGS.map((l) => `- [${l.name}](${abs(l.url)}): ${l.description}`).join('\n')}
 
 ## Product pages
 

@@ -464,6 +464,33 @@ Categories
 
 ### Product Catalog
 
+Browse
+
+### Browse by Category and Brand
+
+#### By category
+
+- Rack-Scale AI Systems
+- GPU & AI Servers
+- Data Center GPUs
+- AI Networking
+- Rack & Multi-Node Servers
+- Storage
+- AI Workstations & Deskside
+- Desktops & Client PCs
+- Edge Systems
+- Software & Management
+
+#### By brand
+
+- NVIDIA
+- Supermicro
+- ASUS
+
+#### Collections
+
+- Supermicro Gold Series
+
 Enterprise Hardware Sales
 
 ### Every Premium Brand, One Supplier

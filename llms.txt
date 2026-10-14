@@ -21,6 +21,23 @@
 - [About](https://planman.ae/about.html): Plan Man is a Dubai-based solution provider and enterprise hardware supplier for hospitality, education, manufacturing and corporate enterprise across the UAE.
 - [Contact](https://planman.ae/contact.html): Request a quote or discuss your IT project. Call or WhatsApp +971 58 522 5166, email sales@planmanme.com or use our form. We reply within one business day.
 
+## Brand, category and collection pages
+
+- [NVIDIA Products](https://planman.ae/products/nvidia.html): NVIDIA rack-scale systems, HGX platforms, data center GPUs, networking, DGX systems and AI software. Supplied and supported in the UAE by Plan Man.
+- [Supermicro Products](https://planman.ae/products/supermicro.html): Supermicro GPU servers, NVL72 SuperClusters, enterprise servers, storage and data center building blocks. Supplied and supported in the UAE by Plan Man.
+- [ASUS Products](https://planman.ae/products/asus.html): ASUS AI PODs, GPU servers, rack and multi-node servers, storage and management software. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
+- [Rack-Scale AI Systems](https://planman.ae/products/rack-scale-ai-systems.html): Liquid-cooled NVL72 racks with 72 GPUs in one NVLink domain, built for training and AI reasoning at scale. Supplied and supported in the UAE by Plan Man.
+- [GPU & AI Servers](https://planman.ae/products/gpu-ai-servers.html): Eight-GPU HGX servers and PCIe GPU servers for AI training, inference and HPC, air- or liquid-cooled. Supplied and supported in the UAE by Plan Man.
+- [Data Center GPUs](https://planman.ae/products/data-center-gpus.html): Data center GPUs for AI inference, training, rendering and virtual workstations. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
+- [AI Networking](https://planman.ae/products/ai-networking.html): InfiniBand and Ethernet fabrics, SuperNICs and DPUs that connect GPU clusters at up to 800 Gb/s. Supplied and supported in the UAE by Plan Man.
+- [Rack & Multi-Node Servers](https://planman.ae/products/rack-multi-node-servers.html): Rackmount, multi-node and blade servers for virtualization, databases, cloud and HPC. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
+- [Storage](https://planman.ae/products/enterprise-storage.html): All-flash NVMe, high-capacity and object storage to feed GPU clusters and protect enterprise data. Supplied and supported in the UAE by Plan Man.
+- [AI Workstations & Deskside](https://planman.ae/products/ai-workstations.html): Desktop and deskside AI supercomputers for building, fine-tuning and running models locally. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
+- [Desktops & Client PCs](https://planman.ae/products/desktops-client-pcs.html): Business desktops and AI PCs for offices, SMBs and local AI work, pre-configured with Windows. Supplied and supported in the UAE by Plan Man.
+- [Edge Systems](https://planman.ae/products/edge-servers.html): Short-depth and compact servers for AI and computing at branch, retail, telco and factory sites. Supplied and supported in the UAE by Plan Man.
+- [Software & Management](https://planman.ae/products/ai-software-management.html): AI software, GPU virtualization and infrastructure management to run your platform. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
+- [Supermicro Gold Series](https://planman.ae/products/supermicro-gold-series.html): Supermicro’s best-selling servers, pre-configured with CPUs, GPUs, memory, storage and networking, tested and ready to ship within days.
+
 ## Product pages
 
 - [NVIDIA Vera Rubin NVL72](https://planman.ae/products/nvidia-vera-rubin-nvl72.html): Next-generation rack-scale platform for agentic AI and reasoning, unifying 72 Rubin GPUs and 36 Vera CPUs in a single NVLink domain.
