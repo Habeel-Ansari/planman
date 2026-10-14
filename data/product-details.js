@@ -3484,6 +3484,8 @@ window.PRODUCT_DETAILS = {
     /* ---------------- Pre-booking (new launches) ---------------- */
     'asus-expertcenter-pro-et900n-g3': {
         model: 'ET900N G3',
+        // optional wide promo banner under the product header: [file, width, height, alt]
+        banner: ['assets/products/asus-expertcenter-pro-et900n-g3-banner.webp', 1600, 663, 'ASUS ExpertCenter Pro ET900N G3 professional workstation for AI, engineering and creative workflows. Pre-booking started.'],
         sources: [
             ['ASUS ExpertCenter Pro ET900N G3', 'https://www.asus.com/displays-desktops/workstations/performance/expertcenter-pro-et900n-g3/'],
             ['ExpertCenter Pro ET900N G3 tech specs', 'https://www.asus.com/displays-desktops/workstations/performance/expertcenter-pro-et900n-g3/techspec/']

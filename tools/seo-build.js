@@ -577,7 +577,13 @@ ${p.preorder ? `                <p class="pd-preorder"><i class="ph ph-clock-cou
         </div>
     </header>
 
-    <nav class="pd-subnav" aria-label="On this page">
+${d.banner ? `    <section class="pd-banner">
+        <div class="container">
+            <a href="${quote(p)}" aria-label="${e(cta(p))}: ${e(p.name)}"><img src="../${d.banner[0]}" alt="${e(d.banner[3])}" width="${d.banner[1]}" height="${d.banner[2]}" loading="lazy"></a>
+        </div>
+    </section>
+
+` : ''}    <nav class="pd-subnav" aria-label="On this page">
         <div class="container">
             <span class="pd-subnav-title">${e(p.name)}</span>
             <ul>
