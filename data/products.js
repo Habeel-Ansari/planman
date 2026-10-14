@@ -100,6 +100,7 @@ window.PRODUCTS = [
     /* ---------------- NVIDIA ---------------- */
     {
         id: 'nvidia-vera-rubin-nvl72', brand: 'nvidia', cat: 'rack-scale', isNew: true, icon: 'ph-cube-transparent',
+        img: 'assets/products/nvidia-vera-rubin-nvl72.webp', imgSize: [315, 720],
         name: 'NVIDIA Vera Rubin NVL72',
         summary: 'Next-generation rack-scale platform for agentic AI and reasoning, unifying 72 Rubin GPUs and 36 Vera CPUs in a single NVLink domain.',
         specs: [
@@ -113,6 +114,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-dgx-vera-rubin-nvl72', brand: 'nvidia', cat: 'rack-scale', isNew: true, icon: 'ph-cube',
+        img: 'assets/products/nvidia-dgx-vera-rubin-nvl72.webp', imgSize: [720, 340],
         name: 'NVIDIA DGX Vera Rubin NVL72',
         summary: 'Turnkey, ready-to-deploy enterprise AI infrastructure built on the Vera Rubin platform and managed with NVIDIA Mission Control.',
         specs: [
@@ -125,6 +127,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-gb300-nvl72', brand: 'nvidia', cat: 'rack-scale', icon: 'ph-cube-transparent',
+        img: 'assets/products/nvidia-gb300-nvl72.webp', imgSize: [360, 720],
         name: 'NVIDIA GB300 NVL72',
         summary: 'Blackwell Ultra rack-scale system built for AI reasoning, training and data processing at scale.',
         specs: [
@@ -138,6 +141,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-gb200-nvl72', brand: 'nvidia', cat: 'rack-scale', icon: 'ph-cube-transparent',
+        img: 'assets/products/nvidia-gb200-nvl72.webp', imgSize: [330, 720],
         name: 'NVIDIA GB200 NVL72',
         summary: 'Liquid-cooled 72-GPU NVLink domain that acts as a single massive GPU for trillion-parameter LLM inference and training.',
         specs: [
@@ -150,6 +154,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-hgx-rubin-nvl8', brand: 'nvidia', cat: 'gpu-servers', isNew: true, icon: 'ph-circuitry',
+        img: 'assets/products/nvidia-hgx.webp', imgSize: [720, 644], imgAlt: "NVIDIA HGX platform 8-GPU baseboard",
         name: 'NVIDIA HGX Rubin NVL8',
         summary: 'Eight Rubin GPUs on sixth-generation NVLink — the building block for partner servers from Supermicro, ASUS and others.',
         specs: [
@@ -161,6 +166,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-dgx-rubin-nvl8', brand: 'nvidia', cat: 'gpu-servers', isNew: true, icon: 'ph-hard-drives',
+        img: 'assets/products/nvidia-dgx-rubin-nvl8.webp', imgSize: [720, 627],
         name: 'NVIDIA DGX Rubin NVL8',
         summary: 'Liquid-cooled DGX system for training, post-training and inference across every AI workload.',
         specs: [
@@ -172,6 +178,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-hgx-b300', brand: 'nvidia', cat: 'gpu-servers', icon: 'ph-circuitry',
+        img: 'assets/products/nvidia-hgx.webp', imgSize: [720, 644], imgAlt: "NVIDIA HGX platform 8-GPU baseboard",
         name: 'NVIDIA HGX B300',
         summary: 'Blackwell Ultra 8-GPU platform for AI reasoning, available in air- and liquid-cooled partner servers.',
         specs: [
@@ -183,6 +190,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-hgx-b200', brand: 'nvidia', cat: 'gpu-servers', icon: 'ph-circuitry',
+        img: 'assets/products/nvidia-hgx.webp', imgSize: [720, 644], imgAlt: "NVIDIA HGX platform 8-GPU baseboard",
         name: 'NVIDIA HGX B200',
         summary: 'The proven Blackwell 8-GPU platform for LLM training and high-volume inference.',
         specs: [
@@ -194,6 +202,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-rtx-pro-6000-server', brand: 'nvidia', cat: 'accelerators', icon: 'ph-graphics-card',
+        img: 'assets/products/nvidia-rtx-pro-6000-server.webp', imgSize: [720, 449],
         name: 'NVIDIA RTX PRO 6000 Blackwell Server Edition',
         summary: 'Universal data center GPU for agentic AI, physical AI, scientific computing, rendering and video.',
         specs: [
@@ -205,6 +214,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-rtx-pro-4500-server', brand: 'nvidia', cat: 'accelerators', icon: 'ph-graphics-card',
+        img: 'assets/products/nvidia-rtx-pro-4500-server.webp', imgSize: [720, 302],
         name: 'NVIDIA RTX PRO 4500 Blackwell Server Edition',
         summary: 'Energy-efficient multi-workload accelerator for AI inference, data science, video and visual computing.',
         specs: [
@@ -215,6 +225,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-h200-nvl', brand: 'nvidia', cat: 'accelerators', icon: 'ph-graphics-card',
+        img: 'assets/products/nvidia-h200-nvl.webp', imgSize: [720, 714],
         name: 'NVIDIA H200 NVL',
         summary: 'Hopper-generation PCIe GPU with large HBM3e memory for LLM inference and HPC in air-cooled racks.',
         specs: [
@@ -226,6 +237,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-l40s', brand: 'nvidia', cat: 'accelerators', icon: 'ph-graphics-card',
+        img: 'assets/products/nvidia-l40s.webp', imgSize: [684, 304],
         name: 'NVIDIA L40S',
         summary: 'Ada Lovelace universal GPU for generative AI inference, graphics and Omniverse workloads.',
         specs: [
@@ -237,6 +249,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-quantum-x800', brand: 'nvidia', cat: 'networking', icon: 'ph-network',
+        img: 'assets/products/nvidia-quantum-x800.webp', imgSize: [720, 400],
         name: 'NVIDIA Quantum-X800 InfiniBand',
         summary: 'End-to-end 800 Gb/s InfiniBand platform for the largest AI training clusters.',
         specs: [
@@ -248,6 +261,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-spectrum-x', brand: 'nvidia', cat: 'networking', icon: 'ph-network',
+        img: 'assets/products/nvidia-spectrum-x.webp', imgSize: [709, 720],
         name: 'NVIDIA Spectrum-X Ethernet',
         summary: 'Ethernet platform purpose-built for AI, from single-cluster fabrics to multi-site AI factories with Spectrum-XGS.',
         specs: [
@@ -259,6 +273,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-connectx-8', brand: 'nvidia', cat: 'networking', icon: 'ph-plugs-connected',
+        img: 'assets/products/nvidia-connectx-8.webp', imgSize: [720, 450],
         name: 'NVIDIA ConnectX-8 SuperNIC',
         summary: 'SuperNIC delivering up to 800 Gb/s for InfiniBand or Ethernet GPU-to-GPU networking.',
         specs: [
@@ -270,6 +285,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-bluefield', brand: 'nvidia', cat: 'networking', icon: 'ph-shield-check',
+        img: 'assets/products/nvidia-bluefield.webp', imgSize: [720, 397], imgAlt: "NVIDIA BlueField-4 DPU",
         name: 'NVIDIA BlueField DPU',
         summary: 'Data processing unit that offloads networking, storage and security from host CPUs using NVIDIA DOCA.',
         specs: [
@@ -281,6 +297,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-dgx-spark', brand: 'nvidia', cat: 'desktop-ai', icon: 'ph-desktop-tower',
+        img: 'assets/products/nvidia-dgx-spark.webp', imgSize: [264, 165],
         name: 'NVIDIA DGX Spark',
         summary: 'Compact desktop AI supercomputer for prototyping, fine-tuning and running models locally.',
         specs: [
@@ -292,6 +309,7 @@ window.PRODUCTS = [
     },
     {
         id: 'nvidia-dgx-station', brand: 'nvidia', cat: 'desktop-ai', icon: 'ph-desktop-tower',
+        img: 'assets/products/nvidia-dgx-station.webp', imgSize: [720, 470], imgAlt: "NVIDIA DGX Station GB300 Desktop Superchip board",
         name: 'NVIDIA DGX Station',
         summary: 'Deskside AI supercomputer for developers and research teams working on large models.',
         specs: [

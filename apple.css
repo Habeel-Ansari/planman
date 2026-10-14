@@ -258,7 +258,7 @@ html[data-theme="light"] .section-alt .tab-list { background: #e8e8ed; }
 .product-visual { border-bottom: 0; margin: 8px 8px 0; border-radius: 18px; }
 .product-body h3 { font-size: 21px; }
 /* Product photos (instead of illustrations): fit inside the panel without distortion */
-.product-visual.has-photo img { width: 86%; height: 74%; max-width: none; object-fit: contain; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .45)); }
+.product-visual.has-photo img { position: absolute; inset: 0; margin: auto; width: 86%; height: 74%; max-width: none; object-fit: contain; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .45)); }
 .product-card:hover .product-visual.has-photo img { transform: translateY(-3px) scale(1.03); }
 
 /* Brand logo in the products page header (shown for collections such as Supermicro Gold Series) */
