@@ -178,9 +178,10 @@ const landingUrl = (kind, key) => `/products/${kind === 'cat' ? catSlug(key) : k
 const fitText = (max, options) => options.find((o) => o.length <= max);
 // lower-case a label for use mid-sentence, keeping acronyms (GPU, AI, PCs)
 const lc = (s) => s.split(' ').map((w) => /[A-Z]{2}/.test(w) ? w : w.toLowerCase()).join(' ');
+const plural = (n, one, many = `${one}s`) => `${n} ${n === 1 ? one : many}`;
 const listText = (a) => a.length < 2 ? a.join('') : `${a.slice(0, -1).join(', ')} and ${a[a.length - 1]}`;
 const LANDINGS = (() => {
-  const { CATEGORY_LEADS = {}, BRAND_LEADS = {}, BRAND_LOGOS = {} } = sandbox.window;
+  const { CATEGORY_LEADS = {}, BRAND_LEADS = {}, BRAND_LOGOS = {}, BRAND_LOGOS_DARK = {} } = sandbox.window;
   const out = [];
   const describe = (lead) => fitText(160, [
     `${lead} Supplied, deployed and supported in Dubai and the UAE by Plan Man.`,
@@ -193,9 +194,9 @@ const LANDINGS = (() => {
     const cats = Object.keys(CATEGORIES).filter((c) => items.some((p) => p.cat === c));
     out.push({
       kind: 'brand', key: b, url: landingUrl('brand', b), name: `${brand} Products`, h1: `${brand} Products in Dubai, UAE`,
-      title: BRAND_TITLES[b] || `${brand} Products in Dubai, UAE | Plan Man`, lead: BRAND_LEADS[b] || '', logo: BRAND_LOGOS[b],
+      title: BRAND_TITLES[b] || `${brand} Products in Dubai, UAE | Plan Man`, lead: BRAND_LEADS[b] || '', logo: BRAND_LOGOS[b], logoDark: BRAND_LOGOS_DARK[b],
       description: describe(BRAND_LEADS[b] || `${brand} products supplied in the UAE.`), items, catalog: `products.html?brand=${b}`,
-      intro: `Plan Man supplies ${brand} ${listText(cats.map((c) => lc(CATEGORIES[c])))} to organisations in Dubai and across the UAE. The ${items.length} ${brand} products below link to full specifications taken from ${brand}'s official product information. We size each configuration to your workload, supply genuine hardware with manufacturer warranty, and handle integration, deployment and after-sales support.`,
+      intro: `Plan Man supplies ${brand} ${listText(cats.map((c) => lc(CATEGORIES[c])))} to organisations in Dubai and across the UAE. ${items.length === 1 ? `The ${brand} product below links` : `The ${items.length} ${brand} products below link`} to full specifications taken from ${brand}'s official product information. We size each configuration to your workload, supply genuine hardware with manufacturer warranty, and handle integration, deployment and after-sales support.`,
       groups: cats.map((c) => ({ id: catSlug(c), name: CATEGORIES[c], items: items.filter((p) => p.cat === c), more: [`All ${CATEGORIES[c]}`, `${catSlug(c)}.html`] }))
     });
   }
@@ -207,7 +208,7 @@ const LANDINGS = (() => {
       kind: 'cat', key: c, url: landingUrl('cat', c), name: label, h1: `${label} in Dubai, UAE`,
       title: fitText(60, [`${label} in Dubai, UAE | Plan Man`, `${label} in Dubai | Plan Man`, `${label} | Plan Man UAE`]) || label,
       lead: CATEGORY_LEADS[c] || '', description: describe(CATEGORY_LEADS[c] || `${label} supplied in the UAE.`), items, catalog: `products.html?cat=${c}`,
-      intro: `Plan Man supplies ${lc(label)} from ${listText(brands.map((b) => BRANDS[b]))} in Dubai and across the UAE. Compare the ${items.length} platforms below, open any of them for full specifications, or tell us your workload and we will recommend and quote the right configuration, then deliver, deploy and support it.`,
+      intro: `Plan Man supplies ${lc(label)} from ${listText(brands.map((b) => BRANDS[b]))} in Dubai and across the UAE. ${items.length === 1 ? 'Open the product below' : `Compare the ${items.length} platforms below, open any of them`} for full specifications, or tell us your workload and we will recommend and quote the right configuration, then deliver, deploy and support it.`,
       groups: brands.map((b) => ({ id: b, name: BRANDS[b], items: items.filter((p) => p.brand === b), more: [`All ${BRANDS[b]} products`, `${b}.html`] }))
     });
   }
@@ -697,6 +698,22 @@ ${d.specNote ? `            <p class="pd-note">${e(d.specNote)}</p>\n` : ''}    
     };
     return row('cat', 'By category') + row('brand', 'By brand') + row('collection', 'Collections');
   };
+  // header logo(s): the brand or collection logo, plus a dark-theme version when the brand has one
+  const logoSize = (f) => {
+    const buf = fs.readFileSync(path.join(ROOT, f));
+    if (f.endsWith('.png')) return [buf.readUInt32BE(16), buf.readUInt32BE(20)];
+    const m = buf.toString('utf8').match(/viewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)"/);
+    return m ? [Math.round(m[1] * 10), Math.round(m[2] * 10)] : [232, 123];
+  };
+  const logoTags = (l) => {
+    const alt = `${e(l.kind === 'brand' ? BRANDS[l.key] : 'Supermicro')} logo`;
+    const brand = l.kind === 'brand' ? ` data-brand="${l.key}"` : '';
+    const tag = (src, cls) => {
+      const [w, h] = logoSize(src);
+      return `            <img class="${cls}" src="../${src}" alt="${alt}" width="${w}" height="${h}"${brand}>\n`;
+    };
+    return tag(l.logo, l.logoDark ? 'catalog-logo has-dark' : 'catalog-logo') + (l.logoDark ? tag(l.logoDark, 'catalog-logo catalog-logo-dark') : '');
+  };
   for (const l of LANDINGS) {
     const page = {
       file: `products${l.url.slice('/products'.length)}`, url: l.url, name: l.name, type: 'CollectionPage', title: l.title, description: l.description,
@@ -745,7 +762,7 @@ ${relink(headBlock(page))}
                 <a href="../products.html">Products</a><i class="ph ph-caret-right" aria-hidden="true"></i>
                 <span aria-current="page">${e(l.name)}</span>
             </nav>
-${l.logo ? `            <img class="catalog-logo" src="../${l.logo}" alt="${e(l.kind === 'brand' ? BRANDS[l.key] : 'Supermicro')} logo" width="232" height="123"${l.kind === 'brand' ? ` data-brand="${l.key}"` : ''}>\n` : ''}            <span class="eyebrow">${l.items.length} products</span>
+${l.logo ? logoTags(l) : ''}            <span class="eyebrow">${plural(l.items.length, 'product')}</span>
             <h1 class="h1">${e(l.h1)}</h1>
             <p class="lead">${e(l.lead)}</p>
             <div class="lp-actions">

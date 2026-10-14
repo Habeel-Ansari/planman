@@ -36,6 +36,7 @@
     const heroTitle = document.getElementById('catalog-title');
     const heroLead = document.getElementById('catalog-lead');
     const heroLogo = document.getElementById('catalog-logo');
+    const heroLogoDark = document.getElementById('catalog-logo-dark');
     const hero = heroTitle && { title: heroTitle.textContent, lead: heroLead.textContent, doc: document.title };
     function renderHero() {
         if (!hero) return;
@@ -51,6 +52,13 @@
         if (heroLogo) {
             heroLogo.hidden = !logo;
             if (logo) { heroLogo.src = logo; heroLogo.alt = cols[state.cat] ? cols[state.cat].name.split(' ')[0] : brands[state.brand]; heroLogo.dataset.brand = logo.split('/').pop().split('.')[0]; }
+            // a separate dark-theme logo, when the brand has one
+            const dark = logo && !cols[state.cat] && (window.BRAND_LOGOS_DARK || {})[state.brand];
+            heroLogo.classList.toggle('has-dark', !!dark);
+            if (heroLogoDark) {
+                heroLogoDark.hidden = !dark;
+                if (dark) { heroLogoDark.src = dark; heroLogoDark.alt = heroLogo.alt; heroLogoDark.dataset.brand = heroLogo.dataset.brand; }
+            }
         }
     }
 

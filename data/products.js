@@ -59,7 +59,12 @@ window.CATEGORY_LEADS = {
 // Brand logo shown in the products page header when that brand is selected (files in assets/brands/)
 window.BRAND_LOGOS = {
     supermicro: 'assets/brands/supermicro.svg',
-    asus: 'assets/brands/asus.svg'
+    asus: 'assets/brands/asus.svg',
+    msi: 'assets/brands/msi.png'
+};
+// Optional dark-theme version of a brand logo (used when the normal one would not show on a dark background)
+window.BRAND_LOGOS_DARK = {
+    msi: 'assets/brands/msi-dark.png'
 };
 window.BRAND_LEADS = {
     nvidia: 'NVIDIA rack-scale systems, HGX platforms, data center GPUs, networking, DGX systems and AI software.',
