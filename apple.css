@@ -373,3 +373,8 @@ html[data-theme="light"] .site-footer.force-dark { --logo-l: block; --logo-d: no
 .lp-browse li a { display: inline-block; background: var(--surface); color: var(--text); border-radius: 980px; padding: 9px 16px; font-size: 15px; font-weight: 500; }
 .lp-browse li a:hover { color: var(--accent-text); }
 a.tag:hover { text-decoration: none; filter: brightness(1.1); }
+
+/* Footer credit */
+.footer-bottom .credit { display: inline-block; margin-top: 4px; }
+.footer-bottom .credit a { color: var(--text-2); font-weight: 500; }
+.footer-bottom .credit a:hover { color: var(--accent-text); text-decoration: underline; text-underline-offset: 3px; }
