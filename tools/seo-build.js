@@ -139,11 +139,18 @@ vm.runInContext(read('data/products.js'), sandbox);
 vm.runInContext(read('data/product-details.js'), sandbox);
 const { PRODUCTS, BRANDS, CATEGORIES, CATEGORY_ART, PRODUCT_DETAILS } = sandbox.window;
 const COLLECTIONS = sandbox.window.COLLECTIONS || {};
+// Smaller copies of each product photo (assets/products/<id>-400.webp / -600.webp, made when the photo is wider)
+// so cards download only the size they display
+const srcset = (p, prefix = '', sizes = '(max-width: 700px) 80vw, 300px') => {
+  const w = p.imgSize[0];
+  const vs = [400, 600].filter((v) => w > v + 40).map((v) => `${prefix}${p.img.replace(/.webp$/, `-${v}.webp`)} ${v}w`);
+  return vs.length ? ` srcset="${vs.join(', ')}, ${prefix}${p.img} ${w}w" sizes="${sizes}"` : '';
+};
 // Card image: the product photo when there is one, otherwise the category illustration
 const cardVisual = (p, esc, prefix = '') => {
   const ill = p.art || CATEGORY_ART[p.cat] || 'servers';
   const img = p.img
-    ? `<img src="${prefix}${p.img}" alt="${esc(p.imgAlt || p.name)}" width="${p.imgSize[0]}" height="${p.imgSize[1]}" loading="lazy">`
+    ? `<img src="${prefix}${p.img}"${srcset(p, prefix)} alt="${esc(p.imgAlt || p.name)}" width="${p.imgSize[0]}" height="${p.imgSize[1]}" loading="lazy">`
     : `<img src="${prefix}assets/illustrations/${ill}.svg" alt="" width="400" height="300" loading="lazy">`;
   return `<div class="product-visual${p.img ? ' has-photo' : ''}"><span class="tag tag-${p.brand}">${esc(BRANDS[p.brand])}</span>${badgeHtml(p, esc)}${img}</div>`;
 };
@@ -229,14 +236,20 @@ const LANDINGS = (() => {
 })();
 const missingImages = PRODUCTS.filter((p) => !fs.existsSync(path.join(ROOT, 'assets/og/products', p.id + '.jpg'))).map((p) => p.id);
 if (missingImages.length) throw new Error(`Missing share images (run python tools/make-product-og.py): ${missingImages.join(', ')}`);
+const missingSizes = PRODUCTS.filter((p) => p.img && [400, 600].some((v) => p.imgSize[0] > v + 40 && !fs.existsSync(path.join(ROOT, p.img.replace(/\.webp$/, `-${v}.webp`))))).map((p) => p.id);
+if (missingSizes.length) throw new Error(`Missing resized photos (run python tools/make-image-sizes.py): ${missingSizes.join(', ')}`);
 const missingDetails = PRODUCTS.filter((p) => !PRODUCT_DETAILS[p.id]).map((p) => p.id);
 if (missingDetails.length) throw new Error(`data/product-details.js has no entry for: ${missingDetails.join(', ')}`);
 
 // footer product links go to the indexable landing pages rather than the catalog's filter URLs
-const footerLinks = (html) => html.replace(/<footer class="site-footer[\s\S]*?<\/footer>/, (f) => f.replace(/href="products\.html\?(cat|brand)=([\w-]+)"/g, (m, kind, key) => {
+const toLanding = (s) => s.replace(/href="products\.html\?(cat|brand)=([\w-]+)(?:#catalog)?"/g, (m, kind, key) => {
   const l = LANDINGS.find((x) => x.key === key && (kind === 'brand' ? x.kind === 'brand' : x.kind !== 'brand'));
   return l ? `href="${l.url.slice(1)}"` : m;
-}));
+});
+const footerLinks = (html) => html.replace(/<footer class="site-footer[\s\S]*?<\/footer>/, toLanding);
+// links inside page content (cards, buttons) also go to the landing pages; the top menu keeps opening the
+// interactive catalog, and the products page keeps its own in-page filter links
+const contentLinks = (html) => html.replace(/<main id="main">[\s\S]*?<\/main>/, toLanding);
 
 /* ------------------------------------------------------------------ JSON-LD */
 function jsonLd(page) {
@@ -366,7 +379,7 @@ function prebookHtml() {
   if (!items.length) return '';
   const card = (p) => `
                     <a class="prebook-card" href="products/${p.id}.html">
-                        <div class="prebook-img">${p.img ? `<img src="${p.img}" alt="${esc(p.imgAlt || p.name)}" width="${p.imgSize[0]}" height="${p.imgSize[1]}" loading="lazy">` : ''}</div>
+                        <div class="prebook-img">${p.img ? `<img src="${p.img}"${srcset(p, '', '(max-width: 600px) 70vw, 240px')} alt="${esc(p.imgAlt || p.name)}" width="${p.imgSize[0]}" height="${p.imgSize[1]}" loading="lazy">` : ''}</div>
                         <span class="prebook-brand">${esc(BRANDS[p.brand])} · ${esc(CATEGORIES[p.cat])}</span>
                         <h3>${esc(p.name)}</h3>
                         <p>${esc(p.specs.slice(0, 2).map(([, v]) => v).join(' · '))}</p>
@@ -419,6 +432,7 @@ for (const page of PAGES) {
   if (!html.includes('class="skip-link"')) html = html.replace(/<body>/, '<body>\n    <a class="skip-link" href="#main">Skip to content</a>');
 
   html = footerLinks(html);
+  if (page.file !== 'products.html') html = contentLinks(html);
 
   // dead social links
   html = html.replace(/\s*<div class="socials">[\s\S]*?<\/div>/, '');
@@ -434,6 +448,15 @@ for (const page of PAGES) {
   });
 
   if (page.file === 'products.html') {
+    // pre-render the default filter UI exactly as catalog.js draws it, so the page does not jump when the script takes over
+    const inCat = (p, c) => c === 'all' || p.cat === c || p.series === c;
+    const chips = ['all', ...Object.keys(BRANDS)].map((b) => `<button class="chip" data-brand="${b}" aria-pressed="${b === 'all'}">${b === 'all' ? 'All brands' : esc(BRANDS[b])} <span class="count">${PRODUCTS.filter((p) => b === 'all' || p.brand === b).length}</span></button>`).join('');
+    const item = (c, text, cls = '') => `<li${cls ? ` class="${cls}"` : ''}><button data-cat="${c}" aria-pressed="${c === 'all'}"><span>${esc(text)}</span><span class="count">${PRODUCTS.filter((p) => inCat(p, c)).length}</span></button></li>`;
+    const catList = item('all', 'All products') + [...Object.keys(CATEGORIES), ...Object.keys(COLLECTIONS)].map((c) => COLLECTIONS[c] ? item(c, COLLECTIONS[c].nav || COLLECTIONS[c].name, 'cat-collection') : item(c, CATEGORIES[c])).join('');
+    html = html
+      .replace(/(<div class="brand-filter" id="brand-filter"[^>]*>)[\s\S]*?(<\/div>)/, `$1${chips}$2`)
+      .replace(/(<ul id="cat-filter">)[\s\S]*?(<\/ul>)/, `$1${catList}$2`)
+      .replace(/(<div class="results-meta" id="results-meta"[^>]*>)[^<]*(<\/div>)/, `$1${PRODUCTS.length} products$2`);
     html = html.replace(/\s*<noscript><p class="muted">Enable JavaScript[\s\S]*?<\/noscript>/, '');
     html = block(html, 'CATALOG', catalogHtml(), (h, w) => h.replace(/(<div class="product-grid" id="product-grid">)/, `$1\n${w}`));
   }

@@ -2,7 +2,7 @@
 
 > Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We take projects from requirements and design through hardware supply, deployment and after-sales support for hospitality groups, universities, manufacturers and enterprises across the UAE, supplying servers, storage, GPUs and networking from all premium brands.
 
-Source: https://planman.ae/ · Generated 2026-10-14 · Contact: +971 58 522 5166 · sales@planmanme.com
+Source: https://planman.ae/ · Generated 2026-10-18 · Contact: +971 58 522 5166 · sales@planmanme.com
 
 ---
 
@@ -492,9 +492,27 @@ Products
 
 Browse NVIDIA, Supermicro and ASUS platforms with full specifications and request a quote for any product. We also supply servers, storage and networking from every premium brand.
 
+All brands 82 NVIDIA 20 Supermicro 45 ASUS 16 MSI 1
+
 Categories
 
+- All products 82
+- Rack-Scale AI Systems 7
+- GPU & AI Servers 24
+- Data Center GPUs 4
+- AI Networking 5
+- Rack & Multi-Node Servers 17
+- Storage 5
+- AI Workstations & Deskside 7
+- Desktops & Client PCs 4
+- AI Laptops 1
+- Edge Systems 4
+- Software & Management 4
+- Gold Series · Ready to Ship 27
+
 ### Product Catalog
+
+82 products
 
 Browse
 

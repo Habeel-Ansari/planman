@@ -16,6 +16,11 @@
     const catArt = window.CATEGORY_ART || {};
     const art = (p) => p.img || `assets/illustrations/${p.art || catArt[p.cat] || 'servers'}.svg`;
     const page = (p) => `products/${p.id}.html`;
+    // smaller copies of the photo (-400 / -600.webp, made by the build when the photo is wider)
+    const srcset = (p) => {
+        const vs = [400, 600].filter((v) => p.imgSize[0] > v + 40).map((v) => `${p.img.replace(/.webp$/, `-${v}.webp`)} ${v}w`);
+        return vs.length ? ` srcset="${vs.join(', ')}, ${p.img} ${p.imgSize[0]}w" sizes="(max-width: 700px) 80vw, 300px"` : '';
+    };
 
     const params = new URLSearchParams(location.search);
     const state = {
@@ -98,7 +103,7 @@
             <div class="product-visual${p.img ? ' has-photo' : ''}">
                 <span class="tag tag-${p.brand}">${esc(brands[p.brand])}</span>
                 ${p.preorder ? '<span class="badge-new badge-preorder">Pre-booking</span>' : p.isNew ? '<span class="badge-new">New</span>' : cols[p.series] ? `<span class="badge-new badge-series">${esc(cols[p.series].badge)}</span>` : ''}
-                <img src="${art(p)}" alt="${p.img ? esc(p.imgAlt || p.name) : ''}" loading="lazy"${p.imgSize ? ` width="${p.imgSize[0]}" height="${p.imgSize[1]}"` : ''}>
+                <img src="${art(p)}"${p.img ? srcset(p) : ''} alt="${p.img ? esc(p.imgAlt || p.name) : ''}" loading="lazy"${p.imgSize ? ` width="${p.imgSize[0]}" height="${p.imgSize[1]}"` : ' width="400" height="300"'}>
             </div>
             <div class="product-body">
                 <div class="product-cat">${esc(cats[p.cat])}</div>
@@ -138,11 +143,16 @@
         }).join('');
     }
 
+    // The page ships with every product already in the grid (built by tools/seo-build.js), so with no filter
+    // active the first render keeps those cards instead of drawing the same 80+ cards a second time.
+    let firstRender = true;
     function render() {
         const list = products.filter((p) => matches(p));
         const groups = (cols[state.cat] || {}).groups;
+        const keepStatic = firstRender && state.brand === 'all' && state.cat === 'all' && !state.q && grid.querySelector('.product-card');
+        firstRender = false;
         grid.classList.toggle('is-grouped', !!(groups && list.length));
-        grid.innerHTML = list.length
+        if (!keepStatic) grid.innerHTML = list.length
             ? (groups ? groupedHtml(groups, list) : list.map((p, i) => card(p, i)).join(''))
             : `<div class="empty-state" style="grid-column:1/-1"><i class="ph ph-magnifying-glass"></i>No products match your filters. <br>Try a different search, or <a class="accent" href="contact.html">ask our engineers</a> — we source beyond this catalog.</div>`;
 

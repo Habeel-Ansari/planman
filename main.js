@@ -134,7 +134,9 @@ document.querySelectorAll('.rotator[data-words]').forEach((rot) => {
 });
 
 // ---------- Scroll reveals ----------
-const splitTargets = document.querySelectorAll('.display, .h1, .h2');
+// The page's main heading (h1) is not split: it is usually the largest element in the first view, so it
+// has to paint straight away (Largest Contentful Paint). Section headings keep the word-by-word reveal.
+const splitTargets = [...document.querySelectorAll('.display, .h1, .h2')].filter((el) => el.tagName !== 'H1');
 document.querySelectorAll('.reveal-stagger').forEach((parent) => {
     [...parent.children].forEach((child, i) => child.style.setProperty('--i', i));
 });

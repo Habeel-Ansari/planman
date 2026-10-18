@@ -432,3 +432,24 @@ html[data-theme="dark"], .force-dark { --tag-msi: #ff6b7d; }
 .catalog-logo-dark { display: var(--logo-d); }
 .catalog-logo-dark[hidden] { display: none; }
 .catalog-logo[data-brand="msi"] { height: 40px; margin-bottom: 20px; }
+
+/* Chip counts: enough contrast to read (WCAG AA 4.5:1) */
+.chip .count { opacity: .72; }
+
+/* Long product grids: the browser skips layout and painting of cards until they are near the screen */
+.product-grid .product-card, .pd-related .product-card { content-visibility: auto; contain-intrinsic-size: auto 560px; }
+
+/* Inter loads after first paint; until then text uses a local font scaled to Inter's metrics,
+   so nothing moves when Inter arrives (no layout shift from the font swap) */
+@font-face {
+    font-family: 'Inter Fallback';
+    src: local('Arial'), local('Helvetica Neue'), local('Helvetica'), local('Liberation Sans'), local('Roboto');
+    ascent-override: 90.49%;
+    descent-override: 22.56%;
+    line-gap-override: 0%;
+    size-adjust: 107.06%;
+}
+:root {
+    --font-body: 'Inter', 'Inter Fallback', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-head: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+}
