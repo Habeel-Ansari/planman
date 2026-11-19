@@ -417,13 +417,13 @@ ${FAQ.map(([q, a]) => `                <details class="faq-item"><summary>${esc(
     </section>`;
 }
 
-/* ------------------------------------------------------------------ promo slider (home page) */
-// Slide 1: every product with `preorder: true` in data/products.js. Slide 2: ASUSTOR NAS (PROMO_ASUSTOR below).
-// main.js adds the arrows/dots behaviour; without JS the slides still scroll sideways.
+/* ------------------------------------------------------------------ home page: pre-booking banner + ASUSTOR section */
+// Pre-booking: every product with `preorder: true` in data/products.js.
+// ASUSTOR: its own section after "Industries We Serve", showing PROMO_ASUSTOR.
 const PROMO_ASUSTOR = ['asustor-as6804t', 'asustor-fs6812x', 'asustor-as6706t-v2', 'asustor-as7224rdx'];
-function promoCard(p, cta, sub) {
+function promoCard(p, cta, sub, cls = 'prebook-card') {
   return `
-                        <a class="prebook-card" href="products/${p.id}.html">
+                        <a class="${cls}" href="products/${p.id}.html">
                             <div class="prebook-img">${p.img ? `<img src="${p.img}"${srcset(p, '', '(max-width: 600px) 70vw, 240px')} alt="${esc(p.imgAlt || p.name)}" width="${p.imgSize[0]}" height="${p.imgSize[1]}" loading="lazy">` : ''}</div>
                             <span class="prebook-brand">${esc(BRANDS[p.brand])} · ${esc(CATEGORIES[p.cat])}</span>
                             <h3>${esc(p.name.replace(/^ASUSTOR /, ''))}</h3>
@@ -431,47 +431,42 @@ function promoCard(p, cta, sub) {
                             <span class="prebook-cta">${cta} <i class="ph ph-arrow-right" aria-hidden="true"></i></span>
                         </a>`;
 }
+const twoSpecs = (q) => q.specs.slice(0, 2).map(([, v]) => v).join(' · ');
 function prebookHtml() {
-  const slides = [];
   const pre = PRODUCTS.filter((p) => p.preorder);
-  if (pre.length) slides.push({ id: 'prebook-title', label: 'Pre-booking', html: `
-                <div class="prebook-panel promo-slide force-dark">
-                    <div class="prebook-head">
-                        <div>
-                            <span class="prebook-pill"><span class="prebook-dot" aria-hidden="true"></span>Pre-booking now open</span>
-                            <h2 class="h2" id="prebook-title">Be First to Get the New AI Computers</h2>
-                            <p class="lead">The first NVIDIA RTX Spark and GB300 desktops and laptops are about to reach the UAE. Pre-book now and we will allocate units from the first shipments in booking order.</p>
-                        </div>
-                        <a class="btn btn-primary" href="contact.html?type=prebook">Pre-book Now <i class="ph ph-arrow-right"></i></a>
-                    </div>
-                    <div class="prebook-grid">${pre.map((p) => promoCard(p, 'Book now', (q) => q.specs.slice(0, 2).map(([, v]) => v).join(' · '))).join('')}
-                    </div>
-                </div>` });
-  const nas = PROMO_ASUSTOR.map((id) => PRODUCTS.find((p) => p.id === id)).filter(Boolean);
-  if (nas.length) slides.push({ id: 'asustor-promo-title', label: 'ASUSTOR NAS', html: `
-                <div class="prebook-panel promo-slide promo-asustor force-dark">
-                    <div class="prebook-head">
-                        <div>
-                            <span class="prebook-pill"><span class="prebook-dot" aria-hidden="true"></span>Exclusive Middle East partner</span>
-                            <h2 class="h2" id="asustor-promo-title"><img class="promo-logo" src="assets/brands/asustor.svg" alt="ASUSTOR" width="306" height="56"> NAS, Only from Plan Man</h2>
-                            <p class="lead">Plan Man is the one and only exclusive partner of ASUSTOR in the Middle East. From 2-bay home NAS to 24-bay rackmount storage, get genuine stock straight from the source.</p>
-                        </div>
-                        <a class="btn btn-primary" href="products/nas-storage.html">Explore ASUSTOR NAS <i class="ph ph-arrow-right"></i></a>
-                    </div>
-                    <div class="prebook-grid">${nas.map((p) => promoCard(p, 'View', (q) => q.specs.slice(0, 2).map(([, v]) => v).join(' · '))).join('')}
-                    </div>
-                </div>` });
-  if (!slides.length) return '';
-  const many = slides.length > 1;
-  return `    <section class="prebook" id="pre-booking" aria-label="Featured offers"${many ? ' aria-roledescription="carousel"' : ''}>
+  if (!pre.length) return '';
+  return `    <section class="prebook" id="pre-booking" aria-labelledby="prebook-title">
         <div class="container">
-            <div class="promo-track" tabindex="0">${slides.map((sl, n) => sl.html.replace('<div class="prebook-panel promo-slide', `<div role="group" aria-roledescription="slide" aria-label="${n + 1} of ${slides.length}: ${sl.label}" class="prebook-panel promo-slide`)).join('')}
-            </div>${many ? `
-            <div class="promo-nav">
-                <button class="promo-arrow" type="button" data-dir="-1" aria-label="Previous slide"><i class="ph ph-caret-left" aria-hidden="true"></i></button>
-                <div class="promo-dots">${slides.map((sl, n) => `<button type="button" class="promo-dot" aria-label="Show ${sl.label}"${n === 0 ? ' aria-current="true"' : ''}></button>`).join('')}</div>
-                <button class="promo-arrow" type="button" data-dir="1" aria-label="Next slide"><i class="ph ph-caret-right" aria-hidden="true"></i></button>
-            </div>` : ''}
+            <div class="prebook-panel force-dark">
+                <div class="prebook-head">
+                    <div>
+                        <span class="prebook-pill"><span class="prebook-dot" aria-hidden="true"></span>Pre-booking now open</span>
+                        <h2 class="h2" id="prebook-title">Be First to Get the New AI Computers</h2>
+                        <p class="lead">The first NVIDIA RTX Spark and GB300 desktops and laptops are about to reach the UAE. Pre-book now and we will allocate units from the first shipments in booking order.</p>
+                    </div>
+                    <a class="btn btn-primary" href="contact.html?type=prebook">Pre-book Now <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="prebook-grid">${pre.map((p) => promoCard(p, 'Book now', twoSpecs)).join('')}
+                </div>
+            </div>
+        </div>
+    </section>`;
+}
+function asustorHtml() {
+  const nas = PROMO_ASUSTOR.map((id) => PRODUCTS.find((p) => p.id === id)).filter(Boolean);
+  if (!nas.length) return '';
+  return `    <section class="section nas-feature" id="asustor" aria-labelledby="asustor-title">
+        <div class="container">
+            <div class="section-head-row reveal">
+                <div>
+                    <span class="nas-pill"><span class="prebook-dot" aria-hidden="true"></span>Exclusive Middle East Partner</span>
+                    <h2 class="h2" id="asustor-title"><img class="nas-logo" src="assets/brands/asustor.svg" alt="ASUSTOR" width="306" height="56"> NAS, Only from Plan Man</h2>
+                    <p class="lead">Plan Man is the one and only exclusive partner of ASUSTOR in the Middle East. From 2-bay home NAS to 24-bay rackmount storage, get genuine stock straight from the source.</p>
+                </div>
+                <a class="btn nas-btn" href="products/nas-storage.html">Explore ASUSTOR NAS <i class="ph ph-arrow-right"></i></a>
+            </div>
+            <div class="nas-grid reveal">${nas.map((p) => promoCard(p, 'View', twoSpecs, 'nas-card')).join('')}
+            </div>
         </div>
     </section>`;
 }
@@ -536,6 +531,7 @@ for (const page of PAGES) {
   if (page.file === 'index.html') {
     html = block(html, 'FAQ', faqHtml(), (h, w) => h.replace(/(\s*<!-- CTA -->)/, `\n${w}\n$1`));
     html = block(html, 'PREBOOK', prebookHtml(), (h, w) => h.replace(/(\n\s*<!-- Industries -->)/, `\n\n${w}\n$1`));
+    html = block(html, 'ASUSTOR', asustorHtml(), (h, w) => h.replace(/(\n\s*<!-- Lifecycle -->)/, `\n\n${w}\n$1`));
   }
 
   write(page.file, html);
