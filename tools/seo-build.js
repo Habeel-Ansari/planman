@@ -44,7 +44,7 @@ const BUSINESS = {
 const PAGES = [
   { file: 'index.html', url: '/', name: 'Home', type: 'WebPage', priority: '1.0',
     title: 'Plan Man | Enterprise IT Solutions & Hardware in Dubai, UAE',
-    description: 'Dubai IT solutions provider and hardware supplier: servers, storage, GPUs and networking from premium brands, with design, deployment and after-sales support.' },
+    description: 'Dubai IT solutions provider and hardware supplier: servers, storage, NAS, GPUs and networking from premium brands, with design, deployment and support.' },
   { file: 'industries.html', url: '/industries.html', name: 'Industries', type: 'CollectionPage', priority: '0.9',
     title: 'IT Solutions for Hotels, Universities & Industry | Plan Man',
     description: 'IT infrastructure for hotels, universities, manufacturers and enterprises in the UAE, from requirements and design to hardware supply, deployment and support.' },
@@ -181,6 +181,45 @@ const BRAND_TITLES = {
   msi: 'MSI AI Laptops in Dubai, UAE | Plan Man',
   asustor: 'ASUSTOR NAS Distributor in Dubai & Middle East | Plan Man'
 };
+// Extra content for specific category landing pages: custom title, product grouping, a buying guide and an FAQ (FAQPage schema)
+const NAS_GROUPS = [
+  ['home-nas', 'Home & Personal NAS', 'Drivestor models for family photos, backups and media streaming.',
+    ['asustor-as1102tl', 'asustor-as1202t', 'asustor-as1204t', 'asustor-as1104t', 'asustor-as3302t-v2', 'asustor-as3304t-v2']],
+  ['home-office-nas', 'Home Office & Creator NAS', 'Intel NAS with 2.5GbE or 5GbE, M.2 NVMe slots and HDMI for media.',
+    ['asustor-as5202t', 'asustor-as5304t', 'asustor-as5402t', 'asustor-as5404t', 'asustor-as6702t', 'asustor-as6704t', 'asustor-as6706t', 'asustor-as6702t-v2', 'asustor-as6704t-v2', 'asustor-as6706t-v2']],
+  ['business-nas', 'Business NAS', 'AMD Ryzen and Intel Atom NAS with 10GbE and ECC memory for teams and file servers.',
+    ['asustor-as6804t', 'asustor-as6806t', 'asustor-as6808t', 'asustor-as6810t', 'asustor-as6508t', 'asustor-as6510t']],
+  ['all-flash-nas', 'All-Flash NAS', 'Silent, low-latency Flashstor NAS built entirely on M.2 NVMe SSDs.',
+    ['asustor-fs6706t', 'asustor-fs6712x', 'asustor-fs6806x', 'asustor-fs6812x']],
+  ['rackmount-nas', 'Rackmount NAS', '1U to 24-bay rackmount NAS with redundant power for server rooms.',
+    ['asustor-as6504rs-rd', 'asustor-as6512rd', 'asustor-as7212rdx', 'asustor-as7216rdx', 'asustor-as7224rdx']],
+  ['expansion', 'Expansion Units', 'Add drive bays to an existing ASUSTOR NAS without rebuilding it.',
+    ['asustor-as5004u', 'asustor-as6004u', 'asustor-ax7012r', 'asustor-as-sas8e']]
+];
+const LANDING_EXTRA = {
+  nas: {
+    title: 'NAS Storage in Dubai & UAE: Home & Business NAS | Plan Man',
+    intro: 'A NAS (network-attached storage) is a small, always-on server that keeps your files, backups and media in one place, reachable from every PC, phone and office on your network. As the exclusive ASUSTOR distributor in the Middle East, Plan Man supplies the complete ASUSTOR NAS range in Dubai and across the UAE, from 2-bay home units to 24-bay rackmount systems, and can supply the drives, install the NAS and set up backups for you.',
+    groups: NAS_GROUPS,
+    guide: {
+      title: 'How to Choose a NAS',
+      items: [
+        ['ph-hard-drives', 'Drive bays and capacity', 'Count the storage you need today, double it for growth, then add room for RAID protection. Two bays suit a home; four to six bays suit most small offices; eight bays and up, or a rackmount NAS, suit growing teams. Expansion units add more bays later.'],
+        ['ph-network', 'Network speed', 'Gigabit is fine for backups and streaming. 2.5GbE and 5GbE make everyday file work noticeably faster on existing cabling, and 10GbE is the right choice for video editing and many users at once.'],
+        ['ph-cpu', 'Processor and memory', 'Entry models handle file sharing and backups. Choose an Intel Celeron or AMD Ryzen model with more memory if you plan to run apps, Docker containers, virtual machines or surveillance cameras on the NAS. ECC memory adds protection for business data.'],
+        ['ph-lightning', 'Hard drives or all-flash', 'Hard drives give the most capacity per dirham. M.2 NVMe slots add an SSD cache for speed, and an all-flash Flashstor NAS is silent and very fast for creative work.'],
+        ['ph-plugs', 'Desktop or rackmount', 'Desktop NAS sit quietly in an office. Rackmount NAS fit server racks and add redundant power supplies so a single failure does not take your storage offline.']
+      ]
+    },
+    faq: [
+      ['What is a NAS and do I need one?', 'A NAS (network-attached storage) is a dedicated storage server on your network. It centralises files, backs up computers and phones automatically, streams media and gives secure remote access, without paying monthly cloud fees for large amounts of data. Most homes with many devices and almost every small office benefit from one.'],
+      ['Which ASUSTOR NAS is right for a small office?', 'For 5 to 20 people, a 4- to 8-bay Lockerstor is a good fit: the Lockerstor Gen3 (AS68 series) adds AMD Ryzen, ECC memory and 10GbE for busy teams, while the Lockerstor Gen2+ is a strong value choice. Tell us your users, capacity and applications and we will recommend a model.'],
+      ['Can Plan Man supply the hard drives and set up the NAS?', 'Yes. We can supply NAS-rated hard drives and SSDs from Seagate and Western Digital, install them, configure RAID, users and shares, and set up backups, so the NAS is ready to use on delivery.'],
+      ['Is Plan Man an official ASUSTOR distributor?', 'Yes. Plan Man is the exclusive ASUSTOR distributor in the Middle East, supplying the full ASUSTOR NAS range, expansion units and genuine accessories from Dubai.'],
+      ['Can I add more storage to an ASUSTOR NAS later?', 'Yes. You can replace drives with larger ones, add SSDs in the M.2 slots, or connect ASUSTOR expansion units: USB units such as the Xpanstor 4 for desktop models, or the Xpanstor 12R SAS enclosure for rackmount Lockerstor R Pro Gen2 models.']
+    ]
+  }
+};
 const COLLECTION_SLUG = { gold: 'supermicro-gold-series' };
 const COLLECTION_TITLES = { gold: 'Supermicro Gold Series Servers in Dubai, UAE | Plan Man' };
 const catSlug = (c) => CAT_SLUG[c] || c;
@@ -215,12 +254,15 @@ const LANDINGS = (() => {
     const items = PRODUCTS.filter((p) => p.cat === c);
     if (!items.length) continue;
     const brands = preorderFirst(Object.keys(BRANDS).filter((b) => items.some((p) => p.brand === b)), (b) => items.some((p) => p.brand === b && p.preorder));
+    const extra = LANDING_EXTRA[c] || {};
     out.push({
-      kind: 'cat', key: c, url: landingUrl('cat', c), name: label, h1: `${label} in Dubai, UAE`,
-      title: fitText(60, [`${label} in Dubai, UAE | Plan Man`, `${label} in Dubai | Plan Man`, `${label} | Plan Man UAE`]) || label,
+      kind: 'cat', key: c, url: landingUrl('cat', c), name: label, h1: `${label} in Dubai, UAE`, guide: extra.guide, faq: extra.faq,
+      title: extra.title || fitText(60, [`${label} in Dubai, UAE | Plan Man`, `${label} in Dubai | Plan Man`, `${label} | Plan Man UAE`]) || label,
       lead: CATEGORY_LEADS[c] || '', description: describe(CATEGORY_LEADS[c] || `${label} supplied in the UAE.`), items, catalog: `products.html?cat=${c}`,
-      intro: `Plan Man supplies ${lc(label)} from ${listText(brands.map((b) => BRANDS[b]))} in Dubai and across the UAE. ${items.length === 1 ? 'Open the product below' : `Compare the ${items.length} platforms below, open any of them`} for full specifications, or tell us your workload and we will recommend and quote the right configuration, then deliver, deploy and support it.`,
-      groups: brands.map((b) => ({ id: b, name: BRANDS[b], items: items.filter((p) => p.brand === b), more: [`All ${BRANDS[b]} products`, `${b}.html`] }))
+      intro: extra.intro || `Plan Man supplies ${lc(label)} from ${listText(brands.map((b) => BRANDS[b]))} in Dubai and across the UAE. ${items.length === 1 ? 'Open the product below' : `Compare the ${items.length} platforms below, open any of them`} for full specifications, or tell us your workload and we will recommend and quote the right configuration, then deliver, deploy and support it.`,
+      groups: extra.groups
+        ? extra.groups.map(([id, name, sub, ids]) => ({ id, name, sub, items: ids.map((x) => items.find((p) => p.id === x)).filter(Boolean) })).filter((g) => g.items.length)
+        : brands.map((b) => ({ id: b, name: BRANDS[b], items: items.filter((p) => p.brand === b), more: [`All ${BRANDS[b]} products`, `${b}.html`] }))
     });
   }
   for (const [k, col] of Object.entries(COLLECTIONS)) {
@@ -534,7 +576,9 @@ for (const page of PAGES) {
     const named = !d.model || p.name.includes(d.model) ? p.name
       : p.name.endsWith(')') ? p.name.replace(/\)$/, `, ${d.model})`) : `${p.name} (${d.model})`;
     const fit = (max, options) => options.find((o) => o.length <= max);
+    const nasName = p.cat === 'nas' && !/NAS|Xpanstor|Expansion|HBA/.test(p.name) ? `${named} NAS` : null;
     const title = fit(60, [
+      ...(nasName ? [`${nasName} in Dubai, UAE | Plan Man`, `${nasName} | Plan Man UAE`] : []),
       `${named} in Dubai, UAE | Plan Man`, `${named} | Plan Man UAE`, `${p.name} in Dubai, UAE | Plan Man`,
       `${p.name} | Plan Man UAE`, `${p.name} | Plan Man`
     ]) || p.name;
@@ -775,8 +819,33 @@ ${d.specNote ? `            <p class="pd-note">${e(d.specNote)}</p>\n` : ''}    
       crumbs: [['Home', '/'], ['Products', '/products.html'], [l.name, l.url]],
       mainEntity: { '@type': 'ItemList', name: l.name, numberOfItems: l.items.length,
         itemListElement: l.items.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p.name, url: abs(productUrl(p)) })) },
-      ogAlt: `${l.name} supplied in Dubai, UAE by Plan Man`
+      ogAlt: `${l.name} supplied in Dubai, UAE by Plan Man`,
+      ...(l.faq ? { extraGraph: [{ '@type': 'FAQPage', '@id': `${abs(l.url)}#faq`, mainEntity: l.faq.map(([q, an]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: an } })) }] } : {})
     };
+    const guideHtml = l.guide ? `
+    <section class="section section-alt lp-guide" id="guide" aria-labelledby="guide-title">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Buying guide</span>
+                <h2 class="h2" id="guide-title">${e(l.guide.title)}</h2>
+            </div>
+            <div class="lp-guide-grid">${l.guide.items.map(([ic, t, d]) => `
+                <div class="lp-guide-item"><i class="ph ${ic}" aria-hidden="true"></i><h3>${e(t)}</h3><p>${e(d)}</p></div>`).join('')}
+            </div>
+        </div>
+    </section>` : '';
+    const faqSection = l.faq ? `
+    <section class="section" id="faq" aria-labelledby="lp-faq-title">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">FAQ</span>
+                <h2 class="h2" id="lp-faq-title">${e(l.name)} Questions</h2>
+            </div>
+            <div class="faq-list">
+${l.faq.map(([q, an]) => `                <details class="faq-item"><summary>${e(q)}</summary><p>${e(an)}</p></details>`).join('\n')}
+            </div>
+        </div>
+    </section>` : '';
     const quoteHref = `../contact.html?product=${encodeURIComponent(l.name)}`;
     const groups = l.groups.map((g) => `
     <section class="section${l.groups.indexOf(g) % 2 ? ' section-alt' : ''} lp-group" id="${g.id}">
@@ -834,6 +903,8 @@ ${l.logo ? logoTags(l) : ''}            <span class="eyebrow">${plural(l.items.l
         </div>
     </section>
 ${groups}
+${guideHtml}
+${faqSection}
 
     <section class="section lp-browse" aria-labelledby="browse-title">
         <div class="container">
