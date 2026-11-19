@@ -1,12 +1,13 @@
 /*
  * Plan Man product catalog.
- * Specs summarised from public vendor product pages (NVIDIA, Supermicro, ASUS), Oct 2026.
+ * Specs summarised from public vendor product pages (NVIDIA, Supermicro, ASUS), Oct 2026;
+ * ASUSTOR NAS line-up from asustor.com, Nov 2026.
  * Extended content for each product page lives in data/product-details.js.
  * Always confirm the final configuration and availability with the vendor before quoting.
  *
  * To add a product, copy an entry and edit it. Fields:
  *   id       unique slug
- *   brand    'nvidia' | 'supermicro' | 'asus'
+ *   brand    'nvidia' | 'supermicro' | 'asus' | 'msi' | 'asustor'
  *   cat      one of the keys in CATEGORIES below
  *   name     product name
  *   summary  one-line description (shown on the card)
@@ -25,7 +26,8 @@ window.BRANDS = {
     nvidia: 'NVIDIA',
     supermicro: 'Supermicro',
     asus: 'ASUS',
-    msi: 'MSI'
+    msi: 'MSI',
+    asustor: 'ASUSTOR'
 };
 
 window.CATEGORIES = {
@@ -35,6 +37,7 @@ window.CATEGORIES = {
     'networking': 'AI Networking',
     'servers': 'Rack & Multi-Node Servers',
     'storage': 'Storage',
+    'nas': 'NAS Storage',
     'desktop-ai': 'AI Workstations & Deskside',
     'client': 'Desktops & Client PCs',
     'laptops': 'AI Laptops',
@@ -49,6 +52,7 @@ window.CATEGORY_LEADS = {
     'accelerators': 'Data center GPUs for AI inference, training, rendering and virtual workstations.',
     'networking': 'InfiniBand and Ethernet fabrics, SuperNICs and DPUs that connect GPU clusters at up to 800 Gb/s.',
     'servers': 'Rackmount, multi-node and blade servers for virtualization, databases, cloud and HPC.',
+    'nas': 'ASUSTOR network-attached storage, from 2-bay home units to 24-bay rackmount systems, plus expansion units.',
     'storage': 'All-flash NVMe, high-capacity and object storage to feed GPU clusters and protect enterprise data.',
     'desktop-ai': 'Desktop and deskside AI supercomputers for building, fine-tuning and running models locally.',
     'client': 'Business desktops and AI PCs for offices, SMBs and local AI work, pre-configured with Windows.',
@@ -60,7 +64,8 @@ window.CATEGORY_LEADS = {
 window.BRAND_LOGOS = {
     supermicro: 'assets/brands/supermicro.svg',
     asus: 'assets/brands/asus.svg',
-    msi: 'assets/brands/msi.png'
+    msi: 'assets/brands/msi.png',
+    asustor: 'assets/brands/asustor.svg'
 };
 // Optional dark-theme version of a brand logo (used when the normal one would not show on a dark background)
 window.BRAND_LOGOS_DARK = {
@@ -70,6 +75,7 @@ window.BRAND_LEADS = {
     nvidia: 'NVIDIA rack-scale systems, HGX platforms, data center GPUs, networking, DGX systems and AI software.',
     supermicro: 'Supermicro GPU servers, NVL72 SuperClusters, enterprise servers, storage and data center building blocks.',
     asus: 'ASUS AI PODs, GPU servers, rack and multi-node servers, storage, AI workstations and mini PCs.',
+    asustor: 'ASUSTOR NAS for home, office and business: Drivestor, Lockerstor and all-flash Flashstor models, rackmount NAS and expansion units.',
     msi: 'MSI business laptops for AI, development and creative work, including NVIDIA RTX Spark models.'
 };
 
@@ -101,6 +107,7 @@ window.CATEGORY_ART = {
     'networking': 'network',
     'servers': 'servers',
     'storage': 'storage',
+    'nas': 'storage',
     'desktop-ai': 'desktop',
     'client': 'desktop',
     'laptops': 'desktop',
@@ -1142,6 +1149,547 @@ window.PRODUCTS = [
             ['Memory', '64 GB or 128 GB unified memory'],
             ['Display', '16" OLED touch, 120 Hz, 100% DCI-P3'],
             ['Storage', '1 TB or 2 TB NVMe SSD']
+        ]
+    },
+
+    /* ---------------- ASUSTOR ---------------- */
+    {
+        id: 'asustor-as1102tl', brand: 'asustor', cat: 'nas', icon: 'ph-database',
+        img: 'assets/products/asustor-as1102tl.webp', imgSize: [323, 384],
+        name: 'ASUSTOR Drivestor 2 Lite (AS1102TL)',
+        summary: 'Entry-level 2-bay NAS for home backup, photo libraries and media streaming at a budget price.',
+        specs: [
+            ['Drive bays', '2× 3.5"/2.5" SATA'],
+            ['CPU', 'Realtek RTD1619B (quad-core, 1.7 GHz)'],
+            ['Networking', '1× 1GbE'],
+            ['Memory', '1GB DDR4'],
+            ['Max internal raw', '36 TB'],
+            ['USB', '1× USB 3.2 Gen 1, 1× USB 2.0'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as1202t', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-database',
+        img: 'assets/products/asustor-as1202t.webp', imgSize: [323, 384],
+        name: 'ASUSTOR Drivestor 2 Gen2 (AS1202T)',
+        summary: 'Compact 2-bay home NAS with 2.5GbE networking for personal backup and media.',
+        specs: [
+            ['Drive bays', '2× 3.5"/2.5" SATA'],
+            ['CPU', 'Realtek RTD1619B (quad-core, 1.7 GHz)'],
+            ['Networking', '1× 2.5GbE'],
+            ['Memory', '1GB DDR4'],
+            ['Max internal raw', '36 TB'],
+            ['USB', '3× USB 5Gbps Type-A'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as1204t', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-database',
+        img: 'assets/products/asustor-as1204t.webp', imgSize: [382, 380],
+        name: 'ASUSTOR Drivestor 4 Gen2 (AS1204T)',
+        summary: '4-bay home and small-office NAS with 2.5GbE for shared storage and backups.',
+        specs: [
+            ['Drive bays', '4× 3.5"/2.5" SATA'],
+            ['CPU', 'Realtek RTD1619B (quad-core, 1.7 GHz)'],
+            ['Networking', '1× 2.5GbE'],
+            ['Memory', '1GB DDR4'],
+            ['Max internal raw', '72 TB'],
+            ['USB', '3× USB 5Gbps Type-A'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as1104t', brand: 'asustor', cat: 'nas', icon: 'ph-database',
+        img: 'assets/products/asustor-as1104t.webp', imgSize: [382, 380],
+        name: 'ASUSTOR Drivestor 4 (AS1104T)',
+        summary: '4-bay value NAS with 2.5GbE for home users and small teams.',
+        specs: [
+            ['Drive bays', '4× 3.5"/2.5" SATA'],
+            ['CPU', 'Realtek RTD1296 (quad-core, 1.4 GHz)'],
+            ['Networking', '1× 2.5GbE'],
+            ['Memory', '1GB DDR4'],
+            ['Max internal raw', '72 TB'],
+            ['USB', '2× USB 3.2 Gen 1'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as3302t-v2', brand: 'asustor', cat: 'nas', icon: 'ph-database',
+        img: 'assets/products/asustor-as3302t-v2.webp', imgSize: [373, 411],
+        name: 'ASUSTOR Drivestor 2 Pro Gen2 (AS3302T v2)',
+        summary: '2-bay NAS with Btrfs snapshots and media transcoding for home offices and creators.',
+        specs: [
+            ['Drive bays', '2× 3.5"/2.5" SATA'],
+            ['CPU', 'Realtek RTD1619B (quad-core, 1.7 GHz)'],
+            ['Networking', '1× 2.5GbE'],
+            ['Memory', '2GB DDR4'],
+            ['Max internal raw', '36 TB'],
+            ['USB', '3× USB 3.2 Gen 1'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as3304t-v2', brand: 'asustor', cat: 'nas', icon: 'ph-database',
+        img: 'assets/products/asustor-as3304t-v2.webp', imgSize: [396, 358],
+        name: 'ASUSTOR Drivestor 4 Pro Gen2 (AS3304T v2)',
+        summary: '4-bay NAS with Btrfs snapshots and media transcoding for small offices and creators.',
+        specs: [
+            ['Drive bays', '4× 3.5"/2.5" SATA'],
+            ['CPU', 'Realtek RTD1619B (quad-core, 1.7 GHz)'],
+            ['Networking', '1× 2.5GbE'],
+            ['Memory', '2GB DDR4'],
+            ['Max internal raw', '72 TB'],
+            ['USB', '3× USB 3.2 Gen 1'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as5202t', brand: 'asustor', cat: 'nas', icon: 'ph-database',
+        img: 'assets/products/asustor-as5202t.webp', imgSize: [293, 391],
+        name: 'ASUSTOR AS5202T',
+        summary: '2-bay Intel NAS with dual 2.5GbE and HDMI output for home and media use.',
+        specs: [
+            ['Drive bays', '2× 3.5"/2.5" SATA'],
+            ['CPU', 'Intel Celeron J4005 (dual-core, 2.0–2.7 GHz)'],
+            ['Networking', '2× 2.5GbE'],
+            ['Memory', '2GB SO-DIMM DDR4, up to 8GB'],
+            ['Max internal raw', '36 TB'],
+            ['USB', '3× USB 3.2 Gen 1'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as5304t', brand: 'asustor', cat: 'nas', icon: 'ph-database',
+        img: 'assets/products/asustor-as5304t.webp', imgSize: [373, 394],
+        name: 'ASUSTOR AS5304T',
+        summary: '4-bay Intel NAS with dual 2.5GbE and HDMI for content creators and small offices.',
+        specs: [
+            ['Drive bays', '4× 3.5"/2.5" SATA'],
+            ['CPU', 'Intel Celeron J4105 (quad-core, 2.0–2.7 GHz)'],
+            ['Networking', '2× 2.5GbE'],
+            ['Memory', '4GB SO-DIMM DDR4, up to 8GB'],
+            ['Max internal raw', '72 TB'],
+            ['USB', '3× USB 3.2 Gen 1'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as5402t', brand: 'asustor', cat: 'nas', icon: 'ph-database',
+        img: 'assets/products/asustor-as5402t.webp', imgSize: [330, 362],
+        name: 'ASUSTOR AS5402T',
+        summary: '2-bay NAS with four M.2 NVMe slots and dual 2.5GbE for fast, hybrid flash storage.',
+        specs: [
+            ['Drive bays', '2× 3.5"/2.5" SATA + 4× M.2 NVMe'],
+            ['CPU', 'Intel Celeron N5105 (quad-core, 2.0–2.9 GHz)'],
+            ['Networking', '2× 2.5GbE'],
+            ['Memory', '4GB SO-DIMM DDR4, up to 16GB'],
+            ['Max internal raw', '36 TB'],
+            ['USB', '3× USB 3.2 Gen 2'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as5404t', brand: 'asustor', cat: 'nas', icon: 'ph-database',
+        img: 'assets/products/asustor-as5404t.webp', imgSize: [395, 357],
+        name: 'ASUSTOR AS5404T',
+        summary: '4-bay NAS with four M.2 NVMe slots and dual 2.5GbE for fast shared storage.',
+        specs: [
+            ['Drive bays', '4× 3.5"/2.5" SATA + 4× M.2 NVMe'],
+            ['CPU', 'Intel Celeron N5105 (quad-core, 2.0–2.9 GHz)'],
+            ['Networking', '2× 2.5GbE'],
+            ['Memory', '4GB SO-DIMM DDR4, up to 16GB'],
+            ['Max internal raw', '72 TB'],
+            ['USB', '3× USB 3.2 Gen 2'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6702t', brand: 'asustor', cat: 'nas', icon: 'ph-database',
+        img: 'assets/products/asustor-as6702t.webp', imgSize: [301, 352],
+        name: 'ASUSTOR Lockerstor 2 Gen2 (AS6702T)',
+        summary: '2-bay enthusiast NAS with Celeron N5105, dual 2.5GbE and four M.2 NVMe slots.',
+        specs: [
+            ['Drive bays', '2× 3.5"/2.5" SATA + 4× M.2 NVMe'],
+            ['CPU', 'Intel Celeron N5105 (quad-core, 2.0–2.9 GHz)'],
+            ['Networking', '2× 2.5GbE'],
+            ['Memory', '4GB SO-DIMM DDR4, up to 16GB'],
+            ['Max internal raw', '36 TB'],
+            ['USB', '2× USB 3.2 Gen 2'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6704t', brand: 'asustor', cat: 'nas', icon: 'ph-database',
+        img: 'assets/products/asustor-as6704t.webp', imgSize: [376, 352],
+        name: 'ASUSTOR Lockerstor 4 Gen2 (AS6704T)',
+        summary: '4-bay enthusiast NAS with dual 2.5GbE, four M.2 slots and a PCIe slot for 10GbE.',
+        specs: [
+            ['Drive bays', '4× 3.5"/2.5" SATA + 4× M.2 NVMe'],
+            ['CPU', 'Intel Celeron N5105 (quad-core, 2.0–2.9 GHz)'],
+            ['Networking', '2× 2.5GbE'],
+            ['Memory', '4GB SO-DIMM DDR4, up to 16GB'],
+            ['Max internal raw', '72 TB'],
+            ['USB', '2× USB 3.2 Gen 2'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6706t', brand: 'asustor', cat: 'nas', icon: 'ph-database',
+        img: 'assets/products/asustor-as6706t.webp', imgSize: [372, 283],
+        name: 'ASUSTOR Lockerstor 6 Gen2 (AS6706T)',
+        summary: '6-bay enthusiast NAS with dual 2.5GbE, four M.2 slots and a PCIe slot for 10GbE.',
+        specs: [
+            ['Drive bays', '6× 3.5"/2.5" SATA + 4× M.2 NVMe'],
+            ['CPU', 'Intel Celeron N5105 (quad-core, 2.0–2.9 GHz)'],
+            ['Networking', '2× 2.5GbE'],
+            ['Memory', '8GB SO-DIMM DDR4, up to 16GB'],
+            ['Max internal raw', '108 TB'],
+            ['USB', '2× USB 3.2 Gen 2'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6702t-v2', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-database',
+        img: 'assets/products/asustor-as6702t-v2.webp', imgSize: [301, 352],
+        name: 'ASUSTOR Lockerstor 2 Gen2+ (AS6702T v2)',
+        summary: 'Refreshed 2-bay Lockerstor with dual 5GbE and four M.2 NVMe slots.',
+        specs: [
+            ['Drive bays', '2× 3.5"/2.5" SATA + 4× M.2 NVMe'],
+            ['CPU', 'Intel Celeron N5105 (quad-core, 2.0–2.9 GHz)'],
+            ['Networking', '2× 5GbE'],
+            ['Memory', '4GB SO-DIMM DDR4, up to 16GB'],
+            ['Max internal raw', '36 TB'],
+            ['USB', '2× USB 3.2 Gen 2 Type-A, 1× USB 2.0 Type-A'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6704t-v2', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-database',
+        img: 'assets/products/asustor-as6704t-v2.webp', imgSize: [376, 352],
+        name: 'ASUSTOR Lockerstor 4 Gen2+ (AS6704T v2)',
+        summary: 'Refreshed 4-bay Lockerstor with dual 5GbE, four M.2 slots and a 10GbE upgrade path.',
+        specs: [
+            ['Drive bays', '4× 3.5"/2.5" SATA + 4× M.2 NVMe'],
+            ['CPU', 'Intel Celeron N5105 (quad-core, 2.0–2.9 GHz)'],
+            ['Networking', '2× 5GbE'],
+            ['Memory', '4GB SO-DIMM DDR4, up to 16GB'],
+            ['Max internal raw', '72 TB'],
+            ['USB', '2× USB 3.2 Gen 2 Type-A, 1× USB 2.0 Type-A'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6706t-v2', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-database',
+        img: 'assets/products/asustor-as6706t-v2.webp', imgSize: [372, 283],
+        name: 'ASUSTOR Lockerstor 6 Gen2+ (AS6706T v2)',
+        summary: 'Refreshed 6-bay Lockerstor with dual 5GbE, four M.2 slots and a 10GbE upgrade path.',
+        specs: [
+            ['Drive bays', '6× 3.5"/2.5" SATA + 4× M.2 NVMe'],
+            ['CPU', 'Intel Celeron N5105 (quad-core, 2.0–2.9 GHz)'],
+            ['Networking', '2× 5GbE'],
+            ['Memory', '8GB SO-DIMM DDR4, up to 16GB'],
+            ['Max internal raw', '108 TB'],
+            ['USB', '2× USB 3.2 Gen 2 Type-A, 1× USB 2.0 Type-A'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6804t', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-database',
+        img: 'assets/products/asustor-as6804t.webp', imgSize: [381, 350],
+        name: 'ASUSTOR Lockerstor 4 Gen3 (AS6804T)',
+        summary: '4-bay AMD Ryzen NAS with ECC DDR5, dual 10GbE, dual 5GbE and USB4.',
+        specs: [
+            ['Drive bays', '4× 3.5"/2.5" SATA + 4× M.2 NVMe'],
+            ['CPU', 'AMD Ryzen V3C14 (quad-core, 2.3–3.8 GHz)'],
+            ['Networking', '2× 10GbE, 2× 5GbE'],
+            ['Memory', '16GB ECC DDR5-4800 SO-DIMM, up to 64GB'],
+            ['Max internal raw', '72 TB'],
+            ['USB', '3× USB 3.2 Gen 2 Type-A, 2× USB4 (40 Gbps)'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6806t', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-database',
+        img: 'assets/products/asustor-as6806t.webp', imgSize: [384, 289],
+        name: 'ASUSTOR Lockerstor 6 Gen3 (AS6806T)',
+        summary: '6-bay AMD Ryzen NAS with ECC DDR5, dual 10GbE, dual 5GbE and USB4.',
+        specs: [
+            ['Drive bays', '6× 3.5"/2.5" SATA + 4× M.2 NVMe'],
+            ['CPU', 'AMD Ryzen V3C14 (quad-core, 2.3–3.8 GHz)'],
+            ['Networking', '2× 10GbE, 2× 5GbE'],
+            ['Memory', '16GB ECC DDR5-4800 SO-DIMM, up to 64GB'],
+            ['Max internal raw', '108 TB'],
+            ['USB', '3× USB 3.2 Gen 2 Type-A, 2× USB4 (40 Gbps)'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6808t', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-database',
+        img: 'assets/products/asustor-as6808t.webp', imgSize: [359, 329],
+        name: 'ASUSTOR Lockerstor 8 Gen3 (AS6808T)',
+        summary: '8-bay AMD Ryzen NAS with ECC DDR5, dual 10GbE, dual 5GbE and USB4.',
+        specs: [
+            ['Drive bays', '8× 3.5"/2.5" SATA + 4× M.2 NVMe'],
+            ['CPU', 'AMD Ryzen V3C14 (quad-core, 2.3–3.8 GHz)'],
+            ['Networking', '2× 10GbE, 2× 5GbE'],
+            ['Memory', '16GB ECC DDR5-4800 SO-DIMM, up to 64GB'],
+            ['Max internal raw', '144 TB'],
+            ['USB', '3× USB 3.2 Gen 2 Type-A, 2× USB4 (40 Gbps)'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6810t', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-database',
+        img: 'assets/products/asustor-as6810t.webp', imgSize: [359, 329],
+        name: 'ASUSTOR Lockerstor 10 Gen3 (AS6810T)',
+        summary: '10-bay AMD Ryzen NAS with ECC DDR5, dual 10GbE, dual 5GbE and USB4 for busy teams.',
+        specs: [
+            ['Drive bays', '10× 3.5"/2.5" SATA + 4× M.2 NVMe'],
+            ['CPU', 'AMD Ryzen V3C14 (quad-core, 2.3–3.8 GHz)'],
+            ['Networking', '2× 10GbE, 2× 5GbE'],
+            ['Memory', '16GB ECC DDR5-4800 SO-DIMM, up to 64GB'],
+            ['Max internal raw', '180 TB'],
+            ['USB', '3× USB 3.2 Gen 2 Type-A, 2× USB4 (40 Gbps)'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6508t', brand: 'asustor', cat: 'nas', icon: 'ph-database',
+        img: 'assets/products/asustor-as6508t.webp', imgSize: [359, 329],
+        name: 'ASUSTOR Lockerstor 8 (AS6508T)',
+        summary: '8-bay business NAS with dual 10GbE, dual 2.5GbE and M.2 SSD caching.',
+        specs: [
+            ['Drive bays', '8× 3.5"/2.5" SATA + 2× M.2 NVMe'],
+            ['CPU', 'Intel Atom C3538 (quad-core, 2.1 GHz)'],
+            ['Networking', '2× 10GbE, 2× 2.5GbE'],
+            ['Memory', '8GB SO-DIMM DDR4, up to 64GB'],
+            ['Max internal raw', '144 TB'],
+            ['USB', '2× USB 3.2 Gen 1'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6510t', brand: 'asustor', cat: 'nas', icon: 'ph-database',
+        img: 'assets/products/asustor-as6510t.webp', imgSize: [358, 328],
+        name: 'ASUSTOR Lockerstor 10 (AS6510T)',
+        summary: '10-bay business NAS with dual 10GbE, dual 2.5GbE and M.2 SSD caching.',
+        specs: [
+            ['Drive bays', '10× 3.5"/2.5" SATA + 2× M.2 NVMe'],
+            ['CPU', 'Intel Atom C3538 (quad-core, 2.1 GHz)'],
+            ['Networking', '2× 10GbE, 2× 2.5GbE'],
+            ['Memory', '8GB SO-DIMM DDR4, up to 64GB'],
+            ['Max internal raw', '180 TB'],
+            ['USB', '2× USB 3.2 Gen 1'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-fs6706t', brand: 'asustor', cat: 'nas', icon: 'ph-lightning',
+        img: 'assets/products/asustor-fs6706t.webp', imgSize: [419, 63],
+        name: 'ASUSTOR Flashstor 6 (FS6706T)',
+        summary: 'Compact all-flash NAS with six M.2 NVMe slots and dual 2.5GbE for quiet, fast storage.',
+        specs: [
+            ['Drive slots', '6× M.2 NVMe SSD (all-flash)'],
+            ['CPU', 'Intel Celeron N5105 (quad-core, 2.0–2.9 GHz)'],
+            ['Networking', '2× 2.5GbE'],
+            ['Memory', '4GB SO-DIMM DDR4, up to 16GB'],
+            ['USB', '2× USB 3.2 Gen 2, 2× USB 2.0'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-fs6712x', brand: 'asustor', cat: 'nas', icon: 'ph-lightning',
+        img: 'assets/products/asustor-fs6712x.webp', imgSize: [419, 63],
+        name: 'ASUSTOR Flashstor 12 Pro (FS6712X)',
+        summary: 'All-flash NAS with twelve M.2 NVMe slots and 10GbE for video editing and creative teams.',
+        specs: [
+            ['Drive slots', '12× M.2 NVMe SSD (all-flash)'],
+            ['CPU', 'Intel Celeron N5105 (quad-core, 2.0–2.9 GHz)'],
+            ['Networking', '1× 10GbE'],
+            ['Memory', '4GB SO-DIMM DDR4, up to 16GB'],
+            ['USB', '2× USB 3.2 Gen 2, 2× USB 2.0'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-fs6806x', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-lightning',
+        img: 'assets/products/asustor-fs6806x.webp', imgSize: [419, 63],
+        name: 'ASUSTOR Flashstor 6 Gen2 (FS6806X)',
+        summary: 'AMD Ryzen all-flash NAS with six M.2 NVMe slots, 10GbE and USB4.',
+        specs: [
+            ['Drive slots', '6× M.2 NVMe SSD (all-flash)'],
+            ['CPU', 'AMD Ryzen V3C14 (quad-core, 2.3–3.8 GHz)'],
+            ['Networking', '1× 10GbE'],
+            ['Memory', '8GB DDR5-4800 SO-DIMM, up to 64GB'],
+            ['USB', '3× USB 3.2 Gen 2 Type-A, 2× USB4 (40 Gbps)'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-fs6812x', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-lightning',
+        img: 'assets/products/asustor-fs6812x.webp', imgSize: [419, 63],
+        name: 'ASUSTOR Flashstor 12 Pro Gen2 (FS6812X)',
+        summary: 'AMD Ryzen all-flash NAS with twelve M.2 NVMe slots, ECC DDR5 and dual 10GbE.',
+        specs: [
+            ['Drive slots', '12× M.2 NVMe SSD (all-flash)'],
+            ['CPU', 'AMD Ryzen V3C14 (quad-core, 2.3–3.8 GHz)'],
+            ['Networking', '2× 10GbE'],
+            ['Memory', '16GB ECC DDR5-4800 SO-DIMM, up to 64GB'],
+            ['USB', '3× USB 3.2 Gen 2 Type-A, 2× USB4 (40 Gbps)'],
+            ['Form factor', 'Desktop tower'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6504rs-rd', brand: 'asustor', cat: 'nas', icon: 'ph-hard-drives',
+        img: 'assets/products/asustor-as6504rs-rd.webp', imgSize: [432, 44],
+        name: 'ASUSTOR Lockerstor 4RS / 4RD (AS6504RS / AS6504RD)',
+        summary: '4-bay 1U rackmount NAS, with single (RS) or redundant (RD) power, for SMB file sharing and backup.',
+        specs: [
+            ['Drive bays', '4× 3.5"/2.5" SATA'],
+            ['CPU', 'Intel Atom C3538 (quad-core, 2.1 GHz)'],
+            ['Networking', '2× 2.5GbE, 2× 1GbE'],
+            ['Memory', '8GB SO-DIMM DDR4, up to 128GB'],
+            ['Max internal raw', '72 TB'],
+            ['USB', '4× USB 3.2 Gen 1'],
+            ['Form factor', '1u rackmount'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as6512rd', brand: 'asustor', cat: 'nas', icon: 'ph-hard-drives',
+        img: 'assets/products/asustor-as6512rd.webp', imgSize: [423, 128],
+        name: 'ASUSTOR Lockerstor 12RD (AS6512RD)',
+        summary: '12-bay 2U rackmount NAS with redundant power for SMB file servers and backup targets.',
+        specs: [
+            ['Drive bays', '12× 3.5"/2.5" SATA'],
+            ['CPU', 'Intel Atom C3538 (quad-core, 2.1 GHz)'],
+            ['Networking', '2× 2.5GbE, 2× 1GbE'],
+            ['Memory', '8GB SO-DIMM DDR4, up to 128GB'],
+            ['Max internal raw', '216 TB'],
+            ['USB', '4× USB 3.2 Gen 1'],
+            ['Form factor', '2u rackmount'],
+            ['Warranty', '3 Years']
+        ]
+    },
+    {
+        id: 'asustor-as7212rdx', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-hard-drives',
+        img: 'assets/products/asustor-as7212rdx.webp', imgSize: [393, 137],
+        name: 'ASUSTOR Lockerstor 12R Pro Gen2 (AS7212RDX)',
+        summary: '12-bay 2U rackmount NAS with AMD Ryzen 7 PRO, up to 192 GB ECC DDR5 and redundant power.',
+        specs: [
+            ['Drive bays', '12× 3.5"/2.5" SATA + 1× M.2 NVMe'],
+            ['CPU', 'AMD Ryzen 7 Pro 7745 (8-core, 3.8–5.3 GHz)'],
+            ['Networking', '2× 10GbE, 2× 1GbE'],
+            ['Memory', '16GB ECC DDR5-4800 UDIMM, up to 192GB'],
+            ['Max internal raw', '216 TB'],
+            ['USB', '4× USB 3.2 Gen 1 Type-A'],
+            ['Form factor', '2u rackmount'],
+            ['Warranty', '5 Years']
+        ]
+    },
+    {
+        id: 'asustor-as7216rdx', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-hard-drives',
+        img: 'assets/products/asustor-as7216rdx.webp', imgSize: [407, 100],
+        name: 'ASUSTOR Lockerstor 16R Pro Gen2 (AS7216RDX)',
+        summary: '16-bay rackmount NAS with AMD Ryzen 7 PRO, ECC DDR5 and room for 25/50GbE cards.',
+        specs: [
+            ['Drive bays', '16× 3.5"/2.5" SATA + 1× M.2 NVMe'],
+            ['CPU', 'AMD Ryzen 7 Pro 7745 (8-core, 3.8–5.3 GHz)'],
+            ['Networking', '2× 10GbE, 2× 1GbE'],
+            ['Memory', '16GB ECC DDR5-4800 UDIMM, up to 192GB'],
+            ['Max internal raw', '288 TB'],
+            ['USB', '4× USB 3.2 Gen 1 Type-A'],
+            ['Form factor', 'Rackmount'],
+            ['Warranty', '5 Years']
+        ]
+    },
+    {
+        id: 'asustor-as7224rdx', brand: 'asustor', cat: 'nas', isNew: true, icon: 'ph-hard-drives',
+        img: 'assets/products/asustor-as7224rdx.webp', imgSize: [355, 112],
+        name: 'ASUSTOR Lockerstor 24R Pro Gen2 (AS7224RDX)',
+        summary: '24-bay rackmount NAS with AMD Ryzen 7 PRO and ECC DDR5 for high-capacity business storage.',
+        specs: [
+            ['Drive bays', '24× 3.5"/2.5" SATA + 1× M.2 NVMe'],
+            ['CPU', 'AMD Ryzen 7 Pro 7745 (8-core, 3.8–5.3 GHz)'],
+            ['Networking', '2× 10GbE, 2× 1GbE'],
+            ['Memory', '16GB ECC DDR5-4800 UDIMM, up to 192GB'],
+            ['Max internal raw', '432 TB'],
+            ['USB', '4× USB 3.2 Gen 1 Type-A'],
+            ['Form factor', 'Rackmount'],
+            ['Warranty', '5 Years']
+        ]
+    },
+    {
+        id: 'asustor-as5004u', brand: 'asustor', cat: 'nas', icon: 'ph-plus-square',
+        img: 'assets/products/asustor-as5004u.webp', imgSize: [395, 357],
+        name: 'ASUSTOR Xpanstor 4 (AS5004U)',
+        summary: '4-bay USB-C expansion enclosure that adds capacity to an ASUSTOR NAS without downtime.',
+        specs: [
+            ['Drive bays', '4× 3.5"/2.5" SATA'],
+            ['Interface', 'USB 3.2 Gen 2 Type-C (10 Gbps)'],
+            ['Features', 'Plug-and-play online expansion, smart power sync, MyArchive'],
+            ['Use case', 'Capacity expansion for desktop NAS']
+        ]
+    },
+    {
+        id: 'asustor-as6004u', brand: 'asustor', cat: 'nas', icon: 'ph-plus-square',
+        img: 'assets/products/asustor-as6004u.webp', imgSize: [316, 378],
+        name: 'ASUSTOR AS6004U Expansion Unit',
+        summary: '4-bay USB expansion unit; supported NAS models connect up to three for extra capacity.',
+        specs: [
+            ['Drive bays', '4× 3.5"/2.5" SATA'],
+            ['Interface', 'USB 3.2 Gen 1 with locking cable bracket'],
+            ['Features', 'Online expansion, smart power sync, MyArchive cold backup'],
+            ['Use case', 'Capacity expansion for desktop NAS']
+        ]
+    },
+    {
+        id: 'asustor-ax7012r', brand: 'asustor', cat: 'nas', icon: 'ph-hard-drives',
+        img: 'assets/products/asustor-ax7012r.webp', imgSize: [720, 441],
+        name: 'ASUSTOR Xpanstor 12R (AX7012R)',
+        summary: '12-bay 2U SAS/SATA JBOD expansion unit for ASUSTOR rackmount NAS.',
+        specs: [
+            ['Drive bays', '12× SAS/SATA'],
+            ['Interface', '4× Mini-SAS HD (SFF-8644)'],
+            ['Power', '650 W redundant power supplies'],
+            ['Form factor', '2U rackmount, hot-swappable fans']
+        ]
+    },
+    {
+        id: 'asustor-as-sas8e', brand: 'asustor', cat: 'nas', icon: 'ph-cpu',
+        name: 'ASUSTOR AS-SAS8e SAS HBA',
+        summary: 'SAS-3 host bus adapter (Broadcom HBA 9500-8e) for connecting Xpanstor 12R expansion units.',
+        specs: [
+            ['Controller', 'Broadcom HBA 9500-8e'],
+            ['Interface', 'SAS-3, 12 Gb/s, full duplex'],
+            ['Management', 'ADM Storage Manager'],
+            ['Use case', '24/7 enterprise expansion']
         ]
     }
 ];
