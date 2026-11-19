@@ -13,7 +13,7 @@
 
 ## Pages
 
-- [Home](https://planman.ae/): Dubai IT solutions provider and hardware supplier: servers, storage, GPUs and networking from premium brands, with design, deployment and after-sales support.
+- [Home](https://planman.ae/): Dubai IT solutions provider and hardware supplier: servers, storage, NAS, GPUs and networking from premium brands, with design, deployment and support.
 - [Industries](https://planman.ae/industries.html): IT infrastructure for hotels, universities, manufacturers and enterprises in the UAE, from requirements and design to hardware supply, deployment and support.
 - [Products](https://planman.ae/products.html): Servers, storage, NAS, GPUs, AI systems and networking from Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, ASUSTOR and Cisco, supplied in the UAE.
 - [Solutions](https://planman.ae/solutions.html): GPU clusters and AI factories, HPC, server clustering and high availability, virtualization, AI storage and hosting, designed and deployed in the UAE.

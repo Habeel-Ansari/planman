@@ -386,6 +386,14 @@ html[data-theme="dark"], .force-dark { --tag-msi: #ff6b7d; }
 .product-card[data-brand="msi"] { --glow: rgba(255, 90, 110, .14); --glow-solid: var(--tag-msi); }
 .pd-hero[data-brand="msi"] { --glow: rgba(255, 90, 110, .16); }
 
+/* ---------- Landing page buying guide ---------- */
+.lp-guide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.lp-guide-item { padding: 24px; border-radius: 22px; background: var(--surface); border: 1px solid var(--border); }
+.section-alt .lp-guide-item { background: var(--bg, #fff); }
+.lp-guide-item i { font-size: 28px; color: var(--accent-text); }
+.lp-guide-item h3 { font-size: 19px; margin: 12px 0 8px; }
+.lp-guide-item p { color: var(--text-2); font-size: 15px; line-height: 1.55; margin: 0; }
+
 /* ---------- ASUSTOR brand ---------- */
 :root { --tag-asustor: #a85400; }
 html[data-theme="dark"], .force-dark { --tag-asustor: #ffb35c; }
