@@ -440,28 +440,24 @@ html[data-theme="dark"] .catalog-logo[data-brand="asustor"] { filter: invert(1);
 /* ASUSTOR section on the home page (after Industries): open layout, soft green glow, no box */
 .nas-feature { position: relative; padding-top: 24px; isolation: isolate; }
 .nas-feature::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-    background: radial-gradient(ellipse 60% 55% at 50% 45%, rgba(34, 184, 100, .10), transparent 70%); }
-.nas-pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; background: rgba(34, 184, 100, .12); color: #128a47; font-size: 13px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
-.nas-pill .prebook-dot { background: #22b864; animation-name: promo-pulse-green; }
-@keyframes promo-pulse-green { 0% { box-shadow: 0 0 0 0 rgba(46, 204, 113, .6); } 70% { box-shadow: 0 0 0 10px rgba(46, 204, 113, 0); } 100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); } }
+    background: radial-gradient(ellipse 60% 55% at 50% 45%, rgba(0, 113, 227, .08), transparent 70%); }
+.nas-pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-text); font-size: 13px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+.nas-pill .prebook-dot { background: var(--accent); animation-name: promo-pulse-blue; }
+@keyframes promo-pulse-blue { 0% { box-shadow: 0 0 0 0 rgba(0, 113, 227, .55); } 70% { box-shadow: 0 0 0 10px rgba(0, 113, 227, 0); } 100% { box-shadow: 0 0 0 0 rgba(0, 113, 227, 0); } }
 .nas-feature .h2 { margin-top: 16px; }
 .nas-logo { display: inline-block; height: .78em; width: auto; vertical-align: baseline; margin-right: .1em; }
-.nas-btn { background: #1f9d57; color: #fff; }
-.nas-btn:hover { background: #1a8a4c; color: #fff; }
 .nas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
 .nas-card { display: flex; flex-direction: column; padding: 24px; border-radius: 24px; color: var(--text); background: var(--bg-elev); transition: transform .4s var(--ease, ease), box-shadow .4s; }
-.nas-card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(20, 120, 70, .14); }
+.nas-card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(0, 80, 180, .14); }
 .nas-card .prebook-img img { filter: drop-shadow(0 14px 20px rgba(0, 0, 0, .22)); }
 .nas-card:hover .prebook-img img { transform: scale(1.04); }
 .nas-card h3 { font-size: 20px; line-height: 1.25; margin: 6px 0 8px; }
 .nas-card p { flex: 1; font-size: 15px; color: var(--text-2); }
-.nas-card .prebook-cta { color: #128a47; }
+.nas-card .prebook-cta { color: var(--accent-text); }
 .nas-card:hover .prebook-cta i { transform: translateX(3px); }
 html[data-theme="dark"] .nas-logo { filter: invert(1); }
-html[data-theme="dark"] .nas-pill { background: rgba(46, 204, 113, .14); color: #5ee08f; }
-html[data-theme="dark"] .nas-card .prebook-cta { color: #5ee08f; }
 html[data-theme="dark"] .nas-card .prebook-img img { filter: drop-shadow(0 16px 24px rgba(0, 0, 0, .55)); }
-html[data-theme="dark"] .nas-feature::before { background: radial-gradient(ellipse 60% 55% at 50% 45%, rgba(46, 204, 113, .12), transparent 70%); }
+html[data-theme="dark"] .nas-feature::before { background: radial-gradient(ellipse 60% 55% at 50% 45%, rgba(41, 151, 255, .12), transparent 70%); }
 html[data-theme="dark"] .nas-card:hover { box-shadow: 0 18px 40px rgba(0, 0, 0, .4); }
 @media (max-width: 600px) { .nas-feature { padding-top: 8px; } .nas-grid { grid-template-columns: 1fr 1fr; gap: 12px; } .nas-card { padding: 16px; border-radius: 18px; } .nas-card h3 { font-size: 16px; } .nas-card p { font-size: 13px; } }
 @media (max-width: 600px) { .prebook-img { height: 160px; } .prebook-img img { max-height: 160px; } .prebook-panel { border-radius: 24px; } }

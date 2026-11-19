@@ -463,7 +463,7 @@ function asustorHtml() {
                     <h2 class="h2" id="asustor-title"><img class="nas-logo" src="assets/brands/asustor.svg" alt="ASUSTOR" width="306" height="56"> NAS, Only from Plan Man</h2>
                     <p class="lead">Plan Man is the one and only exclusive partner of ASUSTOR in the Middle East. From 2-bay home NAS to 24-bay rackmount storage, get genuine stock straight from the source.</p>
                 </div>
-                <a class="btn nas-btn" href="products/nas-storage.html">Explore ASUSTOR NAS <i class="ph ph-arrow-right"></i></a>
+                <a class="btn btn-primary" href="products/nas-storage.html">Explore ASUSTOR NAS <i class="ph ph-arrow-right"></i></a>
             </div>
             <div class="nas-grid reveal">${nas.map((p) => promoCard(p, 'View', twoSpecs, 'nas-card')).join('')}
             </div>
