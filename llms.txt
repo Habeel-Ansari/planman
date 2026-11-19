@@ -219,13 +219,6 @@
 - [ASUSTOR AS7-RAM8G 8GB DDR3-1600 SO-DIMM](https://planman.ae/products/asustor-as7-ram8g.html): 8GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.
 - [ASUSTOR AS7-RAM4G 4GB DDR3-1600 SO-DIMM](https://planman.ae/products/asustor-as7-ram4g.html): 4GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.
 - [ASUSTOR AS7-RAM2G 2GB DDR3-1600 SO-DIMM](https://planman.ae/products/asustor-as7-ram2g.html): 2GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS-IR USB IR Receiver](https://planman.ae/products/asustor-as-ir.html): USB infrared receiver for using an IR remote with ASUSTOR NAS.
-- [ASUSTOR AS-RC10 10-Key IR Remote Control](https://planman.ae/products/asustor-as-rc10.html): 10-key infrared remote control for ASUSTOR NAS media playback.
-- [ASUSTOR AS-RCU IR Remote with USB Receiver](https://planman.ae/products/asustor-as-rcu.html): IR remote control bundled with a USB IR receiver for ASUSTOR NAS.
-- [ASUSTOR AS-RAM2G 2GB DDR3-1333 SO-DIMM](https://planman.ae/products/asustor-as-ram2g.html): 2GB DDR3-1333 SO-DIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS-RAM1G 1GB DDR3-1333 SO-DIMM](https://planman.ae/products/asustor-as-ram1g.html): 1GB DDR3-1333 SO-DIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS-150W 150W Flex Power Supply](https://planman.ae/products/asustor-as-150w.html): Replacement 150W Flex ATX power supply for ASUSTOR NAS.
-- [ASUSTOR AS-T10G 10GbE PCIe Network Card](https://planman.ae/products/asustor-as-t10g.html): Single-port 10GBASE-T PCIe network card for ASUSTOR NAS, PCs and servers.
 
 ## Frequently asked questions
 
