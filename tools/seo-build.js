@@ -410,7 +410,7 @@ function prebookHtml() {
                         <div>
                             <span class="prebook-pill"><span class="prebook-dot" aria-hidden="true"></span>Exclusive Middle East distributor</span>
                             <h2 class="h2" id="asustor-promo-title"><img class="promo-logo" src="assets/brands/asustor.svg" alt="ASUSTOR" width="306" height="56"> NAS, Only from Plan Man</h2>
-                            <p class="lead">Plan Man is the one and only exclusive distributor of ASUSTOR in the Middle East. From 2-bay home NAS to 24-bay rackmount storage, get genuine stock, regional warranty and local support straight from the source.</p>
+                            <p class="lead">Plan Man is the one and only exclusive distributor of ASUSTOR in the Middle East. From 2-bay home NAS to 24-bay rackmount storage, get genuine stock straight from the source.</p>
                         </div>
                         <a class="btn btn-primary" href="products.html?brand=asustor">Explore ASUSTOR NAS <i class="ph ph-arrow-right"></i></a>
                     </div>
