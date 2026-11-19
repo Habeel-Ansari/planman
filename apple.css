@@ -326,6 +326,7 @@ html[data-theme="dark"] .pd-series { color: #f0b54a; }
 .js .split .split-art, .js .tab-panel .tab-art { transform: scale(.9); opacity: 0; transition: transform 1.2s var(--ease), opacity 1.2s var(--ease); }
 .js .split.in .split-art, .js .tab-panel.active .tab-art { transform: none; opacity: 1; }
 .js .reveal-stagger > .card { transform: translateY(40px) scale(.96); }
+.js .reveal-stagger.in > .card { transform: none; }
 
 @media (max-width: 1024px) {
     .nav-links > li > a, .nav-links > li > button { font-size: 20px; font-weight: 600; opacity: 1; padding: 16px 0; }
