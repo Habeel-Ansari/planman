@@ -77,7 +77,7 @@ window.BRAND_LEADS = {
     nvidia: 'NVIDIA rack-scale systems, HGX platforms, data center GPUs, networking, DGX systems and AI software.',
     supermicro: 'Supermicro GPU servers, NVL72 SuperClusters, enterprise servers, storage and data center building blocks.',
     asus: 'ASUS AI PODs, GPU servers, rack and multi-node servers, storage, AI workstations and mini PCs.',
-    asustor: 'Exclusive ASUSTOR distributor in the Middle East: Drivestor, Lockerstor and all-flash Flashstor NAS, rackmount storage, expansion units and accessories.',
+    asustor: 'Exclusive ASUSTOR partner in the Middle East: Drivestor, Lockerstor and all-flash Flashstor NAS, rackmount storage, expansion units and accessories.',
     msi: 'MSI business laptops for AI, development and creative work, including NVIDIA RTX Spark models.'
 };
 

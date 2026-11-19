@@ -1094,9 +1094,9 @@ Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier
 
 We supply complete servers, storage, GPUs, networking, workstations and power equipment from premium enterprise brands including Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, ASUSTOR, Seagate, Western Digital, AMD, Intel, APC and Eaton.
 
-### Is Plan Man an ASUSTOR distributor?
+### Is Plan Man an ASUSTOR partner?
 
-Yes. Plan Man is the exclusive ASUSTOR distributor in the Middle East. We supply the full ASUSTOR range from Dubai: Drivestor and Lockerstor NAS, all-flash Flashstor, rackmount Lockerstor Pro systems, expansion units and genuine accessories such as memory, network cards and switches.
+Yes. Plan Man is the exclusive ASUSTOR partner in the Middle East. We supply the full ASUSTOR range from Dubai: Drivestor and Lockerstor NAS, all-flash Flashstor, rackmount Lockerstor Pro systems, expansion units and genuine accessories such as memory, network cards and switches.
 
 ### Does Plan Man supply NVIDIA GPU servers and AI infrastructure in the UAE?
 
