@@ -295,39 +295,5 @@ if (heroVisual && !reduceMotion) {
     zoom();
 }
 
-// ---------- Promo slider (home page banners) ----------
-document.querySelectorAll('.promo-track').forEach((track) => {
-    const section = track.closest('section');
-    const slides = [...track.children];
-    const dots = [...section.querySelectorAll('.promo-dot')];
-    if (slides.length < 2) return;
-    let cur = 0;
-    const go = (n) => {
-        cur = (n + slides.length) % slides.length;
-        track.scrollTo({ left: slides[cur].offsetLeft - track.offsetLeft, behavior: reduceMotion ? 'auto' : 'smooth' });
-    };
-    track.addEventListener('scroll', () => {
-        const n = Math.round(track.scrollLeft / track.clientWidth);
-        if (n !== cur && slides[n]) cur = n;
-        dots.forEach((d, i) => d.setAttribute('aria-current', i === cur ? 'true' : 'false'));
-    }, { passive: true });
-    dots.forEach((d, i) => d.addEventListener('click', () => go(i)));
-    section.querySelectorAll('.promo-arrow').forEach((b) => b.addEventListener('click', () => go(cur + Number(b.dataset.dir))));
-    track.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowRight') { e.preventDefault(); go(cur + 1); }
-        if (e.key === 'ArrowLeft') { e.preventDefault(); go(cur - 1); }
-    });
-    if (reduceMotion) return;
-    let paused = false;
-    const pause = () => { paused = true; };
-    const resume = () => { paused = false; };
-    section.addEventListener('mouseenter', pause);
-    section.addEventListener('mouseleave', resume);
-    section.addEventListener('focusin', pause);
-    section.addEventListener('focusout', resume);
-    track.addEventListener('touchstart', pause, { passive: true });
-    setInterval(() => { if (!paused && !document.hidden) go(cur + 1); }, 7000);
-});
-
 // ---------- Footer year ----------
 document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });

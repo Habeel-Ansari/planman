@@ -53,7 +53,39 @@ NVIDIA RTX Spark N1X · 64 GB or 128 GB unified memory
 
 Book now
 
-Exclusive Middle East partner
+Industries We Serve
+
+### Infrastructure That Powers Your Hotels
+
+Every sector runs differently. We design around how your hotel, campus, plant or office actually operates.
+
+All industries
+
+#### Hospitality
+
+PMS and POS servers, guest Wi-Fi backbone, surveillance storage and multi-property standards for hotel groups.
+
+Hospitality solutions
+
+#### Universities & Education
+
+AI teaching labs, research HPC, virtual computer labs and campus data centers.
+
+Education solutions
+
+#### Manufacturing & Industrial
+
+Edge AI for quality inspection, high-availability MES and ERP servers, and plant server rooms.
+
+Industrial solutions
+
+#### Corporate Enterprise
+
+Data center refreshes, private cloud, backup and DR, and end-user hardware at scale.
+
+Enterprise solutions
+
+Exclusive Middle East Partner
 
 ### NAS, Only from Plan Man
 
@@ -92,38 +124,6 @@ ASUSTOR · NAS Storage
 24× 3.5"/2.5" SATA + 1× M.2 NVMe · AMD Ryzen 7 Pro 7745 (8-core, 3.8–5.3 GHz)
 
 View
-
-Industries We Serve
-
-### Infrastructure That Powers Your Hotels
-
-Every sector runs differently. We design around how your hotel, campus, plant or office actually operates.
-
-All industries
-
-#### Hospitality
-
-PMS and POS servers, guest Wi-Fi backbone, surveillance storage and multi-property standards for hotel groups.
-
-Hospitality solutions
-
-#### Universities & Education
-
-AI teaching labs, research HPC, virtual computer labs and campus data centers.
-
-Education solutions
-
-#### Manufacturing & Industrial
-
-Edge AI for quality inspection, high-availability MES and ERP servers, and plant server rooms.
-
-Industrial solutions
-
-#### Corporate Enterprise
-
-Data center refreshes, private cloud, backup and DR, and end-user hardware at scale.
-
-Enterprise solutions
 
 How We Deliver
 
