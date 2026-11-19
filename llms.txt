@@ -27,7 +27,7 @@
 - [Supermicro Products](https://planman.ae/products/supermicro.html): Supermicro GPU servers, NVL72 SuperClusters, enterprise servers, storage and data center building blocks. Supplied and supported in the UAE by Plan Man.
 - [ASUS Products](https://planman.ae/products/asus.html): ASUS AI PODs, GPU servers, rack and multi-node servers, storage, AI workstations and mini PCs. Supplied and supported in the UAE by Plan Man.
 - [MSI Products](https://planman.ae/products/msi.html): MSI business laptops for AI, development and creative work, including NVIDIA RTX Spark models. Supplied and supported in the UAE by Plan Man.
-- [ASUSTOR Products](https://planman.ae/products/asustor.html): ASUSTOR NAS for home, office and business: Drivestor, Lockerstor and all-flash Flashstor models, rackmount NAS and expansion units.
+- [ASUSTOR Products](https://planman.ae/products/asustor.html): ASUSTOR NAS for home, office and business: Drivestor, Lockerstor and all-flash Flashstor models, rackmount NAS, expansion units and genuine accessories.
 - [Rack-Scale AI Systems](https://planman.ae/products/rack-scale-ai-systems.html): Liquid-cooled NVL72 racks with 72 GPUs in one NVLink domain, built for training and AI reasoning at scale. Supplied and supported in the UAE by Plan Man.
 - [GPU & AI Servers](https://planman.ae/products/gpu-ai-servers.html): Eight-GPU HGX servers and PCIe GPU servers for AI training, inference and HPC, air- or liquid-cooled. Supplied and supported in the UAE by Plan Man.
 - [Data Center GPUs](https://planman.ae/products/data-center-gpus.html): Data center GPUs for AI inference, training, rendering and virtual workstations. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
@@ -35,6 +35,7 @@
 - [Rack & Multi-Node Servers](https://planman.ae/products/rack-multi-node-servers.html): Rackmount, multi-node and blade servers for virtualization, databases, cloud and HPC. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
 - [Storage](https://planman.ae/products/enterprise-storage.html): All-flash NVMe, high-capacity and object storage to feed GPU clusters and protect enterprise data. Supplied and supported in the UAE by Plan Man.
 - [NAS Storage](https://planman.ae/products/nas-storage.html): ASUSTOR network-attached storage, from 2-bay home units to 24-bay rackmount systems, plus expansion units. Supplied and supported in the UAE by Plan Man.
+- [NAS Accessories](https://planman.ae/products/nas-accessories.html): Genuine ASUSTOR memory, network cards, switches, power supplies, drive trays, rail kits and licenses for your NAS. Available in the UAE from Plan Man.
 - [AI Workstations & Deskside](https://planman.ae/products/ai-workstations.html): Desktop and deskside AI supercomputers for building, fine-tuning and running models locally. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
 - [Desktops & Client PCs](https://planman.ae/products/desktops-client-pcs.html): Business desktops and AI PCs for offices, SMBs and local AI work, pre-configured with Windows. Supplied and supported in the UAE by Plan Man.
 - [AI Laptops](https://planman.ae/products/ai-laptops.html): Windows laptops with NVIDIA RTX Spark for running AI models and agents locally, wherever you work. Supplied and supported in the UAE by Plan Man.
@@ -161,6 +162,70 @@
 - [ASUSTOR AS6004U Expansion Unit](https://planman.ae/products/asustor-as6004u.html): 4-bay USB expansion unit; supported NAS models connect up to three for extra capacity.
 - [ASUSTOR Xpanstor 12R (AX7012R)](https://planman.ae/products/asustor-ax7012r.html): 12-bay 2U SAS/SATA JBOD expansion unit for ASUSTOR rackmount NAS.
 - [ASUSTOR AS-SAS8e SAS HBA](https://planman.ae/products/asustor-as-sas8e.html): SAS-3 host bus adapter (Broadcom HBA 9500-8e) for connecting Xpanstor 12R expansion units.
+- [ASUSTOR AS-U2.5G2 USB-C 2.5GbE Adapter](https://planman.ae/products/asustor-as-u2-5g2.html): Compact USB-C to 2.5GbE adapter with aluminium housing; adds 2.5-Gigabit Ethernet to a NAS, laptop or desktop.
+- [ASUSTOR AS-U2.5G USB-C 2.5GbE Adapter](https://planman.ae/products/asustor-as-u2-5g.html): USB-C to 2.5GbE adapter that upgrades a NAS, laptop or desktop to 2.5-Gigabit Ethernet.
+- [ASUSTOR AS-T10G3 10GbE + M.2 NVMe PCIe Card](https://planman.ae/products/asustor-as-t10g3.html): PCIe 3.0 x4 card combining a 10GbE RJ45 port with two M.2 NVMe SSD slots for compatible ASUSTOR NAS.
+- [ASUSTOR AS-T10G2 10GbE PCIe Network Card](https://planman.ae/products/asustor-as-t10g2.html): Value 10GbE RJ45 network card (Marvell AQC107) for ASUSTOR NAS, PCs and servers.
+- [ASUSTOR Switch'nstor 9 Gen2 (ASW209X)](https://planman.ae/products/asustor-asw209x.html): Fanless unmanaged switch with eight 2.5GbE RJ45 ports and one 10GbE SFP+ uplink.
+- [ASUSTOR ASW205T 5-Port 2.5GbE Switch](https://planman.ae/products/asustor-asw205t.html): Fanless unmanaged switch with five 2.5GbE ports for home and small-office networks.
+- [ASUSTOR AS-48GECD5-U 48GB ECC DDR5 UDIMM](https://planman.ae/products/asustor-as-48gecd5-u.html): 48GB ECC DDR5 UDIMM memory module for ASUSTOR AS7212RDX / AS7216RDX.
+- [ASUSTOR AS-16GECD5-U 16GB ECC DDR5 UDIMM](https://planman.ae/products/asustor-as-16gecd5-u.html): 16GB ECC DDR5 UDIMM memory module for ASUSTOR AS7212RDX / AS7216RDX.
+- [ASUSTOR AS-32GECD5-U 32GB ECC DDR5 UDIMM](https://planman.ae/products/asustor-as-32gecd5-u.html): 32GB ECC DDR5 UDIMM memory module for ASUSTOR AS7212RDX / AS7216RDX.
+- [ASUSTOR AS-48GD5 48GB DDR5 SO-DIMM](https://planman.ae/products/asustor-as-48gd5.html): 48GB DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+- [ASUSTOR AS-32GD5 32GB DDR5 SO-DIMM](https://planman.ae/products/asustor-as-32gd5.html): 32GB DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+- [ASUSTOR AS-16GD5 16GB DDR5 SO-DIMM](https://planman.ae/products/asustor-as-16gd5.html): 16GB DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+- [ASUSTOR AS-8GD5 8GB DDR5 SO-DIMM](https://planman.ae/products/asustor-as-8gd5.html): 8GB DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+- [ASUSTOR AS-48GECD5 48GB ECC DDR5 SO-DIMM](https://planman.ae/products/asustor-as-48gecd5.html): 48GB ECC DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+- [ASUSTOR AS-32GECD5 32GB ECC DDR5 SO-DIMM](https://planman.ae/products/asustor-as-32gecd5.html): 32GB ECC DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+- [ASUSTOR AS-16GECD5 16GB ECC DDR5 SO-DIMM](https://planman.ae/products/asustor-as-16gecd5.html): 16GB ECC DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+- [ASUSTOR AS-32GECD4-U 32GB ECC DDR4 UDIMM](https://planman.ae/products/asustor-as-32gecd4-u.html): 32GB ECC DDR4 UDIMM memory module for ASUSTOR NAS.
+- [ASUSTOR AS-16GECD4-U 16GB ECC DDR4 UDIMM](https://planman.ae/products/asustor-as-16gecd4-u.html): 16GB ECC DDR4 UDIMM memory module for ASUSTOR NAS.
+- [ASUSTOR AS-8GECD4-U 8GB ECC DDR4 UDIMM](https://planman.ae/products/asustor-as-8gecd4-u.html): 8GB ECC DDR4 UDIMM memory module for ASUSTOR NAS.
+- [ASUSTOR AS-32GECD4 32GB ECC DDR4 SO-DIMM](https://planman.ae/products/asustor-as-32gecd4.html): 32GB ECC DDR4 SO-DIMM memory module for ASUSTOR NAS.
+- [ASUSTOR AS-16GECD4 16GB ECC DDR4 SO-DIMM](https://planman.ae/products/asustor-as-16gecd4.html): 16GB ECC DDR4 SO-DIMM memory module for ASUSTOR AS7110T / AS6508T / AS6510T.
+- [ASUSTOR AS-8GECD4 8GB ECC DDR4 SO-DIMM](https://planman.ae/products/asustor-as-8gecd4.html): 8GB ECC DDR4 SO-DIMM memory module for ASUSTOR AS7110T.
+- [ASUSTOR AS-8GD4 8GB DDR4 SO-DIMM](https://planman.ae/products/asustor-as-8gd4.html): 8GB DDR4 SO-DIMM memory module for ASUSTOR AS65 Series / AS54 Series / AS67 Series / FS67 Series.
+- [ASUSTOR AS-4GD4 4GB DDR4 SO-DIMM](https://planman.ae/products/asustor-as-4gd4.html): 4GB DDR4 SO-DIMM memory module for ASUSTOR AS5202T / AS5304T / AS54 Series / AS66 Series / AS67 Series / FS67 Series.
+- [ASUSTOR AS-2GD4 2GB DDR4 SO-DIMM](https://planman.ae/products/asustor-as-2gd4.html): 2GB DDR4 SO-DIMM memory module for ASUSTOR NAS.
+- [ASUSTOR AS-32GD4 32GB DDR4 SO-DIMM](https://planman.ae/products/asustor-as-32gd4.html): 32GB DDR4 SO-DIMM memory module for ASUSTOR AS65 Series.
+- [ASUSTOR AS-16GD4 16GB DDR4 SO-DIMM](https://planman.ae/products/asustor-as-16gd4.html): 16GB DDR4 SO-DIMM memory module for ASUSTOR AS65 Series.
+- [ASUSTOR AS-exFAT exFAT Driver License](https://planman.ae/products/asustor-as-exfat.html): License key that enables the exFAT driver on ASUSTOR NAS, for reading and writing exFAT drives.
+- [ASUSTOR AS-SCL04 Surveillance Center 4-Camera License](https://planman.ae/products/asustor-as-scl04.html): Four-camera license for ASUSTOR Surveillance Center, adding four IP cameras to a NAS.
+- [ASUSTOR AS-SCL01 Surveillance Center 1-Camera License](https://planman.ae/products/asustor-as-scl01.html): Single-camera license for ASUSTOR Surveillance Center, adding one IP camera to a NAS.
+- [ASUSTOR AS-HK1 M.2 SSD Heatsink](https://planman.ae/products/asustor-as-hk1.html): M.2 SSD heatsink with thermal pad for Flashstor FS67 / FS68 and the AS-T10G3 card.
+- [ASUSTOR AS-120W 120W Power Adapter](https://planman.ae/products/asustor-as-120w.html): Replacement 120W power adapter for the ASUSTOR FS6812X.
+- [ASUSTOR AS-90W 90W Power Adapter](https://planman.ae/products/asustor-as-90w.html): Replacement 90W power adapter for ASUSTOR NAS and expansion units.
+- [ASUSTOR AS-65W 65W Power Adapter](https://planman.ae/products/asustor-as-65w.html): Replacement 65W power adapter for ASUSTOR NAS.
+- [ASUSTOR AS-250W 250W Flex Power Supply](https://planman.ae/products/asustor-as-250w.html): Replacement 250W Flex ATX power supply for ASUSTOR NAS.
+- [ASUSTOR AS-Tray-S HDD Tray](https://planman.ae/products/asustor-as-tray-s.html): Spare black drive tray for 2.5" and 3.5" drives in ASUSTOR NAS.
+- [ASUSTOR AS-TrayLock HDD Tray Lock](https://planman.ae/products/asustor-as-traylock.html): Lock for ASUSTOR drive trays, to keep 2.5" and 3.5" drives from being removed.
+- [ASUSTOR AS-Tray HDD Tray](https://planman.ae/products/asustor-as-tray.html): Spare black drive tray for 2.5" and 3.5" drives in ASUSTOR NAS.
+- [ASUSTOR AS-Rail Rack Rail Kit](https://planman.ae/products/asustor-as-rail.html): Rail kit for mounting ASUSTOR 1U, 2U and 3U rackmount NAS in a server rack.
+- [ASUSTOR AS-HDD35S48 3.5" HDD Screw Pack (48 pcs)](https://planman.ae/products/asustor-as-hdd35s48.html): Pack of 48 screws for mounting 3.5" drives in ASUSTOR NAS trays.
+- [ASUSTOR AS-HDD25S48 2.5" HDD Screw Pack (48 pcs)](https://planman.ae/products/asustor-as-hdd25s48.html): Pack of 48 screws for mounting 2.5" drives in ASUSTOR NAS trays.
+- [ASUSTOR AS-RC13 13-Key IR Remote Control](https://planman.ae/products/asustor-as-rc13.html): 13-key infrared remote for controlling media playback on ASUSTOR NAS with HDMI output.
+- [ASUSTOR AS6-RAM8G 8GB DDR3L-1866 SO-DIMM](https://planman.ae/products/asustor-as6-ram8g-1866.html): 8GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS6-RAM4G 4GB DDR3L-1866 SO-DIMM](https://planman.ae/products/asustor-as6-ram4g-1866.html): 4GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS6-RAM2G 2GB DDR3L-1866 SO-DIMM](https://planman.ae/products/asustor-as6-ram2g-1866.html): 2GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS6-RAM1G 1GB DDR3L-1866 SO-DIMM](https://planman.ae/products/asustor-as6-ram1g-1866.html): 1GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS6-RAM8G 8GB DDR3L-1600 SO-DIMM](https://planman.ae/products/asustor-as6-ram8g-1600.html): 8GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS6-RAM4G 4GB DDR3L-1600 SO-DIMM](https://planman.ae/products/asustor-as6-ram4g-1600.html): 4GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS6-RAM2G 2GB DDR3L-1600 SO-DIMM](https://planman.ae/products/asustor-as6-ram2g-1600.html): 2GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS6-RAM1G 1GB DDR3L-1600 SO-DIMM](https://planman.ae/products/asustor-as6-ram1g-1600.html): 1GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS7R-RAM8G 8GB DDR3-1600 UDIMM](https://planman.ae/products/asustor-as7r-ram8g.html): 8GB DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS7R-RAM8GEC 8GB ECC DDR3-1600 UDIMM](https://planman.ae/products/asustor-as7r-ram8gec.html): 8GB ECC DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS7R-RAM4G 4GB DDR3-1600 UDIMM](https://planman.ae/products/asustor-as7r-ram4g.html): 4GB DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS7R-RAM4GEC 4GB ECC DDR3-1600 UDIMM](https://planman.ae/products/asustor-as7r-ram4gec.html): 4GB ECC DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS7-RAM8G 8GB DDR3-1600 SO-DIMM](https://planman.ae/products/asustor-as7-ram8g.html): 8GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS7-RAM4G 4GB DDR3-1600 SO-DIMM](https://planman.ae/products/asustor-as7-ram4g.html): 4GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS7-RAM2G 2GB DDR3-1600 SO-DIMM](https://planman.ae/products/asustor-as7-ram2g.html): 2GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS-IR USB IR Receiver](https://planman.ae/products/asustor-as-ir.html): USB infrared receiver for using an IR remote with ASUSTOR NAS.
+- [ASUSTOR AS-RC10 10-Key IR Remote Control](https://planman.ae/products/asustor-as-rc10.html): 10-key infrared remote control for ASUSTOR NAS media playback.
+- [ASUSTOR AS-RCU IR Remote with USB Receiver](https://planman.ae/products/asustor-as-rcu.html): IR remote control bundled with a USB IR receiver for ASUSTOR NAS.
+- [ASUSTOR AS-RAM2G 2GB DDR3-1333 SO-DIMM](https://planman.ae/products/asustor-as-ram2g.html): 2GB DDR3-1333 SO-DIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS-RAM1G 1GB DDR3-1333 SO-DIMM](https://planman.ae/products/asustor-as-ram1g.html): 1GB DDR3-1333 SO-DIMM memory module for older ASUSTOR NAS models.
+- [ASUSTOR AS-150W 150W Flex Power Supply](https://planman.ae/products/asustor-as-150w.html): Replacement 150W Flex ATX power supply for ASUSTOR NAS.
+- [ASUSTOR AS-T10G 10GbE PCIe Network Card](https://planman.ae/products/asustor-as-t10g.html): Single-port 10GBASE-T PCIe network card for ASUSTOR NAS, PCs and servers.
 
 ## Frequently asked questions
 

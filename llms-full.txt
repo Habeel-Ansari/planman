@@ -532,11 +532,11 @@ Products
 
 Browse NVIDIA, Supermicro and ASUS platforms with full specifications and request a quote for any product. We also supply servers, storage and networking from every premium brand.
 
-All brands 117 NVIDIA 20 Supermicro 45 ASUS 16 MSI 1 ASUSTOR 35
+All brands 181 NVIDIA 20 Supermicro 45 ASUS 16 MSI 1 ASUSTOR 99
 
 Categories
 
-- All products 117
+- All products 181
 - Rack-Scale AI Systems 7
 - GPU & AI Servers 24
 - Data Center GPUs 4
@@ -544,6 +544,7 @@ Categories
 - Rack & Multi-Node Servers 17
 - Storage 5
 - NAS Storage 35
+- NAS Accessories 64
 - AI Workstations & Deskside 7
 - Desktops & Client PCs 4
 - AI Laptops 1
@@ -553,7 +554,7 @@ Categories
 
 ### Product Catalog
 
-117 products
+181 products
 
 Browse
 
@@ -568,6 +569,7 @@ Browse
 - Rack & Multi-Node Servers
 - Storage
 - NAS Storage
+- NAS Accessories
 - AI Workstations & Deskside
 - Desktops & Client PCs
 - AI Laptops
@@ -5157,6 +5159,1419 @@ Specifications:
 Use cases: Connect Xpanstor 12R enclosures, Enterprise storage expansion.
 
 Source: ASUSTOR AS-SAS8e SAS HBA (https://www.asustor.com/en/product/AS_SAS8e)
+
+### NAS Accessories
+
+#### ASUSTOR AS-U2.5G2 USB-C 2.5GbE Adapter (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-u2-5g2.html
+Model: AS-U2.5G2
+
+Compact USB-C to 2.5GbE adapter with aluminium housing; adds 2.5-Gigabit Ethernet to a NAS, laptop or desktop.
+
+The AS-U2.5G2 is a USB Type-C to 2.5-Gigabit Ethernet adapter. It upgrades a NAS, laptop or desktop to 2.5GbE over existing Cat5e or better cabling and stays compatible with Gigabit and 100-Megabit networks.
+
+It uses the Realtek RTL8156B controller in an aluminium housing for better heat dissipation, is powered from the USB port, and ships with a Type-A adapter.
+
+Specifications:
+- Interface: USB Type-C, Type-A adapter included
+- Port: 1× 2.5GBASE-T RJ45 (2.5G/1G/100M)
+- Controller: Realtek RTL8156B
+- Housing: Aluminium, 33 g
+- Compatibility: ASUSTOR ADM 3.5 and above, Windows, macOS, Linux
+
+Use cases: Upgrade a Gigabit NAS to 2.5GbE, Faster laptop and desktop networking, Editing from NAS storage.
+
+Source: AS-U2.5G2 at ASUSTOR (https://www.asustor.com/product/AS_U2_5G2); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-U2.5G USB-C 2.5GbE Adapter (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-u2-5g.html
+Model: AS-U2.5G
+
+USB-C to 2.5GbE adapter that upgrades a NAS, laptop or desktop to 2.5-Gigabit Ethernet.
+
+The AS-U2.5G is a USB Type-C to 2.5-Gigabit Ethernet adapter with an integrated cable. It upgrades a Gigabit ASUSTOR NAS, laptop or desktop to 2.5GbE using standard Cat5e cabling.
+
+It is powered from the USB port and remains compatible with Gigabit and 100-Megabit networks.
+
+Specifications:
+- Interface: USB Type-C (Type-A adapter sold separately)
+- Port: 1× 2.5GBASE-T RJ45 (2.5G/1G/100M)
+- Weight: 49 g
+- Power: USB bus powered
+- Compatibility: ASUSTOR ADM 3.4 and above, Windows, macOS, Linux
+
+Use cases: Upgrade a Gigabit NAS to 2.5GbE, Faster laptop and desktop networking.
+
+Source: AS-U2.5G at ASUSTOR (https://www.asustor.com/product/AS_U2_5G); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-T10G3 10GbE + M.2 NVMe PCIe Card (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-t10g3.html
+Model: AS-T10G3
+
+PCIe 3.0 x4 card combining a 10GbE RJ45 port with two M.2 NVMe SSD slots for compatible ASUSTOR NAS.
+
+The AS-T10G3 is a composite PCIe 3.0 x4 card that adds a 10-Gigabit RJ45 port and two M.2 NVMe SSD slots to a compatible ASUSTOR NAS, so you no longer have to choose between 10GbE and SSD caching.
+
+It uses the Marvell AQC113 controller with heatsinks, supports 10/5/2.5/1 Gbps and 100 Mbps speeds, 16K jumbo frames, checksum offloading and VLAN/QoS. ASUSTOR measured up to 1,171 MB/s read and 1,119 MB/s write.
+
+Specifications:
+- Controller: Marvell AQC113 10GbE
+- Port: 1× RJ45, 10G/5G/2.5G/1G/100M
+- SSD slots: 2× M.2 NVMe
+- Interface: PCIe 3.0 x4
+- Features: 16K jumbo frames, checksum offload, VLAN tagging and QoS
+
+Use cases: 10GbE upgrade for NAS, SSD caching, Video editing over the network.
+
+Source: AS-T10G3 at ASUSTOR (https://www.asustor.com/product/AS_T10G3); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-T10G2 10GbE PCIe Network Card (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-t10g2.html
+Model: AS-T10G2
+
+Value 10GbE RJ45 network card (Marvell AQC107) for ASUSTOR NAS, PCs and servers.
+
+The AS-T10G2 is a 10-Gigabit Ethernet PCIe card with an RJ45 port, built on the Marvell AQC107 controller. It brings 10GbE to a compatible ASUSTOR NAS or to PCs and servers without fibre cabling.
+
+It negotiates 10/5/2.5/1 Gbps and 100 Mbps, supports 16K jumbo frames, checksum offloading and VLAN tagging. ASUSTOR measured up to 1,126 MB/s read and 1,123 MB/s write.
+
+Specifications:
+- Controller: Marvell AQC107
+- Port: 1× RJ45, 10G/5G/2.5G/1G/100M
+- Interface: PCIe
+- Features: 16K jumbo frames, checksum offload, 802.1Q VLAN and QoS
+- Compatibility: ASUSTOR ADM 3.5.6+, Windows, macOS, Linux, VMware ESXi
+
+Use cases: 10GbE upgrade for NAS, Workstation 10GbE, Server networking.
+
+Source: AS-T10G2 at ASUSTOR (https://www.asustor.com/product/AS_T10G2); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR Switch'nstor 9 Gen2 (ASW209X) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-asw209x.html
+Model: ASW209X
+
+Fanless unmanaged switch with eight 2.5GbE RJ45 ports and one 10GbE SFP+ uplink.
+
+The Switch'nstor 9 Gen2 (ASW209X) is a plug-and-play unmanaged switch with eight 2.5-Gigabit RJ45 ports and one 10-Gigabit SFP+ port, for up to 60 Gbps of switching capacity.
+
+It is silent and fanless in a metal housing and can be wall-mounted, making it a simple way to connect a 2.5GbE or 10GbE NAS to a team of workstations.
+
+Specifications:
+- Ports: 8× 2.5GbE RJ45 + 1× 10GbE SFP+
+- Switching capacity: Up to 60 Gbps
+- Management: Unmanaged, plug and play
+- Cooling: Silent, fanless
+- Housing: Metal, wall-mountable
+
+Use cases: 2.5GbE office network, NAS to workstation connections, Small studios.
+
+Source: ASW209X at ASUSTOR (https://www.asustor.com/product/ASW209X); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR ASW205T 5-Port 2.5GbE Switch (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-asw205t.html
+Model: ASW205T
+
+Fanless unmanaged switch with five 2.5GbE ports for home and small-office networks.
+
+The ASW205T is an unmanaged switch with five 2.5-Gigabit Ethernet ports using Realtek controllers, giving 25 Gbps in total over standard Cat5e cabling.
+
+It is silent and fanless in a metal housing and can be wall-mounted. Pair it with a 2.5GbE NAS and USB adapters to double network performance over Gigabit.
+
+Specifications:
+- Ports: 5× 2.5GbE RJ45
+- Total bandwidth: 25 Gbps
+- Controller: Realtek 2.5GbE
+- Cooling: Silent, fanless
+- Housing: Metal, wall-mountable
+
+Use cases: 2.5GbE home network, Small office networking.
+
+Source: ASW205T at ASUSTOR (https://www.asustor.com/product/AS_W205T); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-48GECD5-U 48GB ECC DDR5 UDIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-48gecd5-u.html
+Model: AS-48GECD5-U
+
+48GB ECC DDR5 UDIMM memory module for ASUSTOR AS7212RDX / AS7216RDX.
+
+The AS-48GECD5-U is a genuine ASUSTOR 48GB DDR5 ECC UDIMM memory module (288-pin) for upgrading the memory of the AS7212RDX / AS7216RDX.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches. ECC modules detect and correct common memory errors; ECC is disabled if non-ECC memory is installed alongside.
+
+Specifications:
+- Capacity: 48 GB
+- Type: DDR5 ECC
+- Form factor: UDIMM, 288-pin
+- Compatible with: AS7212RDX / AS7216RDX
+- Part number: AS-48GECD5-U
+- EAN: 4710474831807
+- Dimensions: 133.35 x 30 x 4 (mm)
+- Weight: 15g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-48GECD5-U at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25_146&product_id=130); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-16GECD5-U 16GB ECC DDR5 UDIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-16gecd5-u.html
+Model: AS-16GECD5-U
+
+16GB ECC DDR5 UDIMM memory module for ASUSTOR AS7212RDX / AS7216RDX.
+
+The AS-16GECD5-U is a genuine ASUSTOR 16GB DDR5 ECC UDIMM memory module (288-pin) for upgrading the memory of the AS7212RDX / AS7216RDX.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches. ECC modules detect and correct common memory errors; ECC is disabled if non-ECC memory is installed alongside.
+
+Specifications:
+- Capacity: 16 GB
+- Type: DDR5 ECC
+- Form factor: UDIMM, 288-pin
+- Compatible with: AS7212RDX / AS7216RDX
+- Part number: 92M11-S16EUD50
+- EAN: 4710474831784
+- Dimensions: 133.35 x 30 x 4 (mm)
+- Weight: 15g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-16GECD5-U at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25_146&product_id=128); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-32GECD5-U 32GB ECC DDR5 UDIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-32gecd5-u.html
+Model: AS-32GECD5-U
+
+32GB ECC DDR5 UDIMM memory module for ASUSTOR AS7212RDX / AS7216RDX.
+
+The AS-32GECD5-U is a genuine ASUSTOR 32GB DDR5 ECC UDIMM memory module (288-pin) for upgrading the memory of the AS7212RDX / AS7216RDX.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches. ECC modules detect and correct common memory errors; ECC is disabled if non-ECC memory is installed alongside.
+
+Specifications:
+- Capacity: 32 GB
+- Type: DDR5 ECC
+- Form factor: UDIMM, 288-pin
+- Compatible with: AS7212RDX / AS7216RDX
+- Part number: AS-32GECD5-U
+- EAN: 4710474831791
+- Dimensions: 133.35 x 30 x 4 (mm)
+- Weight: 15g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-32GECD5-U at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25_146&product_id=129); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-48GD5 48GB DDR5 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-48gd5.html
+Model: AS-48GD5
+
+48GB DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+
+The AS-48GD5 is a genuine ASUSTOR 48GB DDR5 SO-DIMM memory module (262-pin) for upgrading the memory of the AS68 / FS68 Series.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches.
+
+Specifications:
+- Capacity: 48 GB
+- Type: DDR5
+- Form factor: SO-DIMM, 262-pin
+- Compatible with: AS68 / FS68 Series
+- Warranty: 3 years
+- Part number: 92M11-S48D50
+- EAN: 4710474830138
+- Dimensions: 67x30x10 (mm)
+- Weight: 9g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-48GD5 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_144&product_id=126); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-32GD5 32GB DDR5 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-32gd5.html
+Model: AS-32GD5
+
+32GB DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+
+The AS-32GD5 is a genuine ASUSTOR 32GB DDR5 SO-DIMM memory module (262-pin) for upgrading the memory of the AS68 / FS68 Series.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches.
+
+Specifications:
+- Capacity: 32 GB
+- Type: DDR5
+- Form factor: SO-DIMM, 262-pin
+- Compatible with: AS68 / FS68 Series
+- Warranty: 3 years
+- Part number: 92M11-S32D50
+- EAN: 4710474830121
+- Dimensions: 67x30x10 (mm)
+- Weight: 9g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-32GD5 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_144&product_id=125); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-16GD5 16GB DDR5 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-16gd5.html
+Model: AS-16GD5
+
+16GB DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+
+The AS-16GD5 is a genuine ASUSTOR 16GB DDR5 SO-DIMM memory module (262-pin) for upgrading the memory of the AS68 / FS68 Series.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches.
+
+Specifications:
+- Capacity: 16 GB
+- Type: DDR5
+- Form factor: SO-DIMM, 262-pin
+- Compatible with: AS68 / FS68 Series
+- Warranty: 3 years
+- Part number: 92M11-S16D50
+- EAN: 4710474830114
+- Dimensions: 67x30x10 (mm)
+- Weight: 9g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-16GD5 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_144&product_id=124); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-8GD5 8GB DDR5 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-8gd5.html
+Model: AS-8GD5
+
+8GB DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+
+The AS-8GD5 is a genuine ASUSTOR 8GB DDR5 SO-DIMM memory module (262-pin) for upgrading the memory of the AS68 / FS68 Series.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches.
+
+Specifications:
+- Capacity: 8 GB
+- Type: DDR5
+- Form factor: SO-DIMM, 262-pin
+- Compatible with: AS68 / FS68 Series
+- Warranty: 3 years
+- Part number: 92M11-S8D50
+- EAN: 4710474830107
+- Dimensions: 67x30x10 (mm)
+- Weight: 9g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-8GD5 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_144&product_id=123); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-48GECD5 48GB ECC DDR5 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-48gecd5.html
+Model: AS-48GECD5
+
+48GB ECC DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+
+The AS-48GECD5 is a genuine ASUSTOR 48GB DDR5 ECC SO-DIMM memory module (262-pin) for upgrading the memory of the AS68 / FS68 Series.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches. ECC modules detect and correct common memory errors; ECC is disabled if non-ECC memory is installed alongside.
+
+Specifications:
+- Capacity: 48 GB
+- Type: DDR5 ECC
+- Form factor: SO-DIMM, 262-pin
+- Compatible with: AS68 / FS68 Series
+- Warranty: 3 years
+- Part number: 92M11-S48ECD50
+- EAN: 4710474830091
+- Dimensions: 67x30x10 (mm)
+- Weight: 9g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-48GECD5 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_140&product_id=122); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-32GECD5 32GB ECC DDR5 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-32gecd5.html
+Model: AS-32GECD5
+
+32GB ECC DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+
+The AS-32GECD5 is a genuine ASUSTOR 32GB DDR5 ECC SO-DIMM memory module (262-pin) for upgrading the memory of the AS68 / FS68 Series.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches. ECC modules detect and correct common memory errors; ECC is disabled if non-ECC memory is installed alongside.
+
+Specifications:
+- Capacity: 32 GB
+- Type: DDR5 ECC
+- Form factor: SO-DIMM, 262-pin
+- Compatible with: AS68 / FS68 Series
+- Warranty: 3 years
+- Part number: 92M11-S32ECD50
+- EAN: 4710474830084
+- Dimensions: 67x30x10 (mm)
+- Weight: 9g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-32GECD5 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_140&product_id=121); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-16GECD5 16GB ECC DDR5 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-16gecd5.html
+Model: AS-16GECD5
+
+16GB ECC DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.
+
+The AS-16GECD5 is a genuine ASUSTOR 16GB DDR5 ECC SO-DIMM memory module (262-pin) for upgrading the memory of the AS68 / FS68 Series.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches. ECC modules detect and correct common memory errors; ECC is disabled if non-ECC memory is installed alongside.
+
+Specifications:
+- Capacity: 16 GB
+- Type: DDR5 ECC
+- Form factor: SO-DIMM, 262-pin
+- Compatible with: AS68 / FS68 Series
+- Warranty: 3 years
+- Part number: 92M11-S16ECD50
+- EAN: 4710474830077
+- Dimensions: 67x30x10 (mm)
+- Weight: 9g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-16GECD5 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_140&product_id=120); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-32GECD4-U 32GB ECC DDR4 UDIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-32gecd4-u.html
+Model: AS-32GECD4-U
+
+32GB ECC DDR4 UDIMM memory module for ASUSTOR NAS.
+
+The AS-32GECD4-U is a genuine ASUSTOR 32GB DDR4 ECC UDIMM memory module (288-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches. ECC modules detect and correct common memory errors; ECC is disabled if non-ECC memory is installed alongside.
+
+Specifications:
+- Capacity: 32 GB
+- Type: DDR4 ECC
+- Form factor: UDIMM, 288-pin
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-32GECD4-U at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25_115&product_id=102); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-16GECD4-U 16GB ECC DDR4 UDIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-16gecd4-u.html
+Model: AS-16GECD4-U
+
+16GB ECC DDR4 UDIMM memory module for ASUSTOR NAS.
+
+The AS-16GECD4-U is a genuine ASUSTOR 16GB DDR4 ECC UDIMM memory module (288-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches. ECC modules detect and correct common memory errors; ECC is disabled if non-ECC memory is installed alongside.
+
+Specifications:
+- Capacity: 16 GB
+- Type: DDR4 ECC
+- Form factor: UDIMM, 288-pin
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-16GECD4-U at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25_115&product_id=101); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-8GECD4-U 8GB ECC DDR4 UDIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-8gecd4-u.html
+Model: AS-8GECD4-U
+
+8GB ECC DDR4 UDIMM memory module for ASUSTOR NAS.
+
+The AS-8GECD4-U is a genuine ASUSTOR 8GB DDR4 ECC UDIMM memory module (288-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches. ECC modules detect and correct common memory errors; ECC is disabled if non-ECC memory is installed alongside.
+
+Specifications:
+- Capacity: 8 GB
+- Type: DDR4 ECC
+- Form factor: UDIMM, 288-pin
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-8GECD4-U at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25_114&product_id=100); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-32GECD4 32GB ECC DDR4 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-32gecd4.html
+Model: AS-32GECD4
+
+32GB ECC DDR4 SO-DIMM memory module for ASUSTOR NAS.
+
+The AS-32GECD4 is a genuine ASUSTOR 32GB DDR4 ECC SO-DIMM memory module (260-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches. ECC modules detect and correct common memory errors; ECC is disabled if non-ECC memory is installed alongside.
+
+Specifications:
+- Capacity: 32 GB
+- Type: DDR4 ECC
+- Form factor: SO-DIMM, 260-pin
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-32GECD4 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25_113&product_id=104); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-16GECD4 16GB ECC DDR4 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-16gecd4.html
+Model: AS-16GECD4
+
+16GB ECC DDR4 SO-DIMM memory module for ASUSTOR AS7110T / AS6508T / AS6510T.
+
+The AS-16GECD4 is a genuine ASUSTOR 16GB DDR4 ECC SO-DIMM memory module (260-pin) for upgrading the memory of the AS7110T / AS6508T / AS6510T.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches. ECC modules detect and correct common memory errors; ECC is disabled if non-ECC memory is installed alongside.
+
+Specifications:
+- Capacity: 16 GB
+- Type: DDR4 ECC
+- Form factor: SO-DIMM, 260-pin
+- Compatible with: AS7110T / AS6508T / AS6510T
+- Warranty: 5 years
+- Part number: 92M11-S16ECD40
+- EAN: 4710474838325
+- Dimensions: 69.6x30x10 (mm)
+- Weight: 7g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-16GECD4 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25_113&product_id=99); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-8GECD4 8GB ECC DDR4 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-8gecd4.html
+Model: AS-8GECD4
+
+8GB ECC DDR4 SO-DIMM memory module for ASUSTOR AS7110T.
+
+The AS-8GECD4 is a genuine ASUSTOR 8GB DDR4 ECC SO-DIMM memory module (260-pin) for upgrading the memory of the AS7110T.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches. ECC modules detect and correct common memory errors; ECC is disabled if non-ECC memory is installed alongside.
+
+Specifications:
+- Capacity: 8 GB
+- Type: DDR4 ECC
+- Form factor: SO-DIMM, 260-pin
+- Compatible with: AS7110T
+- Warranty: 5 years
+- Part number: 92M11-S8ECD40
+- EAN: 4710474838318
+- Dimensions: 69.6x30x10 (mm)
+- Weight: 7g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-8GECD4 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25_113&product_id=75); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-8GD4 8GB DDR4 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-8gd4.html
+Model: AS-8GD4
+
+8GB DDR4 SO-DIMM memory module for ASUSTOR AS65 Series / AS54 Series / AS67 Series / FS67 Series.
+
+The AS-8GD4 is a genuine ASUSTOR 8GB DDR4 SO-DIMM memory module (260-pin) for upgrading the memory of the AS65 Series / AS54 Series / AS67 Series / FS67 Series.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches.
+
+Specifications:
+- Capacity: 8 GB
+- Type: DDR4
+- Form factor: SO-DIMM, 260-pin
+- Compatible with: AS65 Series / AS54 Series / AS67 Series / FS67 Series
+- Part number: 92M11-S8D40
+- EAN: 4710474838295
+- Dimensions: 69.6x30x10 (mm)
+- Weight: 7g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-8GD4 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_111&product_id=98); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-4GD4 4GB DDR4 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-4gd4.html
+Model: AS-4GD4
+
+4GB DDR4 SO-DIMM memory module for ASUSTOR AS5202T / AS5304T / AS54 Series / AS66 Series / AS67 Series / FS67 Series.
+
+The AS-4GD4 is a genuine ASUSTOR 4GB DDR4 SO-DIMM memory module (260-pin) for upgrading the memory of the AS5202T / AS5304T / AS54 Series / AS66 Series / AS67 Series / FS67 Series.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches.
+
+Specifications:
+- Capacity: 4 GB
+- Type: DDR4
+- Form factor: SO-DIMM, 260-pin
+- Compatible with: AS5202T / AS5304T / AS54 Series / AS66 Series / AS67 Series / FS67 Series
+- Warranty: 3 years
+- Part number: 92M11-S4D40
+- EAN: 4710474838219
+- Dimensions: 67x30x10 (mm)
+- Weight: 7g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-4GD4 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=20_108&product_id=93); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-2GD4 2GB DDR4 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-2gd4.html
+Model: AS-2GD4
+
+2GB DDR4 SO-DIMM memory module for ASUSTOR NAS.
+
+The AS-2GD4 is a genuine ASUSTOR 2GB DDR4 SO-DIMM memory module (260-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches.
+
+Specifications:
+- Capacity: 2 GB
+- Type: DDR4
+- Form factor: SO-DIMM, 260-pin
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-2GD4 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=20_107&product_id=92); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-32GD4 32GB DDR4 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-32gd4.html
+Model: AS-32GD4
+
+32GB DDR4 SO-DIMM memory module for ASUSTOR AS65 Series.
+
+The AS-32GD4 is a genuine ASUSTOR 32GB DDR4 SO-DIMM memory module (260-pin) for upgrading the memory of the AS65 Series.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches.
+
+Specifications:
+- Capacity: 32 GB
+- Type: DDR4
+- Form factor: SO-DIMM, 260-pin
+- Compatible with: AS65 Series
+- Part number: 92M11-S32D40
+- EAN: 4710474838448
+- Dimensions: 69.6x30x10 (mm)
+- Weight: 7g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-32GD4 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_112&product_id=105); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-16GD4 16GB DDR4 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-16gd4.html
+Model: AS-16GD4
+
+16GB DDR4 SO-DIMM memory module for ASUSTOR AS65 Series.
+
+The AS-16GD4 is a genuine ASUSTOR 16GB DDR4 SO-DIMM memory module (260-pin) for upgrading the memory of the AS65 Series.
+
+More memory helps with running more apps, Docker containers and virtual machines on the NAS, and with larger file caches.
+
+Specifications:
+- Capacity: 16 GB
+- Type: DDR4
+- Form factor: SO-DIMM, 260-pin
+- Compatible with: AS65 Series
+- Part number: 92M11-S16D40
+- EAN: 4710474838349
+- Dimensions: 69.6x30x10 (mm)
+- Weight: 7g
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-16GD4 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_112&product_id=103); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-exFAT exFAT Driver License (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-exfat.html
+Model: AS-exFAT
+
+License key that enables the exFAT driver on ASUSTOR NAS, for reading and writing exFAT drives.
+
+The AS-exFAT license key enables the download of the exFAT driver for an ASUSTOR NAS, so it can read and write exFAT-formatted external drives and cards. ASUSTOR lists it for ADM 3.x or lower.
+
+Specifications:
+- Type: Digital license
+- Enables: exFAT file system driver
+- ADM version: ADM 3.x or lower
+- Part number: 934AS-00101-000
+
+Use cases: External drive compatibility, Camera card imports.
+
+Source: AS-exFAT at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=67_100&product_id=84); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-SCL04 Surveillance Center 4-Camera License (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-scl04.html
+Model: AS-SCL04
+
+Four-camera license for ASUSTOR Surveillance Center, adding four IP cameras to a NAS.
+
+The AS-SCL04 is a digital license that adds four camera channels to ASUSTOR Surveillance Center, the NVR app on ASUSTOR NAS. Each NAS includes free camera channels; licenses add more.
+
+It is delivered by email as a license key, with no physical copy.
+
+Specifications:
+- Type: Digital license
+- Cameras: 4
+- Software: ASUSTOR Surveillance Center
+- Compatible with: All ASUSTOR NAS models
+- Part number: 931AS-00401-001
+- EAN: 4710474839407
+
+Use cases: Video surveillance, Office and retail CCTV.
+
+Source: AS-SCL04 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=61&product_id=61); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-SCL01 Surveillance Center 1-Camera License (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-scl01.html
+Model: AS-SCL01
+
+Single-camera license for ASUSTOR Surveillance Center, adding one IP camera to a NAS.
+
+The AS-SCL01 is a digital license that adds one camera channel to ASUSTOR Surveillance Center, the NVR app on ASUSTOR NAS. Each NAS includes free camera channels; licenses add more.
+
+It is delivered by email as a license key, with no physical copy.
+
+Specifications:
+- Type: Digital license
+- Cameras: 1
+- Software: ASUSTOR Surveillance Center
+- Compatible with: All ASUSTOR NAS models
+- Part number: 931AS-00101-001
+- EAN: 4710474839391
+
+Use cases: Video surveillance, Office and retail CCTV.
+
+Source: AS-SCL01 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=67&product_id=60); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-HK1 M.2 SSD Heatsink (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-hk1.html
+Model: AS-HK1
+
+M.2 SSD heatsink with thermal pad for Flashstor FS67 / FS68 and the AS-T10G3 card.
+
+The AS-HK1 is an M.2 SSD heatsink with a thermal pad, designed for the Flashstor FS67 and FS68 series and the AS-T10G3 network card. It helps NVMe SSDs stay cool and avoid thermal throttling.
+
+Specifications:
+- Type: M.2 heatsink with thermal pad
+- Compatible with: FS67 / FS68 series, AS-T10G3
+
+Use cases: All-flash NAS, SSD caching.
+
+Source: AS-HK1 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=105_130&product_id=116); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-120W 120W Power Adapter (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-120w.html
+Model: AS-120W
+
+Replacement 120W power adapter for the ASUSTOR FS6812X.
+
+The AS-120W is a genuine ASUSTOR 120W power adapter, used as a spare or replacement part. ASUSTOR lists it for: FS6812X.
+
+Specifications:
+- Output: 120 W
+- Type: External power adapter
+- Compatible with: FS6812X
+- Warranty: 1 year
+- Part number: 92P01-W1201
+- EAN: 4710474830152
+- Dimensions: 156x63x32 (mm)
+- Weight: 426g
+
+Use cases: Replacement part, Spare for critical NAS.
+
+Source: AS-120W at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_145&product_id=127); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-90W 90W Power Adapter (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-90w.html
+Model: AS-90W
+
+Replacement 90W power adapter for ASUSTOR NAS and expansion units.
+
+The AS-90W is a genuine ASUSTOR 90W power adapter, used as a spare or replacement part. ASUSTOR lists it for: AS5004T / AS5104T / AS6104T / AS6204T / AS1004T / AS1004T v2 / AS3104T / AS3104T / AS3204T / AS3204T v2 / AS4004T / AS6404T / AS6004U / AS5304T / AS6604T / AS6704T / FS6712X / AS5404T / AS5004U / AS3304T v2 / AS6804T / FS6806X / AS1204T.
+
+Specifications:
+- Output: 90 W
+- Type: External power adapter
+- Compatible with: AS5004T / AS5104T / AS6104T / AS6204T / AS1004T / AS1004T v2 / AS3104T / AS3104T / AS3204T / AS3204T v2 / AS4004T / AS6404T / AS6004U / AS5304T / AS6604T / AS6704T / FS6712X / AS5404T / AS5004U / AS3304T v2 / AS6804T / FS6806X / AS1204T
+- Warranty: 1 year
+- Part number: 92P01-W0901
+- EAN: 4710474839643
+- Dimensions: 150x60x35 (mm)
+- Weight: 430g
+
+Use cases: Replacement part, Spare for critical NAS.
+
+Source: AS-90W at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=20&product_id=76); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-65W 65W Power Adapter (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-65w.html
+Model: AS-65W
+
+Replacement 65W power adapter for ASUSTOR NAS.
+
+The AS-65W is a genuine ASUSTOR 65W power adapter, used as a spare or replacement part. ASUSTOR lists it for: AS-602T / AS-302T / AS-202TE / AS-202T / AS5002T / AS5102T / AS6102T / AS6202T / AS1002T / AS1002T v2 / AS3102T / AS3102T v2 / AS3202T / AS4002T / AS6302T / AS5202T / AS6602T / AS6702T / FS6706T / AS1102TL / AS3302T v2 / AS1202T.
+
+Specifications:
+- Output: 65 W
+- Type: External power adapter
+- Compatible with: AS-602T / AS-302T / AS-202TE / AS-202T / AS5002T / AS5102T / AS6102T / AS6202T / AS1002T / AS1002T v2 / AS3102T / AS3102T v2 / AS3202T / AS4002T / AS6302T / AS5202T / AS6602T / AS6702T / FS6706T / AS1102TL / AS3302T v2 / AS1202T
+- Warranty: 1 year
+- Part number: 92P01-W0651
+- EAN: 4710474838066
+- Dimensions: 115x51x30.8 (mm)
+- Weight: 251g
+
+Use cases: Replacement part, Spare for critical NAS.
+
+Source: AS-65W at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18&product_id=55); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-250W 250W Flex Power Supply (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-250w.html
+Model: AS-250W
+
+Replacement 250W Flex ATX power supply for ASUSTOR NAS.
+
+The AS-250W is a genuine ASUSTOR 250W Flex ATX power supply, used as a spare or replacement part. ASUSTOR lists it for: AS-204RS / AS-604T / AS-606T / AS-608T / AS7004T / AS5008T / AS5010T / AS5108T / AS5110T / AS6204RS / AS6208T / AS6210T / AS6508T / AS6510T / AS6504RS / AS6706T / AS6806T / AS6808T / AS6810T.
+
+Specifications:
+- Output: 250 W
+- Type: Internal Flex power supply
+- Compatible with: AS-204RS / AS-604T / AS-606T / AS-608T / AS7004T / AS5008T / AS5010T / AS5108T / AS5110T / AS6204RS / AS6208T / AS6210T / AS6508T / AS6510T / AS6504RS / AS6706T / AS6806T / AS6808T / AS6810T
+- Warranty: 1 year
+- Part number: 92P02-W2501
+- EAN: 4710474839049
+- Dimensions: 150x 81.5x 40.5 (mm)
+- Weight: 651g
+
+Use cases: Replacement part, Spare for critical NAS.
+
+Source: AS-250W at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18&product_id=57); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-Tray-S HDD Tray (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-tray-s.html
+Model: AS-Tray-S
+
+Spare black drive tray for 2.5" and 3.5" drives in ASUSTOR NAS.
+
+The AS-Tray-S is a genuine ASUSTOR spare drive tray for 2.5" and 3.5" drives. ASUSTOR lists it for: AS40 Series / AS5202T / AS5304T / AS54 Series / AS5004U / AS3302T v2 / AS3304T v2.
+
+Specifications:
+- Type: Drive tray
+- Drive size: 2.5" and 3.5"
+- Compatible with: AS40 Series / AS5202T / AS5304T / AS54 Series / AS5004U / AS3302T v2 / AS3304T v2
+- Dimensions: 167.4 x116x 28 (mm)
+- Weight: 67g
+- Part number: 92T11-00003
+- EAN: 4710474838134
+
+Use cases: Spare or replacement part, Adding drives to a NAS.
+
+Source: AS-Tray-S at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_103&product_id=88); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-TrayLock HDD Tray Lock (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-traylock.html
+Model: AS-TrayLock
+
+Lock for ASUSTOR drive trays, to keep 2.5" and 3.5" drives from being removed.
+
+The AS-TrayLock is a genuine ASUSTOR drive tray lock for 2.5" and 3.5" drives. ASUSTOR lists it for: AS-6 / AS-2 / AS-3 / AS50 / AS61 Series / AS6302T / AS70 / AS51 Series / AS62 Series / AS6404T / AS6004U / AS65 / AS66 / AS71 Series / AS67 / AS68 / AS72 Series.
+
+Specifications:
+- Type: Drive tray lock
+- Drive size: 2.5" and 3.5"
+- Compatible with: AS-6 / AS-2 / AS-3 / AS50 / AS61 Series / AS6302T / AS70 / AS51 Series / AS62 Series / AS6404T / AS6004U / AS65 / AS66 / AS71 Series / AS67 / AS68 / AS72 Series
+- Dimensions: 106.7x184x27.5 (mm)
+- Weight: 127g
+- Part number: 92T11-00002
+- EAN: 4710474839490
+
+Use cases: Spare or replacement part, Adding drives to a NAS.
+
+Source: AS-TrayLock at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18&product_id=64); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-Tray HDD Tray (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-tray.html
+Model: AS-Tray
+
+Spare black drive tray for 2.5" and 3.5" drives in ASUSTOR NAS.
+
+The AS-Tray is a genuine ASUSTOR spare drive tray for 2.5" and 3.5" drives.
+
+Specifications:
+- Type: Drive tray
+- Drive size: 2.5" and 3.5"
+
+Use cases: Spare or replacement part, Adding drives to a NAS.
+
+Source: AS-Tray at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=61&product_id=52); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-Rail Rack Rail Kit (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-rail.html
+Model: AS-Rail
+
+Rail kit for mounting ASUSTOR 1U, 2U and 3U rackmount NAS in a server rack.
+
+The AS-Rail is a genuine ASUSTOR rail kit for mounting 1U, 2U and 3U ASUSTOR rackmount NAS in a standard server rack. ASUSTOR lists it for: AS-604RD / AS-604RS / AS-609RD / AS-609RS / AS-204RS / AS7009RD / AS7009RDX / AS7012RD / AS7012RDX / AS6204RD / AS6204RS / AS6212RD / AS7112RDX / AS7116RDX / AS72.
+
+Specifications:
+- Type: Rack rail kit
+- Fits: 1U / 2U / 3U ASUSTOR rackmount systems
+- Compatible with: AS-604RD / AS-604RS / AS-609RD / AS-609RS / AS-204RS / AS7009RD / AS7009RDX / AS7012RD / AS7012RDX / AS6204RD / AS6204RS / AS6212RD / AS7112RDX / AS7116RDX / AS72
+- Part number: 92H5-MR0001
+- EAN: 4710474839018
+- Dimensions: 508 x 43.8 x 13.25 (mm) Mounting post depth: 579.1-873.5mm
+- Weight: 2.2kg
+
+Use cases: Rack installation, Server room deployment.
+
+Source: AS-Rail at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25&product_id=51); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-HDD35S48 3.5" HDD Screw Pack (48 pcs) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-hdd35s48.html
+Model: AS-HDD35S48
+
+Pack of 48 screws for mounting 3.5" drives in ASUSTOR NAS trays.
+
+The AS-HDD35S48 is a pack of 48 genuine ASUSTOR screws for mounting 3.5" drives in NAS drive trays.
+
+Specifications:
+- Contents: 48 screws
+- Drive size: 3.5"
+- Compatible with: AS-6 / AS-2 / AS-3 / AS50 / 51 / 61 / 62 / 63 / 64 / 70 / 65 / 71 / AS67 / AS68 / AS72 series
+- Screw type: #6-32L6, F-head Dia=5.0mm, Philips, Ni plated
+- Part number: 13S1M00004001-016 x 3
+- EAN: 4710474838233
+
+Use cases: Drive installation, Spare parts.
+
+Source: AS-HDD35S48 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_83&product_id=94); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-HDD25S48 2.5" HDD Screw Pack (48 pcs) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-hdd25s48.html
+Model: AS-HDD25S48
+
+Pack of 48 screws for mounting 2.5" drives in ASUSTOR NAS trays.
+
+The AS-HDD25S48 is a pack of 48 genuine ASUSTOR screws for mounting 2.5" drives in NAS drive trays.
+
+Specifications:
+- Contents: 48 screws
+- Drive size: 2.5"
+- Compatible with: AS-6 / AS-2 / AS-3 / AS40 / AS50 / AS51 / AS52 / AS53 / AS54 / AS61 / AS62 / AS63 / AS64 / AS70 / AS65 / AS66 / AS71 series / AS5004U / AS33 series / AS33 v2 series / AS68 / AS72
+- Screw type: M3L4, F-head Dia=4.0mm, Philips, Ni plated
+- Part number: 13S1M00007001-016 x 3
+- EAN: 4710474838240
+
+Use cases: Drive installation, Spare parts.
+
+Source: AS-HDD25S48 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18_83&product_id=95); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-RC13 13-Key IR Remote Control (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-rc13.html
+Model: AS-RC13
+
+13-key infrared remote for controlling media playback on ASUSTOR NAS with HDMI output.
+
+The AS-RC13 (13 key IR Remote Control) is an ASUSTOR media accessory for controlling apps and playback on an ASUSTOR NAS connected to a TV.
+
+Specifications:
+- Type: 13 key IR Remote Control
+- Connection: Infrared
+
+Use cases: Home media centre, TV playback from the NAS.
+
+Source: AS-RC13 at ASUSTOR (https://shoptw.asustor.com/?product=%e9%81%99%e6%8e%a7%e5%99%a8-as-rc13); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS6-RAM8G 8GB DDR3L-1866 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6-ram8g-1866.html
+Model: AS6-RAM8G
+
+8GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.
+
+The AS6-RAM8G is a genuine ASUSTOR 8GB DDR3L-1866 SO-DIMM memory module (204-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 8 GB
+- Type: DDR3L-1866
+- Form factor: SO-DIMM, 204-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS6-RAM8G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=20_94&product_id=85); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS6-RAM4G 4GB DDR3L-1866 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6-ram4g-1866.html
+Model: AS6-RAM4G
+
+4GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.
+
+The AS6-RAM4G is a genuine ASUSTOR 4GB DDR3L-1866 SO-DIMM memory module (204-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 4 GB
+- Type: DDR3L-1866
+- Form factor: SO-DIMM, 204-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS6-RAM4G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=20_94&product_id=80); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS6-RAM2G 2GB DDR3L-1866 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6-ram2g-1866.html
+Model: AS6-RAM2G
+
+2GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.
+
+The AS6-RAM2G is a genuine ASUSTOR 2GB DDR3L-1866 SO-DIMM memory module (204-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 2 GB
+- Type: DDR3L-1866
+- Form factor: SO-DIMM, 204-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS6-RAM2G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=20_94&product_id=79); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS6-RAM1G 1GB DDR3L-1866 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6-ram1g-1866.html
+Model: AS6-RAM1G
+
+1GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.
+
+The AS6-RAM1G is a genuine ASUSTOR 1GB DDR3L-1866 SO-DIMM memory module (204-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 1 GB
+- Type: DDR3L-1866
+- Form factor: SO-DIMM, 204-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS6-RAM1G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=20_94&product_id=78); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS6-RAM8G 8GB DDR3L-1600 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6-ram8g-1600.html
+Model: AS6-RAM8G
+
+8GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+
+The AS6-RAM8G is a genuine ASUSTOR 8GB DDR3L-1600 SO-DIMM memory module (204-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 8 GB
+- Type: DDR3L-1600
+- Form factor: SO-DIMM, 204-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS6-RAM8G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=20_77&product_id=85); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS6-RAM4G 4GB DDR3L-1600 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6-ram4g-1600.html
+Model: AS6-RAM4G
+
+4GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+
+The AS6-RAM4G is a genuine ASUSTOR 4GB DDR3L-1600 SO-DIMM memory module (204-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 4 GB
+- Type: DDR3L-1600
+- Form factor: SO-DIMM, 204-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS6-RAM4G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=20_77&product_id=80); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS6-RAM2G 2GB DDR3L-1600 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6-ram2g-1600.html
+Model: AS6-RAM2G
+
+2GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+
+The AS6-RAM2G is a genuine ASUSTOR 2GB DDR3L-1600 SO-DIMM memory module (204-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 2 GB
+- Type: DDR3L-1600
+- Form factor: SO-DIMM, 204-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS6-RAM2G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=20_77&product_id=79); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS6-RAM1G 1GB DDR3L-1600 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6-ram1g-1600.html
+Model: AS6-RAM1G
+
+1GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+
+The AS6-RAM1G is a genuine ASUSTOR 1GB DDR3L-1600 SO-DIMM memory module (204-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 1 GB
+- Type: DDR3L-1600
+- Form factor: SO-DIMM, 204-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS6-RAM1G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=20_77&product_id=78); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS7R-RAM8G 8GB DDR3-1600 UDIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as7r-ram8g.html
+Model: AS7R-RAM8G
+
+8GB DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.
+
+The AS7R-RAM8G is a genuine ASUSTOR 8GB DDR3-1600 UDIMM memory module (240-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 8 GB
+- Type: DDR3-1600
+- Form factor: UDIMM, 240-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS7R-RAM8G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25&product_id=70); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS7R-RAM8GEC 8GB ECC DDR3-1600 UDIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as7r-ram8gec.html
+Model: AS7R-RAM8GEC
+
+8GB ECC DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.
+
+The AS7R-RAM8GEC is a genuine ASUSTOR 8GB DDR3-1600 ECC UDIMM memory module (240-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 8 GB
+- Type: DDR3-1600 ECC
+- Form factor: UDIMM, 240-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS7R-RAM8GEC at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25&product_id=71); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS7R-RAM4G 4GB DDR3-1600 UDIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as7r-ram4g.html
+Model: AS7R-RAM4G
+
+4GB DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.
+
+The AS7R-RAM4G is a genuine ASUSTOR 4GB DDR3-1600 UDIMM memory module (240-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 4 GB
+- Type: DDR3-1600
+- Form factor: UDIMM, 240-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS7R-RAM4G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25&product_id=68); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS7R-RAM4GEC 4GB ECC DDR3-1600 UDIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as7r-ram4gec.html
+Model: AS7R-RAM4GEC
+
+4GB ECC DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.
+
+The AS7R-RAM4GEC is a genuine ASUSTOR 4GB DDR3-1600 ECC UDIMM memory module (240-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 4 GB
+- Type: DDR3-1600 ECC
+- Form factor: UDIMM, 240-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS7R-RAM4GEC at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=25&product_id=69); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS7-RAM8G 8GB DDR3-1600 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as7-ram8g.html
+Model: AS7-RAM8G
+
+8GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+
+The AS7-RAM8G is a genuine ASUSTOR 8GB DDR3-1600 SO-DIMM memory module (204-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 8 GB
+- Type: DDR3-1600
+- Form factor: SO-DIMM, 204-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS7-RAM8G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18&product_id=67); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS7-RAM4G 4GB DDR3-1600 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as7-ram4g.html
+Model: AS7-RAM4G
+
+4GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+
+The AS7-RAM4G is a genuine ASUSTOR 4GB DDR3-1600 SO-DIMM memory module (204-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 4 GB
+- Type: DDR3-1600
+- Form factor: SO-DIMM, 204-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS7-RAM4G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18&product_id=66); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS7-RAM2G 2GB DDR3-1600 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as7-ram2g.html
+Model: AS7-RAM2G
+
+2GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.
+
+The AS7-RAM2G is a genuine ASUSTOR 2GB DDR3-1600 SO-DIMM memory module (204-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 2 GB
+- Type: DDR3-1600
+- Form factor: SO-DIMM, 204-pin
+- Compatible with: Older ASUSTOR NAS models
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS7-RAM2G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18&product_id=62); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-IR USB IR Receiver (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-ir.html
+Model: AS-IR
+
+USB infrared receiver for using an IR remote with ASUSTOR NAS.
+
+The AS-IR (USB IR Receiver for AS-6) is an ASUSTOR media accessory for controlling apps and playback on an ASUSTOR NAS connected to a TV.
+
+Specifications:
+- Type: USB IR Receiver for AS-6
+- Connection: USB IR receiver
+- Availability: End-of-life item, subject to stock
+
+Use cases: Home media centre, TV playback from the NAS.
+
+Source: AS-IR at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18&product_id=58); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-RC10 10-Key IR Remote Control (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-rc10.html
+Model: AS-RC10
+
+10-key infrared remote control for ASUSTOR NAS media playback.
+
+The AS-RC10 (10 Key IR Remote Controller) is an ASUSTOR media accessory for controlling apps and playback on an ASUSTOR NAS connected to a TV.
+
+Specifications:
+- Type: 10 Key IR Remote Controller
+- Connection: Infrared
+- Availability: End-of-life item, subject to stock
+
+Use cases: Home media centre, TV playback from the NAS.
+
+Source: AS-RC10 at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=61&product_id=50); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-RCU IR Remote with USB Receiver (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-rcu.html
+Model: AS-RCU
+
+IR remote control bundled with a USB IR receiver for ASUSTOR NAS.
+
+The AS-RCU (AS-RCU, IR Remote Control with USB IR Receiver for AS-6) is an ASUSTOR media accessory for controlling apps and playback on an ASUSTOR NAS connected to a TV.
+
+Specifications:
+- Type: AS-RCU, IR Remote Control with USB IR Receiver for AS-6
+- Connection: USB IR receiver
+- Availability: End-of-life item, subject to stock
+
+Use cases: Home media centre, TV playback from the NAS.
+
+Source: AS-RCU at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18&product_id=59); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-RAM2G 2GB DDR3-1333 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-ram2g.html
+Model: AS-RAM2G
+
+2GB DDR3-1333 SO-DIMM memory module for older ASUSTOR NAS models.
+
+The AS-RAM2G is a genuine ASUSTOR 2GB DDR3-1333 SO-DIMM memory module (204-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 2 GB
+- Type: DDR3-1333
+- Form factor: SO-DIMM, 204-pin
+- Compatible with: Older ASUSTOR NAS models
+- Availability: End-of-life item, subject to stock
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-RAM2G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18&product_id=54); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-RAM1G 1GB DDR3-1333 SO-DIMM (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-ram1g.html
+Model: AS-RAM1G
+
+1GB DDR3-1333 SO-DIMM memory module for older ASUSTOR NAS models.
+
+The AS-RAM1G is a genuine ASUSTOR 1GB DDR3-1333 SO-DIMM memory module (204-pin) for upgrading the memory of compatible ASUSTOR NAS.
+
+This DDR3 module is for older ASUSTOR NAS models; current models use DDR4 or DDR5. Tell us your NAS model and we will confirm the right part.
+
+Specifications:
+- Capacity: 1 GB
+- Type: DDR3-1333
+- Form factor: SO-DIMM, 204-pin
+- Compatible with: Older ASUSTOR NAS models
+- Availability: End-of-life item, subject to stock
+
+Use cases: NAS memory upgrade, More apps and containers, Virtual machines on the NAS.
+
+Source: AS-RAM1G at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&path=18&product_id=53); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-150W 150W Flex Power Supply (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-150w.html
+Model: AS-150W
+
+Replacement 150W Flex ATX power supply for ASUSTOR NAS.
+
+The AS-150W is a genuine ASUSTOR 150W Flex ATX power supply, used as a spare or replacement part.
+
+Specifications:
+- Output: 150 W
+- Type: Internal Flex power supply
+- Availability: End-of-life item, subject to stock
+
+Use cases: Replacement part, Spare for critical NAS.
+
+Source: AS-150W at ASUSTOR (https://shop.asustor.com/index.php?route=product/product&filter_name=150&product_id=56); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
+
+#### ASUSTOR AS-T10G 10GbE PCIe Network Card (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-t10g.html
+Model: AS-T10G
+
+Single-port 10GBASE-T PCIe network card for ASUSTOR NAS, PCs and servers.
+
+The AS-T10G is a single-port 10GBASE-T PCIe network card. Its RJ45 port gives 10-Gigabit networking over copper and falls back to 5G, 2.5G, 1G and 100M speeds.
+
+It works in compatible ASUSTOR NAS as well as Windows, macOS, Linux and VMware ESXi systems.
+
+Specifications:
+- Port: 1× 10GBASE-T RJ45 (10G/5G/2.5G/1G/100M)
+- Interface: PCIe
+- Compatibility: ASUSTOR ADM 3.2.4+, Windows, macOS, Linux, VMware ESXi
+- Use case: 10GbE upgrade without fibre
+- Availability: End-of-life item, subject to stock
+
+Use cases: 10GbE upgrade for NAS, Workstation 10GbE.
+
+Source: AS-T10G at ASUSTOR (https://www.asustor.com/product/AS_T10G); ASUSTOR accessories (https://www.asustor.com/en/product/accessories)
 
 ### AI Workstations & Deskside
 

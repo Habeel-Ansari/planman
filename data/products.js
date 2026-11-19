@@ -38,6 +38,7 @@ window.CATEGORIES = {
     'servers': 'Rack & Multi-Node Servers',
     'storage': 'Storage',
     'nas': 'NAS Storage',
+    'nas-accessories': 'NAS Accessories',
     'desktop-ai': 'AI Workstations & Deskside',
     'client': 'Desktops & Client PCs',
     'laptops': 'AI Laptops',
@@ -52,6 +53,7 @@ window.CATEGORY_LEADS = {
     'accelerators': 'Data center GPUs for AI inference, training, rendering and virtual workstations.',
     'networking': 'InfiniBand and Ethernet fabrics, SuperNICs and DPUs that connect GPU clusters at up to 800 Gb/s.',
     'servers': 'Rackmount, multi-node and blade servers for virtualization, databases, cloud and HPC.',
+    'nas-accessories': 'Genuine ASUSTOR memory, network cards, switches, power supplies, drive trays, rail kits and licenses for your NAS.',
     'nas': 'ASUSTOR network-attached storage, from 2-bay home units to 24-bay rackmount systems, plus expansion units.',
     'storage': 'All-flash NVMe, high-capacity and object storage to feed GPU clusters and protect enterprise data.',
     'desktop-ai': 'Desktop and deskside AI supercomputers for building, fine-tuning and running models locally.',
@@ -75,7 +77,7 @@ window.BRAND_LEADS = {
     nvidia: 'NVIDIA rack-scale systems, HGX platforms, data center GPUs, networking, DGX systems and AI software.',
     supermicro: 'Supermicro GPU servers, NVL72 SuperClusters, enterprise servers, storage and data center building blocks.',
     asus: 'ASUS AI PODs, GPU servers, rack and multi-node servers, storage, AI workstations and mini PCs.',
-    asustor: 'ASUSTOR NAS for home, office and business: Drivestor, Lockerstor and all-flash Flashstor models, rackmount NAS and expansion units.',
+    asustor: 'ASUSTOR NAS for home, office and business: Drivestor, Lockerstor and all-flash Flashstor models, rackmount NAS, expansion units and genuine accessories.',
     msi: 'MSI business laptops for AI, development and creative work, including NVIDIA RTX Spark models.'
 };
 
@@ -108,6 +110,7 @@ window.CATEGORY_ART = {
     'servers': 'servers',
     'storage': 'storage',
     'nas': 'storage',
+    'nas-accessories': 'storage',
     'desktop-ai': 'desktop',
     'client': 'desktop',
     'laptops': 'desktop',
@@ -1690,6 +1693,773 @@ window.PRODUCTS = [
             ['Interface', 'SAS-3, 12 Gb/s, full duplex'],
             ['Management', 'ADM Storage Manager'],
             ['Use case', '24/7 enterprise expansion']
+        ]
+    },
+
+    /* ---------------- ASUSTOR accessories ---------------- */
+    {
+        id: 'asustor-as-u2-5g2', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-plugs-connected',
+        img: 'assets/products/asustor-as-u2-5g2.webp', imgSize: [500, 320],
+        name: 'ASUSTOR AS-U2.5G2 USB-C 2.5GbE Adapter',
+        summary: 'Compact USB-C to 2.5GbE adapter with aluminium housing; adds 2.5-Gigabit Ethernet to a NAS, laptop or desktop.',
+        specs: [
+            ['Interface', 'USB Type-C, Type-A adapter included'],
+            ['Port', '1× 2.5GBASE-T RJ45 (2.5G/1G/100M)'],
+            ['Controller', 'Realtek RTL8156B'],
+            ['Housing', 'Aluminium, 33 g'],
+            ['Compatibility', 'ASUSTOR ADM 3.5 and above, Windows, macOS, Linux']
+        ]
+    },
+    {
+        id: 'asustor-as-u2-5g', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-plugs-connected',
+        img: 'assets/products/asustor-as-u2-5g.webp', imgSize: [193, 144],
+        name: 'ASUSTOR AS-U2.5G USB-C 2.5GbE Adapter',
+        summary: 'USB-C to 2.5GbE adapter that upgrades a NAS, laptop or desktop to 2.5-Gigabit Ethernet.',
+        specs: [
+            ['Interface', 'USB Type-C (Type-A adapter sold separately)'],
+            ['Port', '1× 2.5GBASE-T RJ45 (2.5G/1G/100M)'],
+            ['Weight', '49 g'],
+            ['Power', 'USB bus powered'],
+            ['Compatibility', 'ASUSTOR ADM 3.4 and above, Windows, macOS, Linux']
+        ]
+    },
+    {
+        id: 'asustor-as-t10g3', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-network',
+        img: 'assets/products/asustor-as-t10g3.webp', imgSize: [720, 680],
+        name: 'ASUSTOR AS-T10G3 10GbE + M.2 NVMe PCIe Card',
+        summary: 'PCIe 3.0 x4 card combining a 10GbE RJ45 port with two M.2 NVMe SSD slots for compatible ASUSTOR NAS.',
+        specs: [
+            ['Controller', 'Marvell AQC113 10GbE'],
+            ['Port', '1× RJ45, 10G/5G/2.5G/1G/100M'],
+            ['SSD slots', '2× M.2 NVMe'],
+            ['Interface', 'PCIe 3.0 x4'],
+            ['Features', '16K jumbo frames, checksum offload, VLAN tagging and QoS']
+        ]
+    },
+    {
+        id: 'asustor-as-t10g2', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-network',
+        img: 'assets/products/asustor-as-t10g2.webp', imgSize: [183, 221],
+        name: 'ASUSTOR AS-T10G2 10GbE PCIe Network Card',
+        summary: 'Value 10GbE RJ45 network card (Marvell AQC107) for ASUSTOR NAS, PCs and servers.',
+        specs: [
+            ['Controller', 'Marvell AQC107'],
+            ['Port', '1× RJ45, 10G/5G/2.5G/1G/100M'],
+            ['Interface', 'PCIe'],
+            ['Features', '16K jumbo frames, checksum offload, 802.1Q VLAN and QoS'],
+            ['Compatibility', 'ASUSTOR ADM 3.5.6+, Windows, macOS, Linux, VMware ESXi']
+        ]
+    },
+    {
+        id: 'asustor-asw209x', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-tree-structure',
+        img: 'assets/products/asustor-asw209x.webp', imgSize: [526, 151],
+        name: 'ASUSTOR Switch\'nstor 9 Gen2 (ASW209X)',
+        summary: 'Fanless unmanaged switch with eight 2.5GbE RJ45 ports and one 10GbE SFP+ uplink.',
+        specs: [
+            ['Ports', '8× 2.5GbE RJ45 + 1× 10GbE SFP+'],
+            ['Switching capacity', 'Up to 60 Gbps'],
+            ['Management', 'Unmanaged, plug and play'],
+            ['Cooling', 'Silent, fanless'],
+            ['Housing', 'Metal, wall-mountable']
+        ]
+    },
+    {
+        id: 'asustor-asw205t', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-tree-structure',
+        img: 'assets/products/asustor-asw205t.webp', imgSize: [561, 343],
+        name: 'ASUSTOR ASW205T 5-Port 2.5GbE Switch',
+        summary: 'Fanless unmanaged switch with five 2.5GbE ports for home and small-office networks.',
+        specs: [
+            ['Ports', '5× 2.5GbE RJ45'],
+            ['Total bandwidth', '25 Gbps'],
+            ['Controller', 'Realtek 2.5GbE'],
+            ['Cooling', 'Silent, fanless'],
+            ['Housing', 'Metal, wall-mountable']
+        ]
+    },
+    {
+        id: 'asustor-as-48gecd5-u', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-48gecd5-u.webp', imgSize: [300, 73],
+        name: 'ASUSTOR AS-48GECD5-U 48GB ECC DDR5 UDIMM',
+        summary: '48GB ECC DDR5 UDIMM memory module for ASUSTOR AS7212RDX / AS7216RDX.',
+        specs: [
+            ['Capacity', '48 GB'],
+            ['Type', 'DDR5 ECC'],
+            ['Form factor', 'UDIMM, 288-pin'],
+            ['Compatible with', 'AS7212RDX / AS7216RDX']
+        ]
+    },
+    {
+        id: 'asustor-as-16gecd5-u', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-16gecd5-u.webp', imgSize: [300, 75],
+        name: 'ASUSTOR AS-16GECD5-U 16GB ECC DDR5 UDIMM',
+        summary: '16GB ECC DDR5 UDIMM memory module for ASUSTOR AS7212RDX / AS7216RDX.',
+        specs: [
+            ['Capacity', '16 GB'],
+            ['Type', 'DDR5 ECC'],
+            ['Form factor', 'UDIMM, 288-pin'],
+            ['Compatible with', 'AS7212RDX / AS7216RDX']
+        ]
+    },
+    {
+        id: 'asustor-as-32gecd5-u', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-32gecd5-u.webp', imgSize: [300, 75],
+        name: 'ASUSTOR AS-32GECD5-U 32GB ECC DDR5 UDIMM',
+        summary: '32GB ECC DDR5 UDIMM memory module for ASUSTOR AS7212RDX / AS7216RDX.',
+        specs: [
+            ['Capacity', '32 GB'],
+            ['Type', 'DDR5 ECC'],
+            ['Form factor', 'UDIMM, 288-pin'],
+            ['Compatible with', 'AS7212RDX / AS7216RDX']
+        ]
+    },
+    {
+        id: 'asustor-as-48gd5', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-48gd5.webp', imgSize: [224, 103],
+        name: 'ASUSTOR AS-48GD5 48GB DDR5 SO-DIMM',
+        summary: '48GB DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.',
+        specs: [
+            ['Capacity', '48 GB'],
+            ['Type', 'DDR5'],
+            ['Form factor', 'SO-DIMM, 262-pin'],
+            ['Compatible with', 'AS68 / FS68 Series'],
+            ['Warranty', '3 years']
+        ]
+    },
+    {
+        id: 'asustor-as-32gd5', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-32gd5.webp', imgSize: [224, 103],
+        name: 'ASUSTOR AS-32GD5 32GB DDR5 SO-DIMM',
+        summary: '32GB DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.',
+        specs: [
+            ['Capacity', '32 GB'],
+            ['Type', 'DDR5'],
+            ['Form factor', 'SO-DIMM, 262-pin'],
+            ['Compatible with', 'AS68 / FS68 Series'],
+            ['Warranty', '3 years']
+        ]
+    },
+    {
+        id: 'asustor-as-16gd5', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-16gd5.webp', imgSize: [224, 103],
+        name: 'ASUSTOR AS-16GD5 16GB DDR5 SO-DIMM',
+        summary: '16GB DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.',
+        specs: [
+            ['Capacity', '16 GB'],
+            ['Type', 'DDR5'],
+            ['Form factor', 'SO-DIMM, 262-pin'],
+            ['Compatible with', 'AS68 / FS68 Series'],
+            ['Warranty', '3 years']
+        ]
+    },
+    {
+        id: 'asustor-as-8gd5', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-8gd5.webp', imgSize: [224, 103],
+        name: 'ASUSTOR AS-8GD5 8GB DDR5 SO-DIMM',
+        summary: '8GB DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.',
+        specs: [
+            ['Capacity', '8 GB'],
+            ['Type', 'DDR5'],
+            ['Form factor', 'SO-DIMM, 262-pin'],
+            ['Compatible with', 'AS68 / FS68 Series'],
+            ['Warranty', '3 years']
+        ]
+    },
+    {
+        id: 'asustor-as-48gecd5', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-48gecd5.webp', imgSize: [497, 217],
+        name: 'ASUSTOR AS-48GECD5 48GB ECC DDR5 SO-DIMM',
+        summary: '48GB ECC DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.',
+        specs: [
+            ['Capacity', '48 GB'],
+            ['Type', 'DDR5 ECC'],
+            ['Form factor', 'SO-DIMM, 262-pin'],
+            ['Compatible with', 'AS68 / FS68 Series'],
+            ['Warranty', '3 years']
+        ]
+    },
+    {
+        id: 'asustor-as-32gecd5', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-32gecd5.webp', imgSize: [228, 99],
+        name: 'ASUSTOR AS-32GECD5 32GB ECC DDR5 SO-DIMM',
+        summary: '32GB ECC DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.',
+        specs: [
+            ['Capacity', '32 GB'],
+            ['Type', 'DDR5 ECC'],
+            ['Form factor', 'SO-DIMM, 262-pin'],
+            ['Compatible with', 'AS68 / FS68 Series'],
+            ['Warranty', '3 years']
+        ]
+    },
+    {
+        id: 'asustor-as-16gecd5', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-16gecd5.webp', imgSize: [224, 99],
+        name: 'ASUSTOR AS-16GECD5 16GB ECC DDR5 SO-DIMM',
+        summary: '16GB ECC DDR5 SO-DIMM memory module for ASUSTOR AS68 / FS68 Series.',
+        specs: [
+            ['Capacity', '16 GB'],
+            ['Type', 'DDR5 ECC'],
+            ['Form factor', 'SO-DIMM, 262-pin'],
+            ['Compatible with', 'AS68 / FS68 Series'],
+            ['Warranty', '3 years']
+        ]
+    },
+    {
+        id: 'asustor-as-32gecd4-u', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-32gecd4-u.webp', imgSize: [365, 88],
+        name: 'ASUSTOR AS-32GECD4-U 32GB ECC DDR4 UDIMM',
+        summary: '32GB ECC DDR4 UDIMM memory module for ASUSTOR NAS.',
+        specs: [
+            ['Capacity', '32 GB'],
+            ['Type', 'DDR4 ECC'],
+            ['Form factor', 'UDIMM, 288-pin']
+        ]
+    },
+    {
+        id: 'asustor-as-16gecd4-u', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-16gecd4-u.webp', imgSize: [365, 88],
+        name: 'ASUSTOR AS-16GECD4-U 16GB ECC DDR4 UDIMM',
+        summary: '16GB ECC DDR4 UDIMM memory module for ASUSTOR NAS.',
+        specs: [
+            ['Capacity', '16 GB'],
+            ['Type', 'DDR4 ECC'],
+            ['Form factor', 'UDIMM, 288-pin']
+        ]
+    },
+    {
+        id: 'asustor-as-8gecd4-u', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-8gecd4-u.webp', imgSize: [365, 88],
+        name: 'ASUSTOR AS-8GECD4-U 8GB ECC DDR4 UDIMM',
+        summary: '8GB ECC DDR4 UDIMM memory module for ASUSTOR NAS.',
+        specs: [
+            ['Capacity', '8 GB'],
+            ['Type', 'DDR4 ECC'],
+            ['Form factor', 'UDIMM, 288-pin']
+        ]
+    },
+    {
+        id: 'asustor-as-32gecd4', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-32gecd4.webp', imgSize: [320, 143],
+        name: 'ASUSTOR AS-32GECD4 32GB ECC DDR4 SO-DIMM',
+        summary: '32GB ECC DDR4 SO-DIMM memory module for ASUSTOR NAS.',
+        specs: [
+            ['Capacity', '32 GB'],
+            ['Type', 'DDR4 ECC'],
+            ['Form factor', 'SO-DIMM, 260-pin']
+        ]
+    },
+    {
+        id: 'asustor-as-16gecd4', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-16gecd4.webp', imgSize: [316, 137],
+        name: 'ASUSTOR AS-16GECD4 16GB ECC DDR4 SO-DIMM',
+        summary: '16GB ECC DDR4 SO-DIMM memory module for ASUSTOR AS7110T / AS6508T / AS6510T.',
+        specs: [
+            ['Capacity', '16 GB'],
+            ['Type', 'DDR4 ECC'],
+            ['Form factor', 'SO-DIMM, 260-pin'],
+            ['Compatible with', 'AS7110T / AS6508T / AS6510T'],
+            ['Warranty', '5 years']
+        ]
+    },
+    {
+        id: 'asustor-as-8gecd4', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-8gecd4.webp', imgSize: [720, 311],
+        name: 'ASUSTOR AS-8GECD4 8GB ECC DDR4 SO-DIMM',
+        summary: '8GB ECC DDR4 SO-DIMM memory module for ASUSTOR AS7110T.',
+        specs: [
+            ['Capacity', '8 GB'],
+            ['Type', 'DDR4 ECC'],
+            ['Form factor', 'SO-DIMM, 260-pin'],
+            ['Compatible with', 'AS7110T'],
+            ['Warranty', '5 years']
+        ]
+    },
+    {
+        id: 'asustor-as-8gd4', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-8gd4.webp', imgSize: [720, 311],
+        name: 'ASUSTOR AS-8GD4 8GB DDR4 SO-DIMM',
+        summary: '8GB DDR4 SO-DIMM memory module for ASUSTOR AS65 Series / AS54 Series / AS67 Series / FS67 Series.',
+        specs: [
+            ['Capacity', '8 GB'],
+            ['Type', 'DDR4'],
+            ['Form factor', 'SO-DIMM, 260-pin'],
+            ['Compatible with', 'AS65 Series / AS54 Series / AS67 Series / FS67 Series']
+        ]
+    },
+    {
+        id: 'asustor-as-4gd4', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-4gd4.webp', imgSize: [720, 311],
+        name: 'ASUSTOR AS-4GD4 4GB DDR4 SO-DIMM',
+        summary: '4GB DDR4 SO-DIMM memory module for ASUSTOR AS5202T / AS5304T / AS54 Series / AS66 Series / AS67 Series / FS67 Series.',
+        specs: [
+            ['Capacity', '4 GB'],
+            ['Type', 'DDR4'],
+            ['Form factor', 'SO-DIMM, 260-pin'],
+            ['Compatible with', 'AS5202T / AS5304T / AS54 Series / AS66 Series / AS67 Series / FS67 Series'],
+            ['Warranty', '3 years']
+        ]
+    },
+    {
+        id: 'asustor-as-2gd4', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-2gd4.webp', imgSize: [720, 310],
+        name: 'ASUSTOR AS-2GD4 2GB DDR4 SO-DIMM',
+        summary: '2GB DDR4 SO-DIMM memory module for ASUSTOR NAS.',
+        specs: [
+            ['Capacity', '2 GB'],
+            ['Type', 'DDR4'],
+            ['Form factor', 'SO-DIMM, 260-pin']
+        ]
+    },
+    {
+        id: 'asustor-as-32gd4', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-32gd4.webp', imgSize: [320, 143],
+        name: 'ASUSTOR AS-32GD4 32GB DDR4 SO-DIMM',
+        summary: '32GB DDR4 SO-DIMM memory module for ASUSTOR AS65 Series.',
+        specs: [
+            ['Capacity', '32 GB'],
+            ['Type', 'DDR4'],
+            ['Form factor', 'SO-DIMM, 260-pin'],
+            ['Compatible with', 'AS65 Series']
+        ]
+    },
+    {
+        id: 'asustor-as-16gd4', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as-16gd4.webp', imgSize: [720, 311],
+        name: 'ASUSTOR AS-16GD4 16GB DDR4 SO-DIMM',
+        summary: '16GB DDR4 SO-DIMM memory module for ASUSTOR AS65 Series.',
+        specs: [
+            ['Capacity', '16 GB'],
+            ['Type', 'DDR4'],
+            ['Form factor', 'SO-DIMM, 260-pin'],
+            ['Compatible with', 'AS65 Series']
+        ]
+    },
+    {
+        id: 'asustor-as-exfat', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-key',
+        img: 'assets/products/asustor-as-exfat.webp', imgSize: [500, 395],
+        name: 'ASUSTOR AS-exFAT exFAT Driver License',
+        summary: 'License key that enables the exFAT driver on ASUSTOR NAS, for reading and writing exFAT drives.',
+        specs: [
+            ['Type', 'Digital license'],
+            ['Enables', 'exFAT file system driver'],
+            ['ADM version', 'ADM 3.x or lower']
+        ]
+    },
+    {
+        id: 'asustor-as-scl04', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-security-camera',
+        img: 'assets/products/asustor-as-scl04.webp', imgSize: [499, 388],
+        name: 'ASUSTOR AS-SCL04 Surveillance Center 4-Camera License',
+        summary: 'Four-camera license for ASUSTOR Surveillance Center, adding four IP cameras to a NAS.',
+        specs: [
+            ['Type', 'Digital license'],
+            ['Cameras', '4'],
+            ['Software', 'ASUSTOR Surveillance Center'],
+            ['Compatible with', 'All ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as-scl01', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-security-camera',
+        img: 'assets/products/asustor-as-scl01.webp', imgSize: [500, 388],
+        name: 'ASUSTOR AS-SCL01 Surveillance Center 1-Camera License',
+        summary: 'Single-camera license for ASUSTOR Surveillance Center, adding one IP camera to a NAS.',
+        specs: [
+            ['Type', 'Digital license'],
+            ['Cameras', '1'],
+            ['Software', 'ASUSTOR Surveillance Center'],
+            ['Compatible with', 'All ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as-hk1', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-thermometer',
+        img: 'assets/products/asustor-as-hk1.webp', imgSize: [442, 292],
+        name: 'ASUSTOR AS-HK1 M.2 SSD Heatsink',
+        summary: 'M.2 SSD heatsink with thermal pad for Flashstor FS67 / FS68 and the AS-T10G3 card.',
+        specs: [
+            ['Type', 'M.2 heatsink with thermal pad'],
+            ['Compatible with', 'FS67 / FS68 series, AS-T10G3']
+        ]
+    },
+    {
+        id: 'asustor-as-120w', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-plug',
+        img: 'assets/products/asustor-as-120w.webp', imgSize: [468, 340],
+        name: 'ASUSTOR AS-120W 120W Power Adapter',
+        summary: 'Replacement 120W power adapter for the ASUSTOR FS6812X.',
+        specs: [
+            ['Output', '120 W'],
+            ['Type', 'External power adapter'],
+            ['Compatible with', 'FS6812X'],
+            ['Warranty', '1 year']
+        ]
+    },
+    {
+        id: 'asustor-as-90w', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-plug',
+        img: 'assets/products/asustor-as-90w.webp', imgSize: [500, 296],
+        name: 'ASUSTOR AS-90W 90W Power Adapter',
+        summary: 'Replacement 90W power adapter for ASUSTOR NAS and expansion units.',
+        specs: [
+            ['Output', '90 W'],
+            ['Type', 'External power adapter'],
+            ['Compatible with', 'AS5004T / AS5104T / AS6104T / AS6204T / AS1004T / AS1004T v2 / AS3104T / AS3104T / AS3204T / AS3204T v2 / AS4004T / AS6404T / AS6004U / AS5304T / AS6604T / AS6704T / FS6712X / AS5404T / AS5004U / AS3304T v2 / AS6804T / FS6806X / AS1204T'],
+            ['Warranty', '1 year']
+        ]
+    },
+    {
+        id: 'asustor-as-65w', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-plug',
+        img: 'assets/products/asustor-as-65w.webp', imgSize: [400, 281],
+        name: 'ASUSTOR AS-65W 65W Power Adapter',
+        summary: 'Replacement 65W power adapter for ASUSTOR NAS.',
+        specs: [
+            ['Output', '65 W'],
+            ['Type', 'External power adapter'],
+            ['Compatible with', 'AS-602T / AS-302T / AS-202TE / AS-202T / AS5002T / AS5102T / AS6102T / AS6202T / AS1002T / AS1002T v2 / AS3102T / AS3102T v2 / AS3202T / AS4002T / AS6302T / AS5202T / AS6602T / AS6702T / FS6706T / AS1102TL / AS3302T v2 / AS1202T'],
+            ['Warranty', '1 year']
+        ]
+    },
+    {
+        id: 'asustor-as-250w', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-plug',
+        img: 'assets/products/asustor-as-250w.webp', imgSize: [416, 369],
+        name: 'ASUSTOR AS-250W 250W Flex Power Supply',
+        summary: 'Replacement 250W Flex ATX power supply for ASUSTOR NAS.',
+        specs: [
+            ['Output', '250 W'],
+            ['Type', 'Internal Flex power supply'],
+            ['Compatible with', 'AS-204RS / AS-604T / AS-606T / AS-608T / AS7004T / AS5008T / AS5010T / AS5108T / AS5110T / AS6204RS / AS6208T / AS6210T / AS6508T / AS6510T / AS6504RS / AS6706T / AS6806T / AS6808T / AS6810T'],
+            ['Warranty', '1 year']
+        ]
+    },
+    {
+        id: 'asustor-as-tray-s', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-hard-drive',
+        img: 'assets/products/asustor-as-tray-s.webp', imgSize: [461, 286],
+        name: 'ASUSTOR AS-Tray-S HDD Tray',
+        summary: 'Spare black drive tray for 2.5" and 3.5" drives in ASUSTOR NAS.',
+        specs: [
+            ['Type', 'Drive tray'],
+            ['Drive size', '2.5" and 3.5"'],
+            ['Compatible with', 'AS40 Series / AS5202T / AS5304T / AS54 Series / AS5004U / AS3302T v2 / AS3304T v2'],
+            ['Dimensions', '167.4 x116x 28 (mm)'],
+            ['Weight', '67g']
+        ]
+    },
+    {
+        id: 'asustor-as-traylock', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-lock-key',
+        img: 'assets/products/asustor-as-traylock.webp', imgSize: [500, 271],
+        name: 'ASUSTOR AS-TrayLock HDD Tray Lock',
+        summary: 'Lock for ASUSTOR drive trays, to keep 2.5" and 3.5" drives from being removed.',
+        specs: [
+            ['Type', 'Drive tray lock'],
+            ['Drive size', '2.5" and 3.5"'],
+            ['Compatible with', 'AS-6 / AS-2 / AS-3 / AS50 / AS61 Series / AS6302T / AS70 / AS51 Series / AS62 Series / AS6404T / AS6004U / AS65 / AS66 / AS71 Series / AS67 / AS68 / AS72 Series'],
+            ['Dimensions', '106.7x184x27.5 (mm)'],
+            ['Weight', '127g']
+        ]
+    },
+    {
+        id: 'asustor-as-tray', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-hard-drive',
+        img: 'assets/products/asustor-as-tray.webp', imgSize: [417, 267],
+        name: 'ASUSTOR AS-Tray HDD Tray',
+        summary: 'Spare black drive tray for 2.5" and 3.5" drives in ASUSTOR NAS.',
+        specs: [
+            ['Type', 'Drive tray'],
+            ['Drive size', '2.5" and 3.5"']
+        ]
+    },
+    {
+        id: 'asustor-as-rail', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-rows',
+        img: 'assets/products/asustor-as-rail.webp', imgSize: [431, 295],
+        name: 'ASUSTOR AS-Rail Rack Rail Kit',
+        summary: 'Rail kit for mounting ASUSTOR 1U, 2U and 3U rackmount NAS in a server rack.',
+        specs: [
+            ['Type', 'Rack rail kit'],
+            ['Fits', '1U / 2U / 3U ASUSTOR rackmount systems'],
+            ['Compatible with', 'AS-604RD / AS-604RS / AS-609RD / AS-609RS / AS-204RS / AS7009RD / AS7009RDX / AS7012RD / AS7012RDX / AS6204RD / AS6204RS / AS6212RD / AS7112RDX / AS7116RDX / AS72']
+        ]
+    },
+    {
+        id: 'asustor-as-hdd35s48', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-wrench',
+        img: 'assets/products/asustor-as-hdd35s48.webp', imgSize: [281, 491],
+        name: 'ASUSTOR AS-HDD35S48 3.5" HDD Screw Pack (48 pcs)',
+        summary: 'Pack of 48 screws for mounting 3.5" drives in ASUSTOR NAS trays.',
+        specs: [
+            ['Contents', '48 screws'],
+            ['Drive size', '3.5"'],
+            ['Compatible with', 'AS-6 / AS-2 / AS-3 / AS50 / 51 / 61 / 62 / 63 / 64 / 70 / 65 / 71 / AS67 / AS68 / AS72 series'],
+            ['Screw type', '#6-32L6, F-head Dia=5.0mm, Philips, Ni plated']
+        ]
+    },
+    {
+        id: 'asustor-as-hdd25s48', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-wrench',
+        img: 'assets/products/asustor-as-hdd25s48.webp', imgSize: [285, 467],
+        name: 'ASUSTOR AS-HDD25S48 2.5" HDD Screw Pack (48 pcs)',
+        summary: 'Pack of 48 screws for mounting 2.5" drives in ASUSTOR NAS trays.',
+        specs: [
+            ['Contents', '48 screws'],
+            ['Drive size', '2.5"'],
+            ['Compatible with', 'AS-6 / AS-2 / AS-3 / AS40 / AS50 / AS51 / AS52 / AS53 / AS54 / AS61 / AS62 / AS63 / AS64 / AS70 / AS65 / AS66 / AS71 series / AS5004U / AS33 series / AS33 v2 series / AS68 / AS72'],
+            ['Screw type', 'M3L4, F-head Dia=4.0mm, Philips, Ni plated']
+        ]
+    },
+    {
+        id: 'asustor-as-rc13', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-television',
+        img: 'assets/products/asustor-as-rc13.webp', imgSize: [119, 427],
+        name: 'ASUSTOR AS-RC13 13-Key IR Remote Control',
+        summary: '13-key infrared remote for controlling media playback on ASUSTOR NAS with HDMI output.',
+        specs: [
+            ['Type', '13 key IR Remote Control'],
+            ['Connection', 'Infrared']
+        ]
+    },
+    {
+        id: 'asustor-as6-ram8g-1866', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as6-ram8g-1866.webp', imgSize: [228, 104],
+        name: 'ASUSTOR AS6-RAM8G 8GB DDR3L-1866 SO-DIMM',
+        summary: '8GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '8 GB'],
+            ['Type', 'DDR3L-1866'],
+            ['Form factor', 'SO-DIMM, 204-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as6-ram4g-1866', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as6-ram4g-1866.webp', imgSize: [471, 212],
+        name: 'ASUSTOR AS6-RAM4G 4GB DDR3L-1866 SO-DIMM',
+        summary: '4GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '4 GB'],
+            ['Type', 'DDR3L-1866'],
+            ['Form factor', 'SO-DIMM, 204-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as6-ram2g-1866', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as6-ram2g-1866.webp', imgSize: [216, 98],
+        name: 'ASUSTOR AS6-RAM2G 2GB DDR3L-1866 SO-DIMM',
+        summary: '2GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '2 GB'],
+            ['Type', 'DDR3L-1866'],
+            ['Form factor', 'SO-DIMM, 204-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as6-ram1g-1866', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as6-ram1g-1866.webp', imgSize: [215, 98],
+        name: 'ASUSTOR AS6-RAM1G 1GB DDR3L-1866 SO-DIMM',
+        summary: '1GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '1 GB'],
+            ['Type', 'DDR3L-1866'],
+            ['Form factor', 'SO-DIMM, 204-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as6-ram8g-1600', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as6-ram8g-1600.webp', imgSize: [500, 226],
+        name: 'ASUSTOR AS6-RAM8G 8GB DDR3L-1600 SO-DIMM',
+        summary: '8GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '8 GB'],
+            ['Type', 'DDR3L-1600'],
+            ['Form factor', 'SO-DIMM, 204-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as6-ram4g-1600', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as6-ram4g-1600.webp', imgSize: [500, 227],
+        name: 'ASUSTOR AS6-RAM4G 4GB DDR3L-1600 SO-DIMM',
+        summary: '4GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '4 GB'],
+            ['Type', 'DDR3L-1600'],
+            ['Form factor', 'SO-DIMM, 204-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as6-ram2g-1600', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as6-ram2g-1600.webp', imgSize: [500, 227],
+        name: 'ASUSTOR AS6-RAM2G 2GB DDR3L-1600 SO-DIMM',
+        summary: '2GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '2 GB'],
+            ['Type', 'DDR3L-1600'],
+            ['Form factor', 'SO-DIMM, 204-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as6-ram1g-1600', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as6-ram1g-1600.webp', imgSize: [500, 227],
+        name: 'ASUSTOR AS6-RAM1G 1GB DDR3L-1600 SO-DIMM',
+        summary: '1GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '1 GB'],
+            ['Type', 'DDR3L-1600'],
+            ['Form factor', 'SO-DIMM, 204-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as7r-ram8g', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as7r-ram8g.webp', imgSize: [500, 121],
+        name: 'ASUSTOR AS7R-RAM8G 8GB DDR3-1600 UDIMM',
+        summary: '8GB DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '8 GB'],
+            ['Type', 'DDR3-1600'],
+            ['Form factor', 'UDIMM, 240-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as7r-ram8gec', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as7r-ram8gec.webp', imgSize: [500, 117],
+        name: 'ASUSTOR AS7R-RAM8GEC 8GB ECC DDR3-1600 UDIMM',
+        summary: '8GB ECC DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '8 GB'],
+            ['Type', 'DDR3-1600 ECC'],
+            ['Form factor', 'UDIMM, 240-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as7r-ram4g', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as7r-ram4g.webp', imgSize: [370, 86],
+        name: 'ASUSTOR AS7R-RAM4G 4GB DDR3-1600 UDIMM',
+        summary: '4GB DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '4 GB'],
+            ['Type', 'DDR3-1600'],
+            ['Form factor', 'UDIMM, 240-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as7r-ram4gec', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as7r-ram4gec.webp', imgSize: [370, 86],
+        name: 'ASUSTOR AS7R-RAM4GEC 4GB ECC DDR3-1600 UDIMM',
+        summary: '4GB ECC DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '4 GB'],
+            ['Type', 'DDR3-1600 ECC'],
+            ['Form factor', 'UDIMM, 240-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as7-ram8g', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as7-ram8g.webp', imgSize: [228, 104],
+        name: 'ASUSTOR AS7-RAM8G 8GB DDR3-1600 SO-DIMM',
+        summary: '8GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '8 GB'],
+            ['Type', 'DDR3-1600'],
+            ['Form factor', 'SO-DIMM, 204-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as7-ram4g', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as7-ram4g.webp', imgSize: [228, 105],
+        name: 'ASUSTOR AS7-RAM4G 4GB DDR3-1600 SO-DIMM',
+        summary: '4GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '4 GB'],
+            ['Type', 'DDR3-1600'],
+            ['Form factor', 'SO-DIMM, 204-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as7-ram2g', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        img: 'assets/products/asustor-as7-ram2g.webp', imgSize: [500, 227],
+        name: 'ASUSTOR AS7-RAM2G 2GB DDR3-1600 SO-DIMM',
+        summary: '2GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '2 GB'],
+            ['Type', 'DDR3-1600'],
+            ['Form factor', 'SO-DIMM, 204-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models']
+        ]
+    },
+    {
+        id: 'asustor-as-ir', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-television',
+        name: 'ASUSTOR AS-IR USB IR Receiver',
+        summary: 'USB infrared receiver for using an IR remote with ASUSTOR NAS.',
+        specs: [
+            ['Type', 'USB IR Receiver for AS-6'],
+            ['Connection', 'USB IR receiver'],
+            ['Availability', 'End-of-life item, subject to stock']
+        ]
+    },
+    {
+        id: 'asustor-as-rc10', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-television',
+        name: 'ASUSTOR AS-RC10 10-Key IR Remote Control',
+        summary: '10-key infrared remote control for ASUSTOR NAS media playback.',
+        specs: [
+            ['Type', '10 Key IR Remote Controller'],
+            ['Connection', 'Infrared'],
+            ['Availability', 'End-of-life item, subject to stock']
+        ]
+    },
+    {
+        id: 'asustor-as-rcu', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-television',
+        name: 'ASUSTOR AS-RCU IR Remote with USB Receiver',
+        summary: 'IR remote control bundled with a USB IR receiver for ASUSTOR NAS.',
+        specs: [
+            ['Type', 'AS-RCU, IR Remote Control with USB IR Receiver for AS-6'],
+            ['Connection', 'USB IR receiver'],
+            ['Availability', 'End-of-life item, subject to stock']
+        ]
+    },
+    {
+        id: 'asustor-as-ram2g', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        name: 'ASUSTOR AS-RAM2G 2GB DDR3-1333 SO-DIMM',
+        summary: '2GB DDR3-1333 SO-DIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '2 GB'],
+            ['Type', 'DDR3-1333'],
+            ['Form factor', 'SO-DIMM, 204-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models'],
+            ['Availability', 'End-of-life item, subject to stock']
+        ]
+    },
+    {
+        id: 'asustor-as-ram1g', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-memory',
+        name: 'ASUSTOR AS-RAM1G 1GB DDR3-1333 SO-DIMM',
+        summary: '1GB DDR3-1333 SO-DIMM memory module for older ASUSTOR NAS models.',
+        specs: [
+            ['Capacity', '1 GB'],
+            ['Type', 'DDR3-1333'],
+            ['Form factor', 'SO-DIMM, 204-pin'],
+            ['Compatible with', 'Older ASUSTOR NAS models'],
+            ['Availability', 'End-of-life item, subject to stock']
+        ]
+    },
+    {
+        id: 'asustor-as-150w', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-plug',
+        name: 'ASUSTOR AS-150W 150W Flex Power Supply',
+        summary: 'Replacement 150W Flex ATX power supply for ASUSTOR NAS.',
+        specs: [
+            ['Output', '150 W'],
+            ['Type', 'Internal Flex power supply'],
+            ['Availability', 'End-of-life item, subject to stock']
+        ]
+    },
+    {
+        id: 'asustor-as-t10g', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-network',
+        name: 'ASUSTOR AS-T10G 10GbE PCIe Network Card',
+        summary: 'Single-port 10GBASE-T PCIe network card for ASUSTOR NAS, PCs and servers.',
+        specs: [
+            ['Port', '1× 10GBASE-T RJ45 (10G/5G/2.5G/1G/100M)'],
+            ['Interface', 'PCIe'],
+            ['Compatibility', 'ASUSTOR ADM 3.2.4+, Windows, macOS, Linux, VMware ESXi'],
+            ['Use case', '10GbE upgrade without fibre'],
+            ['Availability', 'End-of-life item, subject to stock']
         ]
     }
 ];
