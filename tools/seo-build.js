@@ -169,7 +169,7 @@ const productUrl = (p) => `/products/${p.id}.html`;
 // searches like "GPU servers Dubai" or "Supermicro Gold Series UAE".
 const CAT_SLUG = {
   'rack-scale': 'rack-scale-ai-systems', 'gpu-servers': 'gpu-ai-servers', accelerators: 'data-center-gpus',
-  networking: 'ai-networking', servers: 'rack-multi-node-servers', storage: 'enterprise-storage', nas: 'nas-storage',
+  networking: 'ai-networking', servers: 'rack-multi-node-servers', storage: 'enterprise-storage', nas: 'nas-storage', 'nas-accessories': 'nas-accessories',
   'desktop-ai': 'ai-workstations', client: 'desktops-client-pcs', laptops: 'ai-laptops', edge: 'edge-servers', software: 'ai-software-management'
 };
 const BRAND_TITLES = {
