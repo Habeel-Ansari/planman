@@ -204,21 +204,6 @@
 - [ASUSTOR AS-HDD35S48 3.5" HDD Screw Pack (48 pcs)](https://planman.ae/products/asustor-as-hdd35s48.html): Pack of 48 screws for mounting 3.5" drives in ASUSTOR NAS trays.
 - [ASUSTOR AS-HDD25S48 2.5" HDD Screw Pack (48 pcs)](https://planman.ae/products/asustor-as-hdd25s48.html): Pack of 48 screws for mounting 2.5" drives in ASUSTOR NAS trays.
 - [ASUSTOR AS-RC13 13-Key IR Remote Control](https://planman.ae/products/asustor-as-rc13.html): 13-key infrared remote for controlling media playback on ASUSTOR NAS with HDMI output.
-- [ASUSTOR AS6-RAM8G 8GB DDR3L-1866 SO-DIMM](https://planman.ae/products/asustor-as6-ram8g-1866.html): 8GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS6-RAM4G 4GB DDR3L-1866 SO-DIMM](https://planman.ae/products/asustor-as6-ram4g-1866.html): 4GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS6-RAM2G 2GB DDR3L-1866 SO-DIMM](https://planman.ae/products/asustor-as6-ram2g-1866.html): 2GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS6-RAM1G 1GB DDR3L-1866 SO-DIMM](https://planman.ae/products/asustor-as6-ram1g-1866.html): 1GB DDR3L-1866 SO-DIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS6-RAM8G 8GB DDR3L-1600 SO-DIMM](https://planman.ae/products/asustor-as6-ram8g-1600.html): 8GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS6-RAM4G 4GB DDR3L-1600 SO-DIMM](https://planman.ae/products/asustor-as6-ram4g-1600.html): 4GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS6-RAM2G 2GB DDR3L-1600 SO-DIMM](https://planman.ae/products/asustor-as6-ram2g-1600.html): 2GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS6-RAM1G 1GB DDR3L-1600 SO-DIMM](https://planman.ae/products/asustor-as6-ram1g-1600.html): 1GB DDR3L-1600 SO-DIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS7R-RAM8G 8GB DDR3-1600 UDIMM](https://planman.ae/products/asustor-as7r-ram8g.html): 8GB DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS7R-RAM8GEC 8GB ECC DDR3-1600 UDIMM](https://planman.ae/products/asustor-as7r-ram8gec.html): 8GB ECC DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS7R-RAM4G 4GB DDR3-1600 UDIMM](https://planman.ae/products/asustor-as7r-ram4g.html): 4GB DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS7R-RAM4GEC 4GB ECC DDR3-1600 UDIMM](https://planman.ae/products/asustor-as7r-ram4gec.html): 4GB ECC DDR3-1600 UDIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS7-RAM8G 8GB DDR3-1600 SO-DIMM](https://planman.ae/products/asustor-as7-ram8g.html): 8GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS7-RAM4G 4GB DDR3-1600 SO-DIMM](https://planman.ae/products/asustor-as7-ram4g.html): 4GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.
-- [ASUSTOR AS7-RAM2G 2GB DDR3-1600 SO-DIMM](https://planman.ae/products/asustor-as7-ram2g.html): 2GB DDR3-1600 SO-DIMM memory module for older ASUSTOR NAS models.
 
 ## Frequently asked questions
 
