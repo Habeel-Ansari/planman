@@ -2,7 +2,7 @@
 
 > Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We take projects from requirements and design through hardware supply, deployment and after-sales support for hospitality groups, universities, manufacturers and enterprises across the UAE, supplying servers, storage, GPUs and networking from all premium brands.
 
-Source: https://planman.ae/ · Generated 2026-10-18 · Contact: +971 58 522 5166 · sales@planmanme.com
+Source: https://planman.ae/ · Generated 2026-11-19 · Contact: +971 58 522 5166 · sales@planmanme.com
 
 ---
 
@@ -492,17 +492,18 @@ Products
 
 Browse NVIDIA, Supermicro and ASUS platforms with full specifications and request a quote for any product. We also supply servers, storage and networking from every premium brand.
 
-All brands 82 NVIDIA 20 Supermicro 45 ASUS 16 MSI 1
+All brands 117 NVIDIA 20 Supermicro 45 ASUS 16 MSI 1 ASUSTOR 35
 
 Categories
 
-- All products 82
+- All products 117
 - Rack-Scale AI Systems 7
 - GPU & AI Servers 24
 - Data Center GPUs 4
 - AI Networking 5
 - Rack & Multi-Node Servers 17
 - Storage 5
+- NAS Storage 35
 - AI Workstations & Deskside 7
 - Desktops & Client PCs 4
 - AI Laptops 1
@@ -512,7 +513,7 @@ Categories
 
 ### Product Catalog
 
-82 products
+117 products
 
 Browse
 
@@ -526,6 +527,7 @@ Browse
 - AI Networking
 - Rack & Multi-Node Servers
 - Storage
+- NAS Storage
 - AI Workstations & Deskside
 - Desktops & Client PCs
 - AI Laptops
@@ -538,6 +540,7 @@ Browse
 - Supermicro
 - ASUS
 - MSI
+- ASUSTOR
 
 #### Collections
 
@@ -1047,7 +1050,7 @@ Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier
 
 ### Which hardware brands does Plan Man supply?
 
-We supply complete servers, storage, GPUs, networking, workstations and power equipment from premium enterprise brands including Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, Seagate, Western Digital, AMD, Intel, APC and Eaton.
+We supply complete servers, storage, GPUs, networking, workstations and power equipment from premium enterprise brands including Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, ASUSTOR, Seagate, Western Digital, AMD, Intel, APC and Eaton.
 
 ### Does Plan Man supply NVIDIA GPU servers and AI infrastructure in the UAE?
 
@@ -3527,6 +3530,1593 @@ Portfolio:
 Use cases: GPU cluster data storage, AI data lakes, Enterprise file and block storage, Backup and archive, Analytics.
 
 Source: ASUS storage solutions (https://www.asus.com/event/asus-storage-solution/); ASUS storage solutions at SC25 (https://servers.asus.com/news/ASUS-Showcases-Comprehensive-Storage-Solutions-at-SC25)
+
+### NAS Storage
+
+#### ASUSTOR Drivestor 2 Lite (AS1102TL) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as1102tl.html
+Model: AS1102TL
+
+Entry-level 2-bay NAS for home backup, photo libraries and media streaming at a budget price.
+
+The ASUSTOR Drivestor 2 Lite (AS1102TL) is a desktop 2-bay NAS from ASUSTOR's entry-level Drivestor range for home and personal storage. It runs on the quad-core Realtek RTD1619B (1.7 GHz) with 1GB of memory.
+
+It connects over 1× 1GbE networking, with 1× USB 3.2 Gen 1 and 1× USB 2.0 ports. Capacity can grow to 6 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Realtek RTD1619B
+- Architecture: ARM64 64-bit
+- Frequency: Quad-core, 1.7 GHz
+- Memory: 1GB DDR4
+- Maximum memory: Not expandable
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 2
+- Compatible drives: 3.5" SATA HDD
+- Max internal raw capacity: 36 TB
+- Max bays with expansion units: 6
+- Max raw capacity with expansion: 120 TB
+
+Connectivity:
+- Network: 1× Gigabit Ethernet (1G/100M)
+- USB: 1× USB 3.2 Gen 1, 1× USB 2.0
+
+Power & physical:
+- Fans: 1× 70mm
+- Power supply: 65W x1
+- Power consumption: 11.7W (Operation); 3.1W (Disk Hibernation)
+- Noise level: 18.6dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 165 (H) x 102 (W) x 218 (D) mm
+- Weight: 1.14 kg / 2.5 lbs
+- Warranty: 3 Years
+
+Use cases: Home and personal backup, Photo and video libraries, Media streaming, Personal cloud access.
+
+Source: ASUSTOR Drivestor 2 Lite (AS1102TL) (https://www.asustor.com/en/product?p_id=85); Drivestor 2 Lite (AS1102TL) specifications (https://www.asustor.com/en/product/spec?p_id=85)
+
+#### ASUSTOR Drivestor 2 Gen2 (AS1202T) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as1202t.html
+Model: AS1202T
+
+Compact 2-bay home NAS with 2.5GbE networking for personal backup and media.
+
+The ASUSTOR Drivestor 2 Gen2 (AS1202T) is a desktop 2-bay NAS from ASUSTOR's entry-level Drivestor range for home and personal storage. It runs on the quad-core Realtek RTD1619B (1.7 GHz) with 1GB of memory.
+
+It connects over 1× 2.5GbE networking, with 3× USB 5Gbps Type-A ports. Capacity can grow to 14 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Realtek RTD1619B
+- Architecture: ARM64 64-bit
+- Frequency: Quad-core, 1.7 GHz
+- Memory: 1GB DDR4
+- Maximum memory: Not expandable
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 2
+- Compatible drives: 3.5" SATA HDD
+- Max internal raw capacity: 36 TB
+- Max bays with expansion units: 14
+- Max raw capacity with expansion: 280 TB
+
+Connectivity:
+- Network: 1× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 3× USB 5Gbps Type-A
+
+Power & physical:
+- Fans: 1× 70mm
+- Power supply: 65W x1
+- Power consumption: 11.6W (Operation); 5.97W (Disk Hibernation)
+- Noise level: 18.6dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 165 (H) x 102 (W) x 218 (D) mm
+- Weight: 1.14 kg / 2.5 lbs
+- Warranty: 3 Years
+
+Use cases: Home and personal backup, Photo and video libraries, Media streaming, Personal cloud access.
+
+Source: ASUSTOR Drivestor 2 Gen2 (AS1202T) (https://www.asustor.com/en/product?p_id=97); Drivestor 2 Gen2 (AS1202T) specifications (https://www.asustor.com/en/product/spec?p_id=97)
+
+#### ASUSTOR Drivestor 4 Gen2 (AS1204T) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as1204t.html
+Model: AS1204T
+
+4-bay home and small-office NAS with 2.5GbE for shared storage and backups.
+
+The ASUSTOR Drivestor 4 Gen2 (AS1204T) is a desktop 4-bay NAS from ASUSTOR's entry-level Drivestor range for home and personal storage. It runs on the quad-core Realtek RTD1619B (1.7 GHz) with 1GB of memory.
+
+It connects over 1× 2.5GbE networking, with 3× USB 5Gbps Type-A ports. Capacity can grow to 16 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Realtek RTD1619B
+- Architecture: ARM64 64-bit
+- Frequency: Quad-core, 1.7 GHz
+- Memory: 1GB DDR4
+- Maximum memory: Not expandable
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 4
+- Compatible drives: 3.5" SATA HDD
+- Max internal raw capacity: 72 TB
+- Max bays with expansion units: 16
+- Max raw capacity with expansion: 320 TB
+
+Connectivity:
+- Network: 1× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 3× USB 5Gbps Type-A
+
+Power & physical:
+- Fans: 1× 120mm
+- Power supply: 90W x1
+- Power consumption: 22.8W (Operation); 9.41W (Disk Hibernation)
+- Noise level: 19.7dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 165 (H) x 164 (W) x 218 (D) mm
+- Weight: 1.57 kg / 3.45 lbs
+- Warranty: 3 Years
+
+Use cases: Home and personal backup, Photo and video libraries, Media streaming, Personal cloud access.
+
+Source: ASUSTOR Drivestor 4 Gen2 (AS1204T) (https://www.asustor.com/en/product?p_id=98); Drivestor 4 Gen2 (AS1204T) specifications (https://www.asustor.com/en/product/spec?p_id=98)
+
+#### ASUSTOR Drivestor 4 (AS1104T) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as1104t.html
+Model: AS1104T
+
+4-bay value NAS with 2.5GbE for home users and small teams.
+
+The ASUSTOR Drivestor 4 (AS1104T) is a desktop 4-bay NAS from ASUSTOR's entry-level Drivestor range for home and personal storage. It runs on the quad-core Realtek RTD1296 (1.4 GHz) with 1GB of memory.
+
+It connects over 1× 2.5GbE networking, with 2× USB 3.2 Gen 1 ports. Capacity can grow to 12 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Realtek RTD1296
+- Architecture: ARM64 64-bit
+- Frequency: Quad-core, 1.4 GHz
+- Memory: 1GB DDR4
+- Maximum memory: Not expandable
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 4
+- Compatible drives: 3.5" SATA HDD
+- Max internal raw capacity: 72 TB
+- Max bays with expansion units: 12
+- Max raw capacity with expansion: 240 TB
+
+Connectivity:
+- Network: 1× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 2× USB 3.2 Gen 1
+
+Power & physical:
+- Fans: 1× 120mm
+- Power supply: 90W x1
+- Power consumption: 22.8W (Operation); 9.41W (Disk Hibernation)
+- Noise level: 19.7dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 165 (H) x 164 (W) x 218 (D) mm
+- Weight: 1.57 kg / 3.45 lbs
+- Warranty: 3 Years
+
+Use cases: Home and personal backup, Photo and video libraries, Media streaming, Personal cloud access.
+
+Source: ASUSTOR Drivestor 4 (AS1104T) (https://www.asustor.com/en/product?p_id=71); Drivestor 4 (AS1104T) specifications (https://www.asustor.com/en/product/spec?p_id=71)
+
+#### ASUSTOR Drivestor 2 Pro Gen2 (AS3302T v2) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as3302t-v2.html
+Model: AS3302T v2
+
+2-bay NAS with Btrfs snapshots and media transcoding for home offices and creators.
+
+The ASUSTOR Drivestor 2 Pro Gen2 (AS3302T v2) is a desktop 2-bay NAS from ASUSTOR's entry-level Drivestor range for home and personal storage. It runs on the quad-core Realtek RTD1619B (1.7 GHz) with 2GB of memory.
+
+It connects over 1× 2.5GbE networking, with 3× USB 3.2 Gen 1 ports. Capacity can grow to 14 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Realtek RTD1619B
+- Architecture: ARM64 64-bit
+- Frequency: Quad-core, 1.7 GHz
+- Memory: 2GB DDR4
+- Maximum memory: Not expandable
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 2
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD
+- Max internal raw capacity: 36 TB
+- Max bays with expansion units: 14
+- Max raw capacity with expansion: 280 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 1× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 3× USB 3.2 Gen 1
+
+Power & physical:
+- Fans: 1× 70mm
+- Power supply: 65W x1
+- Power consumption: 13.1W (Operation); 4.5W (Disk Hibernation)
+- Noise level: 18.6dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 170 (H) x 114 (W) x 230 (D) mm
+- Weight: 1.6kg / 3.53 lbs
+- Warranty: 3 Years
+
+Use cases: Home and personal backup, Photo and video libraries, Media streaming, Personal cloud access.
+
+Source: ASUSTOR Drivestor 2 Pro Gen2 (AS3302T v2) (https://www.asustor.com/en/product?p_id=83); Drivestor 2 Pro Gen2 (AS3302T v2) specifications (https://www.asustor.com/en/product/spec?p_id=83)
+
+#### ASUSTOR Drivestor 4 Pro Gen2 (AS3304T v2) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as3304t-v2.html
+Model: AS3304T v2
+
+4-bay NAS with Btrfs snapshots and media transcoding for small offices and creators.
+
+The ASUSTOR Drivestor 4 Pro Gen2 (AS3304T v2) is a desktop 4-bay NAS from ASUSTOR's entry-level Drivestor range for home and personal storage. It runs on the quad-core Realtek RTD1619B (1.7 GHz) with 2GB of memory.
+
+It connects over 1× 2.5GbE networking, with 3× USB 3.2 Gen 1 ports. Capacity can grow to 16 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Realtek RTD1619B
+- Architecture: ARM64 64-bit
+- Frequency: Quad-core, 1.7 GHz
+- Memory: 2GB DDR4
+- Maximum memory: Not expandable
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD
+- Max internal raw capacity: 72 TB
+- Max bays with expansion units: 16
+- Max raw capacity with expansion: 320 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 1× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 3× USB 3.2 Gen 1
+
+Power & physical:
+- Fans: 1× 120mm
+- Power supply: 90W x1
+- Power consumption: 25.1W (Operation); 8.4W (Disk Hibernation)
+- Noise level: 19.7dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 170 (H) x 174 (W) x 230 (D) mm
+- Weight: 2.2 kg / 4.85 lbs
+- Warranty: 3 Years
+
+Use cases: Home and personal backup, Photo and video libraries, Media streaming, Personal cloud access.
+
+Source: ASUSTOR Drivestor 4 Pro Gen2 (AS3304T v2) (https://www.asustor.com/en/product?p_id=84); Drivestor 4 Pro Gen2 (AS3304T v2) specifications (https://www.asustor.com/en/product/spec?p_id=84)
+
+#### ASUSTOR AS5202T (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as5202t.html
+Model: AS5202T
+
+2-bay Intel NAS with dual 2.5GbE and HDMI output for home and media use.
+
+The ASUSTOR AS5202T is a desktop 2-bay NAS. It runs on the dual-core Intel Celeron J4005 (2.0–2.7 GHz) with 2GB of memory, expandable to 8GB.
+
+It connects over 2× 2.5GbE networking, with 3× USB 3.2 Gen 1 ports. Capacity can grow to 14 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Celeron J4005
+- Architecture: x64 64-bit
+- Frequency: Dual-core, 2.0–2.7 GHz
+- Memory: 2GB SO-DIMM DDR4
+- Pre-installed: 2GB (1× 2GB)
+- Memory slots: 2
+- Maximum memory: 8GB (2× 4GB)
+- Flash memory: 4GB eMMC
+
+Storage:
+- Drive bays: 2
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD
+- Max internal raw capacity: 36 TB
+- Max bays with expansion units: 14
+- Max raw capacity with expansion: 280 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 3× USB 3.2 Gen 1
+- Video output: 1× HDMI 2.0a
+
+Power & physical:
+- Fans: 1× 70mm; Infrared Receiver
+- Power supply: 65W x1
+- Power consumption: 17 W (Operation); 10.5 W (Disk Hibernation); 1.3 W (Sleep Mode)
+- Noise level: 18.6dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 170 (H) x 114 (W) x 230 (D) mm
+- Weight: 1.6 kg / 3.53 lbs
+- Warranty: 3 Years
+
+Use cases: Home office file sharing, Media server and 4K streaming, PC and phone backup, Small office storage.
+
+Source: ASUSTOR AS5202T (https://www.asustor.com/en/product?p_id=61); AS5202T specifications (https://www.asustor.com/en/product/spec?p_id=61)
+
+#### ASUSTOR AS5304T (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as5304t.html
+Model: AS5304T
+
+4-bay Intel NAS with dual 2.5GbE and HDMI for content creators and small offices.
+
+The ASUSTOR AS5304T is a desktop 4-bay NAS. It runs on the quad-core Intel Celeron J4105 (2.0–2.7 GHz) with 4GB of memory, expandable to 8GB.
+
+It connects over 2× 2.5GbE networking, with 3× USB 3.2 Gen 1 ports. Capacity can grow to 16 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Celeron J4105
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.0–2.7 GHz
+- Memory: 4GB SO-DIMM DDR4
+- Pre-installed: 4GB (1× 4GB)
+- Memory slots: 2
+- Maximum memory: 8GB (2× 4GB)
+- Flash memory: 4GB eMMC
+
+Storage:
+- Drive bays: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD
+- Max internal raw capacity: 72 TB
+- Max bays with expansion units: 16
+- Max raw capacity with expansion: 320 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 3× USB 3.2 Gen 1
+- Video output: 1× HDMI 2.0a
+
+Power & physical:
+- Fans: 1× 120mm; Infrared Receiver
+- Power supply: 90W x1
+- Power consumption: 27 W (Operation); 12.6 W (Disk Hibernation); 1.4 W (Sleep Mode)
+- Noise level: 19.7dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 170 (H) x 174 (W) x 230 (D) mm
+- Weight: 2.2 kg / 4.85 lbs
+- Warranty: 3 Years
+
+Use cases: Home office file sharing, Media server and 4K streaming, PC and phone backup, Small office storage.
+
+Source: ASUSTOR AS5304T (https://www.asustor.com/en/product?p_id=62); AS5304T specifications (https://www.asustor.com/en/product/spec?p_id=62)
+
+#### ASUSTOR AS5402T (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as5402t.html
+Model: AS5402T
+
+2-bay NAS with four M.2 NVMe slots and dual 2.5GbE for fast, hybrid flash storage.
+
+The ASUSTOR AS5402T is a desktop 2-bay NAS. It runs on the quad-core Intel Celeron N5105 (2.0–2.9 GHz) with 4GB of memory, expandable to 16GB.
+
+It connects over 2× 2.5GbE networking, with 3× USB 3.2 Gen 2 ports. Its 4 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 14 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Celeron N5105
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.0–2.9 GHz
+- Memory: 4GB SO-DIMM DDR4
+- Pre-installed: 4GB (1× 4GB)
+- Memory slots: 2
+- Maximum memory: 16GB (2× 8GB)
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 2
+- M.2 slots: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 3.0 x1
+- Max internal raw capacity: 36 TB
+- Max bays with expansion units: 14
+- Max raw capacity with expansion: 280 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 3× USB 3.2 Gen 2
+- Video output: 1× HDMI 2.0b
+
+Power & physical:
+- Fans: 1× 70mm; Infrared Receiver
+- Power supply: 65W x1
+- Power consumption: 22.9 W (Operation); 12.7 W (Disk Hibernation); 0.71 W (Sleep Mode)
+- Noise level: 18.6dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 170 (H) x 114 (W) x 230 (D) mm
+- Weight: 1.71 kg / 3.77 lb
+- Warranty: 3 Years
+
+Use cases: Home office file sharing, Media server and 4K streaming, PC and phone backup, Small office storage.
+
+Source: ASUSTOR AS5402T (https://www.asustor.com/en/product?p_id=81); AS5402T specifications (https://www.asustor.com/en/product/spec?p_id=81)
+
+#### ASUSTOR AS5404T (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as5404t.html
+Model: AS5404T
+
+4-bay NAS with four M.2 NVMe slots and dual 2.5GbE for fast shared storage.
+
+The ASUSTOR AS5404T is a desktop 4-bay NAS. It runs on the quad-core Intel Celeron N5105 (2.0–2.9 GHz) with 4GB of memory, expandable to 16GB.
+
+It connects over 2× 2.5GbE networking, with 3× USB 3.2 Gen 2 ports. Its 4 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 16 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Celeron N5105
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.0–2.9 GHz
+- Memory: 4GB SO-DIMM DDR4
+- Pre-installed: 4GB (1× 4GB)
+- Memory slots: 2
+- Maximum memory: 16GB (2× 8GB)
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 4
+- M.2 slots: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 3.0 x1
+- Max internal raw capacity: 72 TB
+- Max bays with expansion units: 16
+- Max raw capacity with expansion: 320 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 3× USB 3.2 Gen 2
+- Video output: 1× HDMI 2.0b
+
+Power & physical:
+- Fans: 1× 120mm; Infrared Receiver
+- Power supply: 90W x1
+- Power consumption: 38.3W (Operation); 17.7W (Disk Hibernation); 0.81W (Sleep Mode)
+- Noise level: 19.7dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 170 (H) x 174 (W) x 230 (D) mm
+- Weight: 2.26 kg / 4.98 lb
+- Warranty: 3 Years
+
+Use cases: Home office file sharing, Media server and 4K streaming, PC and phone backup, Small office storage.
+
+Source: ASUSTOR AS5404T (https://www.asustor.com/en/product?p_id=82); AS5404T specifications (https://www.asustor.com/en/product/spec?p_id=82)
+
+#### ASUSTOR Lockerstor 2 Gen2 (AS6702T) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6702t.html
+Model: AS6702T
+
+2-bay enthusiast NAS with Celeron N5105, dual 2.5GbE and four M.2 NVMe slots.
+
+The ASUSTOR Lockerstor 2 Gen2 (AS6702T) is a desktop 2-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core Intel Celeron N5105 (2.0–2.9 GHz) with 4GB of memory, expandable to 16GB.
+
+It connects over 2× 2.5GbE networking, with 2× USB 3.2 Gen 2 ports. Its 4 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 10 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Celeron N5105
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.0–2.9 GHz
+- Memory: 4GB SO-DIMM DDR4
+- Pre-installed: 4GB (1× 4GB)
+- Memory slots: 2
+- Maximum memory: 16GB (2× 8GB)
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 2
+- M.2 slots: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 3.0 x1
+- Max internal raw capacity: 36 TB
+- Max bays with expansion units: 10
+- Max raw capacity with expansion: 200 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 2× USB 3.2 Gen 2
+- Video output: 1× HDMI 2.0b
+
+Power & physical:
+- Fans: 1× 70mm; Infrared Receiver
+- Power supply: 65W x1
+- Power consumption: 21 W (Operation); 13.5 W (Disk Hibernation); 0.79 W (Sleep Mode)
+- Noise level: 17.7dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 163.5 (H) x 108 (W) x 230 (D) mm
+- Weight: 2 kg / 4.4 lb
+- Warranty: 3 Years
+
+Use cases: Home office file sharing, Media server and 4K streaming, PC and phone backup, Small office storage.
+
+Source: ASUSTOR Lockerstor 2 Gen2 (AS6702T) (https://www.asustor.com/en/product?p_id=76); Lockerstor 2 Gen2 (AS6702T) specifications (https://www.asustor.com/en/product/spec?p_id=76)
+
+#### ASUSTOR Lockerstor 4 Gen2 (AS6704T) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6704t.html
+Model: AS6704T
+
+4-bay enthusiast NAS with dual 2.5GbE, four M.2 slots and a PCIe slot for 10GbE.
+
+The ASUSTOR Lockerstor 4 Gen2 (AS6704T) is a desktop 4-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core Intel Celeron N5105 (2.0–2.9 GHz) with 4GB of memory, expandable to 16GB.
+
+It connects over 2× 2.5GbE networking, with 2× USB 3.2 Gen 2 ports. Its 4 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 12 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Celeron N5105
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.0–2.9 GHz
+- Memory: 4GB SO-DIMM DDR4
+- Pre-installed: 4GB (1× 4GB)
+- Memory slots: 2
+- Maximum memory: 16GB (2× 8GB)
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 4
+- M.2 slots: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 3.0 x1
+- Max internal raw capacity: 72 TB
+- Max bays with expansion units: 12
+- Max raw capacity with expansion: 240 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 2× USB 3.2 Gen 2
+- PCIe expansion: 1× slot for an optional 10GbE card
+- Video output: 1× HDMI 2.0b
+
+Power & physical:
+- Fans: 1× 120mm
+- Power supply: 90W x1
+- Power consumption: 35 W (Operation); 17.3 W (Disk Hibernation); 0.88 W (Sleep Mode)
+- Noise level: 17.6dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 185.5 (H) x 170 (W) x 230 (D) mm
+- Weight: 2.94 kg / 6.48 lb
+- Warranty: 3 Years
+
+Use cases: Home office file sharing, Media server and 4K streaming, PC and phone backup, Small office storage.
+
+Source: ASUSTOR Lockerstor 4 Gen2 (AS6704T) (https://www.asustor.com/en/product?p_id=77); Lockerstor 4 Gen2 (AS6704T) specifications (https://www.asustor.com/en/product/spec?p_id=77)
+
+#### ASUSTOR Lockerstor 6 Gen2 (AS6706T) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6706t.html
+Model: AS6706T
+
+6-bay enthusiast NAS with dual 2.5GbE, four M.2 slots and a PCIe slot for 10GbE.
+
+The ASUSTOR Lockerstor 6 Gen2 (AS6706T) is a desktop 6-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core Intel Celeron N5105 (2.0–2.9 GHz) with 8GB of memory, expandable to 16GB.
+
+It connects over 2× 2.5GbE networking, with 2× USB 3.2 Gen 2 ports. Its 4 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 14 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Celeron N5105
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.0–2.9 GHz
+- Memory: 8GB SO-DIMM DDR4
+- Pre-installed: 8GB (1× 8GB)
+- Memory slots: 2
+- Maximum memory: 16GB (2× 8GB)
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 6
+- M.2 slots: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 3.0 x1
+- Max internal raw capacity: 108 TB
+- Max bays with expansion units: 14
+- Max raw capacity with expansion: 280 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 2× USB 3.2 Gen 2
+- PCIe expansion: 1× slot for an optional 10GbE card
+- Video output: 1× HDMI 2.0b
+
+Power & physical:
+- Fans: 1× 120mm
+- Power supply: 250W x1
+- Power consumption: 48.5 W (Operation); 27.7 W (Disk Hibernation); 0.81 W (Sleep Mode)
+- Noise level: 18.1dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 185.5 (H) x 233 (W) x 230 (D) mm
+- Weight: 4.4 kg / 9.7 lb
+- Warranty: 3 Years
+
+Use cases: Home office file sharing, Media server and 4K streaming, PC and phone backup, Small office storage.
+
+Source: ASUSTOR Lockerstor 6 Gen2 (AS6706T) (https://www.asustor.com/en/product?p_id=78); Lockerstor 6 Gen2 (AS6706T) specifications (https://www.asustor.com/en/product/spec?p_id=78)
+
+#### ASUSTOR Lockerstor 2 Gen2+ (AS6702T v2) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6702t-v2.html
+Model: AS6702T v2
+
+Refreshed 2-bay Lockerstor with dual 5GbE and four M.2 NVMe slots.
+
+The ASUSTOR Lockerstor 2 Gen2+ (AS6702T v2) is a desktop 2-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core Intel Celeron N5105 (2.0–2.9 GHz) with 4GB of memory, expandable to 16GB.
+
+It connects over 2× 5GbE networking, with 2× USB 3.2 Gen 2 Type-A and 1× USB 2.0 Type-A ports. Its 4 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 10 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Celeron N5105
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.0–2.9 GHz
+- Memory: 4GB SO-DIMM DDR4
+- Pre-installed: 4GB (1× 4GB)
+- Memory slots: 2
+- Maximum memory: 16GB (2× 8GB)
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 2
+- M.2 slots: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 3.0 x1
+- Max internal raw capacity: 36 TB
+- Max bays with expansion units: 10
+- Max raw capacity with expansion: 200 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 5 Gigabit Ethernet (5G/2.5G/1G/100M)
+- USB: 2× USB 3.2 Gen 2 Type-A, 1× USB 2.0 Type-A
+- Video output: 1× HDMI 2.0b
+
+Power & physical:
+- Fans: 1× 70mm; Infrared Receiver
+- Power supply: 65W x1
+- Power consumption: 21 W (Operation); 13.5 W (Disk Hibernation); 0.79 W (Sleep Mode)
+- Noise level: 17.7dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 163.5 (H) x 108 (W) x 230 (D) mm
+- Weight: 2 kg / 4.4 lb
+- Warranty: 3 Years
+
+Use cases: Home office file sharing, Media server and 4K streaming, PC and phone backup, Small office storage.
+
+Source: ASUSTOR Lockerstor 2 Gen2+ (AS6702T v2) (https://www.asustor.com/en/product?p_id=94); Lockerstor 2 Gen2+ (AS6702T v2) specifications (https://www.asustor.com/en/product/spec?p_id=94)
+
+#### ASUSTOR Lockerstor 4 Gen2+ (AS6704T v2) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6704t-v2.html
+Model: AS6704T v2
+
+Refreshed 4-bay Lockerstor with dual 5GbE, four M.2 slots and a 10GbE upgrade path.
+
+The ASUSTOR Lockerstor 4 Gen2+ (AS6704T v2) is a desktop 4-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core Intel Celeron N5105 (2.0–2.9 GHz) with 4GB of memory, expandable to 16GB.
+
+It connects over 2× 5GbE networking, with 2× USB 3.2 Gen 2 Type-A and 1× USB 2.0 Type-A ports. Its 4 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 12 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Celeron N5105
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.0–2.9 GHz
+- Memory: 4GB SO-DIMM DDR4
+- Pre-installed: 4GB (1× 4GB)
+- Memory slots: 2
+- Maximum memory: 16GB (2× 8GB)
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 4
+- M.2 slots: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 3.0 x1
+- Max internal raw capacity: 72 TB
+- Max bays with expansion units: 12
+- Max raw capacity with expansion: 240 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 5 Gigabit Ethernet (5G/2.5G/1G/100M)
+- USB: 2× USB 3.2 Gen 2 Type-A, 1× USB 2.0 Type-A
+- PCIe expansion: 1× slot for an optional 10GbE card
+- Video output: 1× HDMI 2.0b
+
+Power & physical:
+- Fans: 1× 120mm
+- Power supply: 90W x1
+- Power consumption: 35 W (Operation); 17.3 W (Disk Hibernation); 0.88 W (Sleep Mode)
+- Noise level: 17.6dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 185.5 (H) x 170 (W) x 230 (D) mm
+- Weight: 2.94 kg / 6.48 lb
+- Warranty: 3 Years
+
+Use cases: Home office file sharing, Media server and 4K streaming, PC and phone backup, Small office storage.
+
+Source: ASUSTOR Lockerstor 4 Gen2+ (AS6704T v2) (https://www.asustor.com/en/product?p_id=95); Lockerstor 4 Gen2+ (AS6704T v2) specifications (https://www.asustor.com/en/product/spec?p_id=95)
+
+#### ASUSTOR Lockerstor 6 Gen2+ (AS6706T v2) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6706t-v2.html
+Model: AS6706T v2
+
+Refreshed 6-bay Lockerstor with dual 5GbE, four M.2 slots and a 10GbE upgrade path.
+
+The ASUSTOR Lockerstor 6 Gen2+ (AS6706T v2) is a desktop 6-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core Intel Celeron N5105 (2.0–2.9 GHz) with 8GB of memory, expandable to 16GB.
+
+It connects over 2× 5GbE networking, with 2× USB 3.2 Gen 2 Type-A and 1× USB 2.0 Type-A ports. Its 4 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 14 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Celeron N5105
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.0–2.9 GHz
+- Memory: 8GB SO-DIMM DDR4
+- Pre-installed: 8GB (1× 8GB)
+- Memory slots: 2
+- Maximum memory: 16GB (2× 8GB)
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 6
+- M.2 slots: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 3.0 x1
+- Max internal raw capacity: 108 TB
+- Max bays with expansion units: 14
+- Max raw capacity with expansion: 280 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 5 Gigabit Ethernet (5G/2.5G/1G/100M)
+- USB: 2× USB 3.2 Gen 2 Type-A, 1× USB 2.0 Type-A
+- PCIe expansion: 1× slot for an optional 10GbE card
+- Video output: 1× HDMI 2.0b
+
+Power & physical:
+- Fans: 1× 120mm
+- Power supply: 250W x1
+- Power consumption: 48.5 W (Operation); 27.7 W (Disk Hibernation); 0.81 W (Sleep Mode)
+- Noise level: 18.1dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 185.5 (H) x 233 (W) x 230 (D) mm
+- Weight: 4.4 kg / 9.7 lb
+- Warranty: 3 Years
+
+Use cases: Home office file sharing, Media server and 4K streaming, PC and phone backup, Small office storage.
+
+Source: ASUSTOR Lockerstor 6 Gen2+ (AS6706T v2) (https://www.asustor.com/en/product?p_id=96); Lockerstor 6 Gen2+ (AS6706T v2) specifications (https://www.asustor.com/en/product/spec?p_id=96)
+
+#### ASUSTOR Lockerstor 4 Gen3 (AS6804T) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6804t.html
+Model: AS6804T
+
+4-bay AMD Ryzen NAS with ECC DDR5, dual 10GbE, dual 5GbE and USB4.
+
+The ASUSTOR Lockerstor 4 Gen3 (AS6804T) is a desktop 4-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core AMD Ryzen V3C14 (2.3–3.8 GHz) with 16GB of memory, expandable to 64GB.
+
+It connects over 2× 10GbE and 2× 5GbE networking, with 3× USB 3.2 Gen 2 Type-A and 2× USB4 ports. Its 4 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 16 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: AMD Ryzen V3C14
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.3–3.8 GHz
+- Memory: 16GB ECC DDR5-4800 SO-DIMM
+- Pre-installed: 16GB (1× 16GB)
+- Memory slots: 2
+- Maximum memory: 64GB
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 4
+- M.2 slots: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 4.0 x1
+- Max internal raw capacity: 72 TB
+- Max bays with expansion units: 16
+- Max raw capacity with expansion: 320 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 5 Gigabit Ethernet (5G/2.5G/1G/100M); 2× 10 Gigabit Ethernet (10G/2.5G/1G/100M)
+- USB: 3× USB 3.2 Gen 2 Type-A, 2× USB4 (40 Gbps)
+- PCIe expansion: 1× slot for an optional 10GbE card
+
+Power & physical:
+- Fans: 1× 120mm
+- Power supply: 90W x1
+- Power consumption: 34 W (Operation); 2.3 W (Sleep Mode)
+- Noise level: 17.6dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 185.5 (H) x 170 (W) x 230 (D) mm
+- Weight: 3.2 kg / 7.06 lb
+- Warranty: 3 Years
+
+Use cases: Small business file server, Backup with snapshots, Virtual machines and containers, Creative team storage.
+
+Source: ASUSTOR Lockerstor 4 Gen3 (AS6804T) (https://www.asustor.com/en/product?p_id=86); Lockerstor 4 Gen3 (AS6804T) specifications (https://www.asustor.com/en/product/spec?p_id=86)
+
+#### ASUSTOR Lockerstor 6 Gen3 (AS6806T) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6806t.html
+Model: AS6806T
+
+6-bay AMD Ryzen NAS with ECC DDR5, dual 10GbE, dual 5GbE and USB4.
+
+The ASUSTOR Lockerstor 6 Gen3 (AS6806T) is a desktop 6-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core AMD Ryzen V3C14 (2.3–3.8 GHz) with 16GB of memory, expandable to 64GB.
+
+It connects over 2× 10GbE and 2× 5GbE networking, with 3× USB 3.2 Gen 2 Type-A and 2× USB4 ports. Its 4 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 18 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: AMD Ryzen V3C14
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.3–3.8 GHz
+- Memory: 16GB ECC DDR5-4800 SO-DIMM
+- Pre-installed: 16GB (1× 16GB)
+- Memory slots: 2
+- Maximum memory: 64GB
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 6
+- M.2 slots: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 4.0 x1
+- Max internal raw capacity: 108 TB
+- Max bays with expansion units: 18
+- Max raw capacity with expansion: 360 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 5 Gigabit Ethernet (5G/2.5G/1G/100M); 2× 10 Gigabit Ethernet (10G/2.5G/1G/100M)
+- USB: 3× USB 3.2 Gen 2 Type-A, 2× USB4 (40 Gbps)
+- PCIe expansion: 1× slot for an optional 10GbE card
+
+Power & physical:
+- Fans: 1× 120mm
+- Power supply: 250W x1
+- Power consumption: 45 W (Operation); 2.3 W (Sleep Mode)
+- Noise level: 18.1dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 185.5 (H) x 233 (W) x 230 (D) mm
+- Weight: 4.4 kg / 9.7 lb
+- Warranty: 3 Years
+
+Use cases: Small business file server, Backup with snapshots, Virtual machines and containers, Creative team storage.
+
+Source: ASUSTOR Lockerstor 6 Gen3 (AS6806T) (https://www.asustor.com/en/product?p_id=87); Lockerstor 6 Gen3 (AS6806T) specifications (https://www.asustor.com/en/product/spec?p_id=87)
+
+#### ASUSTOR Lockerstor 8 Gen3 (AS6808T) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6808t.html
+Model: AS6808T
+
+8-bay AMD Ryzen NAS with ECC DDR5, dual 10GbE, dual 5GbE and USB4.
+
+The ASUSTOR Lockerstor 8 Gen3 (AS6808T) is a desktop 8-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core AMD Ryzen V3C14 (2.3–3.8 GHz) with 16GB of memory, expandable to 64GB.
+
+It connects over 2× 10GbE and 2× 5GbE networking, with 3× USB 3.2 Gen 2 Type-A and 2× USB4 ports. Its 4 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 20 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: AMD Ryzen V3C14
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.3–3.8 GHz
+- Memory: 16GB ECC DDR5-4800 SO-DIMM
+- Pre-installed: 16GB (1× 16GB)
+- Memory slots: 2
+- Maximum memory: 64GB
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 8
+- M.2 slots: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 4.0 x1
+- Max internal raw capacity: 144 TB
+- Max bays with expansion units: 20
+- Max raw capacity with expansion: 400 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 5 Gigabit Ethernet (5G/2.5G/1G/100M); 2× 10 Gigabit Ethernet (10G/2.5G/1G/100M)
+- USB: 3× USB 3.2 Gen 2 Type-A, 2× USB4 (40 Gbps)
+- PCIe expansion: 1× slot for an optional 10GbE card
+
+Power & physical:
+- Fans: 2× 120mm
+- Power supply: 250W x1
+- Power consumption: 58.5 W (Operation); 2.4 W (Sleep Mode)
+- Noise level: 22dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 215.5 (H) x 293 (W) x 230 (D) mm
+- Weight: 6.45 kg / 14.22 lb
+- Warranty: 3 Years
+
+Use cases: Small business file server, Backup with snapshots, Virtual machines and containers, Creative team storage.
+
+Source: ASUSTOR Lockerstor 8 Gen3 (AS6808T) (https://www.asustor.com/en/product?p_id=88); Lockerstor 8 Gen3 (AS6808T) specifications (https://www.asustor.com/en/product/spec?p_id=88)
+
+#### ASUSTOR Lockerstor 10 Gen3 (AS6810T) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6810t.html
+Model: AS6810T
+
+10-bay AMD Ryzen NAS with ECC DDR5, dual 10GbE, dual 5GbE and USB4 for busy teams.
+
+The ASUSTOR Lockerstor 10 Gen3 (AS6810T) is a desktop 10-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core AMD Ryzen V3C14 (2.3–3.8 GHz) with 16GB of memory, expandable to 64GB.
+
+It connects over 2× 10GbE and 2× 5GbE networking, with 3× USB 3.2 Gen 2 Type-A and 2× USB4 ports. Its 4 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 22 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: AMD Ryzen V3C14
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.3–3.8 GHz
+- Memory: 16GB ECC DDR5-4800 SO-DIMM
+- Pre-installed: 16GB (1× 16GB)
+- Memory slots: 2
+- Maximum memory: 64GB
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 10
+- M.2 slots: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 4.0 x1
+- Max internal raw capacity: 180 TB
+- Max bays with expansion units: 22
+- Max raw capacity with expansion: 440 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 5 Gigabit Ethernet (5G/2.5G/1G/100M); 2× 10 Gigabit Ethernet (10G/2.5G/1G/100M)
+- USB: 3× USB 3.2 Gen 2 Type-A, 2× USB4 (40 Gbps)
+- PCIe expansion: 1× slot for an optional 10GbE card
+
+Power & physical:
+- Fans: 2× 120mm
+- Power supply: 250W x1
+- Power consumption: 68 W (Operation); 2.4 W (Sleep Mode)
+- Noise level: 22dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 215.5 (H) x 293 (W) x 230 (D) mm
+- Weight: 6.55 kg / 14.44 lb
+- Warranty: 3 Years
+
+Use cases: Small business file server, Backup with snapshots, Virtual machines and containers, Creative team storage.
+
+Source: ASUSTOR Lockerstor 10 Gen3 (AS6810T) (https://www.asustor.com/en/product?p_id=89); Lockerstor 10 Gen3 (AS6810T) specifications (https://www.asustor.com/en/product/spec?p_id=89)
+
+#### ASUSTOR Lockerstor 8 (AS6508T) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6508t.html
+Model: AS6508T
+
+8-bay business NAS with dual 10GbE, dual 2.5GbE and M.2 SSD caching.
+
+The ASUSTOR Lockerstor 8 (AS6508T) is a desktop 8-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core Intel Atom C3538 (2.1 GHz) with 8GB of memory, expandable to 64GB.
+
+It connects over 2× 10GbE and 2× 2.5GbE networking, with 2× USB 3.2 Gen 1 ports. Its 2 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 16 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Atom C3538
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.1 GHz
+- Memory: 8GB SO-DIMM DDR4
+- Pre-installed: 8GB (1× 8GB)
+- Memory slots: 2
+- Maximum memory: 64GB (2× 32GB)
+- Flash memory: 4GB eMMC
+
+Storage:
+- Drive bays: 8
+- M.2 slots: 2
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe, M.2 2280 SATA 3, M.2 2260 SATA 3, M.2 2242 SATA 3
+- M.2 interface: PCIe 3.0 x2
+- Max internal raw capacity: 144 TB
+- Max bays with expansion units: 16
+- Max raw capacity with expansion: 320 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 10 Gigabit Ethernet (10G/1G); 2× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 2× USB 3.2 Gen 1
+
+Power & physical:
+- Fans: 2× 120mm
+- Power supply: 250W x1
+- Power consumption: 66.9W (Operation); 37.2W (Disk Hibernation)
+- Noise level: 22dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 215.5 (H) x 293 (W) x 230 (D) mm
+- Weight: 6.2 (kg) / 13.67 (lb)
+- Warranty: 3 Years
+
+Use cases: Small business file server, Backup with snapshots, Virtual machines and containers, Creative team storage.
+
+Source: ASUSTOR Lockerstor 8 (AS6508T) (https://www.asustor.com/en/product?p_id=63); Lockerstor 8 (AS6508T) specifications (https://www.asustor.com/en/product/spec?p_id=63)
+
+#### ASUSTOR Lockerstor 10 (AS6510T) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6510t.html
+Model: AS6510T
+
+10-bay business NAS with dual 10GbE, dual 2.5GbE and M.2 SSD caching.
+
+The ASUSTOR Lockerstor 10 (AS6510T) is a desktop 10-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core Intel Atom C3538 (2.1 GHz) with 8GB of memory, expandable to 64GB.
+
+It connects over 2× 10GbE and 2× 2.5GbE networking, with 2× USB 3.2 Gen 1 ports. Its 2 M.2 NVMe slots can be used for SSD caching or a fast storage volume. Capacity can grow to 18 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Atom C3538
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.1 GHz
+- Memory: 8GB SO-DIMM DDR4
+- Pre-installed: 8GB (1× 8GB)
+- Memory slots: 2
+- Maximum memory: 64GB (2× 32GB)
+- Flash memory: 4GB eMMC
+
+Storage:
+- Drive bays: 10
+- M.2 slots: 2
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe, M.2 2280 SATA 3, M.2 2260 SATA 3, M.2 2242 SATA 3
+- M.2 interface: PCIe 3.0 x2
+- Max internal raw capacity: 180 TB
+- Max bays with expansion units: 18
+- Max raw capacity with expansion: 360 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× 10 Gigabit Ethernet (10G/1G); 2× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 2× USB 3.2 Gen 1
+
+Power & physical:
+- Fans: 2× 120mm
+- Power supply: 250W x1
+- Power consumption: 76.8W (Operation); 41.1W (Disk Hibernation)
+- Noise level: 22dB (HDD idle)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 215.5 (H) x 293 (W) x 230 (D) mm
+- Weight: 6.4 (kg) / 14.1 (lb)
+- Warranty: 3 Years
+
+Use cases: Small business file server, Backup with snapshots, Virtual machines and containers, Creative team storage.
+
+Source: ASUSTOR Lockerstor 10 (AS6510T) (https://www.asustor.com/en/product?p_id=64); Lockerstor 10 (AS6510T) specifications (https://www.asustor.com/en/product/spec?p_id=64)
+
+#### ASUSTOR Flashstor 6 (FS6706T) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-fs6706t.html
+Model: FS6706T
+
+Compact all-flash NAS with six M.2 NVMe slots and dual 2.5GbE for quiet, fast storage.
+
+The ASUSTOR Flashstor 6 (FS6706T) is a desktop all-flash NAS from ASUSTOR's Flashstor range, with 6 M.2 NVMe SSD slots instead of hard drive bays. It runs on the quad-core Intel Celeron N5105 (2.0–2.9 GHz) with 4GB of memory, expandable to 16GB.
+
+It connects over 2× 2.5GbE networking, with 2× USB 3.2 Gen 2 and 2× USB 2.0 ports. Capacity can grow to 8 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Celeron N5105
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.0–2.9 GHz
+- Memory: 4GB SO-DIMM DDR4
+- Pre-installed: 4GB (1× 4GB)
+- Memory slots: 2
+- Maximum memory: 16GB (2× 8GB)
+- Flash memory: 8GB eMMC
+
+Storage:
+- M.2 slots: 6
+- Compatible drives: M.2 2280 NVMe, Heatsinks for compatible NAS devices may be purchased separately if needed, AS-HK1
+- M.2 interface: PCIe 3.0 x1
+- Max bays with expansion units: 8
+- Max raw capacity with expansion: 280 TB
+
+Connectivity:
+- Network: 2× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 2× USB 3.2 Gen 2, 2× USB 2.0
+- Video output: 1× HDMI 2.0b, 1× S/PDIF
+
+Power & physical:
+- Fans: 1× 80mm
+- Power supply: 65W x1
+- Power consumption: 18.2 W (Operation); 0.83 W (Sleep Mode)
+- Noise level: 18.7dB
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 48.3 (H) x 308.26 (W) x 193 (D) mm
+- Weight: 1.35kg / 2.98 lb
+- Warranty: 3 Years
+
+Use cases: Video editing over the network, Creative team storage, Fast file sharing, Quiet office storage.
+
+Source: ASUSTOR Flashstor 6 (FS6706T) (https://www.asustor.com/en/product?p_id=79); Flashstor 6 (FS6706T) specifications (https://www.asustor.com/en/product/spec?p_id=79)
+
+#### ASUSTOR Flashstor 12 Pro (FS6712X) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-fs6712x.html
+Model: FS6712X
+
+All-flash NAS with twelve M.2 NVMe slots and 10GbE for video editing and creative teams.
+
+The ASUSTOR Flashstor 12 Pro (FS6712X) is a desktop all-flash NAS from ASUSTOR's Flashstor range, with 12 M.2 NVMe SSD slots instead of hard drive bays. It runs on the quad-core Intel Celeron N5105 (2.0–2.9 GHz) with 4GB of memory, expandable to 16GB.
+
+It connects over 1× 10GbE networking, with 2× USB 3.2 Gen 2 and 2× USB 2.0 ports. Capacity can grow to 8 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Celeron N5105
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.0–2.9 GHz
+- Memory: 4GB SO-DIMM DDR4
+- Pre-installed: 4GB (1× 4GB)
+- Memory slots: 2
+- Maximum memory: 16GB (2× 8GB)
+- Flash memory: 8GB eMMC
+
+Storage:
+- M.2 slots: 12
+- Compatible drives: M.2 2280 NVMe, Heatsinks for compatible NAS devices may be purchased separately if needed, AS-HK1
+- M.2 interface: PCIe 3.0 x1
+- Max bays with expansion units: 8
+- Max raw capacity with expansion: 400 TB
+
+Connectivity:
+- Network: 1× 10 Gigabit Ethernet (10G/5G/2.5G/1G/100M/10M)
+- USB: 2× USB 3.2 Gen 2, 2× USB 2.0
+- Video output: 1× HDMI 2.0b, 1× S/PDIF
+
+Power & physical:
+- Fans: 1× 80mm
+- Power supply: 90W x1
+- Power consumption: 26 W (Operation)
+- Noise level: 18.7dB
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 48.3 (H) x 308.26 (W) x 193 (D) mm
+- Weight: 1.37 kg / 3 lb
+- Warranty: 3 Years
+
+Use cases: Video editing over the network, Creative team storage, Fast file sharing, Quiet office storage.
+
+Source: ASUSTOR Flashstor 12 Pro (FS6712X) (https://www.asustor.com/en/product?p_id=80); Flashstor 12 Pro (FS6712X) specifications (https://www.asustor.com/en/product/spec?p_id=80)
+
+#### ASUSTOR Flashstor 6 Gen2 (FS6806X) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-fs6806x.html
+Model: FS6806X
+
+AMD Ryzen all-flash NAS with six M.2 NVMe slots, 10GbE and USB4.
+
+The ASUSTOR Flashstor 6 Gen2 (FS6806X) is a desktop all-flash NAS from ASUSTOR's Flashstor range, with 6 M.2 NVMe SSD slots instead of hard drive bays. It runs on the quad-core AMD Ryzen V3C14 (2.3–3.8 GHz) with 8GB of memory, expandable to 64GB.
+
+It connects over 1× 10GbE networking, with 3× USB 3.2 Gen 2 Type-A and 2× USB4 ports. Capacity can grow to 12 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: AMD Ryzen V3C14
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.3–3.8 GHz
+- Memory: 8GB DDR5-4800 SO-DIMM
+- Pre-installed: 8GB (1× 8GB)
+- Memory slots: 2
+- Maximum memory: 64GB
+- Flash memory: 8GB eMMC
+
+Storage:
+- M.2 slots: 6
+- Compatible drives: M.2 2280 NVMe
+- M.2 interface: 1× PCIe 4.0 x4; 3× PCIe 4.0 x2; 2× PCIe 4.0 x1
+- Max bays with expansion units: 12
+- Max raw capacity with expansion: 360 TB
+
+Connectivity:
+- Network: 1× 10 Gigabit Ethernet (10G/2.5G/1G/100M)
+- USB: 3× USB 3.2 Gen 2 Type-A, 2× USB4 (40 Gbps)
+
+Power & physical:
+- Fans: 1× 80mm
+- Power supply: 90W x1
+- Power consumption: 17.9 W (Operation); 1.2 W (Sleep Mode)
+- Noise level: 18.6dB
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 48.3 (H) x 308.26 (W) x 193 (D) mm
+- Weight: 1.4 kg / 3.08 lb
+- Warranty: 3 Years
+
+Use cases: Video editing over the network, Creative team storage, Fast file sharing, Quiet office storage.
+
+Source: ASUSTOR Flashstor 6 Gen2 (FS6806X) (https://www.asustor.com/en/product?p_id=90); Flashstor 6 Gen2 (FS6806X) specifications (https://www.asustor.com/en/product/spec?p_id=90)
+
+#### ASUSTOR Flashstor 12 Pro Gen2 (FS6812X) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-fs6812x.html
+Model: FS6812X
+
+AMD Ryzen all-flash NAS with twelve M.2 NVMe slots, ECC DDR5 and dual 10GbE.
+
+The ASUSTOR Flashstor 12 Pro Gen2 (FS6812X) is a desktop all-flash NAS from ASUSTOR's Flashstor range, with 12 M.2 NVMe SSD slots instead of hard drive bays. It runs on the quad-core AMD Ryzen V3C14 (2.3–3.8 GHz) with 16GB of memory, expandable to 64GB.
+
+It connects over 2× 10GbE networking, with 3× USB 3.2 Gen 2 Type-A and 2× USB4 ports. Capacity can grow to 12 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: AMD Ryzen V3C14
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.3–3.8 GHz
+- Memory: 16GB ECC DDR5-4800 SO-DIMM
+- Pre-installed: 16GB (1× 16GB)
+- Memory slots: 2
+- Maximum memory: 64GB
+- Flash memory: 8GB eMMC
+
+Storage:
+- M.2 slots: 12
+- Compatible drives: M.2 2280 NVMe
+- M.2 interface: 1× PCIe 4.0 x4; 3× PCIe 4.0 x2; 4× PCIe 4.0 x1; 1× PCIe 3.0 x4; 1× PCIe 3.0 x2; 2× PCIe 3.0 x1
+- Max bays with expansion units: 12
+- Max raw capacity with expansion: 480 TB
+
+Connectivity:
+- Network: 2× 10 Gigabit Ethernet (10G/2.5G/1G/100M)
+- USB: 3× USB 3.2 Gen 2 Type-A, 2× USB4 (40 Gbps)
+
+Power & physical:
+- Fans: 1× 80mm
+- Power supply: 120W x1
+- Power consumption: 32.2 W (Operation); 2.8 W (Sleep Mode)
+- Noise level: 18.6dB
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 48.3 (H) x 308.26 (W) x 193 (D) mm
+- Weight: 1.45 kg / 3.19 lb
+- Warranty: 3 Years
+
+Use cases: Video editing over the network, Creative team storage, Fast file sharing, Quiet office storage.
+
+Source: ASUSTOR Flashstor 12 Pro Gen2 (FS6812X) (https://www.asustor.com/en/product?p_id=91); Flashstor 12 Pro Gen2 (FS6812X) specifications (https://www.asustor.com/en/product/spec?p_id=91)
+
+#### ASUSTOR Lockerstor 4RS / 4RD (AS6504RS / AS6504RD) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6504rs-rd.html
+Model: AS6504RS/RD
+
+4-bay 1U rackmount NAS, with single (RS) or redundant (RD) power, for SMB file sharing and backup.
+
+The ASUSTOR Lockerstor 4RS / 4RD (AS6504RS / AS6504RD) is a 1U rackmount 4-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core Intel Atom C3538 (2.1 GHz) with 8GB of memory, expandable to 128GB.
+
+It connects over 2× 2.5GbE and 2× 1GbE networking, with 4× USB 3.2 Gen 1 ports. Capacity can grow to 20 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Atom C3538
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.1 GHz
+- Memory: 8GB SO-DIMM DDR4
+- Pre-installed: 8GB (1× 8GB)
+- Memory slots: 4
+- Maximum memory: 128GB (4× 32GB)
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 4
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD
+- Max internal raw capacity: 72 TB
+- Max bays with expansion units: 20
+- Max raw capacity with expansion: 400 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× Gigabit Ethernet (1G/100M); 2× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 4× USB 3.2 Gen 1
+- PCIe expansion: PCIe 3.0 x8 slot (black, x4 link)
+
+Power & physical:
+- Fans: 2× 40mm
+- Power supply: AS6504RS: 250W x1; AS6504RD: 250W x2; AS6504RS x1 / AS6504RD x2
+- Redundant power: Yes
+- Power consumption: AS6504RS:; 47.7W (Operation); 28.4W (Disk Hibernation); AS6504RD:; 65W (Operation); 42.4W (Disk Hibernation)
+- Noise level: -
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 44 (H) x 439 (W) x 515 (D) mm
+- Weight: AS6504RS: 7.85kg / 17.27 lbs; AS6504RD: 9.3 kg / 20.46 lbs
+- Warranty: 3 Years
+
+Use cases: Business file server, Backup target, Virtualization storage, Surveillance recording.
+
+Source: ASUSTOR Lockerstor 4RS / 4RD (AS6504RS / AS6504RD) (https://www.asustor.com/en/product?p_id=74); Lockerstor 4RS / 4RD (AS6504RS / AS6504RD) specifications (https://www.asustor.com/en/product/spec?p_id=74)
+
+#### ASUSTOR Lockerstor 12RD (AS6512RD) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6512rd.html
+Model: AS6512RD
+
+12-bay 2U rackmount NAS with redundant power for SMB file servers and backup targets.
+
+The ASUSTOR Lockerstor 12RD (AS6512RD) is a 2U rackmount 12-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the quad-core Intel Atom C3538 (2.1 GHz) with 8GB of memory, expandable to 128GB.
+
+It connects over 2× 2.5GbE and 2× 1GbE networking, with 4× USB 3.2 Gen 1 ports. Capacity can grow to 28 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: Intel Atom C3538
+- Architecture: x64 64-bit
+- Frequency: Quad-core, 2.1 GHz
+- Memory: 8GB SO-DIMM DDR4
+- Pre-installed: 8GB (1× 8GB)
+- Memory slots: 4
+- Maximum memory: 128GB (4× 32GB)
+- Flash memory: 8GB eMMC
+
+Storage:
+- Drive bays: 12
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD
+- Max internal raw capacity: 216 TB
+- Max bays with expansion units: 28
+- Max raw capacity with expansion: 480 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× Gigabit Ethernet (1G/100M); 2× 2.5 Gigabit Ethernet (2.5G/1G/100M)
+- USB: 4× USB 3.2 Gen 1
+- PCIe expansion: PCIe 3.0 x8 slot (black, x4 link)
+
+Power & physical:
+- Fans: 2× 60mm
+- Power supply: 350W x2
+- Redundant power: Yes
+- Power consumption: 115W (Operation); 67W (Disk Hibernation)
+- Noise level: -
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 88 (H) x 439 (W) x 535 (D) mm
+- Weight: 11.7kg / 25.74lb
+- Warranty: 3 Years
+
+Use cases: Business file server, Backup target, Virtualization storage, Surveillance recording.
+
+Source: ASUSTOR Lockerstor 12RD (AS6512RD) (https://www.asustor.com/en/product?p_id=75); Lockerstor 12RD (AS6512RD) specifications (https://www.asustor.com/en/product/spec?p_id=75)
+
+#### ASUSTOR Lockerstor 12R Pro Gen2 (AS7212RDX) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as7212rdx.html
+Model: AS7212RDX
+
+12-bay 2U rackmount NAS with AMD Ryzen 7 PRO, up to 192 GB ECC DDR5 and redundant power.
+
+The ASUSTOR Lockerstor 12R Pro Gen2 (AS7212RDX) is a 2U rackmount 12-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the 8-core AMD Ryzen 7 Pro 7745 (3.8–5.3 GHz) with 16GB of memory, expandable to 192GB.
+
+It connects over 2× 10GbE and 2× 1GbE networking, with 4× USB 3.2 Gen 1 Type-A ports. Its M.2 NVMe slot can be used for SSD caching. Capacity can grow to 40 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: AMD Ryzen 7 Pro 7745
+- Architecture: x64 64-bit
+- Frequency: 8-core, 3.8–5.3 GHz
+- Memory: 16GB ECC DDR5-4800 UDIMM
+- Pre-installed: 16GB (1× 16GB)
+- Memory slots: 4
+- Maximum memory: 192GB (4× 48GB)
+- Flash memory: 32GB SATA DOM
+
+Storage:
+- Drive bays: 12
+- M.2 slots: 1
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 5.0 x4
+- Max internal raw capacity: 216 TB
+- Max bays with expansion units: 40
+- Max raw capacity with expansion: 560 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× Gigabit Ethernet (1G/100M, WOL); 2× 10 Gigabit Ethernet (10G/1G)
+- USB: 4× USB 3.2 Gen 1 Type-A
+- PCIe expansion: 1× Gen5 x8 slot (x8 link); 1× Gen5 x4 slot (x4 link); for optional 10/25/40/50GbE or SAS cards
+- Video output: HDMI x1 (for service only)
+
+Power & physical:
+- Fans: 3× 60mm
+- Power supply: 550W x2
+- Redundant power: Yes
+- Power consumption: 102W (Operation); 99W (Disk Hibernation)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 88 (H) x 439 (W) x 576 (D) mm
+- Weight: 14 kg / 30.9lb
+- Warranty: 5 Years
+
+Use cases: Business file server, Backup target, Virtualization storage, Surveillance recording.
+
+Source: ASUSTOR Lockerstor 12R Pro Gen2 (AS7212RDX) (https://www.asustor.com/en/product?p_id=92); Lockerstor 12R Pro Gen2 (AS7212RDX) specifications (https://www.asustor.com/en/product/spec?p_id=92)
+
+#### ASUSTOR Lockerstor 16R Pro Gen2 (AS7216RDX) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as7216rdx.html
+Model: AS7216RDX
+
+16-bay rackmount NAS with AMD Ryzen 7 PRO, ECC DDR5 and room for 25/50GbE cards.
+
+The ASUSTOR Lockerstor 16R Pro Gen2 (AS7216RDX) is a rackmount 16-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the 8-core AMD Ryzen 7 Pro 7745 (3.8–5.3 GHz) with 16GB of memory, expandable to 192GB.
+
+It connects over 2× 10GbE and 2× 1GbE networking, with 4× USB 3.2 Gen 1 Type-A ports. Its M.2 NVMe slot can be used for SSD caching. Capacity can grow to 44 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: AMD Ryzen 7 Pro 7745
+- Architecture: x64 64-bit
+- Frequency: 8-core, 3.8–5.3 GHz
+- Memory: 16GB ECC DDR5-4800 UDIMM
+- Pre-installed: 16GB (1× 16GB)
+- Memory slots: 4
+- Maximum memory: 192GB (4× 48GB)
+- Flash memory: 32GB SATA DOM
+
+Storage:
+- Drive bays: 16
+- M.2 slots: 1
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 5.0 x4
+- Max internal raw capacity: 288 TB
+- Max bays with expansion units: 44
+- Max raw capacity with expansion: 640 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× Gigabit Ethernet (1G/100M, WOL); 2× 10 Gigabit Ethernet (10G/1G)
+- USB: 4× USB 3.2 Gen 1 Type-A
+- PCIe expansion: 1× Gen5 x8 slot (x8 link); 1× Gen5 x4 slot (x4 link); for optional 10/25/40/50GbE or SAS cards
+- Video output: HDMI x1 (for service only)
+
+Power & physical:
+- Fans: 3× 60mm
+- Power supply: 550W x2
+- Redundant power: Yes
+- Power consumption: 187W (Operation); 128W (Disk Hibernation)
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 116 (H) x 439 (W) x 576 (D) mm
+- Weight: 15.3kg / 33.7lb
+- Warranty: 5 Years
+
+Use cases: Business file server, Backup target, Virtualization storage, Surveillance recording.
+
+Source: ASUSTOR Lockerstor 16R Pro Gen2 (AS7216RDX) (https://www.asustor.com/en/product?p_id=93); Lockerstor 16R Pro Gen2 (AS7216RDX) specifications (https://www.asustor.com/en/product/spec?p_id=93)
+
+#### ASUSTOR Lockerstor 24R Pro Gen2 (AS7224RDX) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as7224rdx.html
+Model: AS7224RDX
+
+24-bay rackmount NAS with AMD Ryzen 7 PRO and ECC DDR5 for high-capacity business storage.
+
+The ASUSTOR Lockerstor 24R Pro Gen2 (AS7224RDX) is a rackmount 24-bay NAS from ASUSTOR's Lockerstor range for enthusiasts and businesses. It runs on the 8-core AMD Ryzen 7 Pro 7745 (3.8–5.3 GHz) with 16GB of memory, expandable to 192GB.
+
+It connects over 2× 10GbE and 2× 1GbE networking, with 4× USB 3.2 Gen 1 Type-A ports. Its M.2 NVMe slot can be used for SSD caching. Capacity can grow to 52 drive bays with ASUSTOR expansion units. It runs ASUSTOR Data Master (ADM), with file sharing, backup tools and add-on apps from App Central.
+
+Processor & memory:
+- CPU: AMD Ryzen 7 Pro 7745
+- Architecture: x64 64-bit
+- Frequency: 8-core, 3.8–5.3 GHz
+- Memory: 16GB ECC DDR5-4800 UDIMM
+- Pre-installed: 16GB (1× 16GB)
+- Memory slots: 4
+- Maximum memory: 192GB (4× 48GB)
+- Flash memory: 32GB SATA DOM
+
+Storage:
+- Drive bays: 24
+- M.2 slots: 1
+- Compatible drives: 3.5" SATA HDD, 2.5" SATA HDD, 2.5" SATA SSD, M.2 2280 NVMe
+- M.2 interface: PCIe 5.0 x4
+- Max internal raw capacity: 432 TB
+- Max bays with expansion units: 52
+- Max raw capacity with expansion: 800 TB
+- Hot-swappable drives: Yes
+
+Connectivity:
+- Network: 2× Gigabit Ethernet (1G/100M, WOL); 2× 10 Gigabit Ethernet (10G/1G)
+- USB: 4× USB 3.2 Gen 1 Type-A
+- PCIe expansion: 1× Gen5 x8 slot (x8 link); 1× Gen5 x4 slot (x4 link); for optional 10/25/40/50GbE or SAS cards
+- Video output: HDMI x1 (for service only)
+
+Power & physical:
+- Fans: 4× 60mm
+- Power supply: 550W x2
+- Redundant power: Yes
+- Power consumption: 253 W (Operation) ; 145 W (Disk Hibernation) 
+- Operating temperature: 0°C~40°C (32°F~104°F)
+- Dimensions: 172 (H) x 439 (W) x 576 (D) mm
+- Weight: 18.6kg / 41lb
+- Warranty: 5 Years
+
+Use cases: Business file server, Backup target, Virtualization storage, Surveillance recording.
+
+Source: ASUSTOR Lockerstor 24R Pro Gen2 (AS7224RDX) (https://www.asustor.com/en/product?p_id=99); Lockerstor 24R Pro Gen2 (AS7224RDX) specifications (https://www.asustor.com/en/product/spec?p_id=99)
+
+#### ASUSTOR Xpanstor 4 (AS5004U) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as5004u.html
+Model: AS5004U
+
+4-bay USB-C expansion enclosure that adds capacity to an ASUSTOR NAS without downtime.
+
+The Xpanstor 4 (AS5004U) is a 4-bay expansion enclosure that connects to an ASUSTOR NAS over USB 3.2 Gen 2 Type-C at 10 Gbps, adding drive capacity without rebuilding existing volumes.
+
+It is plug-and-play: the NAS detects the unit online, powers it on and off in sync with the NAS, and controls the fan to suit drive temperature. It also supports MyArchive cold-backup drives and high-capacity hard disks.
+
+Specifications:
+- Drive bays: 4× 3.5"/2.5" SATA
+- Interface: USB 3.2 Gen 2 Type-C (10 Gbps)
+- Features: Plug-and-play online expansion, smart power sync, MyArchive
+- Use case: Capacity expansion for desktop NAS
+
+Use cases: Add capacity to a desktop NAS, Cold backup with MyArchive, Media library expansion.
+
+Source: ASUSTOR Xpanstor 4 (AS5004U) (https://www.asustor.com/en/product/AS5004U)
+
+#### ASUSTOR AS6004U Expansion Unit (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as6004u.html
+Model: AS6004U
+
+4-bay USB expansion unit; supported NAS models connect up to three for extra capacity.
+
+The AS6004U is a 4-bay expansion unit that plugs into any ASUSTOR NAS over USB 3.2 Gen 1. Depending on the NAS model, up to three units can be connected at once.
+
+A cable bracket keeps the USB connection secure, power is synchronised with the NAS, and fan speed follows drive temperature. It supports MyArchive cold-backup drives and high-capacity hard disks.
+
+Specifications:
+- Drive bays: 4× 3.5"/2.5" SATA
+- Interface: USB 3.2 Gen 1 with locking cable bracket
+- Features: Online expansion, smart power sync, MyArchive cold backup
+- Use case: Capacity expansion for desktop NAS
+
+Use cases: Add capacity to a desktop NAS, Cold backup with MyArchive, Archive storage.
+
+Source: ASUSTOR AS6004U Expansion Unit (https://www.asustor.com/en/product/AS6004U)
+
+#### ASUSTOR Xpanstor 12R (AX7012R) (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-ax7012r.html
+Model: AX7012R
+
+12-bay 2U SAS/SATA JBOD expansion unit for ASUSTOR rackmount NAS.
+
+The Xpanstor 12R (AX7012R) is a 2U, 12-bay SAS/SATA expansion enclosure for ASUSTOR rackmount NAS such as the Lockerstor R Pro Gen2 series.
+
+It connects through four Mini-SAS HD (SFF-8644) ports via the AS-SAS8e host bus adapter, with dual 650 W power supplies and hot-swappable fans for continuous operation.
+
+Specifications:
+- Drive bays: 12× SAS/SATA
+- Interface: 4× Mini-SAS HD (SFF-8644)
+- Power: 650 W redundant power supplies
+- Form factor: 2U rackmount, hot-swappable fans
+
+Use cases: Expand rackmount NAS capacity, Backup and archive, Surveillance storage.
+
+Source: ASUSTOR Xpanstor 12R (AX7012R) (https://www.asustor.com/en/product/AX7012R)
+
+#### ASUSTOR AS-SAS8e SAS HBA (ASUSTOR)
+
+Page: https://planman.ae/products/asustor-as-sas8e.html
+Model: AS-SAS8e
+
+SAS-3 host bus adapter (Broadcom HBA 9500-8e) for connecting Xpanstor 12R expansion units.
+
+The AS-SAS8e is a SAS-3 host bus adapter, based on the Broadcom HBA 9500-8e, that connects ASUSTOR NAS to Xpanstor 12R expansion enclosures.
+
+SAS-3 runs at 12 Gb/s, full duplex, with lower latency and better error recovery than SATA, and still supports SATA drives. Drives are managed from ADM Storage Manager.
+
+Specifications:
+- Controller: Broadcom HBA 9500-8e
+- Interface: SAS-3, 12 Gb/s, full duplex
+- Management: ADM Storage Manager
+- Use case: 24/7 enterprise expansion
+
+Use cases: Connect Xpanstor 12R enclosures, Enterprise storage expansion.
+
+Source: ASUSTOR AS-SAS8e SAS HBA (https://www.asustor.com/en/product/AS_SAS8e)
 
 ### AI Workstations & Deskside
 

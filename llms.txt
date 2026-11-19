@@ -9,7 +9,7 @@
 - Business hours: Monday to Saturday, 9:00 AM – 6:00 PM (Gulf Standard Time)
 - Industries served: hospitality, universities and education, manufacturing and industrial, corporate enterprise
 - Project lifecycle: requirements → design → hardware supply → deployment → after-sales support
-- Brands supplied: Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, Seagate, Western Digital, AMD, Intel, APC, Eaton
+- Brands supplied: Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, ASUSTOR, Seagate, Western Digital, AMD, Intel, APC, Eaton
 
 ## Pages
 
@@ -27,12 +27,14 @@
 - [Supermicro Products](https://planman.ae/products/supermicro.html): Supermicro GPU servers, NVL72 SuperClusters, enterprise servers, storage and data center building blocks. Supplied and supported in the UAE by Plan Man.
 - [ASUS Products](https://planman.ae/products/asus.html): ASUS AI PODs, GPU servers, rack and multi-node servers, storage, AI workstations and mini PCs. Supplied and supported in the UAE by Plan Man.
 - [MSI Products](https://planman.ae/products/msi.html): MSI business laptops for AI, development and creative work, including NVIDIA RTX Spark models. Supplied and supported in the UAE by Plan Man.
+- [ASUSTOR Products](https://planman.ae/products/asustor.html): ASUSTOR NAS for home, office and business: Drivestor, Lockerstor and all-flash Flashstor models, rackmount NAS and expansion units.
 - [Rack-Scale AI Systems](https://planman.ae/products/rack-scale-ai-systems.html): Liquid-cooled NVL72 racks with 72 GPUs in one NVLink domain, built for training and AI reasoning at scale. Supplied and supported in the UAE by Plan Man.
 - [GPU & AI Servers](https://planman.ae/products/gpu-ai-servers.html): Eight-GPU HGX servers and PCIe GPU servers for AI training, inference and HPC, air- or liquid-cooled. Supplied and supported in the UAE by Plan Man.
 - [Data Center GPUs](https://planman.ae/products/data-center-gpus.html): Data center GPUs for AI inference, training, rendering and virtual workstations. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
 - [AI Networking](https://planman.ae/products/ai-networking.html): InfiniBand and Ethernet fabrics, SuperNICs and DPUs that connect GPU clusters at up to 800 Gb/s. Supplied and supported in the UAE by Plan Man.
 - [Rack & Multi-Node Servers](https://planman.ae/products/rack-multi-node-servers.html): Rackmount, multi-node and blade servers for virtualization, databases, cloud and HPC. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
 - [Storage](https://planman.ae/products/enterprise-storage.html): All-flash NVMe, high-capacity and object storage to feed GPU clusters and protect enterprise data. Supplied and supported in the UAE by Plan Man.
+- [NAS Storage](https://planman.ae/products/nas-storage.html): ASUSTOR network-attached storage, from 2-bay home units to 24-bay rackmount systems, plus expansion units. Supplied and supported in the UAE by Plan Man.
 - [AI Workstations & Deskside](https://planman.ae/products/ai-workstations.html): Desktop and deskside AI supercomputers for building, fine-tuning and running models locally. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
 - [Desktops & Client PCs](https://planman.ae/products/desktops-client-pcs.html): Business desktops and AI PCs for offices, SMBs and local AI work, pre-configured with Windows. Supplied and supported in the UAE by Plan Man.
 - [AI Laptops](https://planman.ae/products/ai-laptops.html): Windows laptops with NVIDIA RTX Spark for running AI models and agents locally, wherever you work. Supplied and supported in the UAE by Plan Man.
@@ -124,11 +126,46 @@
 - [ASUS Edge & Tower Servers](https://planman.ae/products/asus-edge.html): Edge servers and tower servers for branch offices, retail and on-site AI inference.
 - [ASUS Ascent GX10](https://planman.ae/products/asus-ascent-gx10.html): Compact personal AI supercomputer built on the NVIDIA GB10 Grace Blackwell Superchip.
 - [ASUS Control Center Data Center Edition](https://planman.ae/products/asus-acc.html): Centralised IT management for ASUS servers — monitoring, firmware updates and remote control at scale.
+- [ASUSTOR Drivestor 2 Lite (AS1102TL)](https://planman.ae/products/asustor-as1102tl.html): Entry-level 2-bay NAS for home backup, photo libraries and media streaming at a budget price.
+- [ASUSTOR Drivestor 2 Gen2 (AS1202T)](https://planman.ae/products/asustor-as1202t.html): Compact 2-bay home NAS with 2.5GbE networking for personal backup and media.
+- [ASUSTOR Drivestor 4 Gen2 (AS1204T)](https://planman.ae/products/asustor-as1204t.html): 4-bay home and small-office NAS with 2.5GbE for shared storage and backups.
+- [ASUSTOR Drivestor 4 (AS1104T)](https://planman.ae/products/asustor-as1104t.html): 4-bay value NAS with 2.5GbE for home users and small teams.
+- [ASUSTOR Drivestor 2 Pro Gen2 (AS3302T v2)](https://planman.ae/products/asustor-as3302t-v2.html): 2-bay NAS with Btrfs snapshots and media transcoding for home offices and creators.
+- [ASUSTOR Drivestor 4 Pro Gen2 (AS3304T v2)](https://planman.ae/products/asustor-as3304t-v2.html): 4-bay NAS with Btrfs snapshots and media transcoding for small offices and creators.
+- [ASUSTOR AS5202T](https://planman.ae/products/asustor-as5202t.html): 2-bay Intel NAS with dual 2.5GbE and HDMI output for home and media use.
+- [ASUSTOR AS5304T](https://planman.ae/products/asustor-as5304t.html): 4-bay Intel NAS with dual 2.5GbE and HDMI for content creators and small offices.
+- [ASUSTOR AS5402T](https://planman.ae/products/asustor-as5402t.html): 2-bay NAS with four M.2 NVMe slots and dual 2.5GbE for fast, hybrid flash storage.
+- [ASUSTOR AS5404T](https://planman.ae/products/asustor-as5404t.html): 4-bay NAS with four M.2 NVMe slots and dual 2.5GbE for fast shared storage.
+- [ASUSTOR Lockerstor 2 Gen2 (AS6702T)](https://planman.ae/products/asustor-as6702t.html): 2-bay enthusiast NAS with Celeron N5105, dual 2.5GbE and four M.2 NVMe slots.
+- [ASUSTOR Lockerstor 4 Gen2 (AS6704T)](https://planman.ae/products/asustor-as6704t.html): 4-bay enthusiast NAS with dual 2.5GbE, four M.2 slots and a PCIe slot for 10GbE.
+- [ASUSTOR Lockerstor 6 Gen2 (AS6706T)](https://planman.ae/products/asustor-as6706t.html): 6-bay enthusiast NAS with dual 2.5GbE, four M.2 slots and a PCIe slot for 10GbE.
+- [ASUSTOR Lockerstor 2 Gen2+ (AS6702T v2)](https://planman.ae/products/asustor-as6702t-v2.html): Refreshed 2-bay Lockerstor with dual 5GbE and four M.2 NVMe slots.
+- [ASUSTOR Lockerstor 4 Gen2+ (AS6704T v2)](https://planman.ae/products/asustor-as6704t-v2.html): Refreshed 4-bay Lockerstor with dual 5GbE, four M.2 slots and a 10GbE upgrade path.
+- [ASUSTOR Lockerstor 6 Gen2+ (AS6706T v2)](https://planman.ae/products/asustor-as6706t-v2.html): Refreshed 6-bay Lockerstor with dual 5GbE, four M.2 slots and a 10GbE upgrade path.
+- [ASUSTOR Lockerstor 4 Gen3 (AS6804T)](https://planman.ae/products/asustor-as6804t.html): 4-bay AMD Ryzen NAS with ECC DDR5, dual 10GbE, dual 5GbE and USB4.
+- [ASUSTOR Lockerstor 6 Gen3 (AS6806T)](https://planman.ae/products/asustor-as6806t.html): 6-bay AMD Ryzen NAS with ECC DDR5, dual 10GbE, dual 5GbE and USB4.
+- [ASUSTOR Lockerstor 8 Gen3 (AS6808T)](https://planman.ae/products/asustor-as6808t.html): 8-bay AMD Ryzen NAS with ECC DDR5, dual 10GbE, dual 5GbE and USB4.
+- [ASUSTOR Lockerstor 10 Gen3 (AS6810T)](https://planman.ae/products/asustor-as6810t.html): 10-bay AMD Ryzen NAS with ECC DDR5, dual 10GbE, dual 5GbE and USB4 for busy teams.
+- [ASUSTOR Lockerstor 8 (AS6508T)](https://planman.ae/products/asustor-as6508t.html): 8-bay business NAS with dual 10GbE, dual 2.5GbE and M.2 SSD caching.
+- [ASUSTOR Lockerstor 10 (AS6510T)](https://planman.ae/products/asustor-as6510t.html): 10-bay business NAS with dual 10GbE, dual 2.5GbE and M.2 SSD caching.
+- [ASUSTOR Flashstor 6 (FS6706T)](https://planman.ae/products/asustor-fs6706t.html): Compact all-flash NAS with six M.2 NVMe slots and dual 2.5GbE for quiet, fast storage.
+- [ASUSTOR Flashstor 12 Pro (FS6712X)](https://planman.ae/products/asustor-fs6712x.html): All-flash NAS with twelve M.2 NVMe slots and 10GbE for video editing and creative teams.
+- [ASUSTOR Flashstor 6 Gen2 (FS6806X)](https://planman.ae/products/asustor-fs6806x.html): AMD Ryzen all-flash NAS with six M.2 NVMe slots, 10GbE and USB4.
+- [ASUSTOR Flashstor 12 Pro Gen2 (FS6812X)](https://planman.ae/products/asustor-fs6812x.html): AMD Ryzen all-flash NAS with twelve M.2 NVMe slots, ECC DDR5 and dual 10GbE.
+- [ASUSTOR Lockerstor 4RS / 4RD (AS6504RS / AS6504RD)](https://planman.ae/products/asustor-as6504rs-rd.html): 4-bay 1U rackmount NAS, with single (RS) or redundant (RD) power, for SMB file sharing and backup.
+- [ASUSTOR Lockerstor 12RD (AS6512RD)](https://planman.ae/products/asustor-as6512rd.html): 12-bay 2U rackmount NAS with redundant power for SMB file servers and backup targets.
+- [ASUSTOR Lockerstor 12R Pro Gen2 (AS7212RDX)](https://planman.ae/products/asustor-as7212rdx.html): 12-bay 2U rackmount NAS with AMD Ryzen 7 PRO, up to 192 GB ECC DDR5 and redundant power.
+- [ASUSTOR Lockerstor 16R Pro Gen2 (AS7216RDX)](https://planman.ae/products/asustor-as7216rdx.html): 16-bay rackmount NAS with AMD Ryzen 7 PRO, ECC DDR5 and room for 25/50GbE cards.
+- [ASUSTOR Lockerstor 24R Pro Gen2 (AS7224RDX)](https://planman.ae/products/asustor-as7224rdx.html): 24-bay rackmount NAS with AMD Ryzen 7 PRO and ECC DDR5 for high-capacity business storage.
+- [ASUSTOR Xpanstor 4 (AS5004U)](https://planman.ae/products/asustor-as5004u.html): 4-bay USB-C expansion enclosure that adds capacity to an ASUSTOR NAS without downtime.
+- [ASUSTOR AS6004U Expansion Unit](https://planman.ae/products/asustor-as6004u.html): 4-bay USB expansion unit; supported NAS models connect up to three for extra capacity.
+- [ASUSTOR Xpanstor 12R (AX7012R)](https://planman.ae/products/asustor-ax7012r.html): 12-bay 2U SAS/SATA JBOD expansion unit for ASUSTOR rackmount NAS.
+- [ASUSTOR AS-SAS8e SAS HBA](https://planman.ae/products/asustor-as-sas8e.html): SAS-3 host bus adapter (Broadcom HBA 9500-8e) for connecting Xpanstor 12R expansion units.
 
 ## Frequently asked questions
 
 - **What does Plan Man do?** Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We handle IT projects end to end: requirement analysis, solution design, hardware supply, deployment and after-sales support, for hospitality groups, universities, manufacturers and enterprises across the UAE.
-- **Which hardware brands does Plan Man supply?** We supply complete servers, storage, GPUs, networking, workstations and power equipment from premium enterprise brands including Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, Seagate, Western Digital, AMD, Intel, APC and Eaton.
+- **Which hardware brands does Plan Man supply?** We supply complete servers, storage, GPUs, networking, workstations and power equipment from premium enterprise brands including Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, ASUSTOR, Seagate, Western Digital, AMD, Intel, APC and Eaton.
 - **Does Plan Man supply NVIDIA GPU servers and AI infrastructure in the UAE?** Yes. We supply and integrate NVIDIA-based AI infrastructure, from RTX PRO and HGX B200/B300 GPU servers to rack-scale GB300 NVL72 systems from Supermicro and ASUS, and we design and deploy GPU clusters, AI labs and inference platforms.
 - **Which industries does Plan Man work with?** We focus on hospitality (hotels, resorts and hotel groups), universities and education, manufacturing and industrial sites, and corporate enterprises in the UAE.
 - **Does Plan Man provide installation and after-sales support?** Yes. Our team handles installation, configuration, migration, testing and handover, and continues with after-sales support including warranty and RMA handling, maintenance and upgrades.
