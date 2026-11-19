@@ -37,6 +37,7 @@
     --tag-nvidia: #8cc63f;
     --tag-supermicro: #4da3ff;
     --tag-asus: #c8a2ff;
+    --tag-asustor: #ffb35c;
 
     --radius: 2px;
     --radius-btn: 12px;
@@ -419,6 +420,7 @@ ul.ticks li::before {
 .tag-nvidia { color: var(--tag-nvidia); border-color: rgba(140,198,63,.4); }
 .tag-supermicro { color: var(--tag-supermicro); border-color: rgba(77,163,255,.4); }
 .tag-asus { color: var(--tag-asus); border-color: rgba(200,162,255,.4); }
+.tag-asustor { color: var(--tag-asustor); border-color: rgba(255,179,92,.4); }
 .tag-plain::before { display: none; }
 
 /* Process steps */
@@ -593,6 +595,7 @@ ul.ticks li::before {
 
 .product-card[data-brand="supermicro"] { --glow: rgba(77,163,255,.14); --glow-solid: var(--tag-supermicro); }
 .product-card[data-brand="asus"] { --glow: rgba(200,162,255,.14); --glow-solid: var(--tag-asus); }
+.product-card[data-brand="asustor"] { --glow: rgba(255,179,92,.14); --glow-solid: var(--tag-asustor); }
 
 /* Modal */
 .modal {
@@ -1062,6 +1065,7 @@ a.feature-card { color: inherit; }
     --tag-nvidia: #3d7410;
     --tag-supermicro: #1d64c4;
     --tag-asus: #7443c9;
+    --tag-asustor: #a85400;
 
     --nav-bg: rgba(255, 255, 255, 0.78);
     --nav-bg-solid: rgba(255, 255, 255, 0.95);
@@ -1074,6 +1078,7 @@ a.feature-card { color: inherit; }
 [data-theme="light"] .tag-nvidia { border-color: rgba(61, 116, 16, .35); }
 [data-theme="light"] .tag-supermicro { border-color: rgba(29, 100, 196, .35); }
 [data-theme="light"] .tag-asus { border-color: rgba(116, 67, 201, .35); }
+[data-theme="light"] .tag-asustor { border-color: rgba(168, 84, 0, .35); }
 [data-theme="light"] .card, [data-theme="light"] .product-card, [data-theme="light"] .contact-panel { box-shadow: 0 1px 2px rgba(16, 24, 12, .04), 0 8px 24px -12px rgba(16, 24, 12, .10); }
 [data-theme="light"] .card:hover, [data-theme="light"] .product-card:hover { box-shadow: 0 2px 4px rgba(16, 24, 12, .05), 0 18px 40px -16px rgba(16, 24, 12, .18); }
 [data-theme="light"] .mega { box-shadow: 0 24px 48px -24px rgba(16, 24, 12, .18); }
@@ -1091,7 +1096,7 @@ a.feature-card { color: inherit; }
     --border: #262626; --border-strong: #3a3a3a;
     --text: #ffffff; --text-2: #b3b3b3; --text-3: #8a8a8a;
     --accent: #8cc63f; --accent-hover: #a3dc55; --accent-soft: rgba(140, 198, 63, 0.12); --accent-text: #8cc63f;
-    --tag-nvidia: #8cc63f; --tag-supermicro: #4da3ff; --tag-asus: #c8a2ff;
+    --tag-nvidia: #8cc63f; --tag-supermicro: #4da3ff; --tag-asus: #c8a2ff; --tag-asustor: #ffb35c;
     --tag-bg: rgba(0, 0, 0, 0.4); --media-bg: #0f0f0f;
     --logo-filter: brightness(0) invert(1);
     color: var(--text);
@@ -1102,6 +1107,7 @@ a.feature-card { color: inherit; }
 [data-theme="light"] .force-dark .tag-nvidia { border-color: rgba(140,198,63,.4); }
 [data-theme="light"] .force-dark .tag-supermicro { border-color: rgba(77,163,255,.4); }
 [data-theme="light"] .force-dark .tag-asus { border-color: rgba(200,162,255,.4); }
+[data-theme="light"] .force-dark .tag-asustor { border-color: rgba(255,179,92,.4); }
 
 /* Theme toggle */
 .theme-toggle {

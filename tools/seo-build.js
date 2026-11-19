@@ -67,7 +67,7 @@ const FAQ = [
   ['What does Plan Man do?',
    'Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We handle IT projects end to end: requirement analysis, solution design, hardware supply, deployment and after-sales support, for hospitality groups, universities, manufacturers and enterprises across the UAE.'],
   ['Which hardware brands does Plan Man supply?',
-   'We supply complete servers, storage, GPUs, networking, workstations and power equipment from premium enterprise brands including Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, Seagate, Western Digital, AMD, Intel, APC and Eaton.'],
+   'We supply complete servers, storage, GPUs, networking, workstations and power equipment from premium enterprise brands including Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, ASUSTOR, Seagate, Western Digital, AMD, Intel, APC and Eaton.'],
   ['Does Plan Man supply NVIDIA GPU servers and AI infrastructure in the UAE?',
    'Yes. We supply and integrate NVIDIA-based AI infrastructure, from RTX PRO and HGX B200/B300 GPU servers to rack-scale GB300 NVL72 systems from Supermicro and ASUS, and we design and deploy GPU clusters, AI labs and inference platforms.'],
   ['Which industries does Plan Man work with?',
@@ -370,7 +370,7 @@ write('llms.txt', `# Plan Man
 - Business hours: Monday to Saturday, 9:00 AM – 6:00 PM (Gulf Standard Time)
 - Industries served: hospitality, universities and education, manufacturing and industrial, corporate enterprise
 - Project lifecycle: requirements → design → hardware supply → deployment → after-sales support
-- Brands supplied: Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, Seagate, Western Digital, AMD, Intel, APC, Eaton
+- Brands supplied: Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, ASUSTOR, Seagate, Western Digital, AMD, Intel, APC, Eaton
 
 ## Pages
 

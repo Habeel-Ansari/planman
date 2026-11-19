@@ -61,6 +61,7 @@ html[data-theme="light"] {
     --tag-nvidia: #3d7410;
     --tag-supermicro: #0066cc;
     --tag-asus: #7443c9;
+    --tag-asustor: #a85400;
 
     --nav-bg: rgba(255, 255, 255, 0.72);
     --nav-bg-solid: rgba(255, 255, 255, 0.86);
