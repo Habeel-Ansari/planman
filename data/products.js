@@ -77,7 +77,7 @@ window.BRAND_LEADS = {
     nvidia: 'NVIDIA rack-scale systems, HGX platforms, data center GPUs, networking, DGX systems and AI software.',
     supermicro: 'Supermicro GPU servers, NVL72 SuperClusters, enterprise servers, storage and data center building blocks.',
     asus: 'ASUS AI PODs, GPU servers, rack and multi-node servers, storage, AI workstations and mini PCs.',
-    asustor: 'ASUSTOR NAS for home, office and business: Drivestor, Lockerstor and all-flash Flashstor models, rackmount NAS, expansion units and genuine accessories.',
+    asustor: 'Exclusive ASUSTOR distributor in the Middle East: Drivestor, Lockerstor and all-flash Flashstor NAS, rackmount storage, expansion units and accessories.',
     msi: 'MSI business laptops for AI, development and creative work, including NVIDIA RTX Spark models.'
 };
 
@@ -2129,7 +2129,7 @@ window.PRODUCTS = [
         id: 'asustor-as-tray-s', brand: 'asustor', cat: 'nas-accessories', icon: 'ph-hard-drive',
         img: 'assets/products/asustor-as-tray-s.webp', imgSize: [461, 286],
         name: 'ASUSTOR AS-Tray-S HDD Tray',
-        summary: 'Spare black drive tray for 2.5" and 3.5" drives in ASUSTOR NAS.',
+        summary: 'Screw-mount drive tray for 2.5" and 3.5" drives in Drivestor Pro, AS52, AS53 and AS54 series NAS and the Xpanstor 4.',
         specs: [
             ['Type', 'Drive tray'],
             ['Drive size', '2.5" and 3.5"'],

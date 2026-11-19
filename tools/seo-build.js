@@ -50,7 +50,7 @@ const PAGES = [
     description: 'IT infrastructure for hotels, universities, manufacturers and enterprises in the UAE, from requirements and design to hardware supply, deployment and support.' },
   { file: 'products.html', url: '/products.html', name: 'Products', type: 'CollectionPage', priority: '0.9',
     title: 'Servers, Storage, GPUs & Networking in Dubai | Plan Man',
-    description: 'Servers, storage, data center GPUs, AI systems and networking from Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS and Cisco, supplied and supported in the UAE.' },
+    description: 'Servers, storage, NAS, GPUs, AI systems and networking from Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, ASUSTOR and Cisco, supplied in the UAE.' },
   { file: 'solutions.html', url: '/solutions.html', name: 'Solutions', type: 'WebPage', priority: '0.8',
     title: 'AI, HPC, Clustering & Hosting Solutions, UAE | Plan Man',
     description: 'GPU clusters and AI factories, HPC, server clustering and high availability, virtualization, AI storage and hosting, designed and deployed in the UAE.' },
@@ -70,6 +70,8 @@ const FAQ = [
    'Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We handle IT projects end to end: requirement analysis, solution design, hardware supply, deployment and after-sales support, for hospitality groups, universities, manufacturers and enterprises across the UAE.'],
   ['Which hardware brands does Plan Man supply?',
    'We supply complete servers, storage, GPUs, networking, workstations and power equipment from premium enterprise brands including Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, ASUSTOR, Seagate, Western Digital, AMD, Intel, APC and Eaton.'],
+  ['Is Plan Man an ASUSTOR distributor?',
+   'Yes. Plan Man is the exclusive ASUSTOR distributor in the Middle East. We supply the full ASUSTOR range from Dubai: Drivestor and Lockerstor NAS, all-flash Flashstor, rackmount Lockerstor Pro systems, expansion units and genuine accessories such as memory, network cards and switches.'],
   ['Does Plan Man supply NVIDIA GPU servers and AI infrastructure in the UAE?',
    'Yes. We supply and integrate NVIDIA-based AI infrastructure, from RTX PRO and HGX B200/B300 GPU servers to rack-scale GB300 NVL72 systems from Supermicro and ASUS, and we design and deploy GPU clusters, AI labs and inference platforms.'],
   ['Which industries does Plan Man work with?',
@@ -177,7 +179,7 @@ const BRAND_TITLES = {
   supermicro: 'Supermicro Servers & GPU Systems in Dubai, UAE | Plan Man',
   asus: 'ASUS Servers & AI Systems in Dubai, UAE | Plan Man',
   msi: 'MSI AI Laptops in Dubai, UAE | Plan Man',
-  asustor: 'ASUSTOR NAS Storage in Dubai, UAE | Plan Man'
+  asustor: 'ASUSTOR NAS Distributor in Dubai & Middle East | Plan Man'
 };
 const COLLECTION_SLUG = { gold: 'supermicro-gold-series' };
 const COLLECTION_TITLES = { gold: 'Supermicro Gold Series Servers in Dubai, UAE | Plan Man' };
@@ -274,7 +276,7 @@ function jsonLd(page) {
       { '@type': 'ContactPoint', contactType: 'sales', telephone: BUSINESS.phone, email: BUSINESS.email, areaServed: 'AE', availableLanguage: ['English'] },
       { '@type': 'ContactPoint', contactType: 'customer support', email: BUSINESS.supportEmail, telephone: BUSINESS.phone, areaServed: 'AE', availableLanguage: ['English'] }
     ],
-    knowsAbout: ['Enterprise servers', 'Data storage', 'NVIDIA GPU servers', 'AI infrastructure', 'High-performance computing', 'Server clustering', 'Virtualization', 'Networking', 'Liquid cooling', 'IT infrastructure for hospitality', 'IT infrastructure for education', 'IT infrastructure for manufacturing'],
+    knowsAbout: ['Enterprise servers', 'Data storage', 'NAS storage', 'ASUSTOR NAS', 'NVIDIA GPU servers', 'AI infrastructure', 'High-performance computing', 'Server clustering', 'Virtualization', 'Networking', 'Liquid cooling', 'IT infrastructure for hospitality', 'IT infrastructure for education', 'IT infrastructure for manufacturing'],
     priceRange: 'Quote on request'
   };
   const website = { '@type': 'WebSite', '@id': `${SITE}/#website`, url: `${SITE}/`, name: BUSINESS.name, alternateName: BUSINESS.alternateNames, description: BUSINESS.description, publisher: { '@id': `${SITE}/#organization` }, inLanguage: 'en' };

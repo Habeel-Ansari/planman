@@ -15,7 +15,7 @@
 
 - [Home](https://planman.ae/): Dubai IT solutions provider and hardware supplier: servers, storage, GPUs and networking from premium brands, with design, deployment and after-sales support.
 - [Industries](https://planman.ae/industries.html): IT infrastructure for hotels, universities, manufacturers and enterprises in the UAE, from requirements and design to hardware supply, deployment and support.
-- [Products](https://planman.ae/products.html): Servers, storage, data center GPUs, AI systems and networking from Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS and Cisco, supplied and supported in the UAE.
+- [Products](https://planman.ae/products.html): Servers, storage, NAS, GPUs, AI systems and networking from Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, ASUSTOR and Cisco, supplied in the UAE.
 - [Solutions](https://planman.ae/solutions.html): GPU clusters and AI factories, HPC, server clustering and high availability, virtualization, AI storage and hosting, designed and deployed in the UAE.
 - [Services](https://planman.ae/services.html): Requirement analysis, solution design, rack integration, onsite deployment, liquid cooling, managed services and after-sales support from our Dubai team.
 - [About](https://planman.ae/about.html): Plan Man is a Dubai-based solution provider and enterprise hardware supplier for hospitality, education, manufacturing and corporate enterprise across the UAE.
@@ -27,7 +27,7 @@
 - [Supermicro Products](https://planman.ae/products/supermicro.html): Supermicro GPU servers, NVL72 SuperClusters, enterprise servers, storage and data center building blocks. Supplied and supported in the UAE by Plan Man.
 - [ASUS Products](https://planman.ae/products/asus.html): ASUS AI PODs, GPU servers, rack and multi-node servers, storage, AI workstations and mini PCs. Supplied and supported in the UAE by Plan Man.
 - [MSI Products](https://planman.ae/products/msi.html): MSI business laptops for AI, development and creative work, including NVIDIA RTX Spark models. Supplied and supported in the UAE by Plan Man.
-- [ASUSTOR Products](https://planman.ae/products/asustor.html): ASUSTOR NAS for home, office and business: Drivestor, Lockerstor and all-flash Flashstor models, rackmount NAS, expansion units and genuine accessories.
+- [ASUSTOR Products](https://planman.ae/products/asustor.html): Exclusive ASUSTOR distributor in the Middle East: Drivestor, Lockerstor and all-flash Flashstor NAS, rackmount storage, expansion units and accessories.
 - [Rack-Scale AI Systems](https://planman.ae/products/rack-scale-ai-systems.html): Liquid-cooled NVL72 racks with 72 GPUs in one NVLink domain, built for training and AI reasoning at scale. Supplied and supported in the UAE by Plan Man.
 - [GPU & AI Servers](https://planman.ae/products/gpu-ai-servers.html): Eight-GPU HGX servers and PCIe GPU servers for AI training, inference and HPC, air- or liquid-cooled. Supplied and supported in the UAE by Plan Man.
 - [Data Center GPUs](https://planman.ae/products/data-center-gpus.html): Data center GPUs for AI inference, training, rendering and virtual workstations. Supplied, deployed and supported in Dubai and the UAE by Plan Man.
@@ -197,7 +197,7 @@
 - [ASUSTOR AS-90W 90W Power Adapter](https://planman.ae/products/asustor-as-90w.html): Replacement 90W power adapter for ASUSTOR NAS and expansion units.
 - [ASUSTOR AS-65W 65W Power Adapter](https://planman.ae/products/asustor-as-65w.html): Replacement 65W power adapter for ASUSTOR NAS.
 - [ASUSTOR AS-250W 250W Flex Power Supply](https://planman.ae/products/asustor-as-250w.html): Replacement 250W Flex ATX power supply for ASUSTOR NAS.
-- [ASUSTOR AS-Tray-S HDD Tray](https://planman.ae/products/asustor-as-tray-s.html): Spare black drive tray for 2.5" and 3.5" drives in ASUSTOR NAS.
+- [ASUSTOR AS-Tray-S HDD Tray](https://planman.ae/products/asustor-as-tray-s.html): Screw-mount drive tray for 2.5" and 3.5" drives in Drivestor Pro, AS52, AS53 and AS54 series NAS and the Xpanstor 4.
 - [ASUSTOR AS-TrayLock HDD Tray Lock](https://planman.ae/products/asustor-as-traylock.html): Lock for ASUSTOR drive trays, to keep 2.5" and 3.5" drives from being removed.
 - [ASUSTOR AS-Tray HDD Tray](https://planman.ae/products/asustor-as-tray.html): Spare black drive tray for 2.5" and 3.5" drives in ASUSTOR NAS.
 - [ASUSTOR AS-Rail Rack Rail Kit](https://planman.ae/products/asustor-as-rail.html): Rail kit for mounting ASUSTOR 1U, 2U and 3U rackmount NAS in a server rack.
@@ -209,6 +209,7 @@
 
 - **What does Plan Man do?** Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We handle IT projects end to end: requirement analysis, solution design, hardware supply, deployment and after-sales support, for hospitality groups, universities, manufacturers and enterprises across the UAE.
 - **Which hardware brands does Plan Man supply?** We supply complete servers, storage, GPUs, networking, workstations and power equipment from premium enterprise brands including Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, ASUSTOR, Seagate, Western Digital, AMD, Intel, APC and Eaton.
+- **Is Plan Man an ASUSTOR distributor?** Yes. Plan Man is the exclusive ASUSTOR distributor in the Middle East. We supply the full ASUSTOR range from Dubai: Drivestor and Lockerstor NAS, all-flash Flashstor, rackmount Lockerstor Pro systems, expansion units and genuine accessories such as memory, network cards and switches.
 - **Does Plan Man supply NVIDIA GPU servers and AI infrastructure in the UAE?** Yes. We supply and integrate NVIDIA-based AI infrastructure, from RTX PRO and HGX B200/B300 GPU servers to rack-scale GB300 NVL72 systems from Supermicro and ASUS, and we design and deploy GPU clusters, AI labs and inference platforms.
 - **Which industries does Plan Man work with?** We focus on hospitality (hotels, resorts and hotel groups), universities and education, manufacturing and industrial sites, and corporate enterprises in the UAE.
 - **Does Plan Man provide installation and after-sales support?** Yes. Our team handles installation, configuration, migration, testing and handover, and continues with after-sales support including warranty and RMA handling, maintenance and upgrades.
