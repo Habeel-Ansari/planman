@@ -448,13 +448,15 @@ html[data-theme="dark"] .catalog-logo[data-brand="asustor"] { filter: invert(1);
 .promo-dot[aria-current="true"] { width: 26px; opacity: 1; background: var(--accent); }
 .promo-asustor {
     background:
-        radial-gradient(circle at 88% 0%, rgba(255, 150, 40, .26), transparent 50%),
-        radial-gradient(circle at 0% 100%, rgba(255, 110, 20, .16), transparent 55%),
-        #070504;
+        radial-gradient(circle at 88% 0%, rgba(40, 200, 110, .26), transparent 50%),
+        radial-gradient(circle at 0% 100%, rgba(20, 170, 90, .16), transparent 55%),
+        #040705;
 }
-.promo-asustor .prebook-pill { background: rgba(255, 150, 40, .16); color: #ffb35c; }
-.promo-asustor .prebook-dot { background: #ff9a2e; animation-name: promo-pulse-orange; }
-@keyframes promo-pulse-orange { 0% { box-shadow: 0 0 0 0 rgba(255, 154, 46, .6); } 70% { box-shadow: 0 0 0 10px rgba(255, 154, 46, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 154, 46, 0); } }
+.promo-asustor .prebook-pill { background: rgba(40, 200, 110, .16); color: #5ee08f; }
+.promo-asustor .btn-primary { background: #22b864; color: #fff; }
+.promo-asustor .btn-primary:hover { background: #1ea558; }
+.promo-asustor .prebook-dot { background: #2ecc71; animation-name: promo-pulse-green; }
+@keyframes promo-pulse-green { 0% { box-shadow: 0 0 0 0 rgba(46, 204, 113, .6); } 70% { box-shadow: 0 0 0 10px rgba(46, 204, 113, 0); } 100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); } }
 .promo-logo { display: inline-block; height: .78em; width: auto; vertical-align: baseline; margin-right: .1em; filter: invert(1); }
 @media (max-width: 600px) { .prebook-img { height: 160px; } .prebook-img img { max-height: 160px; } .prebook-panel { border-radius: 24px; } }
 

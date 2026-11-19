@@ -452,11 +452,11 @@ function prebookHtml() {
                 <div class="prebook-panel promo-slide promo-asustor force-dark">
                     <div class="prebook-head">
                         <div>
-                            <span class="prebook-pill"><span class="prebook-dot" aria-hidden="true"></span>Exclusive Middle East distributor</span>
+                            <span class="prebook-pill"><span class="prebook-dot" aria-hidden="true"></span>Exclusive Middle East partner</span>
                             <h2 class="h2" id="asustor-promo-title"><img class="promo-logo" src="assets/brands/asustor.svg" alt="ASUSTOR" width="306" height="56"> NAS, Only from Plan Man</h2>
-                            <p class="lead">Plan Man is the one and only exclusive distributor of ASUSTOR in the Middle East. From 2-bay home NAS to 24-bay rackmount storage, get genuine stock straight from the source.</p>
+                            <p class="lead">Plan Man is the one and only exclusive partner of ASUSTOR in the Middle East. From 2-bay home NAS to 24-bay rackmount storage, get genuine stock straight from the source.</p>
                         </div>
-                        <a class="btn btn-primary" href="products.html?brand=asustor">Explore ASUSTOR NAS <i class="ph ph-arrow-right"></i></a>
+                        <a class="btn btn-primary" href="products/nas-storage.html">Explore ASUSTOR NAS <i class="ph ph-arrow-right"></i></a>
                     </div>
                     <div class="prebook-grid">${nas.map((p) => promoCard(p, 'View', (q) => q.specs.slice(0, 2).map(([, v]) => v).join(' · '))).join('')}
                     </div>
