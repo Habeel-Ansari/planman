@@ -71,7 +71,7 @@ const FAQ = [
   ['Which hardware brands does Plan Man supply?',
    'We supply complete servers, storage, GPUs, networking, workstations and power equipment from premium enterprise brands including Dell, HPE, Lenovo, NVIDIA, Supermicro, ASUS, Cisco, NetApp, Pure Storage, Synology, QNAP, ASUSTOR, Seagate, Western Digital, AMD, Intel, APC and Eaton.'],
   ['Is Plan Man an ASUSTOR partner?',
-   'Yes. Plan Man is the exclusive ASUSTOR partner in the Middle East. We supply the full ASUSTOR range from Dubai: Drivestor and Lockerstor NAS, all-flash Flashstor, rackmount Lockerstor Pro systems, expansion units and genuine accessories such as memory, network cards and switches.'],
+   'Yes. Plan Man is an authorised ASUSTOR partner in the Middle East. We supply the full ASUSTOR range from Dubai: Drivestor and Lockerstor NAS, all-flash Flashstor, rackmount Lockerstor Pro systems, expansion units and genuine accessories such as memory, network cards and switches.'],
   ['Does Plan Man supply NVIDIA GPU servers and AI infrastructure in the UAE?',
    'Yes. We supply and integrate NVIDIA-based AI infrastructure, from RTX PRO and HGX B200/B300 GPU servers to rack-scale GB300 NVL72 systems from Supermicro and ASUS, and we design and deploy GPU clusters, AI labs and inference platforms.'],
   ['Which industries does Plan Man work with?',
@@ -199,7 +199,7 @@ const NAS_GROUPS = [
 const LANDING_EXTRA = {
   nas: {
     title: 'NAS Storage in Dubai & UAE: Home & Business NAS | Plan Man',
-    intro: 'A NAS (network-attached storage) is a small, always-on server that keeps your files, backups and media in one place, reachable from every PC, phone and office on your network. As the exclusive ASUSTOR partner in the Middle East, Plan Man supplies the complete ASUSTOR NAS range in Dubai and across the UAE, from 2-bay home units to 24-bay rackmount systems, and can supply the drives, install the NAS and set up backups for you.',
+    intro: 'A NAS (network-attached storage) is a small, always-on server that keeps your files, backups and media in one place, reachable from every PC, phone and office on your network. As an authorised ASUSTOR partner in the Middle East, Plan Man supplies the complete ASUSTOR NAS range in Dubai and across the UAE, from 2-bay home units to 24-bay rackmount systems, and can supply the drives, install the NAS and set up backups for you.',
     groups: NAS_GROUPS,
     guide: {
       title: 'How to Choose a NAS',
@@ -215,7 +215,7 @@ const LANDING_EXTRA = {
       ['What is a NAS and do I need one?', 'A NAS (network-attached storage) is a dedicated storage server on your network. It centralises files, backs up computers and phones automatically, streams media and gives secure remote access, without paying monthly cloud fees for large amounts of data. Most homes with many devices and almost every small office benefit from one.'],
       ['Which ASUSTOR NAS is right for a small office?', 'For 5 to 20 people, a 4- to 8-bay Lockerstor is a good fit: the Lockerstor Gen3 (AS68 series) adds AMD Ryzen, ECC memory and 10GbE for busy teams, while the Lockerstor Gen2+ is a strong value choice. Tell us your users, capacity and applications and we will recommend a model.'],
       ['Can Plan Man supply the hard drives and set up the NAS?', 'Yes. We can supply NAS-rated hard drives and SSDs from Seagate and Western Digital, install them, configure RAID, users and shares, and set up backups, so the NAS is ready to use on delivery.'],
-      ['Is Plan Man an official ASUSTOR partner?', 'Yes. Plan Man is the exclusive ASUSTOR partner in the Middle East, supplying the full ASUSTOR NAS range, expansion units and genuine accessories from Dubai.'],
+      ['Is Plan Man an official ASUSTOR partner?', 'Yes. Plan Man is an authorised ASUSTOR partner in the Middle East, supplying the full ASUSTOR NAS range, expansion units and genuine accessories from Dubai.'],
       ['Can I add more storage to an ASUSTOR NAS later?', 'Yes. You can replace drives with larger ones, add SSDs in the M.2 slots, or connect ASUSTOR expansion units: USB units such as the Xpanstor 4 for desktop models, or the Xpanstor 12R SAS enclosure for rackmount Lockerstor R Pro Gen2 models.']
     ]
   }
@@ -459,9 +459,9 @@ function asustorHtml() {
         <div class="container">
             <div class="section-head-row reveal">
                 <div>
-                    <span class="nas-pill"><span class="prebook-dot" aria-hidden="true"></span>Exclusive Middle East Partner</span>
-                    <h2 class="h2" id="asustor-title"><img class="nas-logo" src="assets/brands/asustor.svg" alt="ASUSTOR" width="306" height="56"> NAS, Only from Plan Man</h2>
-                    <p class="lead">Plan Man is the one and only exclusive partner of ASUSTOR in the Middle East. From 2-bay home NAS to 24-bay rackmount storage, get genuine stock straight from the source.</p>
+                    <span class="nas-pill"><span class="prebook-dot" aria-hidden="true"></span>Authorised Middle East Partner</span>
+                    <h2 class="h2" id="asustor-title"><img class="nas-logo" src="assets/brands/asustor.svg" alt="ASUSTOR" width="306" height="56"> NAS from Plan Man</h2>
+                    <p class="lead">Plan Man is an authorised ASUSTOR partner in the Middle East. From 2-bay home NAS to 24-bay rackmount storage, get genuine stock straight from the source.</p>
                 </div>
                 <a class="btn btn-primary" href="products/nas-storage.html">Explore ASUSTOR NAS <i class="ph ph-arrow-right"></i></a>
             </div>
