@@ -2,7 +2,7 @@
 
 > Plan Man is a Dubai-based enterprise IT solutions provider and hardware supplier. We take projects from requirements and design through hardware supply, deployment and after-sales support for hospitality groups, universities, manufacturers and enterprises across the UAE, supplying servers, storage, GPUs and networking from all premium brands.
 
-Source: https://planman.ae/ · Generated 2026-11-19 · Contact: +971 58 522 5166 · sales@planmanme.com
+Source: https://planman.ae/ · Generated 2026-11-21 · Contact: +971 58 522 5166 · sales@planmanme.com
 
 ---
 
@@ -85,11 +85,11 @@ Data center refreshes, private cloud, backup and DR, and end-user hardware at sc
 
 Enterprise solutions
 
-Exclusive Middle East Partner
+Authorised Middle East Partner
 
-### NAS, Only from Plan Man
+### NAS from Plan Man
 
-Plan Man is the one and only exclusive partner of ASUSTOR in the Middle East. From 2-bay home NAS to 24-bay rackmount storage, get genuine stock straight from the source.
+Plan Man is an authorised ASUSTOR partner in the Middle East. From 2-bay home NAS to 24-bay rackmount storage, get genuine stock straight from the source.
 
 Explore ASUSTOR NAS
 
@@ -1096,7 +1096,7 @@ We supply complete servers, storage, GPUs, networking, workstations and power eq
 
 ### Is Plan Man an ASUSTOR partner?
 
-Yes. Plan Man is the exclusive ASUSTOR partner in the Middle East. We supply the full ASUSTOR range from Dubai: Drivestor and Lockerstor NAS, all-flash Flashstor, rackmount Lockerstor Pro systems, expansion units and genuine accessories such as memory, network cards and switches.
+Yes. Plan Man is an authorised ASUSTOR partner in the Middle East. We supply the full ASUSTOR range from Dubai: Drivestor and Lockerstor NAS, all-flash Flashstor, rackmount Lockerstor Pro systems, expansion units and genuine accessories such as memory, network cards and switches.
 
 ### Does Plan Man supply NVIDIA GPU servers and AI infrastructure in the UAE?
 
