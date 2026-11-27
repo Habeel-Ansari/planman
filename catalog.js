@@ -102,7 +102,7 @@
         <article class="product-card" data-brand="${p.brand}" style="--i:${Math.min(i, 12)}">
             <div class="product-visual${p.img ? ' has-photo' : ''}">
                 <span class="tag tag-${p.brand}">${esc(brands[p.brand])}</span>
-                ${p.preorder ? '<span class="badge-new badge-preorder">Pre-booking</span>' : p.isNew ? '<span class="badge-new">New</span>' : cols[p.series] ? `<span class="badge-new badge-series">${esc(cols[p.series].badge)}</span>` : ''}
+                ${p.preorder ? '<span class="badge-new badge-preorder">Pre-booking</span>' : p.isNew ? '<span class="badge-new">New</span>' : ''}
                 <img src="${art(p)}"${p.img ? srcset(p) : ''} alt="${p.img ? esc(p.imgAlt || p.name) : ''}" loading="lazy"${p.imgSize ? ` width="${p.imgSize[0]}" height="${p.imgSize[1]}"` : ' width="400" height="300"'}>
             </div>
             <div class="product-body">

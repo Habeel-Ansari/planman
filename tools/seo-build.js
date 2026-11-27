@@ -163,8 +163,7 @@ const seriesLink = (p, esc) => {
   const sub = ((col.groups || []).find((g) => g.key === gk) || { subs: [] }).subs.find(([k]) => k === sk);
   return `<a class="pd-series" href="${landingUrl('collection', p.series).replace('/products/', '')}${gk ? '#' + gk : ''}">${esc(col.name)}${sub ? ' · ' + esc(sub[1]) : ''}</a>`;
 };
-const badgeHtml = (p, esc) => p.preorder ? '<span class="badge-new badge-preorder">Pre-booking</span>' : p.isNew ? '<span class="badge-new">New</span>'
-  : COLLECTIONS[p.series] ? `<span class="badge-new badge-series">${esc(COLLECTIONS[p.series].badge)}</span>` : '';
+const badgeHtml = (p, esc) => p.preorder ? '<span class="badge-new badge-preorder">Pre-booking</span>' : p.isNew ? '<span class="badge-new">New</span>' : '';
 const productUrl = (p) => `/products/${p.id}.html`;
 // Indexable landing pages for each brand, category and collection (products/<slug>.html). The catalog's
 // ?cat= / ?brand= filter views all canonicalise to products.html, so these are what rank for
